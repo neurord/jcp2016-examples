@@ -1,0 +1,9 @@
+<InitialConditions>
+  <ConcentrationSet region="edge">
+    <NanoMolarity specieID="A"     value="259.4653" />  
+    <NanoMolarity specieID="B"     value="259.4653e2" />
+  </ConcentrationSet>
+  <ConcentrationSet region="rest">
+    <NanoMolarity specieID="A"     value="259.4653" />  
+  </ConcentrationSet>
+</InitialConditions>

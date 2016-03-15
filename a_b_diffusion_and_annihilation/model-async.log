@@ -1,0 +1,1473 @@
+17:11:11.974 INFO  stochdiff - NeuroRD v3.0.0-rc1-4-gb612db28f3+
+17:11:11.977 INFO  stochdiff - Writing logs to model-async.log
+17:11:11.977 INFO  o.t.x.ModelReader - umarshalling model-async.xml
+17:11:12.067 INFO  o.t.x.ModelReader - /SDRun/InitialConditions: namespace not specified, assuming http://stochdiff.textensor.org
+17:11:12.075 DEBUG o.t.u.Settings - Overriding stochdiff.writers: [text] → [h5]
+17:11:12.077 INFO  o.t.s.m.SDRun - subvolume grid size is: 0.4 (from 0.4, [0.4, 0.4, 0.4])
+17:11:12.108 DEBUG o.t.s.d.LineBoxer - Using (point x=0.0,y=0.0,z=0.0,r=0.2,nnbr=1) as the starting point
+17:11:12.108 DEBUG o.t.s.d.LineBoxer - Will process (point x=0.4,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.108 DEBUG o.t.s.d.LineBoxer - Will process (point x=40.0,y=0.0,z=0.0,r=0.2,nnbr=1) later
+17:11:12.108 DEBUG o.t.s.d.LineBoxer - Will process (point x=0.8,y=0.0,z=0.0,r=0.20000000000000004,nnbr=2) later
+17:11:12.109 DEBUG o.t.s.d.LineBoxer - Will process (point x=1.2000000000000002,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.109 DEBUG o.t.s.d.LineBoxer - Will process (point x=1.6,y=0.0,z=0.0,r=0.20000000000000004,nnbr=2) later
+17:11:12.109 DEBUG o.t.s.d.LineBoxer - Will process (point x=2.0,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.109 DEBUG o.t.s.d.LineBoxer - Will process (point x=2.4000000000000004,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.109 DEBUG o.t.s.d.LineBoxer - Will process (point x=2.8000000000000003,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.109 DEBUG o.t.s.d.LineBoxer - Will process (point x=3.2,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.110 DEBUG o.t.s.d.LineBoxer - Will process (point x=3.6000000000000005,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.110 DEBUG o.t.s.d.LineBoxer - Will process (point x=4.0,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.110 DEBUG o.t.s.d.LineBoxer - Will process (point x=4.4,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.110 DEBUG o.t.s.d.LineBoxer - Will process (point x=4.8,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.110 DEBUG o.t.s.d.LineBoxer - Will process (point x=5.2,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.111 DEBUG o.t.s.d.LineBoxer - Will process (point x=5.6,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.111 DEBUG o.t.s.d.LineBoxer - Will process (point x=6.0,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.111 DEBUG o.t.s.d.LineBoxer - Will process (point x=6.4,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.111 DEBUG o.t.s.d.LineBoxer - Will process (point x=6.800000000000001,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.111 DEBUG o.t.s.d.LineBoxer - Will process (point x=7.2,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.112 DEBUG o.t.s.d.LineBoxer - Will process (point x=7.6000000000000005,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.112 DEBUG o.t.s.d.LineBoxer - Will process (point x=8.0,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.112 DEBUG o.t.s.d.LineBoxer - Will process (point x=8.4,y=0.0,z=0.0,r=0.20000000000000004,nnbr=2) later
+17:11:12.112 DEBUG o.t.s.d.LineBoxer - Will process (point x=8.799999999999999,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.112 DEBUG o.t.s.d.LineBoxer - Will process (point x=9.200000000000001,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.113 DEBUG o.t.s.d.LineBoxer - Will process (point x=9.6,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.113 DEBUG o.t.s.d.LineBoxer - Will process (point x=10.0,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.113 DEBUG o.t.s.d.LineBoxer - Will process (point x=10.4,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.113 DEBUG o.t.s.d.LineBoxer - Will process (point x=10.8,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.113 DEBUG o.t.s.d.LineBoxer - Will process (point x=11.2,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.114 DEBUG o.t.s.d.LineBoxer - Will process (point x=11.6,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.114 DEBUG o.t.s.d.LineBoxer - Will process (point x=11.999999999999998,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.114 DEBUG o.t.s.d.LineBoxer - Will process (point x=12.4,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.114 DEBUG o.t.s.d.LineBoxer - Will process (point x=12.8,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.115 DEBUG o.t.s.d.LineBoxer - Will process (point x=13.200000000000001,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.115 DEBUG o.t.s.d.LineBoxer - Will process (point x=13.6,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.115 DEBUG o.t.s.d.LineBoxer - Will process (point x=14.0,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.115 DEBUG o.t.s.d.LineBoxer - Will process (point x=14.4,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.115 DEBUG o.t.s.d.LineBoxer - Will process (point x=14.8,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.116 DEBUG o.t.s.d.LineBoxer - Will process (point x=15.200000000000001,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.116 DEBUG o.t.s.d.LineBoxer - Will process (point x=15.6,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.116 DEBUG o.t.s.d.LineBoxer - Will process (point x=16.0,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.116 DEBUG o.t.s.d.LineBoxer - Will process (point x=16.400000000000002,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.116 DEBUG o.t.s.d.LineBoxer - Will process (point x=16.8,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.116 DEBUG o.t.s.d.LineBoxer - Will process (point x=17.2,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.117 DEBUG o.t.s.d.LineBoxer - Will process (point x=17.6,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.117 DEBUG o.t.s.d.LineBoxer - Will process (point x=18.0,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.117 DEBUG o.t.s.d.LineBoxer - Will process (point x=18.4,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.117 DEBUG o.t.s.d.LineBoxer - Will process (point x=18.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.117 DEBUG o.t.s.d.LineBoxer - Will process (point x=19.2,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.117 DEBUG o.t.s.d.LineBoxer - Will process (point x=19.6,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.118 DEBUG o.t.s.d.LineBoxer - Will process (point x=20.0,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.118 DEBUG o.t.s.d.LineBoxer - Will process (point x=20.400000000000002,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.118 DEBUG o.t.s.d.LineBoxer - Will process (point x=20.8,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.118 DEBUG o.t.s.d.LineBoxer - Will process (point x=21.2,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.118 DEBUG o.t.s.d.LineBoxer - Will process (point x=21.6,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.118 DEBUG o.t.s.d.LineBoxer - Will process (point x=22.0,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.119 DEBUG o.t.s.d.LineBoxer - Will process (point x=22.4,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.119 DEBUG o.t.s.d.LineBoxer - Will process (point x=22.8,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.119 DEBUG o.t.s.d.LineBoxer - Will process (point x=23.2,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.119 DEBUG o.t.s.d.LineBoxer - Will process (point x=23.599999999999998,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.119 DEBUG o.t.s.d.LineBoxer - Will process (point x=24.0,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.120 DEBUG o.t.s.d.LineBoxer - Will process (point x=24.4,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.120 DEBUG o.t.s.d.LineBoxer - Will process (point x=24.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.120 DEBUG o.t.s.d.LineBoxer - Will process (point x=25.200000000000003,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.120 DEBUG o.t.s.d.LineBoxer - Will process (point x=25.599999999999998,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.120 DEBUG o.t.s.d.LineBoxer - Will process (point x=26.000000000000004,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.120 DEBUG o.t.s.d.LineBoxer - Will process (point x=26.4,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.121 DEBUG o.t.s.d.LineBoxer - Will process (point x=26.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.121 DEBUG o.t.s.d.LineBoxer - Will process (point x=27.200000000000003,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.121 DEBUG o.t.s.d.LineBoxer - Will process (point x=27.599999999999998,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.121 DEBUG o.t.s.d.LineBoxer - Will process (point x=28.000000000000004,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.121 DEBUG o.t.s.d.LineBoxer - Will process (point x=28.400000000000002,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.121 DEBUG o.t.s.d.LineBoxer - Will process (point x=28.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.122 DEBUG o.t.s.d.LineBoxer - Will process (point x=29.200000000000003,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.126 DEBUG o.t.s.d.LineBoxer - Will process (point x=29.6,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.126 DEBUG o.t.s.d.LineBoxer - Will process (point x=30.0,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.127 DEBUG o.t.s.d.LineBoxer - Will process (point x=30.400000000000002,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.127 DEBUG o.t.s.d.LineBoxer - Will process (point x=30.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.127 DEBUG o.t.s.d.LineBoxer - Will process (point x=31.2,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.127 DEBUG o.t.s.d.LineBoxer - Will process (point x=31.6,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.127 DEBUG o.t.s.d.LineBoxer - Will process (point x=32.0,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.127 DEBUG o.t.s.d.LineBoxer - Will process (point x=32.4,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.128 DEBUG o.t.s.d.LineBoxer - Will process (point x=32.8,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.128 DEBUG o.t.s.d.LineBoxer - Will process (point x=33.2,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.128 DEBUG o.t.s.d.LineBoxer - Will process (point x=33.6,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.128 DEBUG o.t.s.d.LineBoxer - Will process (point x=34.0,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.128 DEBUG o.t.s.d.LineBoxer - Will process (point x=34.4,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.128 DEBUG o.t.s.d.LineBoxer - Will process (point x=34.8,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.129 DEBUG o.t.s.d.LineBoxer - Will process (point x=35.199999999999996,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.129 DEBUG o.t.s.d.LineBoxer - Will process (point x=35.6,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.129 DEBUG o.t.s.d.LineBoxer - Will process (point x=36.0,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.129 DEBUG o.t.s.d.LineBoxer - Will process (point x=36.4,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.129 DEBUG o.t.s.d.LineBoxer - Will process (point x=36.8,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.129 DEBUG o.t.s.d.LineBoxer - Will process (point x=37.199999999999996,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.130 DEBUG o.t.s.d.LineBoxer - Will process (point x=37.6,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.130 DEBUG o.t.s.d.LineBoxer - Will process (point x=38.0,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.130 DEBUG o.t.s.d.LineBoxer - Will process (point x=38.4,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.130 DEBUG o.t.s.d.LineBoxer - Will process (point x=38.800000000000004,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.130 DEBUG o.t.s.d.LineBoxer - Will process (point x=39.199999999999996,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.130 DEBUG o.t.s.d.LineBoxer - Will process (point x=39.6,y=0.0,z=0.0,r=0.2,nnbr=2) later
+17:11:12.131 DEBUG o.t.s.d.LineBoxer - Processing (point x=0.0,y=0.0,z=0.0,r=0.2,nnbr=1) with 1 neighbours
+17:11:12.131 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=0.4,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.132 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.137 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.137 DEBUG o.t.s.d.LineBoxer - Processing (point x=0.4,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.138 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=0.0,y=0.0,z=0.0,r=0.2,nnbr=1) already removed from the working set
+17:11:12.138 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=0.8,y=0.0,z=0.0,r=0.20000000000000004,nnbr=2)
+17:11:12.138 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.138 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.139 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.139 DEBUG o.t.s.d.LineBoxer - Processing (point x=0.8,y=0.0,z=0.0,r=0.20000000000000004,nnbr=2) with 2 neighbours
+17:11:12.139 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=0.4,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.139 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=1.2000000000000002,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.139 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.140 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.140 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.140 DEBUG o.t.s.d.LineBoxer - Processing (point x=1.2000000000000002,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.140 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=0.8,y=0.0,z=0.0,r=0.20000000000000004,nnbr=2) already removed from the working set
+17:11:12.140 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=1.6,y=0.0,z=0.0,r=0.20000000000000004,nnbr=2)
+17:11:12.140 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.141 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.141 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.141 DEBUG o.t.s.d.LineBoxer - Processing (point x=1.6,y=0.0,z=0.0,r=0.20000000000000004,nnbr=2) with 2 neighbours
+17:11:12.141 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=1.2000000000000002,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.141 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=2.0,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.141 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.142 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.142 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.142 DEBUG o.t.s.d.LineBoxer - Processing (point x=2.0,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.142 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=1.6,y=0.0,z=0.0,r=0.20000000000000004,nnbr=2) already removed from the working set
+17:11:12.142 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=2.4000000000000004,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.142 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.143 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.143 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.143 DEBUG o.t.s.d.LineBoxer - Processing (point x=2.4000000000000004,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.143 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=2.0,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.143 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=2.8000000000000003,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.143 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.143 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.144 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.144 DEBUG o.t.s.d.LineBoxer - Processing (point x=2.8000000000000003,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.144 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=2.4000000000000004,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.144 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=3.2,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.144 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.144 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.145 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.145 DEBUG o.t.s.d.LineBoxer - Processing (point x=3.2,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.145 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=2.8000000000000003,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.145 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=3.6000000000000005,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.145 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.145 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.145 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.146 DEBUG o.t.s.d.LineBoxer - Processing (point x=3.6000000000000005,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.146 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=3.2,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.146 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=4.0,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.146 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.153 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.154 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.154 DEBUG o.t.s.d.LineBoxer - Processing (point x=4.0,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.154 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=3.6000000000000005,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.154 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=4.4,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.154 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.154 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.155 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.155 DEBUG o.t.s.d.LineBoxer - Processing (point x=4.4,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.155 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=4.0,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.155 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=4.8,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.155 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.155 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.155 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.156 DEBUG o.t.s.d.LineBoxer - Processing (point x=4.8,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.156 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=4.4,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.156 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=5.2,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.156 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.156 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.156 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.156 DEBUG o.t.s.d.LineBoxer - Processing (point x=5.2,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.156 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=4.8,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.157 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=5.6,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.157 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.157 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.157 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.157 DEBUG o.t.s.d.LineBoxer - Processing (point x=5.6,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.157 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=5.2,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.157 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=6.0,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.158 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.158 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.158 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.158 DEBUG o.t.s.d.LineBoxer - Processing (point x=6.0,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.158 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=5.6,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.158 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=6.4,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.159 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.159 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.159 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.159 DEBUG o.t.s.d.LineBoxer - Processing (point x=6.4,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.159 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=6.0,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.159 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=6.800000000000001,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.159 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.159 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.160 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.160 DEBUG o.t.s.d.LineBoxer - Processing (point x=6.800000000000001,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.160 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=6.4,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.160 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=7.2,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.160 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.160 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.160 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.160 DEBUG o.t.s.d.LineBoxer - Processing (point x=7.2,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.161 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=6.800000000000001,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.161 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=7.6000000000000005,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.161 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.161 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.161 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.161 DEBUG o.t.s.d.LineBoxer - Processing (point x=7.6000000000000005,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.161 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=7.2,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.162 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=8.0,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.162 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.162 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.162 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.162 DEBUG o.t.s.d.LineBoxer - Processing (point x=8.0,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.162 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=7.6000000000000005,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.162 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=8.4,y=0.0,z=0.0,r=0.20000000000000004,nnbr=2)
+17:11:12.162 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.163 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.163 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.163 DEBUG o.t.s.d.LineBoxer - Processing (point x=8.4,y=0.0,z=0.0,r=0.20000000000000004,nnbr=2) with 2 neighbours
+17:11:12.163 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=8.0,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.163 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=8.799999999999999,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.163 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.163 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.164 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.164 DEBUG o.t.s.d.LineBoxer - Processing (point x=8.799999999999999,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.164 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=8.4,y=0.0,z=0.0,r=0.20000000000000004,nnbr=2) already removed from the working set
+17:11:12.164 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=9.200000000000001,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.164 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.164 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.164 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.164 DEBUG o.t.s.d.LineBoxer - Processing (point x=9.200000000000001,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.165 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=8.799999999999999,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.165 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=9.6,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.165 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.165 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.165 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.168 DEBUG o.t.s.d.LineBoxer - Processing (point x=9.6,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.168 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=9.200000000000001,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.169 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=10.0,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.169 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.169 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.169 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.169 DEBUG o.t.s.d.LineBoxer - Processing (point x=10.0,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.170 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=9.6,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.170 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=10.4,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.170 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.170 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.170 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.170 DEBUG o.t.s.d.LineBoxer - Processing (point x=10.4,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.170 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=10.0,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.170 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=10.8,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.170 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.171 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.171 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.171 DEBUG o.t.s.d.LineBoxer - Processing (point x=10.8,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.171 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=10.4,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.171 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=11.2,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.171 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.171 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.172 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.172 DEBUG o.t.s.d.LineBoxer - Processing (point x=11.2,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.172 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=10.8,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.172 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=11.6,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.172 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.172 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.172 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.172 DEBUG o.t.s.d.LineBoxer - Processing (point x=11.6,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.173 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=11.2,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.173 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=11.999999999999998,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.173 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.173 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.173 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.173 DEBUG o.t.s.d.LineBoxer - Processing (point x=11.999999999999998,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.174 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=11.6,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.174 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=12.4,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.174 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.174 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.174 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.174 DEBUG o.t.s.d.LineBoxer - Processing (point x=12.4,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.174 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=11.999999999999998,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.174 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=12.8,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.174 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.175 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.175 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.175 DEBUG o.t.s.d.LineBoxer - Processing (point x=12.8,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.175 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=12.4,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.175 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=13.200000000000001,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.175 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.175 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.176 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.176 DEBUG o.t.s.d.LineBoxer - Processing (point x=13.200000000000001,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.176 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=12.8,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.176 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=13.6,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.176 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.176 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.176 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.176 DEBUG o.t.s.d.LineBoxer - Processing (point x=13.6,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.176 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=13.200000000000001,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.177 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=14.0,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.177 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.177 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.177 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.177 DEBUG o.t.s.d.LineBoxer - Processing (point x=14.0,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.177 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=13.6,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.177 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=14.4,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.177 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.178 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.178 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.178 DEBUG o.t.s.d.LineBoxer - Processing (point x=14.4,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.178 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=14.0,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.178 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=14.8,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.178 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.178 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.179 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.179 DEBUG o.t.s.d.LineBoxer - Processing (point x=14.8,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.179 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=14.4,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.179 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=15.200000000000001,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.179 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.179 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.179 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.179 DEBUG o.t.s.d.LineBoxer - Processing (point x=15.200000000000001,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.180 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=14.8,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.183 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=15.6,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.183 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.183 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.183 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.183 DEBUG o.t.s.d.LineBoxer - Processing (point x=15.6,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.184 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=15.200000000000001,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.184 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=16.0,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.184 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.184 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.184 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.184 DEBUG o.t.s.d.LineBoxer - Processing (point x=16.0,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.184 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=15.6,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.184 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=16.400000000000002,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.185 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.185 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.185 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.185 DEBUG o.t.s.d.LineBoxer - Processing (point x=16.400000000000002,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.185 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=16.0,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.185 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=16.8,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.185 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.185 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.186 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.186 DEBUG o.t.s.d.LineBoxer - Processing (point x=16.8,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.186 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=16.400000000000002,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.186 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=17.2,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.186 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.186 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.186 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.186 DEBUG o.t.s.d.LineBoxer - Processing (point x=17.2,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.187 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=16.8,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.187 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=17.6,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.187 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.187 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.187 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.187 DEBUG o.t.s.d.LineBoxer - Processing (point x=17.6,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.187 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=17.2,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.188 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=18.0,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.188 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.188 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.188 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.189 DEBUG o.t.s.d.LineBoxer - Processing (point x=18.0,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.189 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=17.6,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.189 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=18.4,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.189 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.189 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.189 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.189 DEBUG o.t.s.d.LineBoxer - Processing (point x=18.4,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.189 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=18.0,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.190 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=18.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.190 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.190 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.190 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.190 DEBUG o.t.s.d.LineBoxer - Processing (point x=18.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.190 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=18.4,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.190 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=19.2,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.191 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.191 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.191 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.191 DEBUG o.t.s.d.LineBoxer - Processing (point x=19.2,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.191 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=18.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.191 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=19.6,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.191 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.191 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.191 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.192 DEBUG o.t.s.d.LineBoxer - Processing (point x=19.6,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.192 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=19.2,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.192 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=20.0,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.192 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.192 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.192 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.192 DEBUG o.t.s.d.LineBoxer - Processing (point x=20.0,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.192 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=19.6,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.192 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=20.400000000000002,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.192 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.193 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.193 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.193 DEBUG o.t.s.d.LineBoxer - Processing (point x=20.400000000000002,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.193 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=20.0,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.193 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=20.8,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.193 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.193 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.193 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.193 DEBUG o.t.s.d.LineBoxer - Processing (point x=20.8,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.194 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=20.400000000000002,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.194 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=21.2,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.197 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.197 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.198 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.198 DEBUG o.t.s.d.LineBoxer - Processing (point x=21.2,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.198 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=20.8,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.198 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=21.6,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.198 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.198 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.198 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.198 DEBUG o.t.s.d.LineBoxer - Processing (point x=21.6,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.199 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=21.2,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.199 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=22.0,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.199 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.199 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.199 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.199 DEBUG o.t.s.d.LineBoxer - Processing (point x=22.0,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.199 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=21.6,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.199 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=22.4,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.199 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.199 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.200 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.200 DEBUG o.t.s.d.LineBoxer - Processing (point x=22.4,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.200 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=22.0,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.200 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=22.8,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.200 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.200 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.200 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.200 DEBUG o.t.s.d.LineBoxer - Processing (point x=22.8,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.200 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=22.4,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.201 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=23.2,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.201 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.201 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.201 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.201 DEBUG o.t.s.d.LineBoxer - Processing (point x=23.2,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.201 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=22.8,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.201 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=23.599999999999998,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.201 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.201 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.201 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.202 DEBUG o.t.s.d.LineBoxer - Processing (point x=23.599999999999998,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.202 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=23.2,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.202 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=24.0,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.202 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.202 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.202 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.202 DEBUG o.t.s.d.LineBoxer - Processing (point x=24.0,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.202 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=23.599999999999998,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.202 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=24.4,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.202 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.203 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.203 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.203 DEBUG o.t.s.d.LineBoxer - Processing (point x=24.4,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.203 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=24.0,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.203 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=24.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.203 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.203 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.203 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.203 DEBUG o.t.s.d.LineBoxer - Processing (point x=24.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.204 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=24.4,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.204 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=25.200000000000003,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.204 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.204 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.204 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.204 DEBUG o.t.s.d.LineBoxer - Processing (point x=25.200000000000003,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.204 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=24.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.204 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=25.599999999999998,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.204 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.205 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.205 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.205 DEBUG o.t.s.d.LineBoxer - Processing (point x=25.599999999999998,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.205 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=25.200000000000003,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.205 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=26.000000000000004,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.205 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.205 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.205 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.205 DEBUG o.t.s.d.LineBoxer - Processing (point x=26.000000000000004,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.206 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=25.599999999999998,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.206 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=26.4,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.206 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.206 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.206 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.206 DEBUG o.t.s.d.LineBoxer - Processing (point x=26.4,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.206 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=26.000000000000004,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.207 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=26.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.207 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.211 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.211 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.211 DEBUG o.t.s.d.LineBoxer - Processing (point x=26.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.211 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=26.4,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.211 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=27.200000000000003,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.212 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.212 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.212 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.212 DEBUG o.t.s.d.LineBoxer - Processing (point x=27.200000000000003,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.212 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=26.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.213 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=27.599999999999998,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.213 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.213 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.213 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.213 DEBUG o.t.s.d.LineBoxer - Processing (point x=27.599999999999998,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.213 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=27.200000000000003,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.213 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=28.000000000000004,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.213 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.213 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.213 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.214 DEBUG o.t.s.d.LineBoxer - Processing (point x=28.000000000000004,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.214 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=27.599999999999998,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.214 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=28.400000000000002,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.214 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.214 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.214 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.214 DEBUG o.t.s.d.LineBoxer - Processing (point x=28.400000000000002,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.214 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=28.000000000000004,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.214 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=28.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.214 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.214 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.215 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.215 DEBUG o.t.s.d.LineBoxer - Processing (point x=28.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.215 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=28.400000000000002,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.215 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=29.200000000000003,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.215 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.215 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.215 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.215 DEBUG o.t.s.d.LineBoxer - Processing (point x=29.200000000000003,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.215 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=28.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.215 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=29.6,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.216 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.216 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.216 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.216 DEBUG o.t.s.d.LineBoxer - Processing (point x=29.6,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.216 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=29.200000000000003,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.216 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=30.0,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.216 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.216 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.216 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.216 DEBUG o.t.s.d.LineBoxer - Processing (point x=30.0,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.217 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=29.6,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.217 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=30.400000000000002,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.217 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.217 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.217 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.217 DEBUG o.t.s.d.LineBoxer - Processing (point x=30.400000000000002,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.217 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=30.0,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.217 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=30.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.217 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.217 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.218 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.218 DEBUG o.t.s.d.LineBoxer - Processing (point x=30.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.218 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=30.400000000000002,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.218 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=31.2,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.218 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.218 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.218 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.218 DEBUG o.t.s.d.LineBoxer - Processing (point x=31.2,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.218 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=30.799999999999997,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.218 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=31.6,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.219 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.219 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.219 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.219 DEBUG o.t.s.d.LineBoxer - Processing (point x=31.6,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.219 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=31.2,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.219 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=32.0,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.219 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.219 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.219 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.219 DEBUG o.t.s.d.LineBoxer - Processing (point x=32.0,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.220 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=31.6,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.220 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=32.4,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.220 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.223 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.223 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.223 DEBUG o.t.s.d.LineBoxer - Processing (point x=32.4,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.223 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=32.0,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.224 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=32.8,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.224 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.224 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.224 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.224 DEBUG o.t.s.d.LineBoxer - Processing (point x=32.8,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.224 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=32.4,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.224 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=33.2,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.224 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.224 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.224 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.224 DEBUG o.t.s.d.LineBoxer - Processing (point x=33.2,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.225 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=32.8,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.225 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=33.6,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.225 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.225 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.225 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.225 DEBUG o.t.s.d.LineBoxer - Processing (point x=33.6,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.225 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=33.2,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.225 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=34.0,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.225 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.225 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.225 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.225 DEBUG o.t.s.d.LineBoxer - Processing (point x=34.0,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.226 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=33.6,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.226 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=34.4,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.226 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.226 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.226 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.226 DEBUG o.t.s.d.LineBoxer - Processing (point x=34.4,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.226 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=34.0,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.226 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=34.8,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.226 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.226 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.227 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.227 DEBUG o.t.s.d.LineBoxer - Processing (point x=34.8,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.227 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=34.4,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.227 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=35.199999999999996,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.227 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.227 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.227 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.227 DEBUG o.t.s.d.LineBoxer - Processing (point x=35.199999999999996,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.227 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=34.8,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.227 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=35.6,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.227 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.228 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.228 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.228 DEBUG o.t.s.d.LineBoxer - Processing (point x=35.6,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.228 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=35.199999999999996,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.228 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=36.0,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.228 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.228 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.228 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.228 DEBUG o.t.s.d.LineBoxer - Processing (point x=36.0,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.228 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=35.6,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.229 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=36.4,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.229 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.229 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.229 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.229 DEBUG o.t.s.d.LineBoxer - Processing (point x=36.4,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.229 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=36.0,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.229 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=36.8,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.229 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.229 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.229 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.229 DEBUG o.t.s.d.LineBoxer - Processing (point x=36.8,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.229 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=36.4,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.230 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=37.199999999999996,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.230 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.230 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.230 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.230 DEBUG o.t.s.d.LineBoxer - Processing (point x=37.199999999999996,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.230 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=36.8,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.230 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=37.6,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.230 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.230 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.230 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.230 DEBUG o.t.s.d.LineBoxer - Processing (point x=37.6,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.231 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=37.199999999999996,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.231 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=38.0,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.231 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.231 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.231 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.231 DEBUG o.t.s.d.LineBoxer - Processing (point x=38.0,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.234 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=37.6,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.234 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=38.4,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.234 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.234 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.234 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.234 DEBUG o.t.s.d.LineBoxer - Processing (point x=38.4,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.234 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=38.0,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.234 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=38.800000000000004,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.234 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.234 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.234 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.235 DEBUG o.t.s.d.LineBoxer - Processing (point x=38.800000000000004,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.235 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=38.4,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.235 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=39.199999999999996,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.235 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.235 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.235 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.235 DEBUG o.t.s.d.LineBoxer - Processing (point x=39.199999999999996,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.235 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=38.800000000000004,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.235 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=39.6,y=0.0,z=0.0,r=0.2,nnbr=2)
+17:11:12.235 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.235 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.236 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.236 DEBUG o.t.s.d.LineBoxer - Processing (point x=39.6,y=0.0,z=0.0,r=0.2,nnbr=2) with 2 neighbours
+17:11:12.236 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=39.199999999999996,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.236 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=40.0,y=0.0,z=0.0,r=0.2,nnbr=1)
+17:11:12.236 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+17:11:12.236 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=0.4 dsl=0.0
+17:11:12.236 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+17:11:12.236 DEBUG o.t.s.d.LineBoxer - Processing (point x=40.0,y=0.0,z=0.0,r=0.2,nnbr=1) with 1 neighbours
+17:11:12.236 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=39.6,y=0.0,z=0.0,r=0.2,nnbr=2) already removed from the working set
+17:11:12.238 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (0.0000 0.20000 0.0000) (0.40000 0.20000 0.0000) (0.40000 -0.20000 0.0000) (0.0000 -0.20000 0.0000) from region edge
+17:11:12.238 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (0.40000 0.20000 0.0000) (0.80000 0.20000 0.0000) (0.80000 -0.20000 0.0000) (0.40000 -0.20000 0.0000) from region rest
+17:11:12.238 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (0.80000 0.20000 0.0000) (1.2000 0.20000 0.0000) (1.2000 -0.20000 0.0000) (0.80000 -0.20000 0.0000) from region rest
+17:11:12.239 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (1.2000 0.20000 0.0000) (1.6000 0.20000 0.0000) (1.6000 -0.20000 0.0000) (1.2000 -0.20000 0.0000) from region rest
+17:11:12.239 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (1.6000 0.20000 0.0000) (2.0000 0.20000 0.0000) (2.0000 -0.20000 0.0000) (1.6000 -0.20000 0.0000) from region rest
+17:11:12.240 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (2.0000 0.20000 0.0000) (2.4000 0.20000 0.0000) (2.4000 -0.20000 0.0000) (2.0000 -0.20000 0.0000) from region rest
+17:11:12.240 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (2.4000 0.20000 0.0000) (2.8000 0.20000 0.0000) (2.8000 -0.20000 0.0000) (2.4000 -0.20000 0.0000) from region rest
+17:11:12.240 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (2.8000 0.20000 0.0000) (3.2000 0.20000 0.0000) (3.2000 -0.20000 0.0000) (2.8000 -0.20000 0.0000) from region rest
+17:11:12.241 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (3.2000 0.20000 0.0000) (3.6000 0.20000 0.0000) (3.6000 -0.20000 0.0000) (3.2000 -0.20000 0.0000) from region rest
+17:11:12.241 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (3.6000 0.20000 0.0000) (4.0000 0.20000 0.0000) (4.0000 -0.20000 0.0000) (3.6000 -0.20000 0.0000) from region rest
+17:11:12.242 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (4.0000 0.20000 0.0000) (4.4000 0.20000 0.0000) (4.4000 -0.20000 0.0000) (4.0000 -0.20000 0.0000) from region rest
+17:11:12.242 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (4.4000 0.20000 0.0000) (4.8000 0.20000 0.0000) (4.8000 -0.20000 0.0000) (4.4000 -0.20000 0.0000) from region rest
+17:11:12.243 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (4.8000 0.20000 0.0000) (5.2000 0.20000 0.0000) (5.2000 -0.20000 0.0000) (4.8000 -0.20000 0.0000) from region rest
+17:11:12.243 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (5.2000 0.20000 0.0000) (5.6000 0.20000 0.0000) (5.6000 -0.20000 0.0000) (5.2000 -0.20000 0.0000) from region rest
+17:11:12.243 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (5.6000 0.20000 0.0000) (6.0000 0.20000 0.0000) (6.0000 -0.20000 0.0000) (5.6000 -0.20000 0.0000) from region rest
+17:11:12.244 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (6.0000 0.20000 0.0000) (6.4000 0.20000 0.0000) (6.4000 -0.20000 0.0000) (6.0000 -0.20000 0.0000) from region rest
+17:11:12.244 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (6.4000 0.20000 0.0000) (6.8000 0.20000 0.0000) (6.8000 -0.20000 0.0000) (6.4000 -0.20000 0.0000) from region rest
+17:11:12.244 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (6.8000 0.20000 0.0000) (7.2000 0.20000 0.0000) (7.2000 -0.20000 0.0000) (6.8000 -0.20000 0.0000) from region rest
+17:11:12.245 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (7.2000 0.20000 0.0000) (7.6000 0.20000 0.0000) (7.6000 -0.20000 0.0000) (7.2000 -0.20000 0.0000) from region rest
+17:11:12.245 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (7.6000 0.20000 0.0000) (8.0000 0.20000 0.0000) (8.0000 -0.20000 0.0000) (7.6000 -0.20000 0.0000) from region rest
+17:11:12.246 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (8.0000 0.20000 0.0000) (8.4000 0.20000 0.0000) (8.4000 -0.20000 0.0000) (8.0000 -0.20000 0.0000) from region rest
+17:11:12.246 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (8.4000 0.20000 0.0000) (8.8000 0.20000 0.0000) (8.8000 -0.20000 0.0000) (8.4000 -0.20000 0.0000) from region rest
+17:11:12.246 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (8.8000 0.20000 0.0000) (9.2000 0.20000 0.0000) (9.2000 -0.20000 0.0000) (8.8000 -0.20000 0.0000) from region rest
+17:11:12.247 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (9.2000 0.20000 0.0000) (9.6000 0.20000 0.0000) (9.6000 -0.20000 0.0000) (9.2000 -0.20000 0.0000) from region rest
+17:11:12.247 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (9.6000 0.20000 0.0000) (10.000 0.20000 0.0000) (10.000 -0.20000 0.0000) (9.6000 -0.20000 0.0000) from region rest
+17:11:12.247 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (10.000 0.20000 0.0000) (10.400 0.20000 0.0000) (10.400 -0.20000 0.0000) (10.000 -0.20000 0.0000) from region rest
+17:11:12.248 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (10.400 0.20000 0.0000) (10.800 0.20000 0.0000) (10.800 -0.20000 0.0000) (10.400 -0.20000 0.0000) from region rest
+17:11:12.248 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (10.800 0.20000 0.0000) (11.200 0.20000 0.0000) (11.200 -0.20000 0.0000) (10.800 -0.20000 0.0000) from region rest
+17:11:12.252 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (11.200 0.20000 0.0000) (11.600 0.20000 0.0000) (11.600 -0.20000 0.0000) (11.200 -0.20000 0.0000) from region rest
+17:11:12.252 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (11.600 0.20000 0.0000) (12.000 0.20000 0.0000) (12.000 -0.20000 0.0000) (11.600 -0.20000 0.0000) from region rest
+17:11:12.252 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (12.000 0.20000 0.0000) (12.400 0.20000 0.0000) (12.400 -0.20000 0.0000) (12.000 -0.20000 0.0000) from region rest
+17:11:12.253 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (12.400 0.20000 0.0000) (12.800 0.20000 0.0000) (12.800 -0.20000 0.0000) (12.400 -0.20000 0.0000) from region rest
+17:11:12.253 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (12.800 0.20000 0.0000) (13.200 0.20000 0.0000) (13.200 -0.20000 0.0000) (12.800 -0.20000 0.0000) from region rest
+17:11:12.253 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (13.200 0.20000 0.0000) (13.600 0.20000 0.0000) (13.600 -0.20000 0.0000) (13.200 -0.20000 0.0000) from region rest
+17:11:12.253 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (13.600 0.20000 0.0000) (14.000 0.20000 0.0000) (14.000 -0.20000 0.0000) (13.600 -0.20000 0.0000) from region rest
+17:11:12.254 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (14.000 0.20000 0.0000) (14.400 0.20000 0.0000) (14.400 -0.20000 0.0000) (14.000 -0.20000 0.0000) from region rest
+17:11:12.254 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (14.400 0.20000 0.0000) (14.800 0.20000 0.0000) (14.800 -0.20000 0.0000) (14.400 -0.20000 0.0000) from region rest
+17:11:12.254 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (14.800 0.20000 0.0000) (15.200 0.20000 0.0000) (15.200 -0.20000 0.0000) (14.800 -0.20000 0.0000) from region rest
+17:11:12.255 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (15.200 0.20000 0.0000) (15.600 0.20000 0.0000) (15.600 -0.20000 0.0000) (15.200 -0.20000 0.0000) from region rest
+17:11:12.255 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (15.600 0.20000 0.0000) (16.000 0.20000 0.0000) (16.000 -0.20000 0.0000) (15.600 -0.20000 0.0000) from region rest
+17:11:12.255 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (16.000 0.20000 0.0000) (16.400 0.20000 0.0000) (16.400 -0.20000 0.0000) (16.000 -0.20000 0.0000) from region rest
+17:11:12.256 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (16.400 0.20000 0.0000) (16.800 0.20000 0.0000) (16.800 -0.20000 0.0000) (16.400 -0.20000 0.0000) from region rest
+17:11:12.256 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (16.800 0.20000 0.0000) (17.200 0.20000 0.0000) (17.200 -0.20000 0.0000) (16.800 -0.20000 0.0000) from region rest
+17:11:12.256 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (17.200 0.20000 0.0000) (17.600 0.20000 0.0000) (17.600 -0.20000 0.0000) (17.200 -0.20000 0.0000) from region rest
+17:11:12.257 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (17.600 0.20000 0.0000) (18.000 0.20000 0.0000) (18.000 -0.20000 0.0000) (17.600 -0.20000 0.0000) from region rest
+17:11:12.257 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (18.000 0.20000 0.0000) (18.400 0.20000 0.0000) (18.400 -0.20000 0.0000) (18.000 -0.20000 0.0000) from region rest
+17:11:12.257 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (18.400 0.20000 0.0000) (18.800 0.20000 0.0000) (18.800 -0.20000 0.0000) (18.400 -0.20000 0.0000) from region rest
+17:11:12.257 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (18.800 0.20000 0.0000) (19.200 0.20000 0.0000) (19.200 -0.20000 0.0000) (18.800 -0.20000 0.0000) from region rest
+17:11:12.258 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (19.200 0.20000 0.0000) (19.600 0.20000 0.0000) (19.600 -0.20000 0.0000) (19.200 -0.20000 0.0000) from region rest
+17:11:12.258 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (19.600 0.20000 0.0000) (20.000 0.20000 0.0000) (20.000 -0.20000 0.0000) (19.600 -0.20000 0.0000) from region rest
+17:11:12.258 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (20.000 0.20000 0.0000) (20.400 0.20000 0.0000) (20.400 -0.20000 0.0000) (20.000 -0.20000 0.0000) from region rest
+17:11:12.258 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (20.400 0.20000 0.0000) (20.800 0.20000 0.0000) (20.800 -0.20000 0.0000) (20.400 -0.20000 0.0000) from region rest
+17:11:12.259 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (20.800 0.20000 0.0000) (21.200 0.20000 0.0000) (21.200 -0.20000 0.0000) (20.800 -0.20000 0.0000) from region rest
+17:11:12.259 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (21.200 0.20000 0.0000) (21.600 0.20000 0.0000) (21.600 -0.20000 0.0000) (21.200 -0.20000 0.0000) from region rest
+17:11:12.259 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (21.600 0.20000 0.0000) (22.000 0.20000 0.0000) (22.000 -0.20000 0.0000) (21.600 -0.20000 0.0000) from region rest
+17:11:12.260 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (22.000 0.20000 0.0000) (22.400 0.20000 0.0000) (22.400 -0.20000 0.0000) (22.000 -0.20000 0.0000) from region rest
+17:11:12.260 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (22.400 0.20000 0.0000) (22.800 0.20000 0.0000) (22.800 -0.20000 0.0000) (22.400 -0.20000 0.0000) from region rest
+17:11:12.260 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (22.800 0.20000 0.0000) (23.200 0.20000 0.0000) (23.200 -0.20000 0.0000) (22.800 -0.20000 0.0000) from region rest
+17:11:12.260 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (23.200 0.20000 0.0000) (23.600 0.20000 0.0000) (23.600 -0.20000 0.0000) (23.200 -0.20000 0.0000) from region rest
+17:11:12.261 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (23.600 0.20000 0.0000) (24.000 0.20000 0.0000) (24.000 -0.20000 0.0000) (23.600 -0.20000 0.0000) from region rest
+17:11:12.261 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (24.000 0.20000 0.0000) (24.400 0.20000 0.0000) (24.400 -0.20000 0.0000) (24.000 -0.20000 0.0000) from region rest
+17:11:12.261 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (24.400 0.20000 0.0000) (24.800 0.20000 0.0000) (24.800 -0.20000 0.0000) (24.400 -0.20000 0.0000) from region rest
+17:11:12.262 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (24.800 0.20000 0.0000) (25.200 0.20000 0.0000) (25.200 -0.20000 0.0000) (24.800 -0.20000 0.0000) from region rest
+17:11:12.262 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (25.200 0.20000 0.0000) (25.600 0.20000 0.0000) (25.600 -0.20000 0.0000) (25.200 -0.20000 0.0000) from region rest
+17:11:12.262 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (25.600 0.20000 0.0000) (26.000 0.20000 0.0000) (26.000 -0.20000 0.0000) (25.600 -0.20000 0.0000) from region rest
+17:11:12.262 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (26.000 0.20000 0.0000) (26.400 0.20000 0.0000) (26.400 -0.20000 0.0000) (26.000 -0.20000 0.0000) from region rest
+17:11:12.263 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (26.400 0.20000 0.0000) (26.800 0.20000 0.0000) (26.800 -0.20000 0.0000) (26.400 -0.20000 0.0000) from region rest
+17:11:12.263 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (26.800 0.20000 0.0000) (27.200 0.20000 0.0000) (27.200 -0.20000 0.0000) (26.800 -0.20000 0.0000) from region rest
+17:11:12.263 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (27.200 0.20000 0.0000) (27.600 0.20000 0.0000) (27.600 -0.20000 0.0000) (27.200 -0.20000 0.0000) from region rest
+17:11:12.264 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (27.600 0.20000 0.0000) (28.000 0.20000 0.0000) (28.000 -0.20000 0.0000) (27.600 -0.20000 0.0000) from region rest
+17:11:12.264 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (28.000 0.20000 0.0000) (28.400 0.20000 0.0000) (28.400 -0.20000 0.0000) (28.000 -0.20000 0.0000) from region rest
+17:11:12.264 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (28.400 0.20000 0.0000) (28.800 0.20000 0.0000) (28.800 -0.20000 0.0000) (28.400 -0.20000 0.0000) from region rest
+17:11:12.264 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (28.800 0.20000 0.0000) (29.200 0.20000 0.0000) (29.200 -0.20000 0.0000) (28.800 -0.20000 0.0000) from region rest
+17:11:12.269 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (29.200 0.20000 0.0000) (29.600 0.20000 0.0000) (29.600 -0.20000 0.0000) (29.200 -0.20000 0.0000) from region rest
+17:11:12.269 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (29.600 0.20000 0.0000) (30.000 0.20000 0.0000) (30.000 -0.20000 0.0000) (29.600 -0.20000 0.0000) from region rest
+17:11:12.269 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (30.000 0.20000 0.0000) (30.400 0.20000 0.0000) (30.400 -0.20000 0.0000) (30.000 -0.20000 0.0000) from region rest
+17:11:12.270 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (30.400 0.20000 0.0000) (30.800 0.20000 0.0000) (30.800 -0.20000 0.0000) (30.400 -0.20000 0.0000) from region rest
+17:11:12.270 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (30.800 0.20000 0.0000) (31.200 0.20000 0.0000) (31.200 -0.20000 0.0000) (30.800 -0.20000 0.0000) from region rest
+17:11:12.270 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (31.200 0.20000 0.0000) (31.600 0.20000 0.0000) (31.600 -0.20000 0.0000) (31.200 -0.20000 0.0000) from region rest
+17:11:12.270 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (31.600 0.20000 0.0000) (32.000 0.20000 0.0000) (32.000 -0.20000 0.0000) (31.600 -0.20000 0.0000) from region rest
+17:11:12.270 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (32.000 0.20000 0.0000) (32.400 0.20000 0.0000) (32.400 -0.20000 0.0000) (32.000 -0.20000 0.0000) from region rest
+17:11:12.271 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (32.400 0.20000 0.0000) (32.800 0.20000 0.0000) (32.800 -0.20000 0.0000) (32.400 -0.20000 0.0000) from region rest
+17:11:12.271 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (32.800 0.20000 0.0000) (33.200 0.20000 0.0000) (33.200 -0.20000 0.0000) (32.800 -0.20000 0.0000) from region rest
+17:11:12.271 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (33.200 0.20000 0.0000) (33.600 0.20000 0.0000) (33.600 -0.20000 0.0000) (33.200 -0.20000 0.0000) from region rest
+17:11:12.271 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (33.600 0.20000 0.0000) (34.000 0.20000 0.0000) (34.000 -0.20000 0.0000) (33.600 -0.20000 0.0000) from region rest
+17:11:12.272 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (34.000 0.20000 0.0000) (34.400 0.20000 0.0000) (34.400 -0.20000 0.0000) (34.000 -0.20000 0.0000) from region rest
+17:11:12.272 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (34.400 0.20000 0.0000) (34.800 0.20000 0.0000) (34.800 -0.20000 0.0000) (34.400 -0.20000 0.0000) from region rest
+17:11:12.272 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (34.800 0.20000 0.0000) (35.200 0.20000 0.0000) (35.200 -0.20000 0.0000) (34.800 -0.20000 0.0000) from region rest
+17:11:12.272 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (35.200 0.20000 0.0000) (35.600 0.20000 0.0000) (35.600 -0.20000 0.0000) (35.200 -0.20000 0.0000) from region rest
+17:11:12.273 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (35.600 0.20000 0.0000) (36.000 0.20000 0.0000) (36.000 -0.20000 0.0000) (35.600 -0.20000 0.0000) from region rest
+17:11:12.273 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (36.000 0.20000 0.0000) (36.400 0.20000 0.0000) (36.400 -0.20000 0.0000) (36.000 -0.20000 0.0000) from region rest
+17:11:12.273 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (36.400 0.20000 0.0000) (36.800 0.20000 0.0000) (36.800 -0.20000 0.0000) (36.400 -0.20000 0.0000) from region rest
+17:11:12.273 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (36.800 0.20000 0.0000) (37.200 0.20000 0.0000) (37.200 -0.20000 0.0000) (36.800 -0.20000 0.0000) from region rest
+17:11:12.273 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (37.200 0.20000 0.0000) (37.600 0.20000 0.0000) (37.600 -0.20000 0.0000) (37.200 -0.20000 0.0000) from region rest
+17:11:12.274 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (37.600 0.20000 0.0000) (38.000 0.20000 0.0000) (38.000 -0.20000 0.0000) (37.600 -0.20000 0.0000) from region rest
+17:11:12.274 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (38.000 0.20000 0.0000) (38.400 0.20000 0.0000) (38.400 -0.20000 0.0000) (38.000 -0.20000 0.0000) from region rest
+17:11:12.274 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (38.400 0.20000 0.0000) (38.800 0.20000 0.0000) (38.800 -0.20000 0.0000) (38.400 -0.20000 0.0000) from region rest
+17:11:12.274 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (38.800 0.20000 0.0000) (39.200 0.20000 0.0000) (39.200 -0.20000 0.0000) (38.800 -0.20000 0.0000) from region rest
+17:11:12.275 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (39.200 0.20000 0.0000) (39.600 0.20000 0.0000) (39.600 -0.20000 0.0000) (39.200 -0.20000 0.0000) from region rest
+17:11:12.275 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (39.600 0.20000 0.0000) (40.000 0.20000 0.0000) (40.000 -0.20000 0.0000) (39.600 -0.20000 0.0000) from region rest
+17:11:12.284 DEBUG o.t.u.LibUtil - Added /usr/lib64/jhdf to java.library.path
+17:11:12.285 DEBUG o.t.u.LibUtil - Added /usr/lib64/jhdf5 to java.library.path
+17:11:12.285 DEBUG o.t.u.LibUtil - Added /usr/lib/jhdf to java.library.path
+17:11:12.285 DEBUG o.t.u.LibUtil - Added /usr/lib/jhdf5 to java.library.path
+17:11:12.287 INFO  o.t.s.SDCalc - Using HDF5 writer for model-async.h5
+17:11:12.287 INFO  o.t.s.SDCalc - Beginning calculations (1 trials)
+17:11:12.294 INFO  o.t.s.n.BaseCalc - Writing particle numbers as NUMBERs
+17:11:12.294 INFO  o.t.s.n.g.GridCalc - Extracting dts for 0 output files
+17:11:12.347 INFO  o.t.s.n.g.ResultWriterHDF5 - Created git_version with dims=[1] size=[] chunks=[]
+17:11:12.347 INFO  o.t.s.n.g.ResultWriterHDF5 - Created archiver_version with dims=[1] size=[] chunks=[]
+17:11:12.348 INFO  o.t.s.n.g.ResultWriterHDF5 - Created built_by with dims=[1] size=[] chunks=[]
+17:11:12.348 INFO  o.t.s.n.g.ResultWriterHDF5 - Created build_time with dims=[1] size=[] chunks=[]
+17:11:12.349 INFO  o.t.s.n.g.ResultWriterHDF5 - Created created_by with dims=[1] size=[] chunks=[]
+17:11:12.349 INFO  o.t.s.n.g.ResultWriterHDF5 - Created build_jdk with dims=[1] size=[] chunks=[]
+17:11:12.350 INFO  o.t.s.n.g.ResultWriterHDF5 - Created manifest_version with dims=[1] size=[] chunks=[]
+17:11:12.350 INFO  o.t.s.n.g.ResultWriterHDF5 - Created main_class with dims=[1] size=[] chunks=[]
+17:11:12.350 INFO  o.t.s.m.ReactionScheme - Running with 1 reactions (forward and reverse)
+17:11:12.351 DEBUG o.t.s.n.c.ReactionTable - ireact=0/1 [[0, 1], [1, 1], [1, 1]]→[[], [], []] rate=1.0E-4
+17:11:12.351 INFO  o.t.s.n.BaseCalc - Trial 0: running with simulationSeed 77777
+17:11:12.361 INFO  o.t.s.n.s.InterpolatingStepGenerator - Using BINOMIAL step generator with 601×121 tables
+17:11:13.003 INFO  o.t.s.n.g.NextEventQueue - Using 0.01 as leap tolerance, jumping when 2.0 times longer
+17:11:13.010 INFO  o.t.s.n.g.NextEventQueue - Created 396 diffusion events
+17:11:13.011 INFO  o.t.s.n.g.NextEventQueue - Created 100 reaction events
+17:11:13.012 INFO  o.t.s.n.g.NextEventQueue - Created 0 stimulation events
+17:11:13.012 INFO  o.t.s.n.g.NextEventQueue - Sorting 496 nodes
+17:11:13.014 INFO  o.t.s.n.g.NextEventQueue - Creating dependency graph
+17:11:13.054 INFO  o.t.s.n.g.NextEventQueue - 496 events at the beginning:
+17:11:13.055 INFO  o.t.s.n.g.NextEventQueue - 0 → NextReaction el.0 A+B→nil prop=43.08420391230541 t=0.0029025795206066383
+17:11:13.056 INFO  o.t.s.n.g.NextEventQueue - 1 → NextDiffusion A el.49→50 prop=0.3124999999999995 t=0.011127915279249305
+17:11:13.056 INFO  o.t.s.n.g.NextEventQueue - 2 → NextDiffusion B el.0→1 prop=31.249999999999993 t=0.013572803014770013
+17:11:13.056 INFO  o.t.s.n.g.NextEventQueue - 3 → NextDiffusion A el.85→84 prop=0.3124999999999967 t=0.013862648210509696
+17:11:13.056 INFO  o.t.s.n.g.NextEventQueue - 4 → NextDiffusion A el.51→52 prop=0.3125000000000023 t=0.016983196939908102
+17:11:13.056 INFO  o.t.s.n.g.NextEventQueue - 5 → NextDiffusion A el.20→19 prop=0.312500000000001 t=0.020201226153991562
+17:11:13.056 INFO  o.t.s.n.g.NextEventQueue - 6 → NextDiffusion A el.22→21 prop=0.3124999999999981 t=0.026847038587561985
+17:11:13.056 INFO  o.t.s.n.g.NextEventQueue - 7 → NextDiffusion A el.59→58 prop=0.3124999999999995 t=0.03214890625538652
+17:11:13.061 INFO  o.t.s.n.g.NextEventQueue - 8 → NextDiffusion A el.14→15 prop=0.3124999999999995 t=0.04263042188107406
+17:11:13.062 INFO  o.t.s.n.g.NextEventQueue - 9 → NextDiffusion A el.20→21 prop=0.3124999999999995 t=0.06508226038280046
+17:11:13.062 INFO  o.t.s.n.g.NextEventQueue - 10 → NextDiffusion A el.60→61 prop=0.3125000000000023 t=0.06512586312772961
+17:11:13.062 INFO  o.t.s.n.g.NextEventQueue - 11 → NextDiffusion A el.72→73 prop=0.31249999999999395 t=0.06529852804599268
+17:11:13.062 INFO  o.t.s.n.g.NextEventQueue - 12 → NextDiffusion A el.56→55 prop=0.3124999999999967 t=0.06986399772559784
+17:11:13.062 INFO  o.t.s.n.g.NextEventQueue - 13 → NextDiffusion A el.92→91 prop=0.3124999999999967 t=0.07312260028377066
+17:11:13.062 INFO  o.t.s.n.g.NextEventQueue - 14 → NextDiffusion A el.34→33 prop=0.3124999999999995 t=0.08368635218316349
+17:11:13.062 INFO  o.t.s.n.g.NextEventQueue - 15 → NextDiffusion A el.38→37 prop=0.3125000000000009 t=0.10006539954240681
+17:11:13.063 INFO  o.t.s.n.g.NextEventQueue - 16 → NextDiffusion A el.62→61 prop=0.31249999999999395 t=0.10727024117595875
+17:11:13.063 INFO  o.t.s.n.g.NextEventQueue - 17 → NextDiffusion A el.51→50 prop=0.3125000000000023 t=0.10744184200337926
+17:11:13.063 INFO  o.t.s.n.g.NextEventQueue - 18 → NextDiffusion A el.10→11 prop=0.3125000000000002 t=0.16462649909934993
+17:11:13.063 INFO  o.t.s.n.g.NextEventQueue - 19 → NextDiffusion A el.71→72 prop=0.31250000000000505 t=0.1789461080552676
+17:11:13.063 INFO  o.t.s.n.g.NextEventQueue - 20 → NextDiffusion A el.13→14 prop=0.31250000000000083 t=0.17917363909709635
+17:11:13.063 INFO  o.t.s.n.g.NextEventQueue - 21 → NextDiffusion A el.65→66 prop=0.31250000000000777 t=0.18594241668296177
+17:11:13.064 INFO  o.t.s.n.g.NextEventQueue - 22 → NextDiffusion A el.70→69 prop=0.3124999999999995 t=0.2201457687972696
+17:11:13.064 INFO  o.t.s.n.g.NextEventQueue - 23 → NextDiffusion A el.88→89 prop=0.3124999999999967 t=0.2283768948985431
+17:11:13.064 INFO  o.t.s.n.g.NextEventQueue - 24 → NextDiffusion A el.3→2 prop=0.31250000000000006 t=0.230883946685919
+17:11:13.064 INFO  o.t.s.n.g.NextEventQueue - 25 → NextDiffusion A el.86→87 prop=0.3124999999999967 t=0.24460418299385547
+17:11:13.064 INFO  o.t.s.n.g.NextEventQueue - 26 → NextDiffusion A el.39→40 prop=0.31249999999999817 t=0.26577926733467355
+17:11:13.064 INFO  o.t.s.n.g.NextEventQueue - 27 → NextDiffusion A el.97→96 prop=0.3125000000000078 t=0.27728589244724483
+17:11:13.065 INFO  o.t.s.n.g.NextEventQueue - 28 → NextDiffusion A el.65→64 prop=0.3125000000000023 t=0.3326079385870038
+17:11:13.065 INFO  o.t.s.n.g.NextEventQueue - 29 → NextDiffusion A el.52→51 prop=0.3125000000000023 t=0.33656696106523
+17:11:13.065 INFO  o.t.s.n.g.NextEventQueue - 30 → NextDiffusion A el.94→95 prop=0.3124999999999967 t=0.35521741193333123
+17:11:13.065 INFO  o.t.s.n.g.NextEventQueue - 31 → NextDiffusion A el.29→30 prop=0.3125000000000009 t=0.3630823028973272
+17:11:13.065 INFO  o.t.s.n.g.NextEventQueue - 32 → NextDiffusion A el.45→46 prop=0.3125000000000023 t=0.37739796711644935
+17:11:13.065 INFO  o.t.s.n.g.NextEventQueue - 33 → NextDiffusion A el.79→78 prop=0.3124999999999995 t=0.40098855263558253
+17:11:13.065 INFO  o.t.s.n.g.NextEventQueue - 34 → NextDiffusion A el.73→74 prop=0.3125000000000023 t=0.40959462173766786
+17:11:13.065 INFO  o.t.s.n.g.NextEventQueue - 35 → NextDiffusion A el.54→55 prop=0.3125000000000023 t=0.4345572572408801
+17:11:13.065 INFO  o.t.s.n.g.NextEventQueue - 36 → NextDiffusion A el.86→85 prop=0.31250000000000777 t=0.44676785985026185
+17:11:13.065 INFO  o.t.s.n.g.NextEventQueue - 37 → NextDiffusion A el.64→65 prop=0.31249999999999395 t=0.4875752668207448
+17:11:13.066 INFO  o.t.s.n.g.NextEventQueue - 38 → NextDiffusion A el.91→92 prop=0.3124999999999967 t=0.5019824100065161
+17:11:13.066 INFO  o.t.s.n.g.NextEventQueue - 39 → NextDiffusion A el.61→62 prop=0.3124999999999995 t=0.5255869159299114
+17:11:13.066 INFO  o.t.s.n.g.NextEventQueue - 40 → NextDiffusion A el.6→7 prop=0.31250000000000056 t=0.5891179345748537
+17:11:13.066 INFO  o.t.s.n.g.NextEventQueue - 41 → NextDiffusion A el.80→79 prop=0.3124999999999995 t=0.5989944260878609
+17:11:13.066 INFO  o.t.s.n.g.NextEventQueue - 42 → NextDiffusion A el.2→1 prop=0.3125 t=0.6487045781031643
+17:11:13.066 INFO  o.t.s.n.g.NextEventQueue - 43 → NextDiffusion A el.2→3 prop=0.3124999999999999 t=0.6807042402346553
+17:11:13.066 INFO  o.t.s.n.g.NextEventQueue - 44 → NextDiffusion A el.62→63 prop=0.3124999999999967 t=0.695932292922395
+17:11:13.066 INFO  o.t.s.n.g.NextEventQueue - 45 → NextDiffusion A el.15→16 prop=0.3124999999999995 t=0.7189382169884706
+17:11:13.066 INFO  o.t.s.n.g.NextEventQueue - 46 → NextDiffusion A el.22→23 prop=0.3124999999999981 t=0.7285047520270038
+17:11:13.067 INFO  o.t.s.n.g.NextEventQueue - 47 → NextDiffusion A el.16→15 prop=0.3124999999999995 t=0.7468353462941438
+17:11:13.067 INFO  o.t.s.n.g.NextEventQueue - 48 → NextDiffusion A el.31→30 prop=0.31249999999999817 t=0.7613937853230345
+17:11:13.067 INFO  o.t.s.n.g.NextEventQueue - 49 → NextDiffusion A el.93→92 prop=0.3124999999999967 t=0.790537996346293
+17:11:13.067 INFO  o.t.s.n.g.NextEventQueue - 50 → NextDiffusion A el.1→2 prop=0.31250000000000006 t=0.7973433468476584
+17:11:13.067 INFO  o.t.s.n.g.NextEventQueue - 51 → NextDiffusion A el.19→20 prop=0.31250000000000155 t=0.8007316149061311
+17:11:13.067 INFO  o.t.s.n.g.NextEventQueue - 52 → NextDiffusion A el.8→9 prop=0.3124999999999999 t=0.8027019802343295
+17:11:13.067 INFO  o.t.s.n.g.NextEventQueue - 53 → NextDiffusion A el.0→1 prop=0.31249999999999994 t=0.804397646782302
+17:11:13.067 INFO  o.t.s.n.g.NextEventQueue - 54 → NextDiffusion A el.93→94 prop=0.3124999999999967 t=0.817585624008372
+17:11:13.068 INFO  o.t.s.n.g.NextEventQueue - 55 → NextDiffusion A el.67→66 prop=0.31249999999999395 t=0.8278382377087632
+17:11:13.068 INFO  o.t.s.n.g.NextEventQueue - 56 → NextDiffusion A el.27→26 prop=0.3125000000000023 t=0.8752318884716447
+17:11:13.068 INFO  o.t.s.n.g.NextEventQueue - 57 → NextDiffusion A el.77→78 prop=0.3124999999999995 t=0.8798648008559331
+17:11:13.068 INFO  o.t.s.n.g.NextEventQueue - 58 → NextDiffusion A el.87→88 prop=0.3125000000000023 t=0.8925762229273053
+17:11:13.068 INFO  o.t.s.n.g.NextEventQueue - 59 → NextDiffusion A el.36→35 prop=0.31249999999999817 t=0.9250805220930217
+17:11:13.068 INFO  o.t.s.n.g.NextEventQueue - 60 → NextDiffusion A el.78→77 prop=0.3124999999999995 t=0.9269847532559955
+17:11:13.068 INFO  o.t.s.n.g.NextEventQueue - 61 → NextDiffusion A el.89→88 prop=0.3125000000000023 t=0.9271865790050349
+17:11:13.068 INFO  o.t.s.n.g.NextEventQueue - 62 → NextDiffusion A el.44→43 prop=0.3124999999999995 t=0.9534486375180456
+17:11:13.068 INFO  o.t.s.n.g.NextEventQueue - 63 → NextDiffusion A el.5→6 prop=0.3124999999999995 t=0.9702186905269758
+17:11:13.069 INFO  o.t.s.n.g.NextEventQueue - 64 → NextDiffusion A el.34→35 prop=0.312500000000001 t=1.0623103590153262
+17:11:13.069 INFO  o.t.s.n.g.NextEventQueue - 65 → NextDiffusion A el.29→28 prop=0.3125000000000009 t=1.1361926820145811
+17:11:13.069 INFO  o.t.s.n.g.NextEventQueue - 66 → NextDiffusion A el.98→97 prop=0.3124999999999967 t=1.1831454986239502
+17:11:13.069 INFO  o.t.s.n.g.NextEventQueue - 67 → NextDiffusion A el.11→10 prop=0.31250000000000083 t=1.2155528225383554
+17:11:13.069 INFO  o.t.s.n.g.NextEventQueue - 68 → NextDiffusion A el.26→25 prop=0.31249999999999817 t=1.2469435941942404
+17:11:13.069 INFO  o.t.s.n.g.NextEventQueue - 69 → NextDiffusion A el.63→64 prop=0.3125000000000023 t=1.2844508425209955
+17:11:13.069 INFO  o.t.s.n.g.NextEventQueue - 70 → NextDiffusion A el.96→95 prop=0.3124999999999967 t=1.2948160268720743
+17:11:13.069 INFO  o.t.s.n.g.NextEventQueue - 71 → NextDiffusion A el.82→81 prop=0.3124999999999912 t=1.2994080004506678
+17:11:13.070 INFO  o.t.s.n.g.NextEventQueue - 72 → NextDiffusion A el.57→58 prop=0.3125000000000023 t=1.3144883210402807
+17:11:13.074 INFO  o.t.s.n.g.NextEventQueue - 73 → NextDiffusion A el.40→41 prop=0.3124999999999995 t=1.3409198736047991
+17:11:13.074 INFO  o.t.s.n.g.NextEventQueue - 74 → NextDiffusion A el.1→0 prop=0.31249999999999994 t=1.383609474181194
+17:11:13.074 INFO  o.t.s.n.g.NextEventQueue - 75 → NextDiffusion A el.3→4 prop=0.3125000000000002 t=1.3927397660153362
+17:11:13.074 INFO  o.t.s.n.g.NextEventQueue - 76 → NextDiffusion A el.84→85 prop=0.3124999999999967 t=1.5424304058729215
+17:11:13.074 INFO  o.t.s.n.g.NextEventQueue - 77 → NextDiffusion A el.42→41 prop=0.3125000000000023 t=1.5581492433745237
+17:11:13.074 INFO  o.t.s.n.g.NextEventQueue - 78 → NextDiffusion A el.68→67 prop=0.31250000000000505 t=1.563799779640662
+17:11:13.074 INFO  o.t.s.n.g.NextEventQueue - 79 → NextDiffusion A el.21→20 prop=0.3125000000000009 t=1.570211381801784
+17:11:13.074 INFO  o.t.s.n.g.NextEventQueue - 80 → NextDiffusion A el.75→76 prop=0.3124999999999995 t=1.6162738318043168
+17:11:13.075 INFO  o.t.s.n.g.NextEventQueue - 81 → NextDiffusion A el.71→70 prop=0.31250000000000505 t=1.624668642105418
+17:11:13.075 INFO  o.t.s.n.g.NextEventQueue - 82 → NextDiffusion A el.95→96 prop=0.3125000000000023 t=1.6485917427275785
+17:11:13.075 INFO  o.t.s.n.g.NextEventQueue - 83 → NextDiffusion A el.14→13 prop=0.3125000000000002 t=1.659930291683313
+17:11:13.075 INFO  o.t.s.n.g.NextEventQueue - 84 → NextDiffusion A el.39→38 prop=0.3124999999999995 t=1.6961032798563287
+17:11:13.075 INFO  o.t.s.n.g.NextEventQueue - 85 → NextDiffusion A el.28→27 prop=0.312500000000001 t=1.704832283145973
+17:11:13.075 INFO  o.t.s.n.g.NextEventQueue - 86 → NextDiffusion A el.72→71 prop=0.3124999999999967 t=1.7113165522098983
+17:11:13.075 INFO  o.t.s.n.g.NextEventQueue - 87 → NextDiffusion A el.27→28 prop=0.3125000000000023 t=1.7137796898555069
+17:11:13.075 INFO  o.t.s.n.g.NextEventQueue - 88 → NextDiffusion A el.12→11 prop=0.3124999999999995 t=1.7152189718521251
+17:11:13.076 INFO  o.t.s.n.g.NextEventQueue - 89 → NextDiffusion A el.63→62 prop=0.31250000000000505 t=1.7373960018296315
+17:11:13.076 INFO  o.t.s.n.g.NextEventQueue - 90 → NextDiffusion A el.97→98 prop=0.3125000000000078 t=1.7389484142475125
+17:11:13.076 INFO  o.t.s.n.g.NextEventQueue - 91 → NextDiffusion A el.35→36 prop=0.31249999999999817 t=1.7842831518810298
+17:11:13.076 INFO  o.t.s.n.g.NextEventQueue - 92 → NextDiffusion A el.90→89 prop=0.3124999999999967 t=1.7915552054532835
+17:11:13.076 INFO  o.t.s.n.g.NextEventQueue - 93 → NextDiffusion A el.32→31 prop=0.312500000000001 t=1.8065817662434436
+17:11:13.076 INFO  o.t.s.n.g.NextEventQueue - 94 → NextDiffusion A el.44→45 prop=0.3125000000000023 t=1.8352828156821568
+17:11:13.076 INFO  o.t.s.n.g.NextEventQueue - 95 → NextDiffusion A el.9→8 prop=0.3125000000000005 t=1.8444329905950112
+17:11:13.076 INFO  o.t.s.n.g.NextEventQueue - 96 → NextDiffusion A el.55→54 prop=0.3125000000000023 t=1.8599782557686122
+17:11:13.076 INFO  o.t.s.n.g.NextEventQueue - 97 → NextDiffusion A el.41→40 prop=0.3125000000000023 t=1.8799103679107874
+17:11:13.077 INFO  o.t.s.n.g.NextEventQueue - 98 → NextDiffusion A el.85→86 prop=0.31250000000000777 t=1.9263274637222538
+17:11:13.077 INFO  o.t.s.n.g.NextEventQueue - 99 → NextDiffusion A el.98→99 prop=0.3124999999999967 t=1.94026850974326
+17:11:13.077 INFO  o.t.s.n.g.NextEventQueue - 100 → NextDiffusion A el.58→59 prop=0.3125000000000023 t=2.016489124524244
+17:11:13.077 INFO  o.t.s.n.g.NextEventQueue - 101 → NextDiffusion A el.10→9 prop=0.3124999999999999 t=2.020527650181451
+17:11:13.077 INFO  o.t.s.n.g.NextEventQueue - 102 → NextDiffusion A el.48→49 prop=0.3124999999999967 t=2.0891788603298713
+17:11:13.077 INFO  o.t.s.n.g.NextEventQueue - 103 → NextDiffusion A el.73→72 prop=0.3124999999999995 t=2.166492664433602
+17:11:13.077 INFO  o.t.s.n.g.NextEventQueue - 104 → NextDiffusion A el.66→67 prop=0.3124999999999995 t=2.192168632717528
+17:11:13.077 INFO  o.t.s.n.g.NextEventQueue - 105 → NextDiffusion A el.83→84 prop=0.31250000000000777 t=2.206934297147761
+17:11:13.077 INFO  o.t.s.n.g.NextEventQueue - 106 → NextDiffusion A el.28→29 prop=0.3124999999999995 t=2.2075977179576927
+17:11:13.078 INFO  o.t.s.n.g.NextEventQueue - 107 → NextDiffusion A el.30→31 prop=0.3124999999999967 t=2.296427701864826
+17:11:13.078 INFO  o.t.s.n.g.NextEventQueue - 108 → NextDiffusion A el.96→97 prop=0.3124999999999967 t=2.3730939850441986
+17:11:13.078 INFO  o.t.s.n.g.NextEventQueue - 109 → NextDiffusion A el.42→43 prop=0.3125000000000023 t=2.373884882370626
+17:11:13.078 INFO  o.t.s.n.g.NextEventQueue - 110 → NextDiffusion A el.74→75 prop=0.3124999999999995 t=2.386484674652566
+17:11:13.078 INFO  o.t.s.n.g.NextEventQueue - 111 → NextDiffusion A el.81→80 prop=0.31250000000000777 t=2.4144171678737463
+17:11:13.078 INFO  o.t.s.n.g.NextEventQueue - 112 → NextDiffusion A el.82→83 prop=0.3124999999999912 t=2.421606545556482
+17:11:13.078 INFO  o.t.s.n.g.NextEventQueue - 113 → NextDiffusion A el.94→93 prop=0.3125000000000023 t=2.4859273870665066
+17:11:13.078 INFO  o.t.s.n.g.NextEventQueue - 114 → NextDiffusion A el.92→93 prop=0.3125000000000023 t=2.54096329214622
+17:11:13.078 INFO  o.t.s.n.g.NextEventQueue - 115 → NextDiffusion A el.90→91 prop=0.31250000000000777 t=2.5637865886979934
+17:11:13.078 INFO  o.t.s.n.g.NextEventQueue - 116 → NextDiffusion A el.77→76 prop=0.3124999999999995 t=2.571794076754782
+17:11:13.079 INFO  o.t.s.n.g.NextEventQueue - 117 → NextDiffusion A el.43→42 prop=0.3124999999999995 t=2.6103775769908997
+17:11:13.079 INFO  o.t.s.n.g.NextEventQueue - 118 → NextDiffusion A el.4→5 prop=0.31250000000000006 t=2.707426425290035
+17:11:13.079 INFO  o.t.s.n.g.NextEventQueue - 119 → NextDiffusion A el.81→82 prop=0.3124999999999967 t=2.71526993734436
+17:11:13.079 INFO  o.t.s.n.g.NextEventQueue - 120 → NextDiffusion A el.37→38 prop=0.3124999999999995 t=2.728137320043355
+17:11:13.079 INFO  o.t.s.n.g.NextEventQueue - 121 → NextDiffusion A el.18→17 prop=0.3124999999999995 t=2.7558943297017198
+17:11:13.079 INFO  o.t.s.n.g.NextEventQueue - 122 → NextDiffusion A el.37→36 prop=0.312500000000001 t=2.7729677192412994
+17:11:13.079 INFO  o.t.s.n.g.NextEventQueue - 123 → NextDiffusion A el.59→60 prop=0.3124999999999967 t=2.822140879976474
+17:11:13.079 INFO  o.t.s.n.g.NextEventQueue - 124 → NextDiffusion A el.87→86 prop=0.3124999999999967 t=2.823844176221472
+17:11:13.079 INFO  o.t.s.n.g.NextEventQueue - 125 → NextDiffusion A el.52→53 prop=0.3125000000000023 t=2.895121080764024
+17:11:13.079 INFO  o.t.s.n.g.NextEventQueue - 126 → NextDiffusion A el.89→90 prop=0.3124999999999967 t=3.036081917652547
+17:11:13.080 INFO  o.t.s.n.g.NextEventQueue - 127 → NextDiffusion A el.32→33 prop=0.3124999999999995 t=3.0699795047398433
+17:11:13.080 INFO  o.t.s.n.g.NextEventQueue - 128 → NextDiffusion A el.33→34 prop=0.3125000000000009 t=3.1487081463228
+17:11:13.080 INFO  o.t.s.n.g.NextEventQueue - 129 → NextDiffusion A el.24→25 prop=0.312500000000001 t=3.1709448953512194
+17:11:13.080 INFO  o.t.s.n.g.NextEventQueue - 130 → NextDiffusion A el.16→17 prop=0.3125000000000002 t=3.1769088123239775
+17:11:13.080 INFO  o.t.s.n.g.NextEventQueue - 131 → NextDiffusion A el.45→44 prop=0.3125000000000023 t=3.2092659582624514
+17:11:13.080 INFO  o.t.s.n.g.NextEventQueue - 132 → NextDiffusion A el.12→13 prop=0.3124999999999995 t=3.2230447484209943
+17:11:13.080 INFO  o.t.s.n.g.NextEventQueue - 133 → NextDiffusion A el.95→94 prop=0.3124999999999967 t=3.2391460138778903
+17:11:13.080 INFO  o.t.s.n.g.NextEventQueue - 134 → NextDiffusion A el.53→52 prop=0.3124999999999995 t=3.2525288334185416
+17:11:13.081 INFO  o.t.s.n.g.NextEventQueue - 135 → NextDiffusion A el.50→49 prop=0.3124999999999967 t=3.2622175288692463
+17:11:13.081 INFO  o.t.s.n.g.NextEventQueue - 136 → NextDiffusion A el.61→60 prop=0.3125000000000023 t=3.482533503416626
+17:11:13.081 INFO  o.t.s.n.g.NextEventQueue - 137 → NextDiffusion A el.69→68 prop=0.31249999999999395 t=3.5486628136918497
+17:11:13.081 INFO  o.t.s.n.g.NextEventQueue - 138 → NextDiffusion A el.19→18 prop=0.3125000000000001 t=3.6000361727560994
+17:11:13.085 INFO  o.t.s.n.g.NextEventQueue - 139 → NextDiffusion A el.41→42 prop=0.3125000000000023 t=3.6221700722084114
+17:11:13.085 INFO  o.t.s.n.g.NextEventQueue - 140 → NextDiffusion A el.38→39 prop=0.3125000000000009 t=3.678743972257334
+17:11:13.085 INFO  o.t.s.n.g.NextEventQueue - 141 → NextDiffusion A el.17→18 prop=0.3125000000000001 t=3.6838560163227783
+17:11:13.085 INFO  o.t.s.n.g.NextEventQueue - 142 → NextDiffusion A el.76→77 prop=0.31250000000000505 t=3.7482531584152623
+17:11:13.085 INFO  o.t.s.n.g.NextEventQueue - 143 → NextDiffusion A el.68→69 prop=0.3125000000000023 t=3.8668067191504663
+17:11:13.086 INFO  o.t.s.n.g.NextEventQueue - 144 → NextDiffusion A el.99→98 prop=0.3125000000000023 t=4.029848218524698
+17:11:13.086 INFO  o.t.s.n.g.NextEventQueue - 145 → NextDiffusion A el.7→8 prop=0.3124999999999999 t=4.03072458580639
+17:11:13.086 INFO  o.t.s.n.g.NextEventQueue - 146 → NextDiffusion A el.5→4 prop=0.3124999999999997 t=4.080588926117963
+17:11:13.086 INFO  o.t.s.n.g.NextEventQueue - 147 → NextDiffusion A el.78→79 prop=0.3124999999999967 t=4.084706259484228
+17:11:13.086 INFO  o.t.s.n.g.NextEventQueue - 148 → NextDiffusion A el.4→3 prop=0.3125000000000002 t=4.137933827638649
+17:11:13.086 INFO  o.t.s.n.g.NextEventQueue - 149 → NextDiffusion A el.25→26 prop=0.31249999999999817 t=4.16212111816673
+17:11:13.086 INFO  o.t.s.n.g.NextEventQueue - 150 → NextDiffusion A el.57→56 prop=0.3125000000000023 t=4.171892976935449
+17:11:13.086 INFO  o.t.s.n.g.NextEventQueue - 151 → NextDiffusion A el.23→22 prop=0.3125000000000009 t=4.245711762163596
+17:11:13.086 INFO  o.t.s.n.g.NextEventQueue - 152 → NextDiffusion A el.54→53 prop=0.3124999999999995 t=4.270035368037696
+17:11:13.087 INFO  o.t.s.n.g.NextEventQueue - 153 → NextDiffusion A el.23→24 prop=0.3125000000000009 t=4.391038947402607
+17:11:13.087 INFO  o.t.s.n.g.NextEventQueue - 154 → NextDiffusion A el.24→23 prop=0.3124999999999995 t=4.480202290703609
+17:11:13.087 INFO  o.t.s.n.g.NextEventQueue - 155 → NextDiffusion A el.31→32 prop=0.312500000000001 t=4.562337520889329
+17:11:13.087 INFO  o.t.s.n.g.NextEventQueue - 156 → NextDiffusion A el.7→6 prop=0.31250000000000056 t=4.587171815222902
+17:11:13.087 INFO  o.t.s.n.g.NextEventQueue - 157 → NextDiffusion A el.18→19 prop=0.3124999999999995 t=4.66449242562601
+17:11:13.087 INFO  o.t.s.n.g.NextEventQueue - 158 → NextDiffusion A el.9→10 prop=0.3125000000000005 t=4.742000431792112
+17:11:13.087 INFO  o.t.s.n.g.NextEventQueue - 159 → NextDiffusion A el.56→57 prop=0.3124999999999995 t=4.817934497807819
+17:11:13.087 INFO  o.t.s.n.g.NextEventQueue - 160 → NextDiffusion A el.11→12 prop=0.3125000000000001 t=4.856297945071663
+17:11:13.087 INFO  o.t.s.n.g.NextEventQueue - 161 → NextDiffusion A el.43→44 prop=0.3124999999999967 t=4.920932955059033
+17:11:13.087 INFO  o.t.s.n.g.NextEventQueue - 162 → NextDiffusion A el.60→59 prop=0.3124999999999995 t=4.954018037663361
+17:11:13.088 INFO  o.t.s.n.g.NextEventQueue - 163 → NextDiffusion A el.76→75 prop=0.31250000000000505 t=5.012207893830473
+17:11:13.088 INFO  o.t.s.n.g.NextEventQueue - 164 → NextDiffusion A el.75→74 prop=0.3124999999999967 t=5.120240431728689
+17:11:13.088 INFO  o.t.s.n.g.NextEventQueue - 165 → NextDiffusion A el.55→56 prop=0.3124999999999995 t=5.125928377329034
+17:11:13.088 INFO  o.t.s.n.g.NextEventQueue - 166 → NextDiffusion A el.17→16 prop=0.31250000000000083 t=5.5260109253277285
+17:11:13.088 INFO  o.t.s.n.g.NextEventQueue - 167 → NextDiffusion A el.84→83 prop=0.31250000000000777 t=5.599513781575615
+17:11:13.088 INFO  o.t.s.n.g.NextEventQueue - 168 → NextDiffusion A el.53→54 prop=0.3124999999999967 t=5.715569563630938
+17:11:13.088 INFO  o.t.s.n.g.NextEventQueue - 169 → NextDiffusion A el.25→24 prop=0.312500000000001 t=5.796654565396318
+17:11:13.088 INFO  o.t.s.n.g.NextEventQueue - 170 → NextDiffusion A el.35→34 prop=0.312500000000001 t=5.871842500415092
+17:11:13.088 INFO  o.t.s.n.g.NextEventQueue - 171 → NextDiffusion A el.79→80 prop=0.3124999999999995 t=5.915479652362931
+17:11:13.088 INFO  o.t.s.n.g.NextEventQueue - 172 → NextDiffusion A el.88→87 prop=0.3124999999999967 t=5.954307138075702
+17:11:13.089 INFO  o.t.s.n.g.NextEventQueue - 173 → NextDiffusion A el.36→37 prop=0.312500000000001 t=5.989790712663661
+17:11:13.089 INFO  o.t.s.n.g.NextEventQueue - 174 → NextDiffusion A el.80→81 prop=0.31250000000000777 t=6.186376508656235
+17:11:13.089 INFO  o.t.s.n.g.NextEventQueue - 175 → NextDiffusion A el.30→29 prop=0.3124999999999981 t=6.495922169029947
+17:11:13.089 INFO  o.t.s.n.g.NextEventQueue - 176 → NextDiffusion A el.26→27 prop=0.312500000000001 t=6.620955870204258
+17:11:13.089 INFO  o.t.s.n.g.NextEventQueue - 177 → NextDiffusion A el.33→32 prop=0.3125000000000009 t=6.652473904042789
+17:11:13.089 INFO  o.t.s.n.g.NextEventQueue - 178 → NextDiffusion A el.49→48 prop=0.3124999999999995 t=6.657090508544607
+17:11:13.089 INFO  o.t.s.n.g.NextEventQueue - 179 → NextDiffusion A el.70→71 prop=0.3125000000000023 t=6.788790655045758
+17:11:13.089 INFO  o.t.s.n.g.NextEventQueue - 180 → NextDiffusion A el.66→65 prop=0.312500000000005 t=7.073814789595715
+17:11:13.089 INFO  o.t.s.n.g.NextEventQueue - 181 → NextDiffusion A el.83→82 prop=0.3124999999999967 t=7.6469572931487635
+17:11:13.090 INFO  o.t.s.n.g.NextEventQueue - 182 → NextDiffusion A el.6→5 prop=0.3124999999999999 t=7.790894778451689
+17:11:13.090 INFO  o.t.s.n.g.NextEventQueue - 183 → NextDiffusion A el.67→68 prop=0.3124999999999967 t=7.940866827777894
+17:11:13.090 INFO  o.t.s.n.g.NextEventQueue - 184 → NextDiffusion A el.47→46 prop=0.3124999999999967 t=8.023058318188662
+17:11:13.090 INFO  o.t.s.n.g.NextEventQueue - 185 → NextDiffusion A el.46→47 prop=0.3124999999999995 t=8.032231898589297
+17:11:13.090 INFO  o.t.s.n.g.NextEventQueue - 186 → NextDiffusion A el.13→12 prop=0.3125000000000001 t=8.06541127650707
+17:11:13.090 INFO  o.t.s.n.g.NextEventQueue - 187 → NextDiffusion A el.74→73 prop=0.3125000000000023 t=8.104318357643162
+17:11:13.090 INFO  o.t.s.n.g.NextEventQueue - 188 → NextDiffusion A el.8→7 prop=0.3124999999999995 t=8.34114238579035
+17:11:13.090 INFO  o.t.s.n.g.NextEventQueue - 189 → NextDiffusion A el.50→51 prop=0.3124999999999995 t=8.381900474303595
+17:11:13.090 INFO  o.t.s.n.g.NextEventQueue - 190 → NextDiffusion A el.64→63 prop=0.31249999999999395 t=8.559650540668535
+17:11:13.090 INFO  o.t.s.n.g.NextEventQueue - 191 → NextDiffusion A el.15→14 prop=0.3124999999999995 t=9.884376641898395
+17:11:13.091 INFO  o.t.s.n.g.NextEventQueue - 192 → NextDiffusion A el.69→70 prop=0.31249999999999395 t=10.083537778997732
+17:11:13.091 INFO  o.t.s.n.g.NextEventQueue - 193 → NextDiffusion A el.91→90 prop=0.31250000000000777 t=10.478289569619678
+17:11:13.091 INFO  o.t.s.n.g.NextEventQueue - 194 → NextDiffusion A el.48→47 prop=0.3124999999999995 t=11.45274887982651
+17:11:13.091 INFO  o.t.s.n.g.NextEventQueue - 195 → NextDiffusion A el.47→48 prop=0.3124999999999995 t=11.947308388274122
+17:11:13.091 INFO  o.t.s.n.g.NextEventQueue - 196 → NextDiffusion A el.40→39 prop=0.3124999999999967 t=13.322384489430673
+17:11:13.091 INFO  o.t.s.n.g.NextEventQueue - 197 → NextDiffusion A el.46→45 prop=0.3125000000000023 t=13.943097917511924
+17:11:13.091 INFO  o.t.s.n.g.NextEventQueue - 198 → NextDiffusion A el.58→57 prop=0.3125000000000023 t=18.204004551972954
+17:11:13.091 INFO  o.t.s.n.g.NextEventQueue - 199 → NextDiffusion A el.21→22 prop=0.3125000000000009 t=19.169791742338173
+17:11:13.091 INFO  o.t.s.n.g.NextEventQueue - 200 → NextDiffusion B el.1→0 prop=0.0 t=Infinity
+17:11:13.091 INFO  o.t.s.n.g.NextEventQueue - 201 — 495 will happen at infinity
+17:11:13.092 INFO  o.t.s.n.g.NextEventQueue - 2368 dependency edges, 992 active
+17:11:13.096 INFO  o.t.s.n.g.ResultWriterHDF5 - Created simulation_seed with dims=[1] size=[] chunks=[]
+17:11:13.111 INFO  o.t.s.n.g.ResultWriterHDF5 - Created grid with dims=[100] size=[] chunks=[100]
+17:11:13.112 INFO  o.t.s.n.g.ResultWriterHDF5 - Created neighbors with dims=[100×2] size=[] chunks=[]
+17:11:13.118 INFO  o.t.s.n.g.ResultWriterHDF5 - Created couplings with dims=[100×2] size=[] chunks=[]
+17:11:13.119 INFO  o.t.s.n.g.ResultWriterHDF5 - Created species with dims=[2] size=[] chunks=[]
+17:11:13.121 INFO  o.t.s.n.g.ResultWriterHDF5 - Created regions with dims=[3] size=[] chunks=[]
+17:11:13.122 INFO  o.t.s.n.g.ResultWriterHDF5 - Created reactants with dims=[1×2] size=[] chunks=[]
+17:11:13.123 INFO  o.t.s.n.g.ResultWriterHDF5 - Created products with dims=[1×0] size=[] chunks=[]
+17:11:13.124 INFO  o.t.s.n.g.ResultWriterHDF5 - Created reactant_stoichiometry with dims=[1×2] size=[] chunks=[]
+17:11:13.125 INFO  o.t.s.n.g.ResultWriterHDF5 - Created product_stoichiometry with dims=[1×0] size=[] chunks=[]
+17:11:13.126 INFO  o.t.s.n.g.ResultWriterHDF5 - Created rates with dims=[1] size=[] chunks=[]
+17:11:13.128 INFO  o.t.s.n.g.ResultWriterHDF5 - Created reversible_pairs with dims=[1] size=[] chunks=[]
+17:11:13.143 INFO  o.t.s.n.g.ResultWriterHDF5 - Created descriptions with dims=[496] size=[] chunks=[]
+17:11:13.144 INFO  o.t.s.n.g.ResultWriterHDF5 - Created elements with dims=[496] size=[] chunks=[]
+17:11:13.145 INFO  o.t.s.n.g.ResultWriterHDF5 - Created types with dims=[496] size=[] chunks=[]
+17:11:13.146 INFO  o.t.s.n.g.ResultWriterHDF5 - Created dependent with dims=[496×5] size=[] chunks=[]
+17:11:13.148 INFO  o.t.s.n.g.ResultWriterHDF5 - Created species with dims=[2] size=[] chunks=[]
+17:11:13.149 INFO  o.t.s.n.g.ResultWriterHDF5 - Created elements with dims=[100] size=[] chunks=[]
+17:11:13.188 INFO  o.t.s.n.g.ResultWriterHDF5 - Created serialized_config with dims=[1] size=[] chunks=[]
+17:11:13.189 INFO  o.t.s.n.g.GridCalc - Trial 0: running from time=0.0 ms to time=100000.0 ms
+17:11:13.189 INFO  o.t.s.n.g.GridCalc - dt=1000.0 dtsOut=[] saveStateTime=1.0E9
+17:11:13.190 INFO  o.t.s.n.g.GridCalc - Trial 0: time 0.0 dt=1000.0
+17:11:13.191 INFO  o.t.s.n.g.ResultWriterHDF5 - Created population with dims=[0×100×2] size=[∞×100×2] chunks=[8×100×2]
+17:11:13.192 INFO  o.t.s.n.g.ResultWriterHDF5 - Created times with dims=[0] size=[∞] chunks=[1024]
+17:11:13.210 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 5: max change fraction after leap 0.031250000000000146 for NextReaction el.1 A+B→nil
+17:11:13.211 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap 0.02424242424242424 for NextDiffusion B el.1→2
+17:11:13.212 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap 0.023809523809523805 for NextDiffusion B el.1→2
+17:11:13.212 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap 0.02312138728323699 for NextDiffusion B el.1→2
+17:11:13.214 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 6: max change fraction after leap 0.030927835051546382 for NextDiffusion B el.1→2
+17:11:13.215 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 6: max change fraction after leap 0.029126213592233 for NextDiffusion B el.1→2
+17:11:13.216 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 5: max change fraction after leap 0.022321428571428565 for NextDiffusion B el.1→2
+17:11:13.217 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 6: max change fraction after leap 0.02620087336244541 for NextDiffusion B el.1→2
+17:11:13.217 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 5: max change fraction after leap 0.021186440677966097 for NextDiffusion B el.1→2
+17:11:13.218 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 5: max change fraction after leap 0.02049180327868852 for NextDiffusion B el.1→2
+17:11:13.219 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 5: max change fraction after leap 0.020325203252032516 for NextDiffusion B el.1→2
+17:11:13.220 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 6: max change fraction after leap 0.023999999999999994 for NextDiffusion B el.1→2
+17:11:13.220 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 8: max change fraction after leap 0.030888030888030882 for NextDiffusion B el.1→2
+17:11:13.221 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 10: max change fraction after leap 0.036630036630036625 for NextDiffusion B el.1→2
+17:11:13.222 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 7: max change fraction after leap 0.025362318840579705 for NextDiffusion B el.1→2
+17:11:13.223 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 9: max change fraction after leap 0.032028469750889674 for NextDiffusion B el.1→2
+17:11:13.224 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 7: max change fraction after leap 0.023972602739726023 for NextDiffusion B el.1→2
+17:11:13.225 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 12: max change fraction after leap 0.04137931034482758 for NextDiffusion B el.1→2
+17:11:13.229 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 8: max change fraction after leap 0.027972027972027965 for NextDiffusion B el.1→2
+17:11:13.230 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 10: max change fraction after leap 0.03484320557491288 for NextDiffusion B el.1→2
+17:11:13.232 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 6: max change fraction after leap 0.020547945205479447 for NextDiffusion B el.1→2
+17:11:13.232 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 7: max change fraction after leap 0.023489932885906034 for NextDiffusion B el.1→2
+17:11:13.233 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 8: max change fraction after leap 0.025396825396825393 for NextDiffusion B el.1→2
+17:11:13.233 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 7: max change fraction after leap 0.021739130434782605 for NextDiffusion B el.1→2
+17:11:13.234 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 10: max change fraction after leap 0.031249999999999993 for NextDiffusion B el.1→2
+17:11:13.235 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 3: max change fraction after leap 0.02400000000000001 for NextDiffusion B el.2→3
+17:11:13.235 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.031250000000000014 for NextDiffusion B el.2→3
+17:11:13.236 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.03100775193798451 for NextDiffusion B el.2→3
+17:11:13.236 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 3: max change fraction after leap 0.02307692307692309 for NextDiffusion B el.2→3
+17:11:13.237 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 8: max change fraction after leap 0.025889967637540447 for NextDiffusion B el.1→2
+17:11:13.237 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.03731343283582091 for NextDiffusion B el.2→3
+17:11:13.237 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 9: max change fraction after leap 0.029032258064516123 for NextDiffusion B el.1→2
+17:11:13.237 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -5: max change fraction after leap -0.035714285714285726 for NextDiffusion B el.2→3
+17:11:13.238 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 3: max change fraction after leap 0.022388059701492546 for NextDiffusion B el.2→3
+17:11:13.238 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.02962962962962964 for NextDiffusion B el.2→3
+17:11:13.238 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 3: max change fraction after leap 0.02173913043478262 for NextDiffusion B el.2→3
+17:11:13.238 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 3: max change fraction after leap 0.02189781021897811 for NextDiffusion B el.2→3
+17:11:13.244 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 9: max change fraction after leap 0.02893890675241157 for NextDiffusion B el.1→2
+17:11:13.246 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.03333333333333335 for NextDiffusion B el.2→3
+17:11:13.247 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.03246753246753248 for NextDiffusion B el.2→3
+17:11:13.248 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.03164556962025299 for NextDiffusion B el.2→3
+17:11:13.248 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.03105590062111803 for NextDiffusion B el.2→3
+17:11:13.249 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 14: max change fraction after leap 0.04635761589403973 for NextDiffusion B el.1→2
+17:11:13.249 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.030864197530864213 for NextDiffusion B el.2→3
+17:11:13.250 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 6: max change fraction after leap 0.036585365853658555 for NextDiffusion B el.2→3
+17:11:13.250 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -4: max change fraction after leap -0.023121387283237007 for NextDiffusion B el.2→3
+17:11:13.250 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 7: max change fraction after leap 0.02265372168284789 for NextDiffusion B el.1→2
+17:11:13.251 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.03012048192771086 for NextDiffusion B el.2→3
+17:11:13.251 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.029761904761904778 for NextDiffusion B el.2→3
+17:11:13.253 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -11: max change fraction after leap -0.035947712418300644 for NextDiffusion B el.1→2
+17:11:13.253 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 6: max change fraction after leap 0.036585365853658555 for NextDiffusion B el.2→3
+17:11:13.254 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 13: max change fraction after leap 0.04545454545454545 for NextDiffusion B el.1→2
+17:11:13.255 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 6: max change fraction after leap 0.03870967741935467 for NextDiffusion B el.2→3
+17:11:13.256 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.024096385542168686 for NextDiffusion B el.2→3
+17:11:13.256 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 9: max change fraction after leap 0.03249097472924187 for NextDiffusion B el.1→2
+17:11:13.256 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -4: max change fraction after leap -0.024390243902438862 for NextDiffusion B el.2→3
+17:11:13.257 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.023952095808383245 for NextDiffusion B el.2→3
+17:11:13.258 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.023952095808383245 for NextDiffusion B el.2→3
+17:11:13.258 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 6: max change fraction after leap 0.021582733812949634 for NextDiffusion B el.1→2
+17:11:13.258 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.028248587570621483 for NextDiffusion B el.2→3
+17:11:13.260 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 7: max change fraction after leap 0.025270758122743677 for NextDiffusion B el.1→2
+17:11:13.261 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 6: max change fraction after leap 0.0342857142857143 for NextDiffusion B el.2→3
+17:11:13.261 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.02247191011235956 for NextDiffusion B el.2→3
+17:11:13.263 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 14: max change fraction after leap 0.05128205128205127 for NextDiffusion B el.1→2
+17:11:13.263 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 6: max change fraction after leap 0.03508771929824563 for NextDiffusion B el.2→3
+17:11:13.264 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.02272727272727274 for NextDiffusion B el.2→3
+17:11:13.265 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.026455026455026467 for NextDiffusion B el.2→3
+17:11:13.265 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.025380710659898487 for NextDiffusion B el.2→3
+17:11:13.265 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.025773195876288672 for NextDiffusion B el.2→3
+17:11:13.265 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 8: max change fraction after leap 0.04060913705583758 for NextDiffusion B el.2→3
+17:11:13.267 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 8: max change fraction after leap 0.031872509960159355 for NextDiffusion B el.1→2
+17:11:13.268 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.020833333333333343 for NextDiffusion B el.2→3
+17:11:13.268 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 6: max change fraction after leap 0.02334630350194552 for NextDiffusion B el.1→2
+17:11:13.268 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.020512820512820523 for NextDiffusion B el.2→3
+17:11:13.269 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.02030456852791879 for NextDiffusion B el.2→3
+17:11:13.270 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.02173913043478262 for NextDiffusion B el.2→3
+17:11:13.270 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 9: max change fraction after leap 0.036144578313253004 for NextDiffusion B el.1→2
+17:11:13.271 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -6: max change fraction after leap -0.02325581395348837 for NextDiffusion B el.1→2
+17:11:13.271 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -4: max change fraction after leap -0.02105263157894738 for NextDiffusion B el.2→3
+17:11:13.273 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.022857142857142868 for NextDiffusion B el.2→3
+17:11:13.273 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.022988505747126447 for NextDiffusion B el.2→3
+17:11:13.273 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 7: max change fraction after leap 0.027999999999999994 for NextDiffusion B el.1→2
+17:11:13.274 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.02808988764044945 for NextDiffusion B el.2→3
+17:11:13.275 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 3: max change fraction after leap 0.022900763358778612 for NextDiffusion B el.3→4
+17:11:13.276 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -5: max change fraction after leap -0.02016129032258064 for NextDiffusion B el.1→2
+17:11:13.277 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.021621621621621633 for NextDiffusion B el.2→3
+17:11:13.277 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 5: max change fraction after leap 0.02136752136752136 for NextDiffusion B el.1→2
+17:11:13.277 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 5: max change fraction after leap 0.03676470588235292 for NextDiffusion B el.3→4
+17:11:13.283 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 8: max change fraction after leap 0.04419889502762433 for NextDiffusion B el.2→3
+17:11:13.283 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 4: max change fraction after leap 0.028985507246376795 for NextDiffusion B el.3→4
+17:11:13.283 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 6: max change fraction after leap 0.02620087336244541 for NextDiffusion B el.1→2
+17:11:13.284 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 4: max change fraction after leap 0.029411764705882335 for NextDiffusion B el.3→4
+17:11:13.284 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.02247191011235956 for NextDiffusion B el.2→3
+17:11:13.285 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent -3: max change fraction after leap -0.021582733812949628 for NextDiffusion B el.3→4
+17:11:13.285 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.026881720430107538 for NextDiffusion B el.2→3
+17:11:13.285 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -5: max change fraction after leap -0.026595744680851074 for NextDiffusion B el.2→3
+17:11:13.286 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 6: max change fraction after leap 0.024691358024691353 for NextDiffusion B el.1→2
+17:11:13.286 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.022222222222222233 for NextDiffusion B el.2→3
+17:11:13.288 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 6: max change fraction after leap -0.02439024390243903 for self
+17:11:13.289 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.024242424242424256 for NextDiffusion B el.2→3
+17:11:13.289 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.029585798816568063 for NextDiffusion B el.2→3
+17:11:13.290 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -5: max change fraction after leap 0.020661157024793392 for self
+17:11:13.290 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -5: max change fraction after leap -0.02873563218390806 for NextDiffusion B el.2→3
+17:11:13.290 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 5: max change fraction after leap -0.02049180327868853 for self
+17:11:13.291 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.02453987730061351 for NextDiffusion B el.2→3
+17:11:13.291 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 7: max change fraction after leap -0.029166666666666674 for self
+17:11:13.292 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -7: max change fraction after leap 0.03004291845493563 for self
+17:11:13.292 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.030303030303030318 for NextDiffusion B el.2→3
+17:11:13.292 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -6: max change fraction after leap -0.03571428571428573 for NextDiffusion B el.2→3
+17:11:13.293 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.03067484662576689 for NextDiffusion B el.2→3
+17:11:13.294 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -6: max change fraction after leap 0.025210084033613453 for self
+17:11:13.294 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.029761904761904778 for NextDiffusion B el.2→3
+17:11:13.294 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 6: max change fraction after leap 0.02620087336244541 for NextDiffusion B el.1→2
+17:11:13.295 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 6: max change fraction after leap 0.03351955307262571 for NextDiffusion B el.2→3
+17:11:13.295 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -6: max change fraction after leap -0.026431718061674003 for NextDiffusion B el.1→2
+17:11:13.295 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 5: max change fraction after leap 0.022935779816513756 for NextDiffusion B el.1→2
+17:11:13.296 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 7: max change fraction after leap 0.051851851851851816 for NextDiffusion B el.3→4
+17:11:13.296 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 6: max change fraction after leap 0.033149171270718245 for NextDiffusion B el.2→3
+17:11:13.296 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -8: max change fraction after leap -0.0368663594470046 for NextDiffusion B el.1→2
+17:11:13.296 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent -5: max change fraction after leap -0.03649635036496348 for NextDiffusion B el.3→4
+17:11:13.297 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -4: max change fraction after leap -0.02040816326530613 for NextDiffusion B el.2→3
+17:11:13.297 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 8: max change fraction after leap 0.03755868544600938 for NextDiffusion B el.1→2
+17:11:13.297 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 6: max change fraction after leap 0.032608695652173926 for NextDiffusion B el.2→3
+17:11:13.297 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 6: max change fraction after leap 0.02790697674418604 for NextDiffusion B el.1→2
+17:11:13.298 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent -3: max change fraction after leap -0.022727272727272714 for NextDiffusion B el.3→4
+17:11:13.298 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent -3: max change fraction after leap -0.02307692307692306 for NextDiffusion B el.3→4
+17:11:13.299 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -6: max change fraction after leap -0.032608695652173926 for NextDiffusion B el.2→3
+17:11:13.299 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent -3: max change fraction after leap -0.022556390977443594 for NextDiffusion B el.3→4
+17:11:13.301 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 8: max change fraction after leap 0.0358744394618834 for NextDiffusion B el.1→2
+17:11:13.301 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.02453987730061351 for NextDiffusion B el.2→3
+17:11:13.301 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.024242424242424256 for NextDiffusion B el.2→3
+17:11:13.302 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 3: max change fraction after leap 0.02189781021897809 for NextDiffusion B el.3→4
+17:11:13.302 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -6: max change fraction after leap 0.026431718061674016 for self
+17:11:13.302 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.03144654088050298 for NextDiffusion B el.2→3
+17:11:13.303 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 4: max change fraction after leap 0.02962962962962961 for NextDiffusion B el.3→4
+17:11:13.303 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -4: max change fraction after leap -0.024691358024691197 for NextDiffusion B el.2→3
+17:11:13.304 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.030303030303030318 for NextDiffusion B el.2→3
+17:11:13.304 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -5: max change fraction after leap -0.029411764705882366 for NextDiffusion B el.2→3
+17:11:13.304 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 3: max change fraction after leap 0.021428571428571415 for NextDiffusion B el.3→4
+17:11:13.308 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 4: max change fraction after leap 0.028776978417266168 for NextDiffusion B el.3→4
+17:11:13.309 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 5: max change fraction after leap 0.0354609929078014 for NextDiffusion B el.3→4
+17:11:13.309 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.025477707006369255 for NextDiffusion B el.2→3
+17:11:13.309 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 3: max change fraction after leap 0.020833333333333322 for NextDiffusion B el.3→4
+17:11:13.309 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 3: max change fraction after leap 0.020689655172413782 for NextDiffusion B el.3→4
+17:11:13.310 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.02531645569620236 for NextDiffusion B el.2→3
+17:11:13.310 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -4: max change fraction after leap -0.024539877300613334 for NextDiffusion B el.2→3
+17:11:13.310 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -6: max change fraction after leap -0.02790697674418604 for NextDiffusion B el.1→2
+17:11:13.311 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 6: max change fraction after leap 0.04166666666666684 for NextDiffusion B el.3→4
+17:11:13.312 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.025157232704402347 for NextDiffusion B el.2→3
+17:11:13.312 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent -3: max change fraction after leap -0.020270270270270258 for NextDiffusion B el.3→4
+17:11:13.312 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 7: max change fraction after leap 0.04895104895104912 for NextDiffusion B el.3→4
+17:11:13.312 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent -3: max change fraction after leap -0.02040816326530611 for NextDiffusion B el.3→4
+17:11:13.312 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent -3: max change fraction after leap -0.021428571428571415 for NextDiffusion B el.3→4
+17:11:13.313 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 4: max change fraction after leap 0.029197080291970785 for NextDiffusion B el.3→4
+17:11:13.313 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 6: max change fraction after leap 0.029999999999999992 for NextDiffusion B el.1→2
+17:11:13.314 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.02453987730061351 for NextDiffusion B el.2→3
+17:11:13.314 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.029940119760479056 for NextDiffusion B el.2→3
+17:11:13.314 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 4: max change fraction after leap 0.027777777777777762 for NextDiffusion B el.3→4
+17:11:13.314 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -5: max change fraction after leap -0.024875621890547258 for NextDiffusion B el.1→2
+17:11:13.315 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.025157232704402347 for NextDiffusion B el.2→3
+17:11:13.315 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 3: max change fraction after leap 0.020270270270270452 for NextDiffusion B el.3→4
+17:11:13.315 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent -4: max change fraction after leap -0.026666666666666835 for NextDiffusion B el.3→4
+17:11:13.316 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.024096385542168686 for NextDiffusion B el.2→3
+17:11:13.316 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.029585798816568063 for NextDiffusion B el.2→3
+17:11:13.316 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 6: max change fraction after leap 0.04054054054054071 for NextDiffusion B el.3→4
+17:11:13.317 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 4: max change fraction after leap 0.025316455696202514 for NextDiffusion B el.3→4
+17:11:13.317 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.029411764705882366 for NextDiffusion B el.2→3
+17:11:13.317 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 7: max change fraction after leap 0.04069767441860465 for NextDiffusion B el.1→2
+17:11:13.318 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 6: max change fraction after leap 0.03488372093023258 for NextDiffusion B el.2→3
+17:11:13.318 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -4: max change fraction after leap -0.02222222222222222 for NextDiffusion B el.1→2
+17:11:13.318 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent -3: max change fraction after leap -0.020270270270270258 for NextDiffusion B el.3→4
+17:11:13.318 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap 0.02312138728323699 for NextDiffusion B el.1→2
+17:11:13.319 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap -0.022727272727272724 for self
+17:11:13.319 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap -0.02312138728323699 for self
+17:11:13.320 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent -3: max change fraction after leap -0.023622047244094474 for NextDiffusion B el.3→4
+17:11:13.320 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -9: max change fraction after leap 0.05263157894736841 for self
+17:11:13.321 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 5: max change fraction after leap 0.02702702702702702 for NextDiffusion B el.1→2
+17:11:13.321 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.02150537634408603 for NextDiffusion B el.2→3
+17:11:13.322 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.021621621621621633 for NextDiffusion B el.2→3
+17:11:13.322 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -4: max change fraction after leap 0.021978021978021976 for self
+17:11:13.322 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap 0.02150537634408602 for NextDiffusion B el.1→2
+17:11:13.323 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -5: max change fraction after leap -0.027322404371584712 for NextDiffusion B el.2→3
+17:11:13.323 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -4: max change fraction after leap -0.02247191011235956 for NextDiffusion B el.2→3
+17:11:13.323 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -5: max change fraction after leap 0.02577319587628867 for self
+17:11:13.325 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -4: max change fraction after leap -0.025157232704402524 for NextDiffusion B el.2→3
+17:11:13.325 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -7: max change fraction after leap 0.03589743589743591 for self
+17:11:13.325 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -5: max change fraction after leap -0.025510204081632792 for NextDiffusion B el.1→2
+17:11:13.326 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -4: max change fraction after leap -0.025157232704402524 for NextDiffusion B el.2→3
+17:11:13.326 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.025477707006369255 for NextDiffusion B el.2→3
+17:11:13.327 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 6: max change fraction after leap 0.037735849056603606 for NextDiffusion B el.2→3
+17:11:13.332 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap 0.02259887005649717 for NextDiffusion B el.1→2
+17:11:13.332 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.03144654088050298 for NextDiffusion B el.2→3
+17:11:13.333 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.02469135802469137 for NextDiffusion B el.2→3
+17:11:13.333 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -4: max change fraction after leap -0.022857142857142854 for NextDiffusion B el.1→2
+17:11:13.334 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap 0.02339181286549707 for NextDiffusion B el.1→2
+17:11:13.334 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -5: max change fraction after leap -0.030303030303030148 for NextDiffusion B el.2→3
+17:11:13.335 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.024242424242424256 for NextDiffusion B el.2→3
+17:11:13.336 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 5: max change fraction after leap 0.028735632183908042 for NextDiffusion B el.1→2
+17:11:13.336 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 7: max change fraction after leap 0.03910614525139664 for NextDiffusion B el.1→2
+17:11:13.337 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -4: max change fraction after leap -0.02564102564102565 for NextDiffusion B el.2→3
+17:11:13.339 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 6: max change fraction after leap 0.03749999999999984 for NextDiffusion B el.2→3
+17:11:13.339 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap 0.023809523809523805 for NextDiffusion B el.1→2
+17:11:13.339 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 5: max change fraction after leap 0.029585798816568042 for NextDiffusion B el.1→2
+17:11:13.341 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap 0.022346368715083796 for NextDiffusion B el.1→2
+17:11:13.341 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 6: max change fraction after leap 0.03726708074534164 for NextDiffusion B el.2→3
+17:11:13.341 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -4: max change fraction after leap -0.022988505747126433 for NextDiffusion B el.1→2
+17:11:13.342 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -5: max change fraction after leap -0.0318471337579618 for NextDiffusion B el.2→3
+17:11:13.342 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -4: max change fraction after leap -0.025157232704402524 for NextDiffusion B el.2→3
+17:11:13.343 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 5: max change fraction after leap 0.028089887640449434 for NextDiffusion B el.1→2
+17:11:13.343 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -6: max change fraction after leap 0.032967032967032975 for self
+17:11:13.344 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -5: max change fraction after leap -0.028089887640449434 for NextDiffusion B el.1→2
+17:11:13.345 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -4: max change fraction after leap -0.026666666666666675 for NextDiffusion B el.2→3
+17:11:13.345 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap 0.02222222222222222 for NextDiffusion B el.1→2
+17:11:13.346 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 3: max change fraction after leap 0.020000000000000007 for NextDiffusion B el.2→3
+17:11:13.346 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 8: max change fraction after leap 0.04494382022471909 for NextDiffusion B el.1→2
+17:11:13.347 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.026490066225165573 for NextDiffusion B el.2→3
+17:11:13.348 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.025477707006369255 for NextDiffusion B el.2→3
+17:11:13.349 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -6: max change fraction after leap 0.03529411764705883 for self
+17:11:13.349 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.02564102564102565 for NextDiffusion B el.2→3
+17:11:13.349 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap 0.023952095808383228 for NextDiffusion B el.1→2
+17:11:13.350 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap 0.023668639053254434 for NextDiffusion B el.1→2
+17:11:13.351 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -5: max change fraction after leap 0.030674846625766878 for self
+17:11:13.351 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 5: max change fraction after leap -0.029940119760479045 for self
+17:11:13.352 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.035714285714285726 for NextDiffusion B el.2→3
+17:11:13.352 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -5: max change fraction after leap 0.030864197530864203 for self
+17:11:13.352 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.028169014084507053 for NextDiffusion B el.2→3
+17:11:13.353 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -4: max change fraction after leap -0.027210884353741506 for NextDiffusion B el.2→3
+17:11:13.353 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 3: max change fraction after leap 0.020833333333333343 for NextDiffusion B el.2→3
+17:11:13.353 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -4: max change fraction after leap -0.02424242424242424 for NextDiffusion B el.1→2
+17:11:13.354 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -6: max change fraction after leap -0.036144578313253004 for NextDiffusion B el.1→2
+17:11:13.354 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 3: max change fraction after leap 0.020000000000000007 for NextDiffusion B el.2→3
+17:11:13.354 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 5: max change fraction after leap 0.0326797385620915 for NextDiffusion B el.1→2
+17:11:13.355 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.027210884353741506 for NextDiffusion B el.2→3
+17:11:13.355 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 5: max change fraction after leap 0.033557046979865786 for NextDiffusion B el.2→3
+17:11:13.355 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent -3: max change fraction after leap -0.021428571428571415 for NextDiffusion B el.3→4
+17:11:13.356 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -4: max change fraction after leap -0.025641025641025637 for NextDiffusion B el.1→2
+17:11:13.356 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 4: max change fraction after leap 0.02962962962962961 for NextDiffusion B el.3→4
+17:11:13.356 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -4: max change fraction after leap 0.026315789473684206 for self
+17:11:13.356 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -4: max change fraction after leap -0.026490066225165573 for NextDiffusion B el.2→3
+17:11:13.357 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 3: max change fraction after leap 0.02027027027027028 for NextDiffusion B el.2→3
+17:11:13.357 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap 0.02547770700636942 for NextDiffusion B el.1→2
+17:11:13.361 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap -0.02547770700636943 for self
+17:11:13.362 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 3: max change fraction after leap 0.020833333333333322 for NextDiffusion B el.3→4
+17:11:13.362 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap -0.026666666666666672 for self
+17:11:13.362 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap 0.02702702702702704 for NextDiffusion B el.2→3
+17:11:13.362 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 4: max change fraction after leap 0.028368794326241117 for NextDiffusion B el.3→4
+17:11:13.362 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→0, extent -4: max change fraction after leap 0.02366863905325444 for self
+17:11:13.363 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 5: max change fraction after leap 0.034246575342465925 for NextDiffusion B el.3→4
+17:11:13.363 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -3: max change fraction after leap -0.02054794520547946 for NextDiffusion B el.2→3
+17:11:13.363 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 3: max change fraction after leap 0.02112676056338029 for NextDiffusion B el.2→3
+17:11:13.363 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.3→2, extent -5: max change fraction after leap 0.03401360544217705 for NextDiffusion B el.3→4
+17:11:13.363 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 4: max change fraction after leap -0.023529411764705885 for NextDiffusion B el.1→0
+17:11:13.364 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.3→2, extent 3: max change fraction after leap -0.02013422818791946 for self
+17:11:13.364 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→0, extent 5: max change fraction after leap -0.030487804878048787 for self
+17:11:13.364 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -5: max change fraction after leap 0.03144654088050315 for NextDiffusion B el.1→0
+17:11:13.364 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.3→2, extent 4: max change fraction after leap -0.027777777777777773 for self
+17:11:13.365 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 3: max change fraction after leap 0.021126760563380267 for NextDiffusion B el.3→4
+17:11:13.365 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.2→3, extent 3: max change fraction after leap -0.0206896551724138 for self
+17:11:13.366 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→0, extent 4: max change fraction after leap -0.024242424242424246 for self
+17:11:13.366 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→0, extent -4: max change fraction after leap 0.02580645161290323 for self
+17:11:13.367 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→0, extent -4: max change fraction after leap 0.025316455696202535 for self
+17:11:13.367 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→0, extent 4: max change fraction after leap -0.0245398773006135 for self
+17:11:13.375 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 3: max change fraction after leap 0.02189781021897811 for NextDiffusion B el.2→3
+17:11:13.376 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→0, extent -6: max change fraction after leap 0.04000000000000001 for self
+17:11:13.377 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -3: max change fraction after leap -0.022058823529411773 for NextDiffusion B el.2→3
+17:11:13.377 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 3: max change fraction after leap 0.02158273381294965 for NextDiffusion B el.2→3
+17:11:13.378 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→0, extent -5: max change fraction after leap 0.03401360544217688 for self
+17:11:13.378 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -3: max change fraction after leap -0.02112676056338029 for NextDiffusion B el.2→3
+17:11:13.378 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 3: max change fraction after leap -0.02083333333333333 for self
+17:11:13.379 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 3: max change fraction after leap 0.021126760563380278 for NextDiffusion B el.1→2
+17:11:13.380 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap -0.026666666666666672 for self
+17:11:13.380 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -5: max change fraction after leap 0.03424657534246576 for self
+17:11:13.380 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap 0.02702702702702702 for NextDiffusion B el.1→2
+17:11:13.381 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -3: max change fraction after leap -0.02068965517241379 for NextDiffusion B el.1→2
+17:11:13.381 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 3: max change fraction after leap 0.021126760563380278 for NextDiffusion B el.1→2
+17:11:13.382 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -5: max change fraction after leap -0.0352112676056338 for NextDiffusion B el.1→2
+17:11:13.382 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -3: max change fraction after leap -0.021897810218978096 for NextDiffusion B el.1→2
+17:11:13.383 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap 0.02758620689655172 for NextDiffusion B el.1→2
+17:11:13.384 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -4: max change fraction after leap -0.026845637583892613 for NextDiffusion B el.1→2
+17:11:13.385 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 3: max change fraction after leap 0.021897810218978096 for NextDiffusion B el.1→2
+17:11:13.385 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -3: max change fraction after leap -0.020270270270270268 for NextDiffusion B el.1→2
+17:11:13.387 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 3: max change fraction after leap 0.02083333333333333 for NextDiffusion B el.1→2
+17:11:13.389 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -3: max change fraction after leap -0.02083333333333333 for NextDiffusion B el.1→2
+17:11:13.389 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 3: max change fraction after leap 0.020979020979020976 for NextDiffusion B el.1→2
+17:11:13.390 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 5: max change fraction after leap 0.03311258278145695 for NextDiffusion B el.1→2
+17:11:13.391 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap -0.02597402597402598 for self
+17:11:13.391 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -4: max change fraction after leap 0.027210884353741503 for self
+17:11:13.391 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap -0.026490066225165566 for self
+17:11:13.392 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 4: max change fraction after leap -0.027397260273972608 for self
+17:11:13.393 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent 3: max change fraction after leap 0.02173913043478262 for NextDiffusion B el.2→3
+17:11:13.393 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -4: max change fraction after leap -0.028368794326241144 for NextDiffusion B el.2→3
+17:11:13.394 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→0, extent -7: max change fraction after leap 0.044025157232704414 for self
+17:11:13.395 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→0, extent 4: max change fraction after leap -0.023391812865497078 for self
+17:11:13.399 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→0, extent -5: max change fraction after leap 0.030303030303030307 for self
+17:11:13.413 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→2, extent -5: max change fraction after leap -0.03731343283582091 for NextDiffusion B el.2→3
+17:11:13.415 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→0, extent 4: max change fraction after leap -0.02285714285714286 for self
+17:11:13.417 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→0, extent 4: max change fraction after leap -0.026315789473684216 for self
+17:11:13.417 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.1→0, extent -3: max change fraction after leap 0.020547945205479454 for self
+17:11:13.417 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent 5: max change fraction after leap 0.03496503496503496 for NextDiffusion B el.1→2
+17:11:13.418 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -4: max change fraction after leap -0.027777777777777773 for NextDiffusion B el.1→2
+17:11:13.419 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -3: max change fraction after leap -0.02083333333333333 for NextDiffusion B el.1→2
+17:11:13.419 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -4: max change fraction after leap -0.02836879432624113 for NextDiffusion B el.1→2
+17:11:13.420 WARN  o.t.s.n.g.NextEventQueue - NextDiffusion B el.0→1, extent -4: max change fraction after leap -0.028985507246376805 for NextDiffusion B el.1→2
+17:11:13.512 INFO  o.t.s.n.g.GridCalc - Trial 0: time 1000.0 dt=1000.0 events=94661 293/ms
+17:11:13.649 INFO  o.t.s.n.g.GridCalc - Trial 0: time 2000.0 dt=1000.0 events=93569 682/ms
+17:11:13.744 INFO  o.t.s.n.g.GridCalc - Trial 0: time 3000.0 dt=1000.0
+17:11:13.847 INFO  o.t.s.n.g.GridCalc - Trial 0: time 4000.0 dt=1000.0 events=170208 859/ms
+17:11:13.919 INFO  o.t.s.n.g.GridCalc - Trial 0: time 5000.0 dt=1000.0
+17:11:13.996 INFO  o.t.s.n.g.GridCalc - Trial 0: time 6000.0 dt=1000.0 events=151825 1018/ms
+17:11:14.061 INFO  o.t.s.n.g.GridCalc - Trial 0: time 7000.0 dt=1000.0
+17:11:14.124 INFO  o.t.s.n.g.GridCalc - Trial 0: time 8000.0 dt=1000.0 events=138108 1078/ms
+17:11:14.208 INFO  o.t.s.n.g.GridCalc - Trial 0: time 9000.0 dt=1000.0
+17:11:14.306 INFO  o.t.s.n.g.GridCalc - Trial 0: time 10000.0 dt=1000.0 events=127679 701/ms
+17:11:14.363 INFO  o.t.s.n.g.GridCalc - Trial 0: time 11000.0 dt=1000.0
+17:11:14.417 INFO  o.t.s.n.g.GridCalc - Trial 0: time 12000.0 dt=1000.0 events=119211 1073/ms
+17:11:14.470 INFO  o.t.s.n.g.GridCalc - Trial 0: time 13000.0 dt=1000.0
+17:11:14.519 INFO  o.t.s.n.g.GridCalc - Trial 0: time 14000.0 dt=1000.0 events=109671 1075/ms
+17:11:14.568 INFO  o.t.s.n.g.GridCalc - Trial 0: time 15000.0 dt=1000.0
+17:11:14.623 INFO  o.t.s.n.g.GridCalc - Trial 0: time 16000.0 dt=1000.0 events=102235 983/ms
+17:11:14.668 INFO  o.t.s.n.g.GridCalc - Trial 0: time 17000.0 dt=1000.0
+17:11:14.712 INFO  o.t.s.n.g.GridCalc - Trial 0: time 18000.0 dt=1000.0
+17:11:14.753 INFO  o.t.s.n.g.GridCalc - Trial 0: time 19000.0 dt=1000.0 events=138677 1066/ms
+17:11:14.794 INFO  o.t.s.n.g.GridCalc - Trial 0: time 20000.0 dt=1000.0
+17:11:14.833 INFO  o.t.s.n.g.GridCalc - Trial 0: time 21000.0 dt=1000.0
+17:11:14.871 INFO  o.t.s.n.g.GridCalc - Trial 0: time 22000.0 dt=1000.0 events=125077 1059/ms
+17:11:14.914 INFO  o.t.s.n.g.GridCalc - Trial 0: time 23000.0 dt=1000.0
+17:11:14.970 INFO  o.t.s.n.g.GridCalc - Trial 0: time 24000.0 dt=1000.0
+17:11:15.024 INFO  o.t.s.n.g.GridCalc - Trial 0: time 25000.0 dt=1000.0 events=113844 744/ms
+17:11:15.077 INFO  o.t.s.n.g.GridCalc - Trial 0: time 26000.0 dt=1000.0
+17:11:15.127 INFO  o.t.s.n.g.GridCalc - Trial 0: time 27000.0 dt=1000.0 events=69761 677/ms
+17:11:15.178 INFO  o.t.s.n.g.GridCalc - Trial 0: time 28000.0 dt=1000.0
+17:11:15.226 INFO  o.t.s.n.g.GridCalc - Trial 0: time 29000.0 dt=1000.0
+17:11:15.274 INFO  o.t.s.n.g.GridCalc - Trial 0: time 30000.0 dt=1000.0 events=98625 670/ms
+17:11:15.321 INFO  o.t.s.n.g.GridCalc - Trial 0: time 31000.0 dt=1000.0
+17:11:15.349 INFO  o.t.s.n.g.GridCalc - Trial 0: time 32000.0 dt=1000.0
+17:11:15.379 INFO  o.t.s.n.g.GridCalc - Trial 0: time 33000.0 dt=1000.0 events=89768 854/ms
+17:11:15.406 INFO  o.t.s.n.g.GridCalc - Trial 0: time 34000.0 dt=1000.0
+17:11:15.432 INFO  o.t.s.n.g.GridCalc - Trial 0: time 35000.0 dt=1000.0
+17:11:15.458 INFO  o.t.s.n.g.GridCalc - Trial 0: time 36000.0 dt=1000.0
+17:11:15.483 INFO  o.t.s.n.g.GridCalc - Trial 0: time 37000.0 dt=1000.0 events=107978 1038/ms
+17:11:15.507 INFO  o.t.s.n.g.GridCalc - Trial 0: time 38000.0 dt=1000.0
+17:11:15.530 INFO  o.t.s.n.g.GridCalc - Trial 0: time 39000.0 dt=1000.0
+17:11:15.553 INFO  o.t.s.n.g.GridCalc - Trial 0: time 40000.0 dt=1000.0
+17:11:15.575 INFO  o.t.s.n.g.GridCalc - Trial 0: time 41000.0 dt=1000.0
+17:11:15.596 INFO  o.t.s.n.g.GridCalc - Trial 0: time 42000.0 dt=1000.0 events=117112 1036/ms
+17:11:15.616 INFO  o.t.s.n.g.GridCalc - Trial 0: time 43000.0 dt=1000.0
+17:11:15.635 INFO  o.t.s.n.g.GridCalc - Trial 0: time 44000.0 dt=1000.0
+17:11:15.654 INFO  o.t.s.n.g.GridCalc - Trial 0: time 45000.0 dt=1000.0
+17:11:15.673 INFO  o.t.s.n.g.GridCalc - Trial 0: time 46000.0 dt=1000.0
+17:11:15.691 INFO  o.t.s.n.g.GridCalc - Trial 0: time 47000.0 dt=1000.0
+17:11:15.709 INFO  o.t.s.n.g.GridCalc - Trial 0: time 48000.0 dt=1000.0 events=115920 1025/ms
+17:11:15.726 INFO  o.t.s.n.g.GridCalc - Trial 0: time 49000.0 dt=1000.0
+17:11:15.743 INFO  o.t.s.n.g.GridCalc - Trial 0: time 50000.0 dt=1000.0
+17:11:15.759 INFO  o.t.s.n.g.GridCalc - Trial 0: time 51000.0 dt=1000.0
+17:11:15.775 INFO  o.t.s.n.g.GridCalc - Trial 0: time 52000.0 dt=1000.0
+17:11:15.790 INFO  o.t.s.n.g.GridCalc - Trial 0: time 53000.0 dt=1000.0
+17:11:15.805 INFO  o.t.s.n.g.GridCalc - Trial 0: time 54000.0 dt=1000.0
+17:11:15.819 INFO  o.t.s.n.g.GridCalc - Trial 0: time 55000.0 dt=1000.0 events=110764 1006/ms
+17:11:15.832 INFO  o.t.s.n.g.GridCalc - Trial 0: time 56000.0 dt=1000.0
+17:11:15.846 INFO  o.t.s.n.g.GridCalc - Trial 0: time 57000.0 dt=1000.0
+17:11:15.862 INFO  o.t.s.n.g.GridCalc - Trial 0: time 58000.0 dt=1000.0
+17:11:15.875 INFO  o.t.s.n.g.GridCalc - Trial 0: time 59000.0 dt=1000.0
+17:11:15.887 INFO  o.t.s.n.g.GridCalc - Trial 0: time 60000.0 dt=1000.0
+17:11:15.899 INFO  o.t.s.n.g.GridCalc - Trial 0: time 61000.0 dt=1000.0
+17:11:15.911 INFO  o.t.s.n.g.GridCalc - Trial 0: time 62000.0 dt=1000.0
+17:11:15.922 INFO  o.t.s.n.g.GridCalc - Trial 0: time 63000.0 dt=1000.0 events=99645 967/ms
+17:11:15.933 INFO  o.t.s.n.g.GridCalc - Trial 0: time 64000.0 dt=1000.0
+17:11:15.943 INFO  o.t.s.n.g.GridCalc - Trial 0: time 65000.0 dt=1000.0
+17:11:15.953 INFO  o.t.s.n.g.GridCalc - Trial 0: time 66000.0 dt=1000.0
+17:11:15.963 INFO  o.t.s.n.g.GridCalc - Trial 0: time 67000.0 dt=1000.0
+17:11:15.973 INFO  o.t.s.n.g.GridCalc - Trial 0: time 68000.0 dt=1000.0
+17:11:15.983 INFO  o.t.s.n.g.GridCalc - Trial 0: time 69000.0 dt=1000.0
+17:11:15.993 INFO  o.t.s.n.g.GridCalc - Trial 0: time 70000.0 dt=1000.0
+17:11:16.002 INFO  o.t.s.n.g.GridCalc - Trial 0: time 71000.0 dt=1000.0
+17:11:16.011 INFO  o.t.s.n.g.GridCalc - Trial 0: time 72000.0 dt=1000.0
+17:11:16.020 INFO  o.t.s.n.g.GridCalc - Trial 0: time 73000.0 dt=1000.0
+17:11:16.029 INFO  o.t.s.n.g.GridCalc - Trial 0: time 74000.0 dt=1000.0 events=103356 965/ms
+17:11:16.037 INFO  o.t.s.n.g.GridCalc - Trial 0: time 75000.0 dt=1000.0
+17:11:16.045 INFO  o.t.s.n.g.GridCalc - Trial 0: time 76000.0 dt=1000.0
+17:11:16.053 INFO  o.t.s.n.g.GridCalc - Trial 0: time 77000.0 dt=1000.0
+17:11:16.061 INFO  o.t.s.n.g.GridCalc - Trial 0: time 78000.0 dt=1000.0
+17:11:16.068 INFO  o.t.s.n.g.GridCalc - Trial 0: time 79000.0 dt=1000.0
+17:11:16.075 INFO  o.t.s.n.g.GridCalc - Trial 0: time 80000.0 dt=1000.0
+17:11:16.082 INFO  o.t.s.n.g.GridCalc - Trial 0: time 81000.0 dt=1000.0
+17:11:16.088 INFO  o.t.s.n.g.GridCalc - Trial 0: time 82000.0 dt=1000.0
+17:11:16.095 INFO  o.t.s.n.g.GridCalc - Trial 0: time 83000.0 dt=1000.0
+17:11:16.101 INFO  o.t.s.n.g.GridCalc - Trial 0: time 84000.0 dt=1000.0
+17:11:16.107 INFO  o.t.s.n.g.GridCalc - Trial 0: time 85000.0 dt=1000.0
+17:11:16.113 INFO  o.t.s.n.g.GridCalc - Trial 0: time 86000.0 dt=1000.0
+17:11:16.118 INFO  o.t.s.n.g.GridCalc - Trial 0: time 87000.0 dt=1000.0
+17:11:16.133 INFO  o.t.s.n.g.GridCalc - Trial 0: time 88000.0 dt=1000.0 events=90648 880/ms
+17:11:16.142 INFO  o.t.s.n.g.GridCalc - Trial 0: time 89000.0 dt=1000.0
+17:11:16.150 INFO  o.t.s.n.g.GridCalc - Trial 0: time 90000.0 dt=1000.0
+17:11:16.158 INFO  o.t.s.n.g.GridCalc - Trial 0: time 91000.0 dt=1000.0
+17:11:16.165 INFO  o.t.s.n.g.GridCalc - Trial 0: time 92000.0 dt=1000.0
+17:11:16.172 INFO  o.t.s.n.g.GridCalc - Trial 0: time 93000.0 dt=1000.0
+17:11:16.178 INFO  o.t.s.n.g.GridCalc - Trial 0: time 94000.0 dt=1000.0
+17:11:16.185 INFO  o.t.s.n.g.GridCalc - Trial 0: time 95000.0 dt=1000.0
+17:11:16.190 INFO  o.t.s.n.g.GridCalc - Trial 0: time 96000.0 dt=1000.0
+17:11:16.195 INFO  o.t.s.n.g.GridCalc - Trial 0: time 97000.0 dt=1000.0
+17:11:16.200 INFO  o.t.s.n.g.GridCalc - Trial 0: time 98000.0 dt=1000.0
+17:11:16.205 INFO  o.t.s.n.g.GridCalc - Trial 0: time 99000.0 dt=1000.0
+17:11:16.209 INFO  o.t.s.n.g.GridCalc - Trial 0: time 100000.0 dt=1000.0
+17:11:16.210 INFO  o.t.s.n.g.GridCalc - Trial 0: total number of particles at the end: 56
+17:11:16.214 INFO  o.t.s.n.g.GridCalc - Trial 0: total run time 3025 ms
+17:11:16.215 INFO  o.t.s.n.g.StochasticGridCalc - Used up 2683245 random numbers
+17:11:16.215 INFO  o.t.s.n.g.AdaptiveGridCalc - Queue suffered 15821074 swaps
+17:11:16.215 INFO  o.t.s.n.g.AdaptiveGridCalc - Accuracy control parameter ε=0.01
+17:11:16.215 INFO  o.t.s.n.g.AdaptiveGridCalc - Leapt 3405 (1594 events, 2.1361355081555833 e/l average), waited 2537696 times
+17:11:16.215 INFO  o.t.s.n.g.AdaptiveGridCalc - Real simulation took 3123 ms, 32020.49311559398 ms/s
+17:11:16.215 INFO  o.t.s.n.g.ResultWriterHDF5 - Closing output file model-async.h5
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
