@@ -1,0 +1,5 @@
+<InitialConditions xmlns="http://stochdiff.textensor.org">
+  <ConcentrationSet>
+    <NanoMolarity specieID="A"     value="3e5"  />
+  </ConcentrationSet>
+</InitialConditions>

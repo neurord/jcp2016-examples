@@ -1,0 +1,8 @@
+<ReactionScheme xmlns="http://stochdiff.textensor.org">
+  <Specie name="A" />
+  
+  <Reaction name = "A-->nada" id="decay">
+    <Reactant specieID="A"           />
+    <forwardRate> 0.02e-1  </forwardRate>
+  </Reaction>
+</ReactionScheme>

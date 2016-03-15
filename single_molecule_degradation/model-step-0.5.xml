@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SDRun xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://stochdiff.textensor.org">
+
+  <xi:include href="reactions.xml" />
+  <xi:include href="morphology.xml" />
+  <xi:include href="ic.xml" />
+
+  <runtime>   1000</runtime>
+
+  <discretization>
+    <!-- default largest size for elements in bulk volumes, microns -->
+    <defaultMaxElementSide>2</defaultMaxElementSide>
+  </discretization>
+  
+  <geometry>2D</geometry>
+  <distribution>BINOMIAL</distribution>
+  <algorithm>INDEPENDENT</algorithm>
+  <simulationSeed>77777</simulationSeed>
+  <outputQuantity>NUMBER</outputQuantity>
+
+  <spineSeed>123</spineSeed>
+
+  <!-- 1000 / (2001000/1000) rounded to divide outputInterval -->
+  <fixedStepDt> 0.50 </fixedStepDt>
+
+  <!-- Controls how often the .out file is written, which can be read by ccviz  -->
+  <outputInterval>   5   </outputInterval>
+
+  <tolerance>  0.001          </tolerance>
+
+  <calculation> GRID_STEPPED_STOCHASTIC  </calculation>
+</SDRun>
