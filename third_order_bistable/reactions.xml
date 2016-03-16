@@ -1,0 +1,16 @@
+<ReactionScheme xmlns="http://stochdiff.textensor.org">
+  <Specie name="A" />
+  
+  <Reaction id="A↔nil">
+    <Reactant specieID="A" />
+    <forwardRate>   37.5  </forwardRate>
+    <reverseRate> 2200    </reverseRate>
+  </Reaction>
+
+  <Reaction id="3A↔2A">
+    <Reactant specieID="A" power="3" />
+    <Product  specieID="A" power="2" />
+    <forwardRate> 2.5e-4  </forwardRate>
+    <reverseRate> 0.18    </reverseRate>
+  </Reaction>
+</ReactionScheme>

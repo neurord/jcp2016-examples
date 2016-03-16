@@ -1,0 +1,1082 @@
+12:11:47.736 INFO  stochdiff - NeuroRD v3.0.0-rc1-4-gb612db28f3+
+12:11:47.739 INFO  stochdiff - Writing logs to model-async-0.001.log
+12:11:47.739 INFO  o.t.x.ModelReader - umarshalling model-async-0.001.xml
+12:11:47.842 INFO  o.t.x.ModelReader - /SDRun/Morphology: namespace not specified, assuming http://stochdiff.textensor.org
+12:11:47.850 DEBUG o.t.u.Settings - Overriding stochdiff.writers: [text] → [h5]
+12:11:47.853 INFO  o.t.s.m.SDRun - subvolume grid size is: 2.0 (from 2.0, [2.0, 2.0])
+12:11:47.864 DEBUG o.t.s.d.LineBoxer - Using (point x=0.0,y=0.0,z=0.0,r=1.0,nnbr=1) as the starting point
+12:11:47.865 DEBUG o.t.s.d.LineBoxer - Will process (point x=2.0,y=0.0,z=0.0,r=1.0,nnbr=1) later
+12:11:47.865 DEBUG o.t.s.d.LineBoxer - Processing (point x=0.0,y=0.0,z=0.0,r=1.0,nnbr=1) with 1 neighbours
+12:11:47.865 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=2.0,y=0.0,z=0.0,r=1.0,nnbr=1)
+12:11:47.866 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+12:11:47.871 INFO  o.t.s.n.m.VolumeLine - nl=1 nsl=0 nr=1 dreg=2.0 dsl=0.0
+12:11:47.872 DEBUG o.t.s.d.LineBoxer - Processing (point x=2.0,y=0.0,z=0.0,r=1.0,nnbr=1) with 1 neighbours
+12:11:47.872 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=0.0,y=0.0,z=0.0,r=1.0,nnbr=1) already removed from the working set
+12:11:47.874 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (0.0000 1.0000 0.0000) (2.0000 1.0000 0.0000) (2.0000 -1.0000 0.0000) (1.1102e-16 -1.0000 0.0000) from region nuc
+12:11:47.883 DEBUG o.t.u.LibUtil - Added /usr/lib64/jhdf to java.library.path
+12:11:47.883 DEBUG o.t.u.LibUtil - Added /usr/lib64/jhdf5 to java.library.path
+12:11:47.884 DEBUG o.t.u.LibUtil - Added /usr/lib/jhdf to java.library.path
+12:11:47.884 DEBUG o.t.u.LibUtil - Added /usr/lib/jhdf5 to java.library.path
+12:11:47.886 INFO  o.t.s.SDCalc - Using HDF5 writer for model-async-0.001.h5
+12:11:47.886 INFO  o.t.s.SDCalc - Beginning calculations (1 trials)
+12:11:47.893 INFO  o.t.s.n.BaseCalc - Writing particle numbers as NUMBERs
+12:11:47.893 INFO  o.t.s.n.g.GridCalc - Extracting dts for 0 output files
+12:11:47.956 INFO  o.t.s.n.g.ResultWriterHDF5 - Created git_version with dims=[1] size=[] chunks=[]
+12:11:47.957 INFO  o.t.s.n.g.ResultWriterHDF5 - Created archiver_version with dims=[1] size=[] chunks=[]
+12:11:47.958 INFO  o.t.s.n.g.ResultWriterHDF5 - Created built_by with dims=[1] size=[] chunks=[]
+12:11:47.958 INFO  o.t.s.n.g.ResultWriterHDF5 - Created build_time with dims=[1] size=[] chunks=[]
+12:11:47.959 INFO  o.t.s.n.g.ResultWriterHDF5 - Created created_by with dims=[1] size=[] chunks=[]
+12:11:47.959 INFO  o.t.s.n.g.ResultWriterHDF5 - Created build_jdk with dims=[1] size=[] chunks=[]
+12:11:47.960 INFO  o.t.s.n.g.ResultWriterHDF5 - Created manifest_version with dims=[1] size=[] chunks=[]
+12:11:47.960 INFO  o.t.s.n.g.ResultWriterHDF5 - Created main_class with dims=[1] size=[] chunks=[]
+12:11:47.961 INFO  o.t.s.m.ReactionScheme - Running with 4 reactions (forward and reverse)
+12:11:47.962 DEBUG o.t.s.n.c.ReactionTable - ireact=0/4 [[0], [1], [1]]→[[], [], []] rate=37.5
+12:11:47.962 DEBUG o.t.s.n.c.ReactionTable - ireact=1/4 [[], [], []]→[[0], [1], [1]] rate=2200.0
+12:11:47.962 DEBUG o.t.s.n.c.ReactionTable - ireact=2/4 [[0], [3], [3]]→[[0], [2], [2]] rate=2.5E-4
+12:11:47.963 DEBUG o.t.s.n.c.ReactionTable - ireact=3/4 [[0], [2], [2]]→[[0], [3], [3]] rate=0.18
+12:11:47.963 INFO  o.t.s.n.BaseCalc - Trial 0: running with simulationSeed 77777
+12:11:47.969 INFO  o.t.s.n.s.InterpolatingStepGenerator - Using BINOMIAL step generator with 601×121 tables
+12:11:48.737 INFO  o.t.s.n.g.NextEventQueue - Using 0.001 as leap tolerance, jumping when 2.0 times longer
+12:11:48.740 INFO  o.t.s.n.g.NextEventQueue - Created 0 diffusion events
+12:11:48.742 INFO  o.t.s.n.g.NextEventQueue - Created 4 reaction events
+12:11:48.742 INFO  o.t.s.n.g.NextEventQueue - Created 0 stimulation events
+12:11:48.743 INFO  o.t.s.n.g.NextEventQueue - Sorting 4 nodes
+12:11:48.743 INFO  o.t.s.n.g.NextEventQueue - Creating dependency graph
+12:11:48.747 INFO  o.t.s.n.g.NextEventQueue - 4 events at the beginning:
+12:11:48.751 INFO  o.t.s.n.g.NextEventQueue - 0 → NextReaction el.0 nil→A prop=4400.0 t=3.0601825817681377E-4
+12:11:48.751 INFO  o.t.s.n.g.NextEventQueue - 1 → NextReaction el.0 A→nil prop=0.0 t=Infinity
+12:11:48.752 INFO  o.t.s.n.g.NextEventQueue - 2 — 3 will happen at infinity
+12:11:48.753 INFO  o.t.s.n.g.NextEventQueue - 9 dependency edges, 3 active
+12:11:48.757 INFO  o.t.s.n.g.ResultWriterHDF5 - Created simulation_seed with dims=[1] size=[] chunks=[]
+12:11:48.770 INFO  o.t.s.n.g.ResultWriterHDF5 - Created grid with dims=[1] size=[] chunks=[1]
+12:11:48.771 INFO  o.t.s.n.g.ResultWriterHDF5 - Created neighbors with dims=[1×0] size=[] chunks=[]
+12:11:48.772 INFO  o.t.s.n.g.ResultWriterHDF5 - Created couplings with dims=[1×0] size=[] chunks=[]
+12:11:48.775 INFO  o.t.s.n.g.ResultWriterHDF5 - Created species with dims=[1] size=[] chunks=[]
+12:11:48.777 INFO  o.t.s.n.g.ResultWriterHDF5 - Created regions with dims=[2] size=[] chunks=[]
+12:11:48.779 INFO  o.t.s.n.g.ResultWriterHDF5 - Created reactants with dims=[4×1] size=[] chunks=[]
+12:11:48.781 INFO  o.t.s.n.g.ResultWriterHDF5 - Created products with dims=[4×1] size=[] chunks=[]
+12:11:48.786 INFO  o.t.s.n.g.ResultWriterHDF5 - Created reactant_stoichiometry with dims=[4×1] size=[] chunks=[]
+12:11:48.788 INFO  o.t.s.n.g.ResultWriterHDF5 - Created product_stoichiometry with dims=[4×1] size=[] chunks=[]
+12:11:48.789 INFO  o.t.s.n.g.ResultWriterHDF5 - Created rates with dims=[4] size=[] chunks=[]
+12:11:48.792 INFO  o.t.s.n.g.ResultWriterHDF5 - Created reversible_pairs with dims=[4] size=[] chunks=[]
+12:11:48.798 INFO  o.t.s.n.g.ResultWriterHDF5 - Created descriptions with dims=[4] size=[] chunks=[]
+12:11:48.801 INFO  o.t.s.n.g.ResultWriterHDF5 - Created elements with dims=[4] size=[] chunks=[]
+12:11:48.803 INFO  o.t.s.n.g.ResultWriterHDF5 - Created types with dims=[4] size=[] chunks=[]
+12:11:48.805 INFO  o.t.s.n.g.ResultWriterHDF5 - Created dependent with dims=[4×3] size=[] chunks=[]
+12:11:48.809 INFO  o.t.s.n.g.ResultWriterHDF5 - Created species with dims=[1] size=[] chunks=[]
+12:11:48.811 INFO  o.t.s.n.g.ResultWriterHDF5 - Created elements with dims=[1] size=[] chunks=[]
+12:11:48.870 INFO  o.t.s.n.g.ResultWriterHDF5 - Created serialized_config with dims=[1] size=[] chunks=[]
+12:11:48.871 INFO  o.t.s.n.g.GridCalc - Trial 0: running from time=0.0 ms to time=1000.0 ms
+12:11:48.871 INFO  o.t.s.n.g.GridCalc - dt=1.0 dtsOut=[] saveStateTime=1.0E9
+12:11:48.871 INFO  o.t.s.n.g.GridCalc - Trial 0: time 0.0 dt=1.0
+12:11:48.873 INFO  o.t.s.n.g.ResultWriterHDF5 - Created population with dims=[0×1×1] size=[∞×1×1] chunks=[1024×1×1]
+12:11:48.874 INFO  o.t.s.n.g.ResultWriterHDF5 - Created times with dims=[0] size=[∞] chunks=[1024]
+12:11:49.051 INFO  o.t.s.n.g.GridCalc - Trial 0: time 1.0 dt=1.0 events=14828 82/ms
+12:11:49.103 INFO  o.t.s.n.g.GridCalc - Trial 0: time 2.0 dt=1.0
+12:11:49.127 INFO  o.t.s.n.g.GridCalc - Trial 0: time 3.0 dt=1.0
+12:11:49.148 INFO  o.t.s.n.g.GridCalc - Trial 0: time 4.0 dt=1.0
+12:11:49.257 INFO  o.t.s.n.g.GridCalc - Trial 0: time 5.0 dt=1.0 events=128205 622/ms
+12:11:49.268 INFO  o.t.s.n.g.GridCalc - Trial 0: time 6.0 dt=1.0
+12:11:49.283 INFO  o.t.s.n.g.GridCalc - Trial 0: time 7.0 dt=1.0
+12:11:49.300 INFO  o.t.s.n.g.GridCalc - Trial 0: time 8.0 dt=1.0
+12:11:49.343 INFO  o.t.s.n.g.GridCalc - Trial 0: time 9.0 dt=1.0
+12:11:49.366 INFO  o.t.s.n.g.GridCalc - Trial 0: time 10.0 dt=1.0 events=89092 817/ms
+12:11:49.374 INFO  o.t.s.n.g.GridCalc - Trial 0: time 11.0 dt=1.0
+12:11:49.386 INFO  o.t.s.n.g.GridCalc - Trial 0: time 12.0 dt=1.0
+12:11:49.394 INFO  o.t.s.n.g.GridCalc - Trial 0: time 13.0 dt=1.0
+12:11:49.403 INFO  o.t.s.n.g.GridCalc - Trial 0: time 14.0 dt=1.0
+12:11:49.411 INFO  o.t.s.n.g.GridCalc - Trial 0: time 15.0 dt=1.0
+12:11:49.421 INFO  o.t.s.n.g.GridCalc - Trial 0: time 16.0 dt=1.0
+12:11:49.430 INFO  o.t.s.n.g.GridCalc - Trial 0: time 17.0 dt=1.0
+12:11:49.438 INFO  o.t.s.n.g.GridCalc - Trial 0: time 18.0 dt=1.0
+12:11:49.446 INFO  o.t.s.n.g.GridCalc - Trial 0: time 19.0 dt=1.0
+12:11:49.471 INFO  o.t.s.n.g.GridCalc - Trial 0: time 20.0 dt=1.0 events=168551 1605/ms
+12:11:49.540 INFO  o.t.s.n.g.GridCalc - Trial 0: time 21.0 dt=1.0
+12:11:49.592 INFO  o.t.s.n.g.GridCalc - Trial 0: time 22.0 dt=1.0 events=234613 1938/ms
+12:11:49.650 INFO  o.t.s.n.g.GridCalc - Trial 0: time 23.0 dt=1.0
+12:11:49.682 INFO  o.t.s.n.g.GridCalc - Trial 0: time 24.0 dt=1.0
+12:11:49.766 INFO  o.t.s.n.g.GridCalc - Trial 0: time 25.0 dt=1.0 events=266050 1529/ms
+12:11:49.852 INFO  o.t.s.n.g.GridCalc - Trial 0: time 26.0 dt=1.0
+12:11:49.898 INFO  o.t.s.n.g.GridCalc - Trial 0: time 27.0 dt=1.0 events=228146 1728/ms
+12:11:49.955 INFO  o.t.s.n.g.GridCalc - Trial 0: time 28.0 dt=1.0
+12:11:50.006 INFO  o.t.s.n.g.GridCalc - Trial 0: time 29.0 dt=1.0 events=239677 2219/ms
+12:11:50.065 INFO  o.t.s.n.g.GridCalc - Trial 0: time 30.0 dt=1.0
+12:11:50.130 INFO  o.t.s.n.g.GridCalc - Trial 0: time 31.0 dt=1.0 events=235894 1902/ms
+12:11:50.173 INFO  o.t.s.n.g.GridCalc - Trial 0: time 32.0 dt=1.0
+12:11:50.220 INFO  o.t.s.n.g.GridCalc - Trial 0: time 33.0 dt=1.0
+12:11:50.282 INFO  o.t.s.n.g.GridCalc - Trial 0: time 34.0 dt=1.0 events=311157 2047/ms
+12:11:50.351 INFO  o.t.s.n.g.GridCalc - Trial 0: time 35.0 dt=1.0
+12:11:50.417 INFO  o.t.s.n.g.GridCalc - Trial 0: time 36.0 dt=1.0 events=236619 1752/ms
+12:11:50.425 INFO  o.t.s.n.g.GridCalc - Trial 0: time 37.0 dt=1.0
+12:11:50.436 INFO  o.t.s.n.g.GridCalc - Trial 0: time 38.0 dt=1.0
+12:11:50.449 INFO  o.t.s.n.g.GridCalc - Trial 0: time 39.0 dt=1.0
+12:11:50.467 INFO  o.t.s.n.g.GridCalc - Trial 0: time 40.0 dt=1.0
+12:11:50.479 INFO  o.t.s.n.g.GridCalc - Trial 0: time 41.0 dt=1.0
+12:11:50.492 INFO  o.t.s.n.g.GridCalc - Trial 0: time 42.0 dt=1.0
+12:11:50.508 INFO  o.t.s.n.g.GridCalc - Trial 0: time 43.0 dt=1.0
+12:11:50.521 INFO  o.t.s.n.g.GridCalc - Trial 0: time 44.0 dt=1.0 events=140824 1354/ms
+12:11:50.535 INFO  o.t.s.n.g.GridCalc - Trial 0: time 45.0 dt=1.0
+12:11:50.554 INFO  o.t.s.n.g.GridCalc - Trial 0: time 46.0 dt=1.0
+12:11:50.570 INFO  o.t.s.n.g.GridCalc - Trial 0: time 47.0 dt=1.0
+12:11:50.583 INFO  o.t.s.n.g.GridCalc - Trial 0: time 48.0 dt=1.0
+12:11:50.599 INFO  o.t.s.n.g.GridCalc - Trial 0: time 49.0 dt=1.0
+12:11:50.615 INFO  o.t.s.n.g.GridCalc - Trial 0: time 50.0 dt=1.0
+12:11:50.633 INFO  o.t.s.n.g.GridCalc - Trial 0: time 51.0 dt=1.0 events=121589 1085/ms
+12:11:50.647 INFO  o.t.s.n.g.GridCalc - Trial 0: time 52.0 dt=1.0
+12:11:50.661 INFO  o.t.s.n.g.GridCalc - Trial 0: time 53.0 dt=1.0
+12:11:50.674 INFO  o.t.s.n.g.GridCalc - Trial 0: time 54.0 dt=1.0
+12:11:50.689 INFO  o.t.s.n.g.GridCalc - Trial 0: time 55.0 dt=1.0
+12:11:50.706 INFO  o.t.s.n.g.GridCalc - Trial 0: time 56.0 dt=1.0
+12:11:50.720 INFO  o.t.s.n.g.GridCalc - Trial 0: time 57.0 dt=1.0
+12:11:50.733 INFO  o.t.s.n.g.GridCalc - Trial 0: time 58.0 dt=1.0
+12:11:50.747 INFO  o.t.s.n.g.GridCalc - Trial 0: time 59.0 dt=1.0 events=135038 1184/ms
+12:11:50.760 INFO  o.t.s.n.g.GridCalc - Trial 0: time 60.0 dt=1.0
+12:11:50.799 INFO  o.t.s.n.g.GridCalc - Trial 0: time 61.0 dt=1.0
+12:11:50.813 INFO  o.t.s.n.g.GridCalc - Trial 0: time 62.0 dt=1.0
+12:11:50.826 INFO  o.t.s.n.g.GridCalc - Trial 0: time 63.0 dt=1.0
+12:11:50.878 INFO  o.t.s.n.g.GridCalc - Trial 0: time 64.0 dt=1.0 events=115219 879/ms
+12:11:50.887 INFO  o.t.s.n.g.GridCalc - Trial 0: time 65.0 dt=1.0
+12:11:50.895 INFO  o.t.s.n.g.GridCalc - Trial 0: time 66.0 dt=1.0
+12:11:50.904 INFO  o.t.s.n.g.GridCalc - Trial 0: time 67.0 dt=1.0
+12:11:50.912 INFO  o.t.s.n.g.GridCalc - Trial 0: time 68.0 dt=1.0
+12:11:50.920 INFO  o.t.s.n.g.GridCalc - Trial 0: time 69.0 dt=1.0
+12:11:50.928 INFO  o.t.s.n.g.GridCalc - Trial 0: time 70.0 dt=1.0
+12:11:50.936 INFO  o.t.s.n.g.GridCalc - Trial 0: time 71.0 dt=1.0
+12:11:50.944 INFO  o.t.s.n.g.GridCalc - Trial 0: time 72.0 dt=1.0
+12:11:50.954 INFO  o.t.s.n.g.GridCalc - Trial 0: time 73.0 dt=1.0
+12:11:50.962 INFO  o.t.s.n.g.GridCalc - Trial 0: time 74.0 dt=1.0
+12:11:50.971 INFO  o.t.s.n.g.GridCalc - Trial 0: time 75.0 dt=1.0
+12:11:50.979 INFO  o.t.s.n.g.GridCalc - Trial 0: time 76.0 dt=1.0 events=199835 1978/ms
+12:11:50.988 INFO  o.t.s.n.g.GridCalc - Trial 0: time 77.0 dt=1.0
+12:11:50.995 INFO  o.t.s.n.g.GridCalc - Trial 0: time 78.0 dt=1.0
+12:11:51.040 INFO  o.t.s.n.g.GridCalc - Trial 0: time 79.0 dt=1.0
+12:11:51.091 INFO  o.t.s.n.g.GridCalc - Trial 0: time 80.0 dt=1.0 events=243504 2174/ms
+12:11:51.124 INFO  o.t.s.n.g.GridCalc - Trial 0: time 81.0 dt=1.0
+12:11:51.132 INFO  o.t.s.n.g.GridCalc - Trial 0: time 82.0 dt=1.0
+12:11:51.140 INFO  o.t.s.n.g.GridCalc - Trial 0: time 83.0 dt=1.0
+12:11:51.151 INFO  o.t.s.n.g.GridCalc - Trial 0: time 84.0 dt=1.0
+12:11:51.160 INFO  o.t.s.n.g.GridCalc - Trial 0: time 85.0 dt=1.0
+12:11:51.181 INFO  o.t.s.n.g.GridCalc - Trial 0: time 86.0 dt=1.0
+12:11:51.233 INFO  o.t.s.n.g.GridCalc - Trial 0: time 87.0 dt=1.0 events=310956 2189/ms
+12:11:51.290 INFO  o.t.s.n.g.GridCalc - Trial 0: time 88.0 dt=1.0
+12:11:51.340 INFO  o.t.s.n.g.GridCalc - Trial 0: time 89.0 dt=1.0 events=237270 2217/ms
+12:11:51.394 INFO  o.t.s.n.g.GridCalc - Trial 0: time 90.0 dt=1.0
+12:11:51.456 INFO  o.t.s.n.g.GridCalc - Trial 0: time 91.0 dt=1.0 events=239366 2063/ms
+12:11:51.508 INFO  o.t.s.n.g.GridCalc - Trial 0: time 92.0 dt=1.0
+12:11:51.565 INFO  o.t.s.n.g.GridCalc - Trial 0: time 93.0 dt=1.0 events=243569 2255/ms
+12:11:51.591 INFO  o.t.s.n.g.GridCalc - Trial 0: time 94.0 dt=1.0
+12:11:51.599 INFO  o.t.s.n.g.GridCalc - Trial 0: time 95.0 dt=1.0
+12:11:51.609 INFO  o.t.s.n.g.GridCalc - Trial 0: time 96.0 dt=1.0
+12:11:51.617 INFO  o.t.s.n.g.GridCalc - Trial 0: time 97.0 dt=1.0
+12:11:51.625 INFO  o.t.s.n.g.GridCalc - Trial 0: time 98.0 dt=1.0
+12:11:51.633 INFO  o.t.s.n.g.GridCalc - Trial 0: time 99.0 dt=1.0
+12:11:51.642 INFO  o.t.s.n.g.GridCalc - Trial 0: time 100.0 dt=1.0
+12:11:51.650 INFO  o.t.s.n.g.GridCalc - Trial 0: time 101.0 dt=1.0
+12:11:51.658 INFO  o.t.s.n.g.GridCalc - Trial 0: time 102.0 dt=1.0
+12:11:51.666 INFO  o.t.s.n.g.GridCalc - Trial 0: time 103.0 dt=1.0 events=211902 2077/ms
+12:11:51.674 INFO  o.t.s.n.g.GridCalc - Trial 0: time 104.0 dt=1.0
+12:11:51.685 INFO  o.t.s.n.g.GridCalc - Trial 0: time 105.0 dt=1.0
+12:11:51.693 INFO  o.t.s.n.g.GridCalc - Trial 0: time 106.0 dt=1.0
+12:11:51.701 INFO  o.t.s.n.g.GridCalc - Trial 0: time 107.0 dt=1.0
+12:11:51.712 INFO  o.t.s.n.g.GridCalc - Trial 0: time 108.0 dt=1.0
+12:11:51.720 INFO  o.t.s.n.g.GridCalc - Trial 0: time 109.0 dt=1.0
+12:11:51.729 INFO  o.t.s.n.g.GridCalc - Trial 0: time 110.0 dt=1.0
+12:11:51.737 INFO  o.t.s.n.g.GridCalc - Trial 0: time 111.0 dt=1.0
+12:11:51.745 INFO  o.t.s.n.g.GridCalc - Trial 0: time 112.0 dt=1.0
+12:11:51.754 INFO  o.t.s.n.g.GridCalc - Trial 0: time 113.0 dt=1.0
+12:11:51.761 INFO  o.t.s.n.g.GridCalc - Trial 0: time 114.0 dt=1.0
+12:11:51.769 INFO  o.t.s.n.g.GridCalc - Trial 0: time 115.0 dt=1.0 events=207628 2015/ms
+12:11:51.778 INFO  o.t.s.n.g.GridCalc - Trial 0: time 116.0 dt=1.0
+12:11:51.785 INFO  o.t.s.n.g.GridCalc - Trial 0: time 117.0 dt=1.0
+12:11:51.793 INFO  o.t.s.n.g.GridCalc - Trial 0: time 118.0 dt=1.0
+12:11:51.801 INFO  o.t.s.n.g.GridCalc - Trial 0: time 119.0 dt=1.0
+12:11:51.811 INFO  o.t.s.n.g.GridCalc - Trial 0: time 120.0 dt=1.0
+12:11:51.819 INFO  o.t.s.n.g.GridCalc - Trial 0: time 121.0 dt=1.0
+12:11:51.828 INFO  o.t.s.n.g.GridCalc - Trial 0: time 122.0 dt=1.0
+12:11:51.835 INFO  o.t.s.n.g.GridCalc - Trial 0: time 123.0 dt=1.0
+12:11:51.842 INFO  o.t.s.n.g.GridCalc - Trial 0: time 124.0 dt=1.0
+12:11:51.851 INFO  o.t.s.n.g.GridCalc - Trial 0: time 125.0 dt=1.0
+12:11:51.859 INFO  o.t.s.n.g.GridCalc - Trial 0: time 126.0 dt=1.0
+12:11:51.868 INFO  o.t.s.n.g.GridCalc - Trial 0: time 127.0 dt=1.0
+12:11:51.876 INFO  o.t.s.n.g.GridCalc - Trial 0: time 128.0 dt=1.0 events=218698 2043/ms
+12:11:51.885 INFO  o.t.s.n.g.GridCalc - Trial 0: time 129.0 dt=1.0
+12:11:51.893 INFO  o.t.s.n.g.GridCalc - Trial 0: time 130.0 dt=1.0
+12:11:51.901 INFO  o.t.s.n.g.GridCalc - Trial 0: time 131.0 dt=1.0
+12:11:51.910 INFO  o.t.s.n.g.GridCalc - Trial 0: time 132.0 dt=1.0
+12:11:51.917 INFO  o.t.s.n.g.GridCalc - Trial 0: time 133.0 dt=1.0
+12:11:51.926 INFO  o.t.s.n.g.GridCalc - Trial 0: time 134.0 dt=1.0
+12:11:51.936 INFO  o.t.s.n.g.GridCalc - Trial 0: time 135.0 dt=1.0
+12:11:51.946 INFO  o.t.s.n.g.GridCalc - Trial 0: time 136.0 dt=1.0
+12:11:51.953 INFO  o.t.s.n.g.GridCalc - Trial 0: time 137.0 dt=1.0
+12:11:51.972 INFO  o.t.s.n.g.GridCalc - Trial 0: time 138.0 dt=1.0
+12:11:51.987 INFO  o.t.s.n.g.GridCalc - Trial 0: time 139.0 dt=1.0 events=195156 1758/ms
+12:11:52.050 INFO  o.t.s.n.g.GridCalc - Trial 0: time 140.0 dt=1.0
+12:11:52.106 INFO  o.t.s.n.g.GridCalc - Trial 0: time 141.0 dt=1.0 events=168711 1417/ms
+12:11:52.134 INFO  o.t.s.n.g.GridCalc - Trial 0: time 142.0 dt=1.0
+12:11:52.147 INFO  o.t.s.n.g.GridCalc - Trial 0: time 143.0 dt=1.0
+12:11:52.159 INFO  o.t.s.n.g.GridCalc - Trial 0: time 144.0 dt=1.0
+12:11:52.172 INFO  o.t.s.n.g.GridCalc - Trial 0: time 145.0 dt=1.0
+12:11:52.187 INFO  o.t.s.n.g.GridCalc - Trial 0: time 146.0 dt=1.0
+12:11:52.199 INFO  o.t.s.n.g.GridCalc - Trial 0: time 147.0 dt=1.0
+12:11:52.212 INFO  o.t.s.n.g.GridCalc - Trial 0: time 148.0 dt=1.0 events=132660 1251/ms
+12:11:52.227 INFO  o.t.s.n.g.GridCalc - Trial 0: time 149.0 dt=1.0
+12:11:52.244 INFO  o.t.s.n.g.GridCalc - Trial 0: time 150.0 dt=1.0
+12:11:52.259 INFO  o.t.s.n.g.GridCalc - Trial 0: time 151.0 dt=1.0
+12:11:52.271 INFO  o.t.s.n.g.GridCalc - Trial 0: time 152.0 dt=1.0
+12:11:52.284 INFO  o.t.s.n.g.GridCalc - Trial 0: time 153.0 dt=1.0
+12:11:52.298 INFO  o.t.s.n.g.GridCalc - Trial 0: time 154.0 dt=1.0
+12:11:52.311 INFO  o.t.s.n.g.GridCalc - Trial 0: time 155.0 dt=1.0
+12:11:52.324 INFO  o.t.s.n.g.GridCalc - Trial 0: time 156.0 dt=1.0 events=136142 1215/ms
+12:11:52.337 INFO  o.t.s.n.g.GridCalc - Trial 0: time 157.0 dt=1.0
+12:11:52.350 INFO  o.t.s.n.g.GridCalc - Trial 0: time 158.0 dt=1.0
+12:11:52.361 INFO  o.t.s.n.g.GridCalc - Trial 0: time 159.0 dt=1.0
+12:11:52.376 INFO  o.t.s.n.g.GridCalc - Trial 0: time 160.0 dt=1.0
+12:11:52.388 INFO  o.t.s.n.g.GridCalc - Trial 0: time 161.0 dt=1.0
+12:11:52.402 INFO  o.t.s.n.g.GridCalc - Trial 0: time 162.0 dt=1.0
+12:11:52.415 INFO  o.t.s.n.g.GridCalc - Trial 0: time 163.0 dt=1.0
+12:11:52.428 INFO  o.t.s.n.g.GridCalc - Trial 0: time 164.0 dt=1.0 events=126273 1214/ms
+12:11:52.442 INFO  o.t.s.n.g.GridCalc - Trial 0: time 165.0 dt=1.0
+12:11:52.455 INFO  o.t.s.n.g.GridCalc - Trial 0: time 166.0 dt=1.0
+12:11:52.469 INFO  o.t.s.n.g.GridCalc - Trial 0: time 167.0 dt=1.0
+12:11:52.486 INFO  o.t.s.n.g.GridCalc - Trial 0: time 168.0 dt=1.0
+12:11:52.499 INFO  o.t.s.n.g.GridCalc - Trial 0: time 169.0 dt=1.0
+12:11:52.514 INFO  o.t.s.n.g.GridCalc - Trial 0: time 170.0 dt=1.0
+12:11:52.531 INFO  o.t.s.n.g.GridCalc - Trial 0: time 171.0 dt=1.0 events=126311 1238/ms
+12:11:52.543 INFO  o.t.s.n.g.GridCalc - Trial 0: time 172.0 dt=1.0
+12:11:52.558 INFO  o.t.s.n.g.GridCalc - Trial 0: time 173.0 dt=1.0
+12:11:52.576 INFO  o.t.s.n.g.GridCalc - Trial 0: time 174.0 dt=1.0
+12:11:52.588 INFO  o.t.s.n.g.GridCalc - Trial 0: time 175.0 dt=1.0
+12:11:52.604 INFO  o.t.s.n.g.GridCalc - Trial 0: time 176.0 dt=1.0
+12:11:52.619 INFO  o.t.s.n.g.GridCalc - Trial 0: time 177.0 dt=1.0
+12:11:52.635 INFO  o.t.s.n.g.GridCalc - Trial 0: time 178.0 dt=1.0 events=130635 1244/ms
+12:11:52.649 INFO  o.t.s.n.g.GridCalc - Trial 0: time 179.0 dt=1.0
+12:11:52.661 INFO  o.t.s.n.g.GridCalc - Trial 0: time 180.0 dt=1.0
+12:11:52.673 INFO  o.t.s.n.g.GridCalc - Trial 0: time 181.0 dt=1.0
+12:11:52.685 INFO  o.t.s.n.g.GridCalc - Trial 0: time 182.0 dt=1.0
+12:11:52.698 INFO  o.t.s.n.g.GridCalc - Trial 0: time 183.0 dt=1.0
+12:11:52.711 INFO  o.t.s.n.g.GridCalc - Trial 0: time 184.0 dt=1.0
+12:11:52.724 INFO  o.t.s.n.g.GridCalc - Trial 0: time 185.0 dt=1.0
+12:11:52.737 INFO  o.t.s.n.g.GridCalc - Trial 0: time 186.0 dt=1.0 events=125486 1230/ms
+12:11:52.749 INFO  o.t.s.n.g.GridCalc - Trial 0: time 187.0 dt=1.0
+12:11:52.762 INFO  o.t.s.n.g.GridCalc - Trial 0: time 188.0 dt=1.0
+12:11:52.777 INFO  o.t.s.n.g.GridCalc - Trial 0: time 189.0 dt=1.0
+12:11:52.792 INFO  o.t.s.n.g.GridCalc - Trial 0: time 190.0 dt=1.0
+12:11:52.807 INFO  o.t.s.n.g.GridCalc - Trial 0: time 191.0 dt=1.0
+12:11:52.821 INFO  o.t.s.n.g.GridCalc - Trial 0: time 192.0 dt=1.0
+12:11:52.834 INFO  o.t.s.n.g.GridCalc - Trial 0: time 193.0 dt=1.0
+12:11:52.886 INFO  o.t.s.n.g.GridCalc - Trial 0: time 194.0 dt=1.0 events=142930 965/ms
+12:11:52.897 INFO  o.t.s.n.g.GridCalc - Trial 0: time 195.0 dt=1.0
+12:11:52.908 INFO  o.t.s.n.g.GridCalc - Trial 0: time 196.0 dt=1.0
+12:11:52.919 INFO  o.t.s.n.g.GridCalc - Trial 0: time 197.0 dt=1.0
+12:11:52.931 INFO  o.t.s.n.g.GridCalc - Trial 0: time 198.0 dt=1.0
+12:11:52.942 INFO  o.t.s.n.g.GridCalc - Trial 0: time 199.0 dt=1.0
+12:11:52.959 INFO  o.t.s.n.g.GridCalc - Trial 0: time 200.0 dt=1.0
+12:11:52.970 INFO  o.t.s.n.g.GridCalc - Trial 0: time 201.0 dt=1.0
+12:11:52.980 INFO  o.t.s.n.g.GridCalc - Trial 0: time 202.0 dt=1.0
+12:11:52.991 INFO  o.t.s.n.g.GridCalc - Trial 0: time 203.0 dt=1.0 events=161574 1524/ms
+12:11:53.004 INFO  o.t.s.n.g.GridCalc - Trial 0: time 204.0 dt=1.0
+12:11:53.062 INFO  o.t.s.n.g.GridCalc - Trial 0: time 205.0 dt=1.0
+12:11:53.132 INFO  o.t.s.n.g.GridCalc - Trial 0: time 206.0 dt=1.0 events=231949 1645/ms
+12:11:53.192 INFO  o.t.s.n.g.GridCalc - Trial 0: time 207.0 dt=1.0
+12:11:53.264 INFO  o.t.s.n.g.GridCalc - Trial 0: time 208.0 dt=1.0 events=209914 1590/ms
+12:11:53.327 INFO  o.t.s.n.g.GridCalc - Trial 0: time 209.0 dt=1.0
+12:11:53.398 INFO  o.t.s.n.g.GridCalc - Trial 0: time 210.0 dt=1.0 events=212115 1582/ms
+12:11:53.422 INFO  o.t.s.n.g.GridCalc - Trial 0: time 211.0 dt=1.0
+12:11:53.432 INFO  o.t.s.n.g.GridCalc - Trial 0: time 212.0 dt=1.0
+12:11:53.444 INFO  o.t.s.n.g.GridCalc - Trial 0: time 213.0 dt=1.0
+12:11:53.455 INFO  o.t.s.n.g.GridCalc - Trial 0: time 214.0 dt=1.0
+12:11:53.467 INFO  o.t.s.n.g.GridCalc - Trial 0: time 215.0 dt=1.0
+12:11:53.476 INFO  o.t.s.n.g.GridCalc - Trial 0: time 216.0 dt=1.0
+12:11:53.488 INFO  o.t.s.n.g.GridCalc - Trial 0: time 217.0 dt=1.0
+12:11:53.498 INFO  o.t.s.n.g.GridCalc - Trial 0: time 218.0 dt=1.0
+12:11:53.509 INFO  o.t.s.n.g.GridCalc - Trial 0: time 219.0 dt=1.0 events=166923 1503/ms
+12:11:53.520 INFO  o.t.s.n.g.GridCalc - Trial 0: time 220.0 dt=1.0
+12:11:53.532 INFO  o.t.s.n.g.GridCalc - Trial 0: time 221.0 dt=1.0
+12:11:53.542 INFO  o.t.s.n.g.GridCalc - Trial 0: time 222.0 dt=1.0
+12:11:53.557 INFO  o.t.s.n.g.GridCalc - Trial 0: time 223.0 dt=1.0
+12:11:53.582 INFO  o.t.s.n.g.GridCalc - Trial 0: time 224.0 dt=1.0
+12:11:53.595 INFO  o.t.s.n.g.GridCalc - Trial 0: time 225.0 dt=1.0
+12:11:53.608 INFO  o.t.s.n.g.GridCalc - Trial 0: time 226.0 dt=1.0
+12:11:53.621 INFO  o.t.s.n.g.GridCalc - Trial 0: time 227.0 dt=1.0 events=143821 1284/ms
+12:11:53.634 INFO  o.t.s.n.g.GridCalc - Trial 0: time 228.0 dt=1.0
+12:11:53.654 INFO  o.t.s.n.g.GridCalc - Trial 0: time 229.0 dt=1.0
+12:11:53.662 INFO  o.t.s.n.g.GridCalc - Trial 0: time 230.0 dt=1.0
+12:11:53.670 INFO  o.t.s.n.g.GridCalc - Trial 0: time 231.0 dt=1.0
+12:11:53.678 INFO  o.t.s.n.g.GridCalc - Trial 0: time 232.0 dt=1.0
+12:11:53.687 INFO  o.t.s.n.g.GridCalc - Trial 0: time 233.0 dt=1.0
+12:11:53.695 INFO  o.t.s.n.g.GridCalc - Trial 0: time 234.0 dt=1.0
+12:11:53.702 INFO  o.t.s.n.g.GridCalc - Trial 0: time 235.0 dt=1.0
+12:11:53.711 INFO  o.t.s.n.g.GridCalc - Trial 0: time 236.0 dt=1.0
+12:11:53.720 INFO  o.t.s.n.g.GridCalc - Trial 0: time 237.0 dt=1.0
+12:11:53.728 INFO  o.t.s.n.g.GridCalc - Trial 0: time 238.0 dt=1.0 events=219050 2066/ms
+12:11:53.735 INFO  o.t.s.n.g.GridCalc - Trial 0: time 239.0 dt=1.0
+12:11:53.743 INFO  o.t.s.n.g.GridCalc - Trial 0: time 240.0 dt=1.0
+12:11:53.751 INFO  o.t.s.n.g.GridCalc - Trial 0: time 241.0 dt=1.0
+12:11:53.761 INFO  o.t.s.n.g.GridCalc - Trial 0: time 242.0 dt=1.0
+12:11:53.782 INFO  o.t.s.n.g.GridCalc - Trial 0: time 243.0 dt=1.0
+12:11:53.835 INFO  o.t.s.n.g.GridCalc - Trial 0: time 244.0 dt=1.0 events=236703 2191/ms
+12:11:53.884 INFO  o.t.s.n.g.GridCalc - Trial 0: time 245.0 dt=1.0
+12:11:53.939 INFO  o.t.s.n.g.GridCalc - Trial 0: time 246.0 dt=1.0 events=235594 2265/ms
+12:11:53.980 INFO  o.t.s.n.g.GridCalc - Trial 0: time 247.0 dt=1.0
+12:11:54.030 INFO  o.t.s.n.g.GridCalc - Trial 0: time 248.0 dt=1.0
+12:11:54.083 INFO  o.t.s.n.g.GridCalc - Trial 0: time 249.0 dt=1.0 events=325956 2263/ms
+12:11:54.096 INFO  o.t.s.n.g.GridCalc - Trial 0: time 250.0 dt=1.0
+12:11:54.105 INFO  o.t.s.n.g.GridCalc - Trial 0: time 251.0 dt=1.0
+12:11:54.112 INFO  o.t.s.n.g.GridCalc - Trial 0: time 252.0 dt=1.0
+12:11:54.120 INFO  o.t.s.n.g.GridCalc - Trial 0: time 253.0 dt=1.0
+12:11:54.141 INFO  o.t.s.n.g.GridCalc - Trial 0: time 254.0 dt=1.0
+12:11:54.149 INFO  o.t.s.n.g.GridCalc - Trial 0: time 255.0 dt=1.0
+12:11:54.158 INFO  o.t.s.n.g.GridCalc - Trial 0: time 256.0 dt=1.0
+12:11:54.167 INFO  o.t.s.n.g.GridCalc - Trial 0: time 257.0 dt=1.0
+12:11:54.174 INFO  o.t.s.n.g.GridCalc - Trial 0: time 258.0 dt=1.0
+12:11:54.181 INFO  o.t.s.n.g.GridCalc - Trial 0: time 259.0 dt=1.0
+12:11:54.189 INFO  o.t.s.n.g.GridCalc - Trial 0: time 260.0 dt=1.0 events=190126 1793/ms
+12:11:54.197 INFO  o.t.s.n.g.GridCalc - Trial 0: time 261.0 dt=1.0
+12:11:54.205 INFO  o.t.s.n.g.GridCalc - Trial 0: time 262.0 dt=1.0
+12:11:54.214 INFO  o.t.s.n.g.GridCalc - Trial 0: time 263.0 dt=1.0
+12:11:54.222 INFO  o.t.s.n.g.GridCalc - Trial 0: time 264.0 dt=1.0
+12:11:54.233 INFO  o.t.s.n.g.GridCalc - Trial 0: time 265.0 dt=1.0
+12:11:54.240 INFO  o.t.s.n.g.GridCalc - Trial 0: time 266.0 dt=1.0
+12:11:54.248 INFO  o.t.s.n.g.GridCalc - Trial 0: time 267.0 dt=1.0
+12:11:54.256 INFO  o.t.s.n.g.GridCalc - Trial 0: time 268.0 dt=1.0
+12:11:54.265 INFO  o.t.s.n.g.GridCalc - Trial 0: time 269.0 dt=1.0
+12:11:54.273 INFO  o.t.s.n.g.GridCalc - Trial 0: time 270.0 dt=1.0
+12:11:54.281 INFO  o.t.s.n.g.GridCalc - Trial 0: time 271.0 dt=1.0
+12:11:54.289 INFO  o.t.s.n.g.GridCalc - Trial 0: time 272.0 dt=1.0
+12:11:54.297 INFO  o.t.s.n.g.GridCalc - Trial 0: time 273.0 dt=1.0 events=218710 2044/ms
+12:11:54.305 INFO  o.t.s.n.g.GridCalc - Trial 0: time 274.0 dt=1.0
+12:11:54.321 INFO  o.t.s.n.g.GridCalc - Trial 0: time 275.0 dt=1.0
+12:11:54.378 INFO  o.t.s.n.g.GridCalc - Trial 0: time 276.0 dt=1.0
+12:11:54.428 INFO  o.t.s.n.g.GridCalc - Trial 0: time 277.0 dt=1.0 events=294035 2227/ms
+12:11:54.483 INFO  o.t.s.n.g.GridCalc - Trial 0: time 278.0 dt=1.0
+12:11:54.503 INFO  o.t.s.n.g.GridCalc - Trial 0: time 279.0 dt=1.0
+12:11:54.511 INFO  o.t.s.n.g.GridCalc - Trial 0: time 280.0 dt=1.0
+12:11:54.519 INFO  o.t.s.n.g.GridCalc - Trial 0: time 281.0 dt=1.0
+12:11:54.552 INFO  o.t.s.n.g.GridCalc - Trial 0: time 282.0 dt=1.0 events=275140 2218/ms
+12:11:54.605 INFO  o.t.s.n.g.GridCalc - Trial 0: time 283.0 dt=1.0
+12:11:54.660 INFO  o.t.s.n.g.GridCalc - Trial 0: time 284.0 dt=1.0 events=244228 2261/ms
+12:11:54.716 INFO  o.t.s.n.g.GridCalc - Trial 0: time 285.0 dt=1.0
+12:11:54.779 INFO  o.t.s.n.g.GridCalc - Trial 0: time 286.0 dt=1.0 events=208524 1752/ms
+12:11:54.857 INFO  o.t.s.n.g.GridCalc - Trial 0: time 287.0 dt=1.0
+12:11:54.924 INFO  o.t.s.n.g.GridCalc - Trial 0: time 288.0 dt=1.0 events=237168 1635/ms
+12:11:54.994 INFO  o.t.s.n.g.GridCalc - Trial 0: time 289.0 dt=1.0
+12:11:55.063 INFO  o.t.s.n.g.GridCalc - Trial 0: time 290.0 dt=1.0 events=241240 1735/ms
+12:11:55.114 INFO  o.t.s.n.g.GridCalc - Trial 0: time 291.0 dt=1.0
+12:11:55.164 INFO  o.t.s.n.g.GridCalc - Trial 0: time 292.0 dt=1.0 events=224511 2222/ms
+12:11:55.215 INFO  o.t.s.n.g.GridCalc - Trial 0: time 293.0 dt=1.0
+12:11:55.250 INFO  o.t.s.n.g.GridCalc - Trial 0: time 294.0 dt=1.0
+12:11:55.261 INFO  o.t.s.n.g.GridCalc - Trial 0: time 295.0 dt=1.0
+12:11:55.272 INFO  o.t.s.n.g.GridCalc - Trial 0: time 296.0 dt=1.0 events=207192 1918/ms
+12:11:55.284 INFO  o.t.s.n.g.GridCalc - Trial 0: time 297.0 dt=1.0
+12:11:55.295 INFO  o.t.s.n.g.GridCalc - Trial 0: time 298.0 dt=1.0
+12:11:55.304 INFO  o.t.s.n.g.GridCalc - Trial 0: time 299.0 dt=1.0
+12:11:55.316 INFO  o.t.s.n.g.GridCalc - Trial 0: time 300.0 dt=1.0
+12:11:55.329 INFO  o.t.s.n.g.GridCalc - Trial 0: time 301.0 dt=1.0
+12:11:55.349 INFO  o.t.s.n.g.GridCalc - Trial 0: time 302.0 dt=1.0
+12:11:55.386 INFO  o.t.s.n.g.GridCalc - Trial 0: time 303.0 dt=1.0 events=168623 1479/ms
+12:11:55.398 INFO  o.t.s.n.g.GridCalc - Trial 0: time 304.0 dt=1.0
+12:11:55.413 INFO  o.t.s.n.g.GridCalc - Trial 0: time 305.0 dt=1.0
+12:11:55.425 INFO  o.t.s.n.g.GridCalc - Trial 0: time 306.0 dt=1.0
+12:11:55.438 INFO  o.t.s.n.g.GridCalc - Trial 0: time 307.0 dt=1.0
+12:11:55.452 INFO  o.t.s.n.g.GridCalc - Trial 0: time 308.0 dt=1.0
+12:11:55.464 INFO  o.t.s.n.g.GridCalc - Trial 0: time 309.0 dt=1.0
+12:11:55.483 INFO  o.t.s.n.g.GridCalc - Trial 0: time 310.0 dt=1.0
+12:11:55.495 INFO  o.t.s.n.g.GridCalc - Trial 0: time 311.0 dt=1.0 events=138947 1274/ms
+12:11:55.509 INFO  o.t.s.n.g.GridCalc - Trial 0: time 312.0 dt=1.0
+12:11:55.522 INFO  o.t.s.n.g.GridCalc - Trial 0: time 313.0 dt=1.0
+12:11:55.533 INFO  o.t.s.n.g.GridCalc - Trial 0: time 314.0 dt=1.0
+12:11:55.545 INFO  o.t.s.n.g.GridCalc - Trial 0: time 315.0 dt=1.0
+12:11:55.561 INFO  o.t.s.n.g.GridCalc - Trial 0: time 316.0 dt=1.0
+12:11:55.573 INFO  o.t.s.n.g.GridCalc - Trial 0: time 317.0 dt=1.0
+12:11:55.587 INFO  o.t.s.n.g.GridCalc - Trial 0: time 318.0 dt=1.0
+12:11:55.602 INFO  o.t.s.n.g.GridCalc - Trial 0: time 319.0 dt=1.0 events=134666 1270/ms
+12:11:55.616 INFO  o.t.s.n.g.GridCalc - Trial 0: time 320.0 dt=1.0
+12:11:55.629 INFO  o.t.s.n.g.GridCalc - Trial 0: time 321.0 dt=1.0
+12:11:55.642 INFO  o.t.s.n.g.GridCalc - Trial 0: time 322.0 dt=1.0
+12:11:55.656 INFO  o.t.s.n.g.GridCalc - Trial 0: time 323.0 dt=1.0
+12:11:55.668 INFO  o.t.s.n.g.GridCalc - Trial 0: time 324.0 dt=1.0
+12:11:55.681 INFO  o.t.s.n.g.GridCalc - Trial 0: time 325.0 dt=1.0
+12:11:55.693 INFO  o.t.s.n.g.GridCalc - Trial 0: time 326.0 dt=1.0
+12:11:55.710 INFO  o.t.s.n.g.GridCalc - Trial 0: time 327.0 dt=1.0 events=139595 1280/ms
+12:11:55.723 INFO  o.t.s.n.g.GridCalc - Trial 0: time 328.0 dt=1.0
+12:11:55.735 INFO  o.t.s.n.g.GridCalc - Trial 0: time 329.0 dt=1.0
+12:11:55.748 INFO  o.t.s.n.g.GridCalc - Trial 0: time 330.0 dt=1.0
+12:11:55.762 INFO  o.t.s.n.g.GridCalc - Trial 0: time 331.0 dt=1.0
+12:11:55.776 INFO  o.t.s.n.g.GridCalc - Trial 0: time 332.0 dt=1.0
+12:11:55.790 INFO  o.t.s.n.g.GridCalc - Trial 0: time 333.0 dt=1.0
+12:11:55.805 INFO  o.t.s.n.g.GridCalc - Trial 0: time 334.0 dt=1.0
+12:11:55.818 INFO  o.t.s.n.g.GridCalc - Trial 0: time 335.0 dt=1.0 events=138367 1293/ms
+12:11:55.830 INFO  o.t.s.n.g.GridCalc - Trial 0: time 336.0 dt=1.0
+12:11:55.842 INFO  o.t.s.n.g.GridCalc - Trial 0: time 337.0 dt=1.0
+12:11:55.854 INFO  o.t.s.n.g.GridCalc - Trial 0: time 338.0 dt=1.0
+12:11:55.869 INFO  o.t.s.n.g.GridCalc - Trial 0: time 339.0 dt=1.0
+12:11:55.883 INFO  o.t.s.n.g.GridCalc - Trial 0: time 340.0 dt=1.0
+12:11:55.898 INFO  o.t.s.n.g.GridCalc - Trial 0: time 341.0 dt=1.0
+12:11:55.911 INFO  o.t.s.n.g.GridCalc - Trial 0: time 342.0 dt=1.0
+12:11:55.923 INFO  o.t.s.n.g.GridCalc - Trial 0: time 343.0 dt=1.0 events=134461 1268/ms
+12:11:55.936 INFO  o.t.s.n.g.GridCalc - Trial 0: time 344.0 dt=1.0
+12:11:55.950 INFO  o.t.s.n.g.GridCalc - Trial 0: time 345.0 dt=1.0
+12:11:55.963 INFO  o.t.s.n.g.GridCalc - Trial 0: time 346.0 dt=1.0
+12:11:55.976 INFO  o.t.s.n.g.GridCalc - Trial 0: time 347.0 dt=1.0
+12:11:55.989 INFO  o.t.s.n.g.GridCalc - Trial 0: time 348.0 dt=1.0
+12:11:56.003 INFO  o.t.s.n.g.GridCalc - Trial 0: time 349.0 dt=1.0
+12:11:56.018 INFO  o.t.s.n.g.GridCalc - Trial 0: time 350.0 dt=1.0
+12:11:56.031 INFO  o.t.s.n.g.GridCalc - Trial 0: time 351.0 dt=1.0 events=138031 1278/ms
+12:11:56.046 INFO  o.t.s.n.g.GridCalc - Trial 0: time 352.0 dt=1.0
+12:11:56.058 INFO  o.t.s.n.g.GridCalc - Trial 0: time 353.0 dt=1.0
+12:11:56.074 INFO  o.t.s.n.g.GridCalc - Trial 0: time 354.0 dt=1.0
+12:11:56.089 INFO  o.t.s.n.g.GridCalc - Trial 0: time 355.0 dt=1.0
+12:11:56.101 INFO  o.t.s.n.g.GridCalc - Trial 0: time 356.0 dt=1.0
+12:11:56.113 INFO  o.t.s.n.g.GridCalc - Trial 0: time 357.0 dt=1.0
+12:11:56.125 INFO  o.t.s.n.g.GridCalc - Trial 0: time 358.0 dt=1.0
+12:11:56.138 INFO  o.t.s.n.g.GridCalc - Trial 0: time 359.0 dt=1.0 events=139132 1300/ms
+12:11:56.152 INFO  o.t.s.n.g.GridCalc - Trial 0: time 360.0 dt=1.0
+12:11:56.165 INFO  o.t.s.n.g.GridCalc - Trial 0: time 361.0 dt=1.0
+12:11:56.177 INFO  o.t.s.n.g.GridCalc - Trial 0: time 362.0 dt=1.0
+12:11:56.190 INFO  o.t.s.n.g.GridCalc - Trial 0: time 363.0 dt=1.0
+12:11:56.202 INFO  o.t.s.n.g.GridCalc - Trial 0: time 364.0 dt=1.0
+12:11:56.217 INFO  o.t.s.n.g.GridCalc - Trial 0: time 365.0 dt=1.0
+12:11:56.228 INFO  o.t.s.n.g.GridCalc - Trial 0: time 366.0 dt=1.0
+12:11:56.245 INFO  o.t.s.n.g.GridCalc - Trial 0: time 367.0 dt=1.0 events=131982 1233/ms
+12:11:56.258 INFO  o.t.s.n.g.GridCalc - Trial 0: time 368.0 dt=1.0
+12:11:56.319 INFO  o.t.s.n.g.GridCalc - Trial 0: time 369.0 dt=1.0
+12:11:56.405 INFO  o.t.s.n.g.GridCalc - Trial 0: time 370.0 dt=1.0 events=195613 1222/ms
+12:11:56.484 INFO  o.t.s.n.g.GridCalc - Trial 0: time 371.0 dt=1.0
+12:11:56.569 INFO  o.t.s.n.g.GridCalc - Trial 0: time 372.0 dt=1.0 events=221572 1351/ms
+12:11:56.654 INFO  o.t.s.n.g.GridCalc - Trial 0: time 373.0 dt=1.0
+12:11:56.748 INFO  o.t.s.n.g.GridCalc - Trial 0: time 374.0 dt=1.0 events=242932 1357/ms
+12:11:56.767 INFO  o.t.s.n.g.GridCalc - Trial 0: time 375.0 dt=1.0
+12:11:56.786 INFO  o.t.s.n.g.GridCalc - Trial 0: time 376.0 dt=1.0
+12:11:56.799 INFO  o.t.s.n.g.GridCalc - Trial 0: time 377.0 dt=1.0
+12:11:56.811 INFO  o.t.s.n.g.GridCalc - Trial 0: time 378.0 dt=1.0
+12:11:56.825 INFO  o.t.s.n.g.GridCalc - Trial 0: time 379.0 dt=1.0
+12:11:56.837 INFO  o.t.s.n.g.GridCalc - Trial 0: time 380.0 dt=1.0
+12:11:56.850 INFO  o.t.s.n.g.GridCalc - Trial 0: time 381.0 dt=1.0 events=132315 1297/ms
+12:11:56.865 INFO  o.t.s.n.g.GridCalc - Trial 0: time 382.0 dt=1.0
+12:11:56.878 INFO  o.t.s.n.g.GridCalc - Trial 0: time 383.0 dt=1.0
+12:11:56.893 INFO  o.t.s.n.g.GridCalc - Trial 0: time 384.0 dt=1.0
+12:11:56.905 INFO  o.t.s.n.g.GridCalc - Trial 0: time 385.0 dt=1.0
+12:11:56.919 INFO  o.t.s.n.g.GridCalc - Trial 0: time 386.0 dt=1.0
+12:11:56.931 INFO  o.t.s.n.g.GridCalc - Trial 0: time 387.0 dt=1.0
+12:11:56.946 INFO  o.t.s.n.g.GridCalc - Trial 0: time 388.0 dt=1.0
+12:11:56.959 INFO  o.t.s.n.g.GridCalc - Trial 0: time 389.0 dt=1.0 events=138990 1275/ms
+12:11:56.973 INFO  o.t.s.n.g.GridCalc - Trial 0: time 390.0 dt=1.0
+12:11:56.986 INFO  o.t.s.n.g.GridCalc - Trial 0: time 391.0 dt=1.0
+12:11:56.998 INFO  o.t.s.n.g.GridCalc - Trial 0: time 392.0 dt=1.0
+12:11:57.011 INFO  o.t.s.n.g.GridCalc - Trial 0: time 393.0 dt=1.0
+12:11:57.024 INFO  o.t.s.n.g.GridCalc - Trial 0: time 394.0 dt=1.0
+12:11:57.037 INFO  o.t.s.n.g.GridCalc - Trial 0: time 395.0 dt=1.0
+12:11:57.050 INFO  o.t.s.n.g.GridCalc - Trial 0: time 396.0 dt=1.0
+12:11:57.061 INFO  o.t.s.n.g.GridCalc - Trial 0: time 397.0 dt=1.0 events=133607 1309/ms
+12:11:57.069 INFO  o.t.s.n.g.GridCalc - Trial 0: time 398.0 dt=1.0
+12:11:57.076 INFO  o.t.s.n.g.GridCalc - Trial 0: time 399.0 dt=1.0
+12:11:57.085 INFO  o.t.s.n.g.GridCalc - Trial 0: time 400.0 dt=1.0
+12:11:57.093 INFO  o.t.s.n.g.GridCalc - Trial 0: time 401.0 dt=1.0
+12:11:57.102 INFO  o.t.s.n.g.GridCalc - Trial 0: time 402.0 dt=1.0
+12:11:57.111 INFO  o.t.s.n.g.GridCalc - Trial 0: time 403.0 dt=1.0
+12:11:57.119 INFO  o.t.s.n.g.GridCalc - Trial 0: time 404.0 dt=1.0
+12:11:57.127 INFO  o.t.s.n.g.GridCalc - Trial 0: time 405.0 dt=1.0
+12:11:57.135 INFO  o.t.s.n.g.GridCalc - Trial 0: time 406.0 dt=1.0
+12:11:57.142 INFO  o.t.s.n.g.GridCalc - Trial 0: time 407.0 dt=1.0
+12:11:57.151 INFO  o.t.s.n.g.GridCalc - Trial 0: time 408.0 dt=1.0
+12:11:57.158 INFO  o.t.s.n.g.GridCalc - Trial 0: time 409.0 dt=1.0
+12:11:57.165 INFO  o.t.s.n.g.GridCalc - Trial 0: time 410.0 dt=1.0 events=217008 2086/ms
+12:11:57.173 INFO  o.t.s.n.g.GridCalc - Trial 0: time 411.0 dt=1.0
+12:11:57.182 INFO  o.t.s.n.g.GridCalc - Trial 0: time 412.0 dt=1.0
+12:11:57.190 INFO  o.t.s.n.g.GridCalc - Trial 0: time 413.0 dt=1.0
+12:11:57.199 INFO  o.t.s.n.g.GridCalc - Trial 0: time 414.0 dt=1.0
+12:11:57.206 INFO  o.t.s.n.g.GridCalc - Trial 0: time 415.0 dt=1.0
+12:11:57.215 INFO  o.t.s.n.g.GridCalc - Trial 0: time 416.0 dt=1.0
+12:11:57.223 INFO  o.t.s.n.g.GridCalc - Trial 0: time 417.0 dt=1.0
+12:11:57.237 INFO  o.t.s.n.g.GridCalc - Trial 0: time 418.0 dt=1.0
+12:11:57.246 INFO  o.t.s.n.g.GridCalc - Trial 0: time 419.0 dt=1.0
+12:11:57.253 INFO  o.t.s.n.g.GridCalc - Trial 0: time 420.0 dt=1.0
+12:11:57.262 INFO  o.t.s.n.g.GridCalc - Trial 0: time 421.0 dt=1.0
+12:11:57.269 INFO  o.t.s.n.g.GridCalc - Trial 0: time 422.0 dt=1.0 events=206587 1986/ms
+12:11:57.277 INFO  o.t.s.n.g.GridCalc - Trial 0: time 423.0 dt=1.0
+12:11:57.284 INFO  o.t.s.n.g.GridCalc - Trial 0: time 424.0 dt=1.0
+12:11:57.292 INFO  o.t.s.n.g.GridCalc - Trial 0: time 425.0 dt=1.0
+12:11:57.325 INFO  o.t.s.n.g.GridCalc - Trial 0: time 426.0 dt=1.0
+12:11:57.377 INFO  o.t.s.n.g.GridCalc - Trial 0: time 427.0 dt=1.0 events=236940 2193/ms
+12:11:57.433 INFO  o.t.s.n.g.GridCalc - Trial 0: time 428.0 dt=1.0
+12:11:57.483 INFO  o.t.s.n.g.GridCalc - Trial 0: time 429.0 dt=1.0 events=234877 2215/ms
+12:11:57.536 INFO  o.t.s.n.g.GridCalc - Trial 0: time 430.0 dt=1.0
+12:11:57.583 INFO  o.t.s.n.g.GridCalc - Trial 0: time 431.0 dt=1.0
+12:11:57.641 INFO  o.t.s.n.g.GridCalc - Trial 0: time 432.0 dt=1.0 events=349614 2212/ms
+12:11:57.692 INFO  o.t.s.n.g.GridCalc - Trial 0: time 433.0 dt=1.0
+12:11:57.746 INFO  o.t.s.n.g.GridCalc - Trial 0: time 434.0 dt=1.0 events=233486 2223/ms
+12:11:57.804 INFO  o.t.s.n.g.GridCalc - Trial 0: time 435.0 dt=1.0
+12:11:57.857 INFO  o.t.s.n.g.GridCalc - Trial 0: time 436.0 dt=1.0 events=240371 2165/ms
+12:11:57.888 INFO  o.t.s.n.g.GridCalc - Trial 0: time 437.0 dt=1.0
+12:11:57.899 INFO  o.t.s.n.g.GridCalc - Trial 0: time 438.0 dt=1.0
+12:11:57.910 INFO  o.t.s.n.g.GridCalc - Trial 0: time 439.0 dt=1.0
+12:11:57.969 INFO  o.t.s.n.g.GridCalc - Trial 0: time 440.0 dt=1.0 events=165041 1473/ms
+12:11:58.036 INFO  o.t.s.n.g.GridCalc - Trial 0: time 441.0 dt=1.0
+12:11:58.117 INFO  o.t.s.n.g.GridCalc - Trial 0: time 442.0 dt=1.0 events=234032 1581/ms
+12:11:58.183 INFO  o.t.s.n.g.GridCalc - Trial 0: time 443.0 dt=1.0
+12:11:58.259 INFO  o.t.s.n.g.GridCalc - Trial 0: time 444.0 dt=1.0 events=261595 1842/ms
+12:11:58.335 INFO  o.t.s.n.g.GridCalc - Trial 0: time 445.0 dt=1.0
+12:11:58.407 INFO  o.t.s.n.g.GridCalc - Trial 0: time 446.0 dt=1.0 events=234949 1587/ms
+12:11:58.466 INFO  o.t.s.n.g.GridCalc - Trial 0: time 447.0 dt=1.0
+12:11:58.556 INFO  o.t.s.n.g.GridCalc - Trial 0: time 448.0 dt=1.0 events=225123 1510/ms
+12:11:58.634 INFO  o.t.s.n.g.GridCalc - Trial 0: time 449.0 dt=1.0
+12:11:58.701 INFO  o.t.s.n.g.GridCalc - Trial 0: time 450.0 dt=1.0 events=229069 1579/ms
+12:11:58.780 INFO  o.t.s.n.g.GridCalc - Trial 0: time 451.0 dt=1.0
+12:11:58.859 INFO  o.t.s.n.g.GridCalc - Trial 0: time 452.0 dt=1.0 events=248231 1571/ms
+12:11:58.929 INFO  o.t.s.n.g.GridCalc - Trial 0: time 453.0 dt=1.0
+12:11:59.000 INFO  o.t.s.n.g.GridCalc - Trial 0: time 454.0 dt=1.0 events=230578 1635/ms
+12:11:59.076 INFO  o.t.s.n.g.GridCalc - Trial 0: time 455.0 dt=1.0
+12:11:59.148 INFO  o.t.s.n.g.GridCalc - Trial 0: time 456.0 dt=1.0 events=237022 1601/ms
+12:11:59.223 INFO  o.t.s.n.g.GridCalc - Trial 0: time 457.0 dt=1.0
+12:11:59.266 INFO  o.t.s.n.g.GridCalc - Trial 0: time 458.0 dt=1.0 events=184435 1563/ms
+12:11:59.342 INFO  o.t.s.n.g.GridCalc - Trial 0: time 459.0 dt=1.0
+12:11:59.420 INFO  o.t.s.n.g.GridCalc - Trial 0: time 460.0 dt=1.0 events=251288 1631/ms
+12:11:59.490 INFO  o.t.s.n.g.GridCalc - Trial 0: time 461.0 dt=1.0
+12:11:59.499 INFO  o.t.s.n.g.GridCalc - Trial 0: time 462.0 dt=1.0
+12:11:59.510 INFO  o.t.s.n.g.GridCalc - Trial 0: time 463.0 dt=1.0
+12:11:59.521 INFO  o.t.s.n.g.GridCalc - Trial 0: time 464.0 dt=1.0 events=159899 1583/ms
+12:11:59.532 INFO  o.t.s.n.g.GridCalc - Trial 0: time 465.0 dt=1.0
+12:11:59.543 INFO  o.t.s.n.g.GridCalc - Trial 0: time 466.0 dt=1.0
+12:11:59.554 INFO  o.t.s.n.g.GridCalc - Trial 0: time 467.0 dt=1.0
+12:11:59.564 INFO  o.t.s.n.g.GridCalc - Trial 0: time 468.0 dt=1.0
+12:11:59.575 INFO  o.t.s.n.g.GridCalc - Trial 0: time 469.0 dt=1.0
+12:11:59.587 INFO  o.t.s.n.g.GridCalc - Trial 0: time 470.0 dt=1.0
+12:11:59.598 INFO  o.t.s.n.g.GridCalc - Trial 0: time 471.0 dt=1.0
+12:11:59.609 INFO  o.t.s.n.g.GridCalc - Trial 0: time 472.0 dt=1.0
+12:11:59.620 INFO  o.t.s.n.g.GridCalc - Trial 0: time 473.0 dt=1.0
+12:11:59.630 INFO  o.t.s.n.g.GridCalc - Trial 0: time 474.0 dt=1.0 events=168721 1547/ms
+12:11:59.644 INFO  o.t.s.n.g.GridCalc - Trial 0: time 475.0 dt=1.0
+12:11:59.652 INFO  o.t.s.n.g.GridCalc - Trial 0: time 476.0 dt=1.0
+12:11:59.660 INFO  o.t.s.n.g.GridCalc - Trial 0: time 477.0 dt=1.0
+12:11:59.669 INFO  o.t.s.n.g.GridCalc - Trial 0: time 478.0 dt=1.0
+12:11:59.716 INFO  o.t.s.n.g.GridCalc - Trial 0: time 479.0 dt=1.0
+12:11:59.774 INFO  o.t.s.n.g.GridCalc - Trial 0: time 480.0 dt=1.0 events=304296 2113/ms
+12:11:59.827 INFO  o.t.s.n.g.GridCalc - Trial 0: time 481.0 dt=1.0
+12:11:59.879 INFO  o.t.s.n.g.GridCalc - Trial 0: time 482.0 dt=1.0 events=231979 2209/ms
+12:11:59.949 INFO  o.t.s.n.g.GridCalc - Trial 0: time 483.0 dt=1.0
+12:11:59.997 INFO  o.t.s.n.g.GridCalc - Trial 0: time 484.0 dt=1.0 events=223182 1891/ms
+12:12:00.052 INFO  o.t.s.n.g.GridCalc - Trial 0: time 485.0 dt=1.0
+12:12:00.107 INFO  o.t.s.n.g.GridCalc - Trial 0: time 486.0 dt=1.0 events=244416 2221/ms
+12:12:00.163 INFO  o.t.s.n.g.GridCalc - Trial 0: time 487.0 dt=1.0
+12:12:00.210 INFO  o.t.s.n.g.GridCalc - Trial 0: time 488.0 dt=1.0 events=226616 2200/ms
+12:12:00.258 INFO  o.t.s.n.g.GridCalc - Trial 0: time 489.0 dt=1.0
+12:12:00.310 INFO  o.t.s.n.g.GridCalc - Trial 0: time 490.0 dt=1.0
+12:12:00.361 INFO  o.t.s.n.g.GridCalc - Trial 0: time 491.0 dt=1.0 events=334322 2214/ms
+12:12:00.416 INFO  o.t.s.n.g.GridCalc - Trial 0: time 492.0 dt=1.0
+12:12:00.461 INFO  o.t.s.n.g.GridCalc - Trial 0: time 493.0 dt=1.0
+12:12:00.520 INFO  o.t.s.n.g.GridCalc - Trial 0: time 494.0 dt=1.0 events=353540 2223/ms
+12:12:00.576 INFO  o.t.s.n.g.GridCalc - Trial 0: time 495.0 dt=1.0
+12:12:00.636 INFO  o.t.s.n.g.GridCalc - Trial 0: time 496.0 dt=1.0 events=262418 2262/ms
+12:12:00.692 INFO  o.t.s.n.g.GridCalc - Trial 0: time 497.0 dt=1.0
+12:12:00.748 INFO  o.t.s.n.g.GridCalc - Trial 0: time 498.0 dt=1.0 events=251217 2243/ms
+12:12:00.802 INFO  o.t.s.n.g.GridCalc - Trial 0: time 499.0 dt=1.0
+12:12:00.857 INFO  o.t.s.n.g.GridCalc - Trial 0: time 500.0 dt=1.0 events=244084 2239/ms
+12:12:00.911 INFO  o.t.s.n.g.GridCalc - Trial 0: time 501.0 dt=1.0
+12:12:00.953 INFO  o.t.s.n.g.GridCalc - Trial 0: time 502.0 dt=1.0
+12:12:01.002 INFO  o.t.s.n.g.GridCalc - Trial 0: time 503.0 dt=1.0 events=323375 2230/ms
+12:12:01.048 INFO  o.t.s.n.g.GridCalc - Trial 0: time 504.0 dt=1.0
+12:12:01.094 INFO  o.t.s.n.g.GridCalc - Trial 0: time 505.0 dt=1.0
+12:12:01.149 INFO  o.t.s.n.g.GridCalc - Trial 0: time 506.0 dt=1.0 events=327590 2228/ms
+12:12:01.173 INFO  o.t.s.n.g.GridCalc - Trial 0: time 507.0 dt=1.0
+12:12:01.181 INFO  o.t.s.n.g.GridCalc - Trial 0: time 508.0 dt=1.0
+12:12:01.188 INFO  o.t.s.n.g.GridCalc - Trial 0: time 509.0 dt=1.0
+12:12:01.196 INFO  o.t.s.n.g.GridCalc - Trial 0: time 510.0 dt=1.0
+12:12:01.204 INFO  o.t.s.n.g.GridCalc - Trial 0: time 511.0 dt=1.0
+12:12:01.212 INFO  o.t.s.n.g.GridCalc - Trial 0: time 512.0 dt=1.0
+12:12:01.220 INFO  o.t.s.n.g.GridCalc - Trial 0: time 513.0 dt=1.0
+12:12:01.228 INFO  o.t.s.n.g.GridCalc - Trial 0: time 514.0 dt=1.0
+12:12:01.237 INFO  o.t.s.n.g.GridCalc - Trial 0: time 515.0 dt=1.0
+12:12:01.245 INFO  o.t.s.n.g.GridCalc - Trial 0: time 516.0 dt=1.0
+12:12:01.252 INFO  o.t.s.n.g.GridCalc - Trial 0: time 517.0 dt=1.0 events=216898 2105/ms
+12:12:01.260 INFO  o.t.s.n.g.GridCalc - Trial 0: time 518.0 dt=1.0
+12:12:01.268 INFO  o.t.s.n.g.GridCalc - Trial 0: time 519.0 dt=1.0
+12:12:01.277 INFO  o.t.s.n.g.GridCalc - Trial 0: time 520.0 dt=1.0
+12:12:01.284 INFO  o.t.s.n.g.GridCalc - Trial 0: time 521.0 dt=1.0
+12:12:01.294 INFO  o.t.s.n.g.GridCalc - Trial 0: time 522.0 dt=1.0
+12:12:01.302 INFO  o.t.s.n.g.GridCalc - Trial 0: time 523.0 dt=1.0
+12:12:01.310 INFO  o.t.s.n.g.GridCalc - Trial 0: time 524.0 dt=1.0
+12:12:01.318 INFO  o.t.s.n.g.GridCalc - Trial 0: time 525.0 dt=1.0
+12:12:01.326 INFO  o.t.s.n.g.GridCalc - Trial 0: time 526.0 dt=1.0
+12:12:01.334 INFO  o.t.s.n.g.GridCalc - Trial 0: time 527.0 dt=1.0
+12:12:01.342 INFO  o.t.s.n.g.GridCalc - Trial 0: time 528.0 dt=1.0
+12:12:01.350 INFO  o.t.s.n.g.GridCalc - Trial 0: time 529.0 dt=1.0
+12:12:01.357 INFO  o.t.s.n.g.GridCalc - Trial 0: time 530.0 dt=1.0 events=218521 2081/ms
+12:12:01.374 INFO  o.t.s.n.g.GridCalc - Trial 0: time 531.0 dt=1.0
+12:12:01.430 INFO  o.t.s.n.g.GridCalc - Trial 0: time 532.0 dt=1.0
+12:12:01.487 INFO  o.t.s.n.g.GridCalc - Trial 0: time 533.0 dt=1.0 events=291011 2238/ms
+12:12:01.539 INFO  o.t.s.n.g.GridCalc - Trial 0: time 534.0 dt=1.0
+12:12:01.591 INFO  o.t.s.n.g.GridCalc - Trial 0: time 535.0 dt=1.0 events=231419 2225/ms
+12:12:01.644 INFO  o.t.s.n.g.GridCalc - Trial 0: time 536.0 dt=1.0
+12:12:01.680 INFO  o.t.s.n.g.GridCalc - Trial 0: time 537.0 dt=1.0
+12:12:01.690 INFO  o.t.s.n.g.GridCalc - Trial 0: time 538.0 dt=1.0
+12:12:01.698 INFO  o.t.s.n.g.GridCalc - Trial 0: time 539.0 dt=1.0 events=235819 2203/ms
+12:12:01.706 INFO  o.t.s.n.g.GridCalc - Trial 0: time 540.0 dt=1.0
+12:12:01.714 INFO  o.t.s.n.g.GridCalc - Trial 0: time 541.0 dt=1.0
+12:12:01.725 INFO  o.t.s.n.g.GridCalc - Trial 0: time 542.0 dt=1.0
+12:12:01.735 INFO  o.t.s.n.g.GridCalc - Trial 0: time 543.0 dt=1.0
+12:12:01.749 INFO  o.t.s.n.g.GridCalc - Trial 0: time 544.0 dt=1.0
+12:12:01.764 INFO  o.t.s.n.g.GridCalc - Trial 0: time 545.0 dt=1.0
+12:12:01.776 INFO  o.t.s.n.g.GridCalc - Trial 0: time 546.0 dt=1.0
+12:12:01.787 INFO  o.t.s.n.g.GridCalc - Trial 0: time 547.0 dt=1.0
+12:12:01.799 INFO  o.t.s.n.g.GridCalc - Trial 0: time 548.0 dt=1.0 events=154115 1525/ms
+12:12:01.813 INFO  o.t.s.n.g.GridCalc - Trial 0: time 549.0 dt=1.0
+12:12:01.825 INFO  o.t.s.n.g.GridCalc - Trial 0: time 550.0 dt=1.0
+12:12:01.839 INFO  o.t.s.n.g.GridCalc - Trial 0: time 551.0 dt=1.0
+12:12:01.851 INFO  o.t.s.n.g.GridCalc - Trial 0: time 552.0 dt=1.0
+12:12:01.865 INFO  o.t.s.n.g.GridCalc - Trial 0: time 553.0 dt=1.0
+12:12:01.878 INFO  o.t.s.n.g.GridCalc - Trial 0: time 554.0 dt=1.0
+12:12:01.891 INFO  o.t.s.n.g.GridCalc - Trial 0: time 555.0 dt=1.0
+12:12:01.908 INFO  o.t.s.n.g.GridCalc - Trial 0: time 556.0 dt=1.0 events=135800 1245/ms
+12:12:01.920 INFO  o.t.s.n.g.GridCalc - Trial 0: time 557.0 dt=1.0
+12:12:01.932 INFO  o.t.s.n.g.GridCalc - Trial 0: time 558.0 dt=1.0
+12:12:01.948 INFO  o.t.s.n.g.GridCalc - Trial 0: time 559.0 dt=1.0
+12:12:01.961 INFO  o.t.s.n.g.GridCalc - Trial 0: time 560.0 dt=1.0
+12:12:01.974 INFO  o.t.s.n.g.GridCalc - Trial 0: time 561.0 dt=1.0
+12:12:01.987 INFO  o.t.s.n.g.GridCalc - Trial 0: time 562.0 dt=1.0
+12:12:01.999 INFO  o.t.s.n.g.GridCalc - Trial 0: time 563.0 dt=1.0
+12:12:02.012 INFO  o.t.s.n.g.GridCalc - Trial 0: time 564.0 dt=1.0 events=131571 1265/ms
+12:12:02.024 INFO  o.t.s.n.g.GridCalc - Trial 0: time 565.0 dt=1.0
+12:12:02.037 INFO  o.t.s.n.g.GridCalc - Trial 0: time 566.0 dt=1.0
+12:12:02.049 INFO  o.t.s.n.g.GridCalc - Trial 0: time 567.0 dt=1.0
+12:12:02.061 INFO  o.t.s.n.g.GridCalc - Trial 0: time 568.0 dt=1.0
+12:12:02.076 INFO  o.t.s.n.g.GridCalc - Trial 0: time 569.0 dt=1.0
+12:12:02.089 INFO  o.t.s.n.g.GridCalc - Trial 0: time 570.0 dt=1.0
+12:12:02.102 INFO  o.t.s.n.g.GridCalc - Trial 0: time 571.0 dt=1.0
+12:12:02.113 INFO  o.t.s.n.g.GridCalc - Trial 0: time 572.0 dt=1.0 events=128330 1270/ms
+12:12:02.125 INFO  o.t.s.n.g.GridCalc - Trial 0: time 573.0 dt=1.0
+12:12:02.138 INFO  o.t.s.n.g.GridCalc - Trial 0: time 574.0 dt=1.0
+12:12:02.153 INFO  o.t.s.n.g.GridCalc - Trial 0: time 575.0 dt=1.0
+12:12:02.165 INFO  o.t.s.n.g.GridCalc - Trial 0: time 576.0 dt=1.0
+12:12:02.179 INFO  o.t.s.n.g.GridCalc - Trial 0: time 577.0 dt=1.0
+12:12:02.192 INFO  o.t.s.n.g.GridCalc - Trial 0: time 578.0 dt=1.0
+12:12:02.204 INFO  o.t.s.n.g.GridCalc - Trial 0: time 579.0 dt=1.0
+12:12:02.218 INFO  o.t.s.n.g.GridCalc - Trial 0: time 580.0 dt=1.0 events=132539 1262/ms
+12:12:02.232 INFO  o.t.s.n.g.GridCalc - Trial 0: time 581.0 dt=1.0
+12:12:02.244 INFO  o.t.s.n.g.GridCalc - Trial 0: time 582.0 dt=1.0
+12:12:02.257 INFO  o.t.s.n.g.GridCalc - Trial 0: time 583.0 dt=1.0
+12:12:02.271 INFO  o.t.s.n.g.GridCalc - Trial 0: time 584.0 dt=1.0
+12:12:02.286 INFO  o.t.s.n.g.GridCalc - Trial 0: time 585.0 dt=1.0
+12:12:02.299 INFO  o.t.s.n.g.GridCalc - Trial 0: time 586.0 dt=1.0
+12:12:02.311 INFO  o.t.s.n.g.GridCalc - Trial 0: time 587.0 dt=1.0
+12:12:02.326 INFO  o.t.s.n.g.GridCalc - Trial 0: time 588.0 dt=1.0 events=138228 1279/ms
+12:12:02.339 INFO  o.t.s.n.g.GridCalc - Trial 0: time 589.0 dt=1.0
+12:12:02.352 INFO  o.t.s.n.g.GridCalc - Trial 0: time 590.0 dt=1.0
+12:12:02.366 INFO  o.t.s.n.g.GridCalc - Trial 0: time 591.0 dt=1.0
+12:12:02.379 INFO  o.t.s.n.g.GridCalc - Trial 0: time 592.0 dt=1.0
+12:12:02.393 INFO  o.t.s.n.g.GridCalc - Trial 0: time 593.0 dt=1.0
+12:12:02.406 INFO  o.t.s.n.g.GridCalc - Trial 0: time 594.0 dt=1.0
+12:12:02.425 INFO  o.t.s.n.g.GridCalc - Trial 0: time 595.0 dt=1.0
+12:12:02.438 INFO  o.t.s.n.g.GridCalc - Trial 0: time 596.0 dt=1.0 events=144499 1290/ms
+12:12:02.452 INFO  o.t.s.n.g.GridCalc - Trial 0: time 597.0 dt=1.0
+12:12:02.486 INFO  o.t.s.n.g.GridCalc - Trial 0: time 598.0 dt=1.0
+12:12:02.499 INFO  o.t.s.n.g.GridCalc - Trial 0: time 599.0 dt=1.0
+12:12:02.512 INFO  o.t.s.n.g.GridCalc - Trial 0: time 600.0 dt=1.0
+12:12:02.525 INFO  o.t.s.n.g.GridCalc - Trial 0: time 601.0 dt=1.0
+12:12:02.538 INFO  o.t.s.n.g.GridCalc - Trial 0: time 602.0 dt=1.0
+12:12:02.551 INFO  o.t.s.n.g.GridCalc - Trial 0: time 603.0 dt=1.0 events=114311 1011/ms
+12:12:02.565 INFO  o.t.s.n.g.GridCalc - Trial 0: time 604.0 dt=1.0
+12:12:02.578 INFO  o.t.s.n.g.GridCalc - Trial 0: time 605.0 dt=1.0
+12:12:02.591 INFO  o.t.s.n.g.GridCalc - Trial 0: time 606.0 dt=1.0
+12:12:02.603 INFO  o.t.s.n.g.GridCalc - Trial 0: time 607.0 dt=1.0
+12:12:02.615 INFO  o.t.s.n.g.GridCalc - Trial 0: time 608.0 dt=1.0
+12:12:02.628 INFO  o.t.s.n.g.GridCalc - Trial 0: time 609.0 dt=1.0
+12:12:02.640 INFO  o.t.s.n.g.GridCalc - Trial 0: time 610.0 dt=1.0
+12:12:02.655 INFO  o.t.s.n.g.GridCalc - Trial 0: time 611.0 dt=1.0 events=131937 1268/ms
+12:12:02.669 INFO  o.t.s.n.g.GridCalc - Trial 0: time 612.0 dt=1.0
+12:12:02.683 INFO  o.t.s.n.g.GridCalc - Trial 0: time 613.0 dt=1.0
+12:12:02.697 INFO  o.t.s.n.g.GridCalc - Trial 0: time 614.0 dt=1.0
+12:12:02.710 INFO  o.t.s.n.g.GridCalc - Trial 0: time 615.0 dt=1.0
+12:12:02.723 INFO  o.t.s.n.g.GridCalc - Trial 0: time 616.0 dt=1.0
+12:12:02.736 INFO  o.t.s.n.g.GridCalc - Trial 0: time 617.0 dt=1.0
+12:12:02.776 INFO  o.t.s.n.g.GridCalc - Trial 0: time 618.0 dt=1.0 events=156338 1292/ms
+12:12:02.860 INFO  o.t.s.n.g.GridCalc - Trial 0: time 619.0 dt=1.0
+12:12:02.917 INFO  o.t.s.n.g.GridCalc - Trial 0: time 620.0 dt=1.0 events=250225 1774/ms
+12:12:02.965 INFO  o.t.s.n.g.GridCalc - Trial 0: time 621.0 dt=1.0
+12:12:02.976 INFO  o.t.s.n.g.GridCalc - Trial 0: time 622.0 dt=1.0
+12:12:02.983 INFO  o.t.s.n.g.GridCalc - Trial 0: time 623.0 dt=1.0
+12:12:02.991 INFO  o.t.s.n.g.GridCalc - Trial 0: time 624.0 dt=1.0
+12:12:03.000 INFO  o.t.s.n.g.GridCalc - Trial 0: time 625.0 dt=1.0
+12:12:03.008 INFO  o.t.s.n.g.GridCalc - Trial 0: time 626.0 dt=1.0
+12:12:03.015 INFO  o.t.s.n.g.GridCalc - Trial 0: time 627.0 dt=1.0
+12:12:03.023 INFO  o.t.s.n.g.GridCalc - Trial 0: time 628.0 dt=1.0 events=229449 2164/ms
+12:12:03.030 INFO  o.t.s.n.g.GridCalc - Trial 0: time 629.0 dt=1.0
+12:12:03.037 INFO  o.t.s.n.g.GridCalc - Trial 0: time 630.0 dt=1.0
+12:12:03.045 INFO  o.t.s.n.g.GridCalc - Trial 0: time 631.0 dt=1.0
+12:12:03.052 INFO  o.t.s.n.g.GridCalc - Trial 0: time 632.0 dt=1.0
+12:12:03.060 INFO  o.t.s.n.g.GridCalc - Trial 0: time 633.0 dt=1.0
+12:12:03.067 INFO  o.t.s.n.g.GridCalc - Trial 0: time 634.0 dt=1.0
+12:12:03.075 INFO  o.t.s.n.g.GridCalc - Trial 0: time 635.0 dt=1.0
+12:12:03.083 INFO  o.t.s.n.g.GridCalc - Trial 0: time 636.0 dt=1.0
+12:12:03.090 INFO  o.t.s.n.g.GridCalc - Trial 0: time 637.0 dt=1.0
+12:12:03.101 INFO  o.t.s.n.g.GridCalc - Trial 0: time 638.0 dt=1.0
+12:12:03.108 INFO  o.t.s.n.g.GridCalc - Trial 0: time 639.0 dt=1.0
+12:12:03.116 INFO  o.t.s.n.g.GridCalc - Trial 0: time 640.0 dt=1.0
+12:12:03.124 INFO  o.t.s.n.g.GridCalc - Trial 0: time 641.0 dt=1.0 events=213279 2111/ms
+12:12:03.132 INFO  o.t.s.n.g.GridCalc - Trial 0: time 642.0 dt=1.0
+12:12:03.140 INFO  o.t.s.n.g.GridCalc - Trial 0: time 643.0 dt=1.0
+12:12:03.148 INFO  o.t.s.n.g.GridCalc - Trial 0: time 644.0 dt=1.0
+12:12:03.156 INFO  o.t.s.n.g.GridCalc - Trial 0: time 645.0 dt=1.0
+12:12:03.164 INFO  o.t.s.n.g.GridCalc - Trial 0: time 646.0 dt=1.0
+12:12:03.172 INFO  o.t.s.n.g.GridCalc - Trial 0: time 647.0 dt=1.0
+12:12:03.180 INFO  o.t.s.n.g.GridCalc - Trial 0: time 648.0 dt=1.0
+12:12:03.188 INFO  o.t.s.n.g.GridCalc - Trial 0: time 649.0 dt=1.0
+12:12:03.196 INFO  o.t.s.n.g.GridCalc - Trial 0: time 650.0 dt=1.0
+12:12:03.203 INFO  o.t.s.n.g.GridCalc - Trial 0: time 651.0 dt=1.0
+12:12:03.211 INFO  o.t.s.n.g.GridCalc - Trial 0: time 652.0 dt=1.0
+12:12:03.218 INFO  o.t.s.n.g.GridCalc - Trial 0: time 653.0 dt=1.0
+12:12:03.227 INFO  o.t.s.n.g.GridCalc - Trial 0: time 654.0 dt=1.0 events=217089 2107/ms
+12:12:03.237 INFO  o.t.s.n.g.GridCalc - Trial 0: time 655.0 dt=1.0
+12:12:03.245 INFO  o.t.s.n.g.GridCalc - Trial 0: time 656.0 dt=1.0
+12:12:03.252 INFO  o.t.s.n.g.GridCalc - Trial 0: time 657.0 dt=1.0
+12:12:03.260 INFO  o.t.s.n.g.GridCalc - Trial 0: time 658.0 dt=1.0
+12:12:03.268 INFO  o.t.s.n.g.GridCalc - Trial 0: time 659.0 dt=1.0
+12:12:03.279 INFO  o.t.s.n.g.GridCalc - Trial 0: time 660.0 dt=1.0
+12:12:03.287 INFO  o.t.s.n.g.GridCalc - Trial 0: time 661.0 dt=1.0
+12:12:03.299 INFO  o.t.s.n.g.GridCalc - Trial 0: time 662.0 dt=1.0
+12:12:03.306 INFO  o.t.s.n.g.GridCalc - Trial 0: time 663.0 dt=1.0
+12:12:03.314 INFO  o.t.s.n.g.GridCalc - Trial 0: time 664.0 dt=1.0
+12:12:03.323 INFO  o.t.s.n.g.GridCalc - Trial 0: time 665.0 dt=1.0
+12:12:03.331 INFO  o.t.s.n.g.GridCalc - Trial 0: time 666.0 dt=1.0 events=217579 2092/ms
+12:12:03.339 INFO  o.t.s.n.g.GridCalc - Trial 0: time 667.0 dt=1.0
+12:12:03.348 INFO  o.t.s.n.g.GridCalc - Trial 0: time 668.0 dt=1.0
+12:12:03.356 INFO  o.t.s.n.g.GridCalc - Trial 0: time 669.0 dt=1.0
+12:12:03.364 INFO  o.t.s.n.g.GridCalc - Trial 0: time 670.0 dt=1.0
+12:12:03.372 INFO  o.t.s.n.g.GridCalc - Trial 0: time 671.0 dt=1.0
+12:12:03.379 INFO  o.t.s.n.g.GridCalc - Trial 0: time 672.0 dt=1.0
+12:12:03.386 INFO  o.t.s.n.g.GridCalc - Trial 0: time 673.0 dt=1.0
+12:12:03.394 INFO  o.t.s.n.g.GridCalc - Trial 0: time 674.0 dt=1.0
+12:12:03.404 INFO  o.t.s.n.g.GridCalc - Trial 0: time 675.0 dt=1.0
+12:12:03.412 INFO  o.t.s.n.g.GridCalc - Trial 0: time 676.0 dt=1.0
+12:12:03.420 INFO  o.t.s.n.g.GridCalc - Trial 0: time 677.0 dt=1.0
+12:12:03.429 INFO  o.t.s.n.g.GridCalc - Trial 0: time 678.0 dt=1.0
+12:12:03.437 INFO  o.t.s.n.g.GridCalc - Trial 0: time 679.0 dt=1.0 events=222690 2100/ms
+12:12:03.445 INFO  o.t.s.n.g.GridCalc - Trial 0: time 680.0 dt=1.0
+12:12:03.452 INFO  o.t.s.n.g.GridCalc - Trial 0: time 681.0 dt=1.0
+12:12:03.461 INFO  o.t.s.n.g.GridCalc - Trial 0: time 682.0 dt=1.0
+12:12:03.468 INFO  o.t.s.n.g.GridCalc - Trial 0: time 683.0 dt=1.0
+12:12:03.477 INFO  o.t.s.n.g.GridCalc - Trial 0: time 684.0 dt=1.0
+12:12:03.486 INFO  o.t.s.n.g.GridCalc - Trial 0: time 685.0 dt=1.0
+12:12:03.494 INFO  o.t.s.n.g.GridCalc - Trial 0: time 686.0 dt=1.0
+12:12:03.502 INFO  o.t.s.n.g.GridCalc - Trial 0: time 687.0 dt=1.0
+12:12:03.509 INFO  o.t.s.n.g.GridCalc - Trial 0: time 688.0 dt=1.0
+12:12:03.518 INFO  o.t.s.n.g.GridCalc - Trial 0: time 689.0 dt=1.0
+12:12:03.527 INFO  o.t.s.n.g.GridCalc - Trial 0: time 690.0 dt=1.0
+12:12:03.534 INFO  o.t.s.n.g.GridCalc - Trial 0: time 691.0 dt=1.0
+12:12:03.542 INFO  o.t.s.n.g.GridCalc - Trial 0: time 692.0 dt=1.0 events=218313 2079/ms
+12:12:03.549 INFO  o.t.s.n.g.GridCalc - Trial 0: time 693.0 dt=1.0
+12:12:03.558 INFO  o.t.s.n.g.GridCalc - Trial 0: time 694.0 dt=1.0
+12:12:03.567 INFO  o.t.s.n.g.GridCalc - Trial 0: time 695.0 dt=1.0
+12:12:03.574 INFO  o.t.s.n.g.GridCalc - Trial 0: time 696.0 dt=1.0
+12:12:03.583 INFO  o.t.s.n.g.GridCalc - Trial 0: time 697.0 dt=1.0
+12:12:03.590 INFO  o.t.s.n.g.GridCalc - Trial 0: time 698.0 dt=1.0
+12:12:03.598 INFO  o.t.s.n.g.GridCalc - Trial 0: time 699.0 dt=1.0
+12:12:03.606 INFO  o.t.s.n.g.GridCalc - Trial 0: time 700.0 dt=1.0
+12:12:03.614 INFO  o.t.s.n.g.GridCalc - Trial 0: time 701.0 dt=1.0
+12:12:03.621 INFO  o.t.s.n.g.GridCalc - Trial 0: time 702.0 dt=1.0
+12:12:03.629 INFO  o.t.s.n.g.GridCalc - Trial 0: time 703.0 dt=1.0
+12:12:03.636 INFO  o.t.s.n.g.GridCalc - Trial 0: time 704.0 dt=1.0
+12:12:03.643 INFO  o.t.s.n.g.GridCalc - Trial 0: time 705.0 dt=1.0 events=215257 2131/ms
+12:12:03.652 INFO  o.t.s.n.g.GridCalc - Trial 0: time 706.0 dt=1.0
+12:12:03.660 INFO  o.t.s.n.g.GridCalc - Trial 0: time 707.0 dt=1.0
+12:12:03.667 INFO  o.t.s.n.g.GridCalc - Trial 0: time 708.0 dt=1.0
+12:12:03.675 INFO  o.t.s.n.g.GridCalc - Trial 0: time 709.0 dt=1.0
+12:12:03.684 INFO  o.t.s.n.g.GridCalc - Trial 0: time 710.0 dt=1.0
+12:12:03.693 INFO  o.t.s.n.g.GridCalc - Trial 0: time 711.0 dt=1.0
+12:12:03.706 INFO  o.t.s.n.g.GridCalc - Trial 0: time 712.0 dt=1.0
+12:12:03.716 INFO  o.t.s.n.g.GridCalc - Trial 0: time 713.0 dt=1.0
+12:12:03.723 INFO  o.t.s.n.g.GridCalc - Trial 0: time 714.0 dt=1.0
+12:12:03.730 INFO  o.t.s.n.g.GridCalc - Trial 0: time 715.0 dt=1.0
+12:12:03.738 INFO  o.t.s.n.g.GridCalc - Trial 0: time 716.0 dt=1.0
+12:12:03.754 INFO  o.t.s.n.g.GridCalc - Trial 0: time 717.0 dt=1.0 events=213803 1926/ms
+12:12:03.793 INFO  o.t.s.n.g.GridCalc - Trial 0: time 718.0 dt=1.0
+12:12:03.849 INFO  o.t.s.n.g.GridCalc - Trial 0: time 719.0 dt=1.0
+12:12:03.894 INFO  o.t.s.n.g.GridCalc - Trial 0: time 720.0 dt=1.0 events=313251 2237/ms
+12:12:03.902 INFO  o.t.s.n.g.GridCalc - Trial 0: time 721.0 dt=1.0
+12:12:03.910 INFO  o.t.s.n.g.GridCalc - Trial 0: time 722.0 dt=1.0
+12:12:03.918 INFO  o.t.s.n.g.GridCalc - Trial 0: time 723.0 dt=1.0
+12:12:03.926 INFO  o.t.s.n.g.GridCalc - Trial 0: time 724.0 dt=1.0
+12:12:03.934 INFO  o.t.s.n.g.GridCalc - Trial 0: time 725.0 dt=1.0
+12:12:03.942 INFO  o.t.s.n.g.GridCalc - Trial 0: time 726.0 dt=1.0
+12:12:03.951 INFO  o.t.s.n.g.GridCalc - Trial 0: time 727.0 dt=1.0
+12:12:03.959 INFO  o.t.s.n.g.GridCalc - Trial 0: time 728.0 dt=1.0
+12:12:03.967 INFO  o.t.s.n.g.GridCalc - Trial 0: time 729.0 dt=1.0
+12:12:03.974 INFO  o.t.s.n.g.GridCalc - Trial 0: time 730.0 dt=1.0
+12:12:03.981 INFO  o.t.s.n.g.GridCalc - Trial 0: time 731.0 dt=1.0
+12:12:03.990 INFO  o.t.s.n.g.GridCalc - Trial 0: time 732.0 dt=1.0
+12:12:03.997 INFO  o.t.s.n.g.GridCalc - Trial 0: time 733.0 dt=1.0 events=214629 2083/ms
+12:12:04.006 INFO  o.t.s.n.g.GridCalc - Trial 0: time 734.0 dt=1.0
+12:12:04.014 INFO  o.t.s.n.g.GridCalc - Trial 0: time 735.0 dt=1.0
+12:12:04.021 INFO  o.t.s.n.g.GridCalc - Trial 0: time 736.0 dt=1.0
+12:12:04.029 INFO  o.t.s.n.g.GridCalc - Trial 0: time 737.0 dt=1.0
+12:12:04.038 INFO  o.t.s.n.g.GridCalc - Trial 0: time 738.0 dt=1.0
+12:12:04.046 INFO  o.t.s.n.g.GridCalc - Trial 0: time 739.0 dt=1.0
+12:12:04.054 INFO  o.t.s.n.g.GridCalc - Trial 0: time 740.0 dt=1.0
+12:12:04.064 INFO  o.t.s.n.g.GridCalc - Trial 0: time 741.0 dt=1.0
+12:12:04.072 INFO  o.t.s.n.g.GridCalc - Trial 0: time 742.0 dt=1.0
+12:12:04.080 INFO  o.t.s.n.g.GridCalc - Trial 0: time 743.0 dt=1.0
+12:12:04.089 INFO  o.t.s.n.g.GridCalc - Trial 0: time 744.0 dt=1.0
+12:12:04.097 INFO  o.t.s.n.g.GridCalc - Trial 0: time 745.0 dt=1.0
+12:12:04.104 INFO  o.t.s.n.g.GridCalc - Trial 0: time 746.0 dt=1.0 events=222038 2075/ms
+12:12:04.114 INFO  o.t.s.n.g.GridCalc - Trial 0: time 747.0 dt=1.0
+12:12:04.122 INFO  o.t.s.n.g.GridCalc - Trial 0: time 748.0 dt=1.0
+12:12:04.130 INFO  o.t.s.n.g.GridCalc - Trial 0: time 749.0 dt=1.0
+12:12:04.138 INFO  o.t.s.n.g.GridCalc - Trial 0: time 750.0 dt=1.0
+12:12:04.147 INFO  o.t.s.n.g.GridCalc - Trial 0: time 751.0 dt=1.0
+12:12:04.156 INFO  o.t.s.n.g.GridCalc - Trial 0: time 752.0 dt=1.0
+12:12:04.164 INFO  o.t.s.n.g.GridCalc - Trial 0: time 753.0 dt=1.0
+12:12:04.171 INFO  o.t.s.n.g.GridCalc - Trial 0: time 754.0 dt=1.0
+12:12:04.214 INFO  o.t.s.n.g.GridCalc - Trial 0: time 755.0 dt=1.0 events=230205 2111/ms
+12:12:04.266 INFO  o.t.s.n.g.GridCalc - Trial 0: time 756.0 dt=1.0
+12:12:04.321 INFO  o.t.s.n.g.GridCalc - Trial 0: time 757.0 dt=1.0 events=239392 2216/ms
+12:12:04.378 INFO  o.t.s.n.g.GridCalc - Trial 0: time 758.0 dt=1.0
+12:12:04.428 INFO  o.t.s.n.g.GridCalc - Trial 0: time 759.0 dt=1.0 events=238805 2231/ms
+12:12:04.485 INFO  o.t.s.n.g.GridCalc - Trial 0: time 760.0 dt=1.0
+12:12:04.535 INFO  o.t.s.n.g.GridCalc - Trial 0: time 761.0 dt=1.0 events=238967 2233/ms
+12:12:04.588 INFO  o.t.s.n.g.GridCalc - Trial 0: time 762.0 dt=1.0
+12:12:04.646 INFO  o.t.s.n.g.GridCalc - Trial 0: time 763.0 dt=1.0 events=247425 2229/ms
+12:12:04.700 INFO  o.t.s.n.g.GridCalc - Trial 0: time 764.0 dt=1.0
+12:12:04.757 INFO  o.t.s.n.g.GridCalc - Trial 0: time 765.0 dt=1.0 events=245840 2214/ms
+12:12:04.810 INFO  o.t.s.n.g.GridCalc - Trial 0: time 766.0 dt=1.0
+12:12:04.867 INFO  o.t.s.n.g.GridCalc - Trial 0: time 767.0 dt=1.0 events=244595 2223/ms
+12:12:04.915 INFO  o.t.s.n.g.GridCalc - Trial 0: time 768.0 dt=1.0
+12:12:04.971 INFO  o.t.s.n.g.GridCalc - Trial 0: time 769.0 dt=1.0 events=232413 2234/ms
+12:12:05.025 INFO  o.t.s.n.g.GridCalc - Trial 0: time 770.0 dt=1.0
+12:12:05.077 INFO  o.t.s.n.g.GridCalc - Trial 0: time 771.0 dt=1.0 events=237900 2244/ms
+12:12:05.124 INFO  o.t.s.n.g.GridCalc - Trial 0: time 772.0 dt=1.0
+12:12:05.174 INFO  o.t.s.n.g.GridCalc - Trial 0: time 773.0 dt=1.0
+12:12:05.213 INFO  o.t.s.n.g.GridCalc - Trial 0: time 774.0 dt=1.0 events=302455 2223/ms
+12:12:05.267 INFO  o.t.s.n.g.GridCalc - Trial 0: time 775.0 dt=1.0
+12:12:05.312 INFO  o.t.s.n.g.GridCalc - Trial 0: time 776.0 dt=1.0
+12:12:05.368 INFO  o.t.s.n.g.GridCalc - Trial 0: time 777.0 dt=1.0 events=344234 2235/ms
+12:12:05.383 INFO  o.t.s.n.g.GridCalc - Trial 0: time 778.0 dt=1.0
+12:12:05.391 INFO  o.t.s.n.g.GridCalc - Trial 0: time 779.0 dt=1.0
+12:12:05.402 INFO  o.t.s.n.g.GridCalc - Trial 0: time 780.0 dt=1.0
+12:12:05.412 INFO  o.t.s.n.g.GridCalc - Trial 0: time 781.0 dt=1.0
+12:12:05.422 INFO  o.t.s.n.g.GridCalc - Trial 0: time 782.0 dt=1.0
+12:12:05.430 INFO  o.t.s.n.g.GridCalc - Trial 0: time 783.0 dt=1.0
+12:12:05.437 INFO  o.t.s.n.g.GridCalc - Trial 0: time 784.0 dt=1.0
+12:12:05.445 INFO  o.t.s.n.g.GridCalc - Trial 0: time 785.0 dt=1.0
+12:12:05.453 INFO  o.t.s.n.g.GridCalc - Trial 0: time 786.0 dt=1.0
+12:12:05.461 INFO  o.t.s.n.g.GridCalc - Trial 0: time 787.0 dt=1.0
+12:12:05.469 INFO  o.t.s.n.g.GridCalc - Trial 0: time 788.0 dt=1.0 events=214653 2104/ms
+12:12:05.477 INFO  o.t.s.n.g.GridCalc - Trial 0: time 789.0 dt=1.0
+12:12:05.485 INFO  o.t.s.n.g.GridCalc - Trial 0: time 790.0 dt=1.0
+12:12:05.493 INFO  o.t.s.n.g.GridCalc - Trial 0: time 791.0 dt=1.0
+12:12:05.504 INFO  o.t.s.n.g.GridCalc - Trial 0: time 792.0 dt=1.0
+12:12:05.511 INFO  o.t.s.n.g.GridCalc - Trial 0: time 793.0 dt=1.0
+12:12:05.520 INFO  o.t.s.n.g.GridCalc - Trial 0: time 794.0 dt=1.0
+12:12:05.530 INFO  o.t.s.n.g.GridCalc - Trial 0: time 795.0 dt=1.0
+12:12:05.538 INFO  o.t.s.n.g.GridCalc - Trial 0: time 796.0 dt=1.0
+12:12:05.547 INFO  o.t.s.n.g.GridCalc - Trial 0: time 797.0 dt=1.0
+12:12:05.555 INFO  o.t.s.n.g.GridCalc - Trial 0: time 798.0 dt=1.0
+12:12:05.563 INFO  o.t.s.n.g.GridCalc - Trial 0: time 799.0 dt=1.0
+12:12:05.571 INFO  o.t.s.n.g.GridCalc - Trial 0: time 800.0 dt=1.0 events=214155 2099/ms
+12:12:05.579 INFO  o.t.s.n.g.GridCalc - Trial 0: time 801.0 dt=1.0
+12:12:05.587 INFO  o.t.s.n.g.GridCalc - Trial 0: time 802.0 dt=1.0
+12:12:05.594 INFO  o.t.s.n.g.GridCalc - Trial 0: time 803.0 dt=1.0
+12:12:05.605 INFO  o.t.s.n.g.GridCalc - Trial 0: time 804.0 dt=1.0
+12:12:05.612 INFO  o.t.s.n.g.GridCalc - Trial 0: time 805.0 dt=1.0
+12:12:05.619 INFO  o.t.s.n.g.GridCalc - Trial 0: time 806.0 dt=1.0
+12:12:05.627 INFO  o.t.s.n.g.GridCalc - Trial 0: time 807.0 dt=1.0
+12:12:05.635 INFO  o.t.s.n.g.GridCalc - Trial 0: time 808.0 dt=1.0
+12:12:05.643 INFO  o.t.s.n.g.GridCalc - Trial 0: time 809.0 dt=1.0
+12:12:05.650 INFO  o.t.s.n.g.GridCalc - Trial 0: time 810.0 dt=1.0
+12:12:05.659 INFO  o.t.s.n.g.GridCalc - Trial 0: time 811.0 dt=1.0
+12:12:05.666 INFO  o.t.s.n.g.GridCalc - Trial 0: time 812.0 dt=1.0
+12:12:05.674 INFO  o.t.s.n.g.GridCalc - Trial 0: time 813.0 dt=1.0 events=211811 2056/ms
+12:12:05.683 INFO  o.t.s.n.g.GridCalc - Trial 0: time 814.0 dt=1.0
+12:12:05.690 INFO  o.t.s.n.g.GridCalc - Trial 0: time 815.0 dt=1.0
+12:12:05.697 INFO  o.t.s.n.g.GridCalc - Trial 0: time 816.0 dt=1.0
+12:12:05.706 INFO  o.t.s.n.g.GridCalc - Trial 0: time 817.0 dt=1.0
+12:12:05.714 INFO  o.t.s.n.g.GridCalc - Trial 0: time 818.0 dt=1.0
+12:12:05.721 INFO  o.t.s.n.g.GridCalc - Trial 0: time 819.0 dt=1.0
+12:12:05.729 INFO  o.t.s.n.g.GridCalc - Trial 0: time 820.0 dt=1.0
+12:12:05.736 INFO  o.t.s.n.g.GridCalc - Trial 0: time 821.0 dt=1.0
+12:12:05.744 INFO  o.t.s.n.g.GridCalc - Trial 0: time 822.0 dt=1.0
+12:12:05.751 INFO  o.t.s.n.g.GridCalc - Trial 0: time 823.0 dt=1.0
+12:12:05.760 INFO  o.t.s.n.g.GridCalc - Trial 0: time 824.0 dt=1.0
+12:12:05.769 INFO  o.t.s.n.g.GridCalc - Trial 0: time 825.0 dt=1.0
+12:12:05.781 INFO  o.t.s.n.g.GridCalc - Trial 0: time 826.0 dt=1.0 events=222093 2075/ms
+12:12:05.789 INFO  o.t.s.n.g.GridCalc - Trial 0: time 827.0 dt=1.0
+12:12:05.797 INFO  o.t.s.n.g.GridCalc - Trial 0: time 828.0 dt=1.0
+12:12:05.808 INFO  o.t.s.n.g.GridCalc - Trial 0: time 829.0 dt=1.0
+12:12:05.815 INFO  o.t.s.n.g.GridCalc - Trial 0: time 830.0 dt=1.0
+12:12:05.823 INFO  o.t.s.n.g.GridCalc - Trial 0: time 831.0 dt=1.0
+12:12:05.830 INFO  o.t.s.n.g.GridCalc - Trial 0: time 832.0 dt=1.0
+12:12:05.852 INFO  o.t.s.n.g.GridCalc - Trial 0: time 833.0 dt=1.0
+12:12:05.862 INFO  o.t.s.n.g.GridCalc - Trial 0: time 834.0 dt=1.0
+12:12:05.904 INFO  o.t.s.n.g.GridCalc - Trial 0: time 835.0 dt=1.0 events=233631 1915/ms
+12:12:05.944 INFO  o.t.s.n.g.GridCalc - Trial 0: time 836.0 dt=1.0
+12:12:05.994 INFO  o.t.s.n.g.GridCalc - Trial 0: time 837.0 dt=1.0
+12:12:06.047 INFO  o.t.s.n.g.GridCalc - Trial 0: time 838.0 dt=1.0 events=316524 2198/ms
+12:12:06.102 INFO  o.t.s.n.g.GridCalc - Trial 0: time 839.0 dt=1.0
+12:12:06.154 INFO  o.t.s.n.g.GridCalc - Trial 0: time 840.0 dt=1.0 events=236323 2208/ms
+12:12:06.210 INFO  o.t.s.n.g.GridCalc - Trial 0: time 841.0 dt=1.0
+12:12:06.266 INFO  o.t.s.n.g.GridCalc - Trial 0: time 842.0 dt=1.0 events=245862 2195/ms
+12:12:06.313 INFO  o.t.s.n.g.GridCalc - Trial 0: time 843.0 dt=1.0
+12:12:06.365 INFO  o.t.s.n.g.GridCalc - Trial 0: time 844.0 dt=1.0
+12:12:06.418 INFO  o.t.s.n.g.GridCalc - Trial 0: time 845.0 dt=1.0 events=340666 2241/ms
+12:12:06.470 INFO  o.t.s.n.g.GridCalc - Trial 0: time 846.0 dt=1.0
+12:12:06.520 INFO  o.t.s.n.g.GridCalc - Trial 0: time 847.0 dt=1.0 events=230812 2262/ms
+12:12:06.575 INFO  o.t.s.n.g.GridCalc - Trial 0: time 848.0 dt=1.0
+12:12:06.633 INFO  o.t.s.n.g.GridCalc - Trial 0: time 849.0 dt=1.0 events=252858 2237/ms
+12:12:06.689 INFO  o.t.s.n.g.GridCalc - Trial 0: time 850.0 dt=1.0
+12:12:06.739 INFO  o.t.s.n.g.GridCalc - Trial 0: time 851.0 dt=1.0 events=239448 2258/ms
+12:12:06.790 INFO  o.t.s.n.g.GridCalc - Trial 0: time 852.0 dt=1.0
+12:12:06.851 INFO  o.t.s.n.g.GridCalc - Trial 0: time 853.0 dt=1.0 events=242493 2165/ms
+12:12:06.902 INFO  o.t.s.n.g.GridCalc - Trial 0: time 854.0 dt=1.0
+12:12:06.955 INFO  o.t.s.n.g.GridCalc - Trial 0: time 855.0 dt=1.0 events=222502 2139/ms
+12:12:07.004 INFO  o.t.s.n.g.GridCalc - Trial 0: time 856.0 dt=1.0
+12:12:07.052 INFO  o.t.s.n.g.GridCalc - Trial 0: time 857.0 dt=1.0
+12:12:07.108 INFO  o.t.s.n.g.GridCalc - Trial 0: time 858.0 dt=1.0 events=335168 2190/ms
+12:12:07.166 INFO  o.t.s.n.g.GridCalc - Trial 0: time 859.0 dt=1.0
+12:12:07.222 INFO  o.t.s.n.g.GridCalc - Trial 0: time 860.0 dt=1.0 events=244666 2146/ms
+12:12:07.270 INFO  o.t.s.n.g.GridCalc - Trial 0: time 861.0 dt=1.0
+12:12:07.304 INFO  o.t.s.n.g.GridCalc - Trial 0: time 862.0 dt=1.0
+12:12:07.312 INFO  o.t.s.n.g.GridCalc - Trial 0: time 863.0 dt=1.0
+12:12:07.320 INFO  o.t.s.n.g.GridCalc - Trial 0: time 864.0 dt=1.0
+12:12:07.327 INFO  o.t.s.n.g.GridCalc - Trial 0: time 865.0 dt=1.0 events=222734 2121/ms
+12:12:07.334 INFO  o.t.s.n.g.GridCalc - Trial 0: time 866.0 dt=1.0
+12:12:07.341 INFO  o.t.s.n.g.GridCalc - Trial 0: time 867.0 dt=1.0
+12:12:07.354 INFO  o.t.s.n.g.GridCalc - Trial 0: time 868.0 dt=1.0
+12:12:07.361 INFO  o.t.s.n.g.GridCalc - Trial 0: time 869.0 dt=1.0
+12:12:07.370 INFO  o.t.s.n.g.GridCalc - Trial 0: time 870.0 dt=1.0
+12:12:07.377 INFO  o.t.s.n.g.GridCalc - Trial 0: time 871.0 dt=1.0
+12:12:07.384 INFO  o.t.s.n.g.GridCalc - Trial 0: time 872.0 dt=1.0
+12:12:07.392 INFO  o.t.s.n.g.GridCalc - Trial 0: time 873.0 dt=1.0
+12:12:07.399 INFO  o.t.s.n.g.GridCalc - Trial 0: time 874.0 dt=1.0
+12:12:07.407 INFO  o.t.s.n.g.GridCalc - Trial 0: time 875.0 dt=1.0
+12:12:07.415 INFO  o.t.s.n.g.GridCalc - Trial 0: time 876.0 dt=1.0
+12:12:07.423 INFO  o.t.s.n.g.GridCalc - Trial 0: time 877.0 dt=1.0
+12:12:07.431 INFO  o.t.s.n.g.GridCalc - Trial 0: time 878.0 dt=1.0 events=212516 2043/ms
+12:12:07.439 INFO  o.t.s.n.g.GridCalc - Trial 0: time 879.0 dt=1.0
+12:12:07.453 INFO  o.t.s.n.g.GridCalc - Trial 0: time 880.0 dt=1.0
+12:12:07.464 INFO  o.t.s.n.g.GridCalc - Trial 0: time 881.0 dt=1.0
+12:12:07.475 INFO  o.t.s.n.g.GridCalc - Trial 0: time 882.0 dt=1.0
+12:12:07.485 INFO  o.t.s.n.g.GridCalc - Trial 0: time 883.0 dt=1.0
+12:12:07.495 INFO  o.t.s.n.g.GridCalc - Trial 0: time 884.0 dt=1.0
+12:12:07.504 INFO  o.t.s.n.g.GridCalc - Trial 0: time 885.0 dt=1.0
+12:12:07.511 INFO  o.t.s.n.g.GridCalc - Trial 0: time 886.0 dt=1.0
+12:12:07.520 INFO  o.t.s.n.g.GridCalc - Trial 0: time 887.0 dt=1.0
+12:12:07.528 INFO  o.t.s.n.g.GridCalc - Trial 0: time 888.0 dt=1.0
+12:12:07.536 INFO  o.t.s.n.g.GridCalc - Trial 0: time 889.0 dt=1.0 events=182637 1739/ms
+12:12:07.551 INFO  o.t.s.n.g.GridCalc - Trial 0: time 890.0 dt=1.0
+12:12:07.562 INFO  o.t.s.n.g.GridCalc - Trial 0: time 891.0 dt=1.0
+12:12:07.573 INFO  o.t.s.n.g.GridCalc - Trial 0: time 892.0 dt=1.0
+12:12:07.583 INFO  o.t.s.n.g.GridCalc - Trial 0: time 893.0 dt=1.0
+12:12:07.594 INFO  o.t.s.n.g.GridCalc - Trial 0: time 894.0 dt=1.0
+12:12:07.604 INFO  o.t.s.n.g.GridCalc - Trial 0: time 895.0 dt=1.0
+12:12:07.615 INFO  o.t.s.n.g.GridCalc - Trial 0: time 896.0 dt=1.0
+12:12:07.626 INFO  o.t.s.n.g.GridCalc - Trial 0: time 897.0 dt=1.0
+12:12:07.637 INFO  o.t.s.n.g.GridCalc - Trial 0: time 898.0 dt=1.0 events=154417 1528/ms
+12:12:07.652 INFO  o.t.s.n.g.GridCalc - Trial 0: time 899.0 dt=1.0
+12:12:07.664 INFO  o.t.s.n.g.GridCalc - Trial 0: time 900.0 dt=1.0
+12:12:07.675 INFO  o.t.s.n.g.GridCalc - Trial 0: time 901.0 dt=1.0
+12:12:07.685 INFO  o.t.s.n.g.GridCalc - Trial 0: time 902.0 dt=1.0
+12:12:07.696 INFO  o.t.s.n.g.GridCalc - Trial 0: time 903.0 dt=1.0
+12:12:07.707 INFO  o.t.s.n.g.GridCalc - Trial 0: time 904.0 dt=1.0
+12:12:07.716 INFO  o.t.s.n.g.GridCalc - Trial 0: time 905.0 dt=1.0
+12:12:07.726 INFO  o.t.s.n.g.GridCalc - Trial 0: time 906.0 dt=1.0
+12:12:07.737 INFO  o.t.s.n.g.GridCalc - Trial 0: time 907.0 dt=1.0
+12:12:07.752 INFO  o.t.s.n.g.GridCalc - Trial 0: time 908.0 dt=1.0 events=168447 1464/ms
+12:12:07.763 INFO  o.t.s.n.g.GridCalc - Trial 0: time 909.0 dt=1.0
+12:12:07.774 INFO  o.t.s.n.g.GridCalc - Trial 0: time 910.0 dt=1.0
+12:12:07.788 INFO  o.t.s.n.g.GridCalc - Trial 0: time 911.0 dt=1.0
+12:12:07.799 INFO  o.t.s.n.g.GridCalc - Trial 0: time 912.0 dt=1.0
+12:12:07.810 INFO  o.t.s.n.g.GridCalc - Trial 0: time 913.0 dt=1.0
+12:12:07.822 INFO  o.t.s.n.g.GridCalc - Trial 0: time 914.0 dt=1.0
+12:12:07.832 INFO  o.t.s.n.g.GridCalc - Trial 0: time 915.0 dt=1.0
+12:12:07.844 INFO  o.t.s.n.g.GridCalc - Trial 0: time 916.0 dt=1.0
+12:12:07.856 INFO  o.t.s.n.g.GridCalc - Trial 0: time 917.0 dt=1.0 events=156081 1500/ms
+12:12:07.868 INFO  o.t.s.n.g.GridCalc - Trial 0: time 918.0 dt=1.0
+12:12:07.878 INFO  o.t.s.n.g.GridCalc - Trial 0: time 919.0 dt=1.0
+12:12:07.889 INFO  o.t.s.n.g.GridCalc - Trial 0: time 920.0 dt=1.0
+12:12:07.901 INFO  o.t.s.n.g.GridCalc - Trial 0: time 921.0 dt=1.0
+12:12:07.913 INFO  o.t.s.n.g.GridCalc - Trial 0: time 922.0 dt=1.0
+12:12:07.923 INFO  o.t.s.n.g.GridCalc - Trial 0: time 923.0 dt=1.0
+12:12:07.934 INFO  o.t.s.n.g.GridCalc - Trial 0: time 924.0 dt=1.0
+12:12:07.946 INFO  o.t.s.n.g.GridCalc - Trial 0: time 925.0 dt=1.0
+12:12:07.957 INFO  o.t.s.n.g.GridCalc - Trial 0: time 926.0 dt=1.0 events=152774 1512/ms
+12:12:07.968 INFO  o.t.s.n.g.GridCalc - Trial 0: time 927.0 dt=1.0
+12:12:07.982 INFO  o.t.s.n.g.GridCalc - Trial 0: time 928.0 dt=1.0
+12:12:07.995 INFO  o.t.s.n.g.GridCalc - Trial 0: time 929.0 dt=1.0
+12:12:08.006 INFO  o.t.s.n.g.GridCalc - Trial 0: time 930.0 dt=1.0
+12:12:08.017 INFO  o.t.s.n.g.GridCalc - Trial 0: time 931.0 dt=1.0
+12:12:08.030 INFO  o.t.s.n.g.GridCalc - Trial 0: time 932.0 dt=1.0
+12:12:08.041 INFO  o.t.s.n.g.GridCalc - Trial 0: time 933.0 dt=1.0
+12:12:08.052 INFO  o.t.s.n.g.GridCalc - Trial 0: time 934.0 dt=1.0
+12:12:08.066 INFO  o.t.s.n.g.GridCalc - Trial 0: time 935.0 dt=1.0 events=170329 1562/ms
+12:12:08.078 INFO  o.t.s.n.g.GridCalc - Trial 0: time 936.0 dt=1.0
+12:12:08.088 INFO  o.t.s.n.g.GridCalc - Trial 0: time 937.0 dt=1.0
+12:12:08.098 INFO  o.t.s.n.g.GridCalc - Trial 0: time 938.0 dt=1.0
+12:12:08.112 INFO  o.t.s.n.g.GridCalc - Trial 0: time 939.0 dt=1.0
+12:12:08.121 INFO  o.t.s.n.g.GridCalc - Trial 0: time 940.0 dt=1.0
+12:12:08.135 INFO  o.t.s.n.g.GridCalc - Trial 0: time 941.0 dt=1.0
+12:12:08.145 INFO  o.t.s.n.g.GridCalc - Trial 0: time 942.0 dt=1.0
+12:12:08.158 INFO  o.t.s.n.g.GridCalc - Trial 0: time 943.0 dt=1.0
+12:12:08.168 INFO  o.t.s.n.g.GridCalc - Trial 0: time 944.0 dt=1.0 events=158576 1554/ms
+12:12:08.179 INFO  o.t.s.n.g.GridCalc - Trial 0: time 945.0 dt=1.0
+12:12:08.191 INFO  o.t.s.n.g.GridCalc - Trial 0: time 946.0 dt=1.0
+12:12:08.204 INFO  o.t.s.n.g.GridCalc - Trial 0: time 947.0 dt=1.0
+12:12:08.235 INFO  o.t.s.n.g.GridCalc - Trial 0: time 948.0 dt=1.0
+12:12:08.246 INFO  o.t.s.n.g.GridCalc - Trial 0: time 949.0 dt=1.0
+12:12:08.257 INFO  o.t.s.n.g.GridCalc - Trial 0: time 950.0 dt=1.0
+12:12:08.268 INFO  o.t.s.n.g.GridCalc - Trial 0: time 951.0 dt=1.0
+12:12:08.277 INFO  o.t.s.n.g.GridCalc - Trial 0: time 952.0 dt=1.0 events=138766 1273/ms
+12:12:08.288 INFO  o.t.s.n.g.GridCalc - Trial 0: time 953.0 dt=1.0
+12:12:08.299 INFO  o.t.s.n.g.GridCalc - Trial 0: time 954.0 dt=1.0
+12:12:08.308 INFO  o.t.s.n.g.GridCalc - Trial 0: time 955.0 dt=1.0
+12:12:08.319 INFO  o.t.s.n.g.GridCalc - Trial 0: time 956.0 dt=1.0
+12:12:08.329 INFO  o.t.s.n.g.GridCalc - Trial 0: time 957.0 dt=1.0
+12:12:08.340 INFO  o.t.s.n.g.GridCalc - Trial 0: time 958.0 dt=1.0
+12:12:08.351 INFO  o.t.s.n.g.GridCalc - Trial 0: time 959.0 dt=1.0
+12:12:08.368 INFO  o.t.s.n.g.GridCalc - Trial 0: time 960.0 dt=1.0
+12:12:08.425 INFO  o.t.s.n.g.GridCalc - Trial 0: time 961.0 dt=1.0 events=229312 1549/ms
+12:12:08.489 INFO  o.t.s.n.g.GridCalc - Trial 0: time 962.0 dt=1.0
+12:12:08.572 INFO  o.t.s.n.g.GridCalc - Trial 0: time 963.0 dt=1.0 events=233909 1591/ms
+12:12:08.645 INFO  o.t.s.n.g.GridCalc - Trial 0: time 964.0 dt=1.0
+12:12:08.724 INFO  o.t.s.n.g.GridCalc - Trial 0: time 965.0 dt=1.0 events=255660 1681/ms
+12:12:08.802 INFO  o.t.s.n.g.GridCalc - Trial 0: time 966.0 dt=1.0
+12:12:08.868 INFO  o.t.s.n.g.GridCalc - Trial 0: time 967.0 dt=1.0 events=220355 1530/ms
+12:12:08.947 INFO  o.t.s.n.g.GridCalc - Trial 0: time 968.0 dt=1.0
+12:12:09.019 INFO  o.t.s.n.g.GridCalc - Trial 0: time 969.0 dt=1.0 events=244415 1618/ms
+12:12:09.086 INFO  o.t.s.n.g.GridCalc - Trial 0: time 970.0 dt=1.0
+12:12:09.151 INFO  o.t.s.n.g.GridCalc - Trial 0: time 971.0 dt=1.0 events=217434 1659/ms
+12:12:09.220 INFO  o.t.s.n.g.GridCalc - Trial 0: time 972.0 dt=1.0
+12:12:09.292 INFO  o.t.s.n.g.GridCalc - Trial 0: time 973.0 dt=1.0 events=225668 1600/ms
+12:12:09.399 INFO  o.t.s.n.g.GridCalc - Trial 0: time 974.0 dt=1.0 events=127490 1191/ms
+12:12:09.476 INFO  o.t.s.n.g.GridCalc - Trial 0: time 975.0 dt=1.0
+12:12:09.493 INFO  o.t.s.n.g.GridCalc - Trial 0: time 976.0 dt=1.0
+12:12:09.509 INFO  o.t.s.n.g.GridCalc - Trial 0: time 977.0 dt=1.0 events=105173 947/ms
+12:12:09.525 INFO  o.t.s.n.g.GridCalc - Trial 0: time 978.0 dt=1.0
+12:12:09.541 INFO  o.t.s.n.g.GridCalc - Trial 0: time 979.0 dt=1.0
+12:12:09.561 INFO  o.t.s.n.g.GridCalc - Trial 0: time 980.0 dt=1.0
+12:12:09.577 INFO  o.t.s.n.g.GridCalc - Trial 0: time 981.0 dt=1.0
+12:12:09.596 INFO  o.t.s.n.g.GridCalc - Trial 0: time 982.0 dt=1.0
+12:12:09.616 INFO  o.t.s.n.g.GridCalc - Trial 0: time 983.0 dt=1.0 events=102667 959/ms
+12:12:09.632 INFO  o.t.s.n.g.GridCalc - Trial 0: time 984.0 dt=1.0
+12:12:09.648 INFO  o.t.s.n.g.GridCalc - Trial 0: time 985.0 dt=1.0
+12:12:09.665 INFO  o.t.s.n.g.GridCalc - Trial 0: time 986.0 dt=1.0
+12:12:09.683 INFO  o.t.s.n.g.GridCalc - Trial 0: time 987.0 dt=1.0
+12:12:09.704 INFO  o.t.s.n.g.GridCalc - Trial 0: time 988.0 dt=1.0
+12:12:09.719 INFO  o.t.s.n.g.GridCalc - Trial 0: time 989.0 dt=1.0 events=99896 969/ms
+12:12:09.734 INFO  o.t.s.n.g.GridCalc - Trial 0: time 990.0 dt=1.0
+12:12:09.751 INFO  o.t.s.n.g.GridCalc - Trial 0: time 991.0 dt=1.0
+12:12:09.769 INFO  o.t.s.n.g.GridCalc - Trial 0: time 992.0 dt=1.0
+12:12:09.789 INFO  o.t.s.n.g.GridCalc - Trial 0: time 993.0 dt=1.0
+12:12:09.806 INFO  o.t.s.n.g.GridCalc - Trial 0: time 994.0 dt=1.0
+12:12:09.824 INFO  o.t.s.n.g.GridCalc - Trial 0: time 995.0 dt=1.0 events=103351 984/ms
+12:12:09.839 INFO  o.t.s.n.g.GridCalc - Trial 0: time 996.0 dt=1.0
+12:12:09.854 INFO  o.t.s.n.g.GridCalc - Trial 0: time 997.0 dt=1.0
+12:12:09.867 INFO  o.t.s.n.g.GridCalc - Trial 0: time 998.0 dt=1.0
+12:12:09.883 INFO  o.t.s.n.g.GridCalc - Trial 0: time 999.0 dt=1.0
+12:12:09.903 INFO  o.t.s.n.g.GridCalc - Trial 0: time 1000.0 dt=1.0
+12:12:09.903 INFO  o.t.s.n.g.GridCalc - Trial 0: total number of particles at the end: 119
+12:12:09.906 INFO  o.t.s.n.g.GridCalc - Trial 0: total run time 21035 ms
+12:12:09.906 INFO  o.t.s.n.g.StochasticGridCalc - Used up 36833066 random numbers
+12:12:09.906 INFO  o.t.s.n.g.AdaptiveGridCalc - Queue suffered 29668992 swaps
+12:12:09.907 INFO  o.t.s.n.g.AdaptiveGridCalc - Accuracy control parameter ε=0.001
+12:12:09.907 INFO  o.t.s.n.g.AdaptiveGridCalc - Leapt 0 (0 events, NaN e/l average), waited 36833061 times
+12:12:09.907 INFO  o.t.s.n.g.AdaptiveGridCalc - Real simulation took 21154 ms, 47.272383473574735 ms/s
+12:12:09.907 INFO  o.t.s.n.g.ResultWriterHDF5 - Closing output file model-async-0.001.h5
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SDRun xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://stochdiff.textensor.org">
+
+  <xi:include href="reactions.xml" />
+  <xi:include href="morphology.xml" />
+
+  <runtime>   1000</runtime>
+
+  <discretization>
+    <!-- default largest size for elements in bulk volumes, microns -->
+    <defaultMaxElementSide>2</defaultMaxElementSide>
+  </discretization>
+  
+  <simulationSeed>77777</simulationSeed>
+
+  <outputInterval>   1   </outputInterval>
+
+  <calculation> GRID_EXACT  </calculation>
+</SDRun>
