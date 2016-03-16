@@ -1,0 +1,12 @@
+digraph Connections {
+	rankdir=LR;
+	splines=true;
+	node [color=blue,style=filled];
+	"0"  [fillcolor=grey];
+	"0" -> "1" [penwidth=4.856297990381251];
+	"1"  [fillcolor=grey];
+	"1" -> "0" [penwidth=4.856297990381251];
+	"1" -> "2" [penwidth=4.856297990381251];
+	"2"  [fillcolor=grey];
+	"2" -> "1" [penwidth=4.856297990381251];
+}

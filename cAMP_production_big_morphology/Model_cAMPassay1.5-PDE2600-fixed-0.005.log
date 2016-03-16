@@ -1,0 +1,1139 @@
+12:04:26.468 INFO  stochdiff - NeuroRD v3.0.0-rc1-4-gb612db28f3+
+12:04:26.471 INFO  stochdiff - Writing logs to Model_cAMPassay1.5-PDE2600-fixed-0.005.log
+12:04:26.471 INFO  o.t.x.ModelReader - umarshalling Model_cAMPassay1.5-PDE2600-fixed-0.005.xml
+12:04:26.569 INFO  o.t.x.ModelReader - /SDRun/ReactionScheme: namespace not specified, assuming http://stochdiff.textensor.org
+12:04:26.630 INFO  o.t.x.ModelReader - Renaming attribute dt to outputInterval
+12:04:26.656 DEBUG o.t.u.Settings - Overriding stochdiff.writers: [text] → [h5]
+12:04:26.658 INFO  o.t.s.m.SDRun - subvolume grid size is: 1.0 (from 1.0, [1.0, 1.0])
+12:04:26.670 DEBUG o.t.s.d.LineBoxer - Using (point x=0.0,y=0.0,z=0.0,r=0.5,nnbr=1) as the starting point
+12:04:26.670 DEBUG o.t.s.d.LineBoxer - Will process (point x=3.0,y=0.0,z=0.0,r=0.5,nnbr=1) later
+12:04:26.670 DEBUG o.t.s.d.LineBoxer - Will process (point x=1.0,y=0.0,z=0.0,r=0.5,nnbr=2) later
+12:04:26.670 DEBUG o.t.s.d.LineBoxer - Will process (point x=2.0,y=0.0,z=0.0,r=0.5,nnbr=2) later
+12:04:26.671 DEBUG o.t.s.d.LineBoxer - Processing (point x=0.0,y=0.0,z=0.0,r=0.5,nnbr=1) with 1 neighbours
+12:04:26.671 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=1.0,y=0.0,z=0.0,r=0.5,nnbr=2)
+12:04:26.671 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+12:04:26.676 INFO  o.t.s.n.m.VolumeLine - nl=3 nsl=1 nr=1 dreg=1.0 dsl=0.25
+12:04:26.677 DEBUG o.t.s.d.LineBoxer - Processing (point x=1.0,y=0.0,z=0.0,r=0.5,nnbr=2) with 2 neighbours
+12:04:26.677 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=0.0,y=0.0,z=0.0,r=0.5,nnbr=1) already removed from the working set
+12:04:26.678 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=2.0,y=0.0,z=0.0,r=0.5,nnbr=2)
+12:04:26.678 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+12:04:26.678 INFO  o.t.s.n.m.VolumeLine - nl=3 nsl=1 nr=1 dreg=1.0 dsl=0.25
+12:04:26.678 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+12:04:26.679 DEBUG o.t.s.d.LineBoxer - Processing (point x=2.0,y=0.0,z=0.0,r=0.5,nnbr=2) with 2 neighbours
+12:04:26.679 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=1.0,y=0.0,z=0.0,r=0.5,nnbr=2) already removed from the working set
+12:04:26.679 DEBUG o.t.s.d.LineBoxer - Looking at neighbour (point x=3.0,y=0.0,z=0.0,r=0.5,nnbr=1)
+12:04:26.679 DEBUG o.t.s.d.LineBoxer - Creating new grid between neighbouring points
+12:04:26.679 INFO  o.t.s.n.m.VolumeLine - nl=3 nsl=1 nr=1 dreg=1.0 dsl=0.25
+12:04:26.680 DEBUG o.t.s.d.LineBoxer - Attaching with planeConnect()
+12:04:26.680 DEBUG o.t.s.d.LineBoxer - Processing (point x=3.0,y=0.0,z=0.0,r=0.5,nnbr=1) with 1 neighbours
+12:04:26.680 DEBUG o.t.s.d.LineBoxer - Neighbour (point x=2.0,y=0.0,z=0.0,r=0.5,nnbr=2) already removed from the working set
+12:04:26.682 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (0.0000 0.75000 0.0000) (1.0000 0.75000 0.0000) (1.0000 0.50000 0.0000) (0.0000 0.50000 0.0000) from region dend
+12:04:26.683 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (0.0000 0.50000 0.0000) (1.0000 0.50000 0.0000) (1.0000 -0.50000 0.0000) (5.5511e-17 -0.50000 0.0000) from region dend
+12:04:26.684 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (5.5511e-17 -0.50000 0.0000) (1.0000 -0.50000 0.0000) (1.0000 -0.75000 0.0000) (5.5511e-17 -0.75000 0.0000) from region dend
+12:04:26.685 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (1.0000 0.75000 0.0000) (2.0000 0.75000 0.0000) (2.0000 0.50000 0.0000) (1.0000 0.50000 0.0000) from region dend
+12:04:26.686 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (1.0000 0.50000 0.0000) (2.0000 0.50000 0.0000) (2.0000 -0.50000 0.0000) (1.0000 -0.50000 0.0000) from region dend
+12:04:26.687 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (1.0000 -0.50000 0.0000) (2.0000 -0.50000 0.0000) (2.0000 -0.75000 0.0000) (1.0000 -0.75000 0.0000) from region dend
+12:04:26.689 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (2.0000 0.75000 0.0000) (3.0000 0.75000 0.0000) (3.0000 0.50000 0.0000) (2.0000 0.50000 0.0000) from region dend
+12:04:26.689 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (2.0000 0.50000 0.0000) (3.0000 0.50000 0.0000) (3.0000 -0.50000 0.0000) (2.0000 -0.50000 0.0000) from region dend
+12:04:26.690 DEBUG o.t.s.n.m.VolumeGrid - Processing VolumeElement (2.0000 -0.50000 0.0000) (3.0000 -0.50000 0.0000) (3.0000 -0.75000 0.0000) (2.0000 -0.75000 0.0000) from region dend
+12:04:26.699 DEBUG o.t.u.LibUtil - Added /usr/lib64/jhdf to java.library.path
+12:04:26.699 DEBUG o.t.u.LibUtil - Added /usr/lib64/jhdf5 to java.library.path
+12:04:26.699 DEBUG o.t.u.LibUtil - Added /usr/lib/jhdf to java.library.path
+12:04:26.699 DEBUG o.t.u.LibUtil - Added /usr/lib/jhdf5 to java.library.path
+12:04:26.702 INFO  o.t.s.SDCalc - Using HDF5 writer for Model_cAMPassay1.5-PDE2600-fixed-0.005.h5
+12:04:26.702 INFO  o.t.s.SDCalc - Beginning calculations (1 trials)
+12:04:26.709 INFO  o.t.s.n.BaseCalc - Writing particle numbers as NUMBERs
+12:04:26.709 INFO  o.t.s.n.g.GridCalc - Extracting dts for 1 output files
+12:04:26.760 INFO  o.t.s.n.g.ResultWriterHDF5 - Created git_version with dims=[1] size=[] chunks=[]
+12:04:26.761 INFO  o.t.s.n.g.ResultWriterHDF5 - Created archiver_version with dims=[1] size=[] chunks=[]
+12:04:26.762 INFO  o.t.s.n.g.ResultWriterHDF5 - Created built_by with dims=[1] size=[] chunks=[]
+12:04:26.762 INFO  o.t.s.n.g.ResultWriterHDF5 - Created build_time with dims=[1] size=[] chunks=[]
+12:04:26.763 INFO  o.t.s.n.g.ResultWriterHDF5 - Created created_by with dims=[1] size=[] chunks=[]
+12:04:26.763 INFO  o.t.s.n.g.ResultWriterHDF5 - Created build_jdk with dims=[1] size=[] chunks=[]
+12:04:26.764 INFO  o.t.s.n.g.ResultWriterHDF5 - Created manifest_version with dims=[1] size=[] chunks=[]
+12:04:26.764 INFO  o.t.s.n.g.ResultWriterHDF5 - Created main_class with dims=[1] size=[] chunks=[]
+12:04:26.765 INFO  o.t.s.m.ReactionScheme - Running with 43 reactions (forward and reverse)
+12:04:26.766 DEBUG o.t.s.n.c.ReactionTable - ireact=0/43 [[0, 1], [1, 1], [1, 1]]→[[2], [1], [1]] rate=1.66667E-6
+12:04:26.766 DEBUG o.t.s.n.c.ReactionTable - ireact=1/43 [[2], [1], [1]]→[[0, 1], [1, 1], [1, 1]] rate=0.005
+12:04:26.766 DEBUG o.t.s.n.c.ReactionTable - ireact=2/43 [[2, 3], [1, 1], [1, 1]]→[[4], [1], [1]] rate=3.0E-5
+12:04:26.767 DEBUG o.t.s.n.c.ReactionTable - ireact=3/43 [[4], [1], [1]]→[[2, 3], [1, 1], [1, 1]] rate=4.0E-4
+12:04:26.767 DEBUG o.t.s.n.c.ReactionTable - ireact=4/43 [[3, 1], [1, 1], [1, 1]]→[[6], [1], [1]] rate=1.0E-5
+12:04:26.767 DEBUG o.t.s.n.c.ReactionTable - ireact=5/43 [[6], [1], [1]]→[[3, 1], [1, 1], [1, 1]] rate=4.0E-4
+12:04:26.767 DEBUG o.t.s.n.c.ReactionTable - ireact=6/43 [[6, 0], [1, 1], [1, 1]]→[[4], [1], [1]] rate=5.0E-6
+12:04:26.768 DEBUG o.t.s.n.c.ReactionTable - ireact=7/43 [[4], [1], [1]]→[[6, 0], [1, 1], [1, 1]] rate=0.005
+12:04:26.768 DEBUG o.t.s.n.c.ReactionTable - ireact=8/43 [[4], [1], [1]]→[[7], [1], [1]] rate=0.002
+12:04:26.768 DEBUG o.t.s.n.c.ReactionTable - ireact=9/43 [[5], [1], [1]]→[[2, 9], [1, 1], [1, 1]] rate=0.016
+12:04:26.768 DEBUG o.t.s.n.c.ReactionTable - ireact=10/43 [[7], [1], [1]]→[[8], [1], [1]] rate=0.001
+12:04:26.769 DEBUG o.t.s.n.c.ReactionTable - ireact=11/43 [[8, 9], [1, 1], [1, 1]]→[[3], [1], [1]] rate=0.002
+12:04:26.769 DEBUG o.t.s.n.c.ReactionTable - ireact=12/43 [[7, 10], [1, 1], [1, 1]]→[[11], [1], [1]] rate=3.7E-7
+12:04:26.769 DEBUG o.t.s.n.c.ReactionTable - ireact=13/43 [[11], [1], [1]]→[[7, 10], [1, 1], [1, 1]] rate=1.0E-4
+12:04:26.769 DEBUG o.t.s.n.c.ReactionTable - ireact=14/43 [[11, 13], [1, 1], [1, 1]]→[[12], [1], [1]] rate=1.276E-7
+12:04:26.770 DEBUG o.t.s.n.c.ReactionTable - ireact=15/43 [[12], [1], [1]]→[[11, 13], [1, 1], [1, 1]] rate=2.612E-4
+12:04:26.770 DEBUG o.t.s.n.c.ReactionTable - ireact=16/43 [[12], [1], [1]]→[[11, 14], [1, 1], [1, 1]] rate=0.02846
+12:04:26.770 DEBUG o.t.s.n.c.ReactionTable - ireact=17/43 [[11, 14], [1, 1], [1, 1]]→[[12], [1], [1]] rate=2.592E-7
+12:04:26.770 DEBUG o.t.s.n.c.ReactionTable - ireact=18/43 [[16, 14], [1, 1], [1, 1]]→[[17], [1], [1]] rate=8.4E-5
+12:04:26.771 DEBUG o.t.s.n.c.ReactionTable - ireact=19/43 [[17], [1], [1]]→[[16, 14], [1, 1], [1, 1]] rate=0.0168
+12:04:26.771 DEBUG o.t.s.n.c.ReactionTable - ireact=20/43 [[17], [1], [1]]→[[16, 15], [1, 1], [1, 1]] rate=0.0042
+12:04:26.777 DEBUG o.t.s.n.c.ReactionTable - ireact=21/43 [[28, 16], [1, 1], [1, 1]]→[[18], [1], [1]] rate=6.25E-8
+12:04:26.778 DEBUG o.t.s.n.c.ReactionTable - ireact=22/43 [[18], [1], [1]]→[[28, 16], [1, 1], [1, 1]] rate=6.02E-6
+12:04:26.778 DEBUG o.t.s.n.c.ReactionTable - ireact=23/43 [[18], [1], [1]]→[[20, 28], [1, 1], [1, 1]] rate=1.5E-6
+12:04:26.778 DEBUG o.t.s.n.c.ReactionTable - ireact=24/43 [[28, 17], [1, 1], [1, 1]]→[[19], [1], [1]] rate=6.25E-8
+12:04:26.778 DEBUG o.t.s.n.c.ReactionTable - ireact=25/43 [[19], [1], [1]]→[[28, 17], [1, 1], [1, 1]] rate=6.02E-6
+12:04:26.779 DEBUG o.t.s.n.c.ReactionTable - ireact=26/43 [[19], [1], [1]]→[[21, 28], [1, 1], [1, 1]] rate=1.5E-6
+12:04:26.779 DEBUG o.t.s.n.c.ReactionTable - ireact=27/43 [[20], [1], [1]]→[[16], [1], [1]] rate=1.036E-5
+12:04:26.779 DEBUG o.t.s.n.c.ReactionTable - ireact=28/43 [[20, 14], [1, 1], [1, 1]]→[[21], [1], [1]] rate=1.008E-4
+12:04:26.780 DEBUG o.t.s.n.c.ReactionTable - ireact=29/43 [[21], [1], [1]]→[[20, 14], [1, 1], [1, 1]] rate=0.0168
+12:04:26.780 DEBUG o.t.s.n.c.ReactionTable - ireact=30/43 [[21], [1], [1]]→[[20, 15], [1, 1], [1, 1]] rate=0.0084
+12:04:26.780 DEBUG o.t.s.n.c.ReactionTable - ireact=31/43 [[15], [1], [1]]→[[13], [1], [1]] rate=0.001
+12:04:26.781 DEBUG o.t.s.n.c.ReactionTable - ireact=32/43 [[25, 14], [1, 2], [1, 1]]→[[26], [1], [1]] rate=2.60868E-7
+12:04:26.781 DEBUG o.t.s.n.c.ReactionTable - ireact=33/43 [[26], [1], [1]]→[[25, 14], [1, 2], [1, 1]] rate=6.0E-5
+12:04:26.781 DEBUG o.t.s.n.c.ReactionTable - ireact=34/43 [[26, 14], [1, 2], [1, 1]]→[[27], [1], [1]] rate=3.46218E-7
+12:04:26.781 DEBUG o.t.s.n.c.ReactionTable - ireact=35/43 [[27], [1], [1]]→[[26, 14], [1, 2], [1, 1]] rate=6.0E-4
+12:04:26.782 DEBUG o.t.s.n.c.ReactionTable - ireact=36/43 [[27], [1], [1]]→[[29, 28], [1, 2], [1, 1]] rate=4.8E-5
+12:04:26.782 DEBUG o.t.s.n.c.ReactionTable - ireact=37/43 [[29, 28], [1, 2], [1, 1]]→[[27], [1], [1]] rate=5.1E-6
+12:04:26.782 DEBUG o.t.s.n.c.ReactionTable - ireact=38/43 [[22, 14], [1, 1], [1, 1]]→[[23], [1], [1]] rate=2.0E-8
+12:04:26.782 DEBUG o.t.s.n.c.ReactionTable - ireact=39/43 [[23], [1], [1]]→[[22, 14], [1, 1], [1, 1]] rate=5.0E-4
+12:04:26.783 DEBUG o.t.s.n.c.ReactionTable - ireact=40/43 [[23, 14], [1, 1], [1, 1]]→[[24], [1], [1]] rate=5.9E-6
+12:04:26.783 DEBUG o.t.s.n.c.ReactionTable - ireact=41/43 [[24], [1], [1]]→[[23, 14], [1, 1], [1, 1]] rate=5.0E-4
+12:04:26.783 DEBUG o.t.s.n.c.ReactionTable - ireact=42/43 [[24], [1], [1]]→[[23, 15], [1, 1], [1, 1]] rate=0.0054
+12:04:26.783 INFO  o.t.s.n.BaseCalc - Trial 0: running with simulationSeed 123
+12:04:26.785 DEBUG o.t.s.m.SurfaceDensitySet - pico surface densities: [Da, D1R, DaD1R, Gsabg, DaD1RGs, DaD1RGbg, GsD1R, GasGTP, GasGDP, Gbg, AC, ACGas, ACGasATP, ATP, cAMP, AMP, PDE10, PDE10cAMP, PKAcPDE10, PKAcPDE10cAMP, pPDE10, pPDE10cAMP, PDE2, PDE2cAMP, PDE2cAMP2, PKA, PKAcAMP2, PKAcAMP4, PKAc, PKAr] → [NaN, 200.0, NaN, 2000.0, NaN, NaN, NaN, NaN, NaN, NaN, 1000.0, 0.0, 0.0, NaN, NaN, NaN, 100.0, 0.0, 0.0, 0.0, 0.0, 0.0, NaN, NaN, NaN, 1000.0, 0.0, 0.0, 0.0, 0.0]
+12:04:26.785 DEBUG o.t.s.n.g.SteppedStochasticGridCalc - lnrates: [-13.304682934200283, -5.298317366548036, -10.41431317630212, -7.824046010856292, -11.512925464970229, -7.824046010856292, -12.206072645530174, -5.298317366548036, -6.214608098422191, -4.135166556742356, -6.907755278982137, -6.214608098422191, -14.809762831308142, -9.210340371976182, -15.874365466035721, -8.250224160561999, -3.559255686320431, -15.165665872468292, -9.38469375912096, -4.086376392572924, -5.472670753692815, -16.588099280204055, -12.020423298643545, -13.41004544985611, -16.588099280204055, -12.020423298643545, -13.41004544985611, -11.477558321132937, -9.202372202327005, -4.086376392572924, -4.779523573132869, -6.907755278982137, -15.15925130468337, -9.721165995742174, -14.876197202488305, -7.418580902748128, -9.944309547056383, -12.186270018233994, -17.72753356339242, -7.600902459542082, -12.0405582070526, -7.600902459542082, -5.221356325411908]
+12:04:26.786 DEBUG o.t.s.n.g.SteppedStochasticGridCalc - lnvolumes: [0.0, 1.3862943611198906, 0.0, 0.0, 1.3862943611198906, 0.0, 0.0, 1.3862943611198906, 0.0]
+12:04:26.788 INFO  o.t.s.n.s.InterpolatingStepGenerator - Using BINOMIAL step generator with 601×121 tables
+12:04:27.453 INFO  o.t.s.n.g.SteppedStochasticGridCalc - Using INDEPENDENT destination allocation
+12:04:27.454 INFO  o.t.s.n.g.SteppedStochasticGridCalc - max no of neighbors for a single element is 4
+12:04:27.459 INFO  o.t.s.n.g.ResultWriterHDF5 - Created simulation_seed with dims=[1] size=[] chunks=[]
+12:04:27.471 INFO  o.t.s.n.g.ResultWriterHDF5 - Created grid with dims=[9] size=[] chunks=[9]
+12:04:27.472 INFO  o.t.s.n.g.ResultWriterHDF5 - Created neighbors with dims=[9×4] size=[] chunks=[]
+12:04:27.473 INFO  o.t.s.n.g.ResultWriterHDF5 - Created couplings with dims=[9×4] size=[] chunks=[]
+12:04:27.475 INFO  o.t.s.n.g.ResultWriterHDF5 - Created species with dims=[30] size=[] chunks=[]
+12:04:27.476 INFO  o.t.s.n.g.ResultWriterHDF5 - Created regions with dims=[2] size=[] chunks=[]
+12:04:27.479 INFO  o.t.s.n.g.ResultWriterHDF5 - Created target_names with dims=[1] size=[] chunks=[]
+12:04:27.480 INFO  o.t.s.n.g.ResultWriterHDF5 - Created targets with dims=[1×1] size=[] chunks=[]
+12:04:27.481 INFO  o.t.s.n.g.ResultWriterHDF5 - Created reactants with dims=[43×2] size=[] chunks=[]
+12:04:27.482 INFO  o.t.s.n.g.ResultWriterHDF5 - Created products with dims=[43×2] size=[] chunks=[]
+12:04:27.484 INFO  o.t.s.n.g.ResultWriterHDF5 - Created reactant_stoichiometry with dims=[43×2] size=[] chunks=[]
+12:04:27.485 INFO  o.t.s.n.g.ResultWriterHDF5 - Created product_stoichiometry with dims=[43×2] size=[] chunks=[]
+12:04:27.486 INFO  o.t.s.n.g.ResultWriterHDF5 - Created rates with dims=[43] size=[] chunks=[]
+12:04:27.487 INFO  o.t.s.n.g.ResultWriterHDF5 - Created reversible_pairs with dims=[43] size=[] chunks=[]
+12:04:27.489 INFO  o.t.s.n.g.ResultWriterHDF5 - Created species with dims=[30] size=[] chunks=[]
+12:04:27.490 INFO  o.t.s.n.g.ResultWriterHDF5 - Created elements with dims=[9] size=[] chunks=[]
+12:04:27.491 INFO  o.t.s.n.g.ResultWriterHDF5 - Created species with dims=[29] size=[] chunks=[]
+12:04:27.492 INFO  o.t.s.n.g.ResultWriterHDF5 - Created elements with dims=[9] size=[] chunks=[]
+12:04:27.543 INFO  o.t.s.n.g.ResultWriterHDF5 - Created serialized_config with dims=[1] size=[] chunks=[]
+12:04:27.544 INFO  o.t.s.n.g.GridCalc - Trial 0: running from time=0.0 ms to time=200000.0 ms
+12:04:27.544 INFO  o.t.s.n.g.GridCalc - dt=0.005 dtsOut=[100.0] saveStateTime=1.0E9
+12:04:27.544 INFO  o.t.s.n.g.GridCalc - Trial 0: time 0.0 dt=0.005
+12:04:27.547 INFO  o.t.s.n.g.ResultWriterHDF5 - Created population with dims=[0×9×30] size=[∞×9×30] chunks=[4×9×30]
+12:04:27.548 INFO  o.t.s.n.g.ResultWriterHDF5 - Created times with dims=[0] size=[∞] chunks=[1024]
+12:04:27.551 INFO  o.t.s.n.g.ResultWriterHDF5 - elementsout2: [[0, 1, 2, 3, 4, 5, 6, 7, 8]] 
+12:04:27.551 INFO  o.t.s.n.g.ResultWriterHDF5 - i:1 [0, 1, 2, 3, 4, 5, 6, 7, 8]
+12:04:27.551 INFO  o.t.s.n.g.ResultWriterHDF5 - Created population with dims=[0×9×29] size=[∞×9×29] chunks=[4×9×29]
+12:04:27.552 INFO  o.t.s.n.g.ResultWriterHDF5 - Created times with dims=[0] size=[∞] chunks=[1024]
+12:04:29.263 INFO  o.t.s.n.g.GridCalc - Trial 0: time 199.9999999998906 dt=0.005 events=17280000 10052/ms
+12:04:30.857 INFO  o.t.s.n.g.GridCalc - Trial 0: time 399.99999999970873 dt=0.005 events=17280000 10840/ms
+12:04:32.501 INFO  o.t.s.n.g.GridCalc - Trial 0: time 599.9999999995268 dt=0.005 events=17280000 10517/ms
+12:04:34.181 INFO  o.t.s.n.g.GridCalc - Trial 0: time 799.9999999993449 dt=0.005 events=17280000 10285/ms
+12:04:35.768 INFO  o.t.s.n.g.GridCalc - Trial 0: time 999.999999999163 dt=0.005 events=17280000 10881/ms
+12:04:37.395 INFO  o.t.s.n.g.GridCalc - Trial 0: time 1200.000000002983 dt=0.005 events=17280000 10620/ms
+12:04:39.094 INFO  o.t.s.n.g.GridCalc - Trial 0: time 1400.0000000073485 dt=0.005 events=17280000 10170/ms
+12:04:40.937 INFO  o.t.s.n.g.GridCalc - Trial 0: time 1600.000000011714 dt=0.005 events=17280000 9376/ms
+12:04:42.727 INFO  o.t.s.n.g.GridCalc - Trial 0: time 1800.0000000160796 dt=0.005 events=17280000 9653/ms
+12:04:44.507 INFO  o.t.s.n.g.GridCalc - Trial 0: time 2000.0000000204452 dt=0.005 events=17280000 9713/ms
+12:04:46.276 INFO  o.t.s.n.g.GridCalc - Trial 0: time 2200.0000000248106 dt=0.005 events=17280000 9762/ms
+12:04:48.014 INFO  o.t.s.n.g.GridCalc - Trial 0: time 2400.000000029176 dt=0.005 events=17280000 9942/ms
+12:04:49.736 INFO  o.t.s.n.g.GridCalc - Trial 0: time 2600.0000000335417 dt=0.005 events=17280000 10034/ms
+12:04:51.430 INFO  o.t.s.n.g.GridCalc - Trial 0: time 2800.0000000379073 dt=0.005 events=17280000 10206/ms
+12:04:53.132 INFO  o.t.s.n.g.GridCalc - Trial 0: time 3000.000000042273 dt=0.005 events=17280000 10146/ms
+12:04:54.837 INFO  o.t.s.n.g.GridCalc - Trial 0: time 3200.0000000466384 dt=0.005 events=17280000 10134/ms
+12:04:56.579 INFO  o.t.s.n.g.GridCalc - Trial 0: time 3400.000000051004 dt=0.005 events=17280000 9919/ms
+12:04:58.321 INFO  o.t.s.n.g.GridCalc - Trial 0: time 3600.0000000553696 dt=0.005 events=17280000 9925/ms
+12:05:00.062 INFO  o.t.s.n.g.GridCalc - Trial 0: time 3800.000000059735 dt=0.005 events=17280000 9919/ms
+12:05:01.759 INFO  o.t.s.n.g.GridCalc - Trial 0: time 4000.0000000641007 dt=0.005 events=17280000 10182/ms
+12:05:03.450 INFO  o.t.s.n.g.GridCalc - Trial 0: time 4200.000000068466 dt=0.005 events=17280000 10218/ms
+12:05:05.170 INFO  o.t.s.n.g.GridCalc - Trial 0: time 4400.000000072831 dt=0.005 events=17280000 10046/ms
+12:05:06.849 INFO  o.t.s.n.g.GridCalc - Trial 0: time 4600.000000077197 dt=0.005 events=17280000 10291/ms
+12:05:08.530 INFO  o.t.s.n.g.GridCalc - Trial 0: time 4800.000000081563 dt=0.005 events=17280000 10279/ms
+12:05:10.170 INFO  o.t.s.n.g.GridCalc - Trial 0: time 5000.000000085928 dt=0.005 events=17280000 10536/ms
+12:05:11.759 INFO  o.t.s.n.g.GridCalc - Trial 0: time 5200.000000090294 dt=0.005 events=17280000 10874/ms
+12:05:13.398 INFO  o.t.s.n.g.GridCalc - Trial 0: time 5400.000000094659 dt=0.005 events=17280000 10543/ms
+12:05:15.071 INFO  o.t.s.n.g.GridCalc - Trial 0: time 5600.000000099025 dt=0.005 events=17280000 10328/ms
+12:05:16.712 INFO  o.t.s.n.g.GridCalc - Trial 0: time 5800.00000010339 dt=0.005 events=17280000 10530/ms
+12:05:18.322 INFO  o.t.s.n.g.GridCalc - Trial 0: time 6000.000000107756 dt=0.005 events=17280000 10732/ms
+12:05:19.876 INFO  o.t.s.n.g.GridCalc - Trial 0: time 6200.000000112122 dt=0.005 events=17280000 11119/ms
+12:05:21.444 INFO  o.t.s.n.g.GridCalc - Trial 0: time 6400.000000116487 dt=0.005 events=17280000 11020/ms
+12:05:23.000 INFO  o.t.s.n.g.GridCalc - Trial 0: time 6600.000000120853 dt=0.005 events=17280000 11105/ms
+12:05:24.579 INFO  o.t.s.n.g.GridCalc - Trial 0: time 6800.000000125218 dt=0.005 events=17280000 10943/ms
+12:05:26.239 INFO  o.t.s.n.g.GridCalc - Trial 0: time 7000.000000129584 dt=0.005 events=17280000 10415/ms
+12:05:27.917 INFO  o.t.s.n.g.GridCalc - Trial 0: time 7200.0000001339495 dt=0.005 events=17280000 10291/ms
+12:05:29.571 INFO  o.t.s.n.g.GridCalc - Trial 0: time 7400.000000138315 dt=0.005 events=17280000 10447/ms
+12:05:31.161 INFO  o.t.s.n.g.GridCalc - Trial 0: time 7600.000000142681 dt=0.005 events=17280000 10867/ms
+12:05:32.741 INFO  o.t.s.n.g.GridCalc - Trial 0: time 7800.000000147046 dt=0.005 events=17280000 10936/ms
+12:05:34.338 INFO  o.t.s.n.g.GridCalc - Trial 0: time 8000.000000151412 dt=0.005 events=17280000 10820/ms
+12:05:35.944 INFO  o.t.s.n.g.GridCalc - Trial 0: time 8200.000000154321 dt=0.005 events=17280000 10766/ms
+12:05:37.552 INFO  o.t.s.n.g.GridCalc - Trial 0: time 8400.000000122307 dt=0.005 events=17280000 10739/ms
+12:05:39.175 INFO  o.t.s.n.g.GridCalc - Trial 0: time 8600.000000090293 dt=0.005 events=17280000 10646/ms
+12:05:40.884 INFO  o.t.s.n.g.GridCalc - Trial 0: time 8800.000000058279 dt=0.005 events=17280000 10117/ms
+12:05:42.593 INFO  o.t.s.n.g.GridCalc - Trial 0: time 9000.000000026264 dt=0.005 events=17280000 10105/ms
+12:05:44.291 INFO  o.t.s.n.g.GridCalc - Trial 0: time 9200.00499999425 dt=0.005 events=17280432 10176/ms
+12:05:46.000 INFO  o.t.s.n.g.GridCalc - Trial 0: time 9400.004999962235 dt=0.005 events=17280000 10111/ms
+12:05:47.688 INFO  o.t.s.n.g.GridCalc - Trial 0: time 9600.004999930221 dt=0.005 events=17280000 10236/ms
+12:05:49.391 INFO  o.t.s.n.g.GridCalc - Trial 0: time 9800.004999898207 dt=0.005 events=17280000 10146/ms
+12:05:51.094 INFO  o.t.s.n.g.GridCalc - Trial 0: time 10000.004999866193 dt=0.005 events=17280000 10146/ms
+12:05:52.792 INFO  o.t.s.n.g.GridCalc - Trial 0: time 10200.004999834178 dt=0.005 events=17280000 10182/ms
+12:05:54.511 INFO  o.t.s.n.g.GridCalc - Trial 0: time 10400.004999802164 dt=0.005 events=17280000 10052/ms
+12:05:56.130 INFO  o.t.s.n.g.GridCalc - Trial 0: time 10600.00499977015 dt=0.005 events=17280000 10666/ms
+12:05:57.707 INFO  o.t.s.n.g.GridCalc - Trial 0: time 10800.004999738136 dt=0.005 events=17280000 10957/ms
+12:05:59.285 INFO  o.t.s.n.g.GridCalc - Trial 0: time 11000.004999706121 dt=0.005 events=17280000 10950/ms
+12:06:00.868 INFO  o.t.s.n.g.GridCalc - Trial 0: time 11200.004999674107 dt=0.005 events=17280000 10922/ms
+12:06:02.458 INFO  o.t.s.n.g.GridCalc - Trial 0: time 11400.004999642093 dt=0.005 events=17280000 10861/ms
+12:06:04.037 INFO  o.t.s.n.g.GridCalc - Trial 0: time 11600.004999610079 dt=0.005 events=17280000 10943/ms
+12:06:05.668 INFO  o.t.s.n.g.GridCalc - Trial 0: time 11800.004999578065 dt=0.005 events=17280000 10594/ms
+12:06:07.340 INFO  o.t.s.n.g.GridCalc - Trial 0: time 12000.00499954605 dt=0.005 events=17280000 10334/ms
+12:06:09.089 INFO  o.t.s.n.g.GridCalc - Trial 0: time 12200.004999514036 dt=0.005 events=17280000 9885/ms
+12:06:10.795 INFO  o.t.s.n.g.GridCalc - Trial 0: time 12400.004999482022 dt=0.005 events=17280000 10123/ms
+12:06:12.495 INFO  o.t.s.n.g.GridCalc - Trial 0: time 12600.004999450008 dt=0.005 events=17280000 10164/ms
+12:06:14.244 INFO  o.t.s.n.g.GridCalc - Trial 0: time 12800.004999417994 dt=0.005 events=17280000 9885/ms
+12:06:15.936 INFO  o.t.s.n.g.GridCalc - Trial 0: time 13000.00499938598 dt=0.005 events=17280000 10212/ms
+12:06:17.640 INFO  o.t.s.n.g.GridCalc - Trial 0: time 13200.004999353965 dt=0.005 events=17280000 10134/ms
+12:06:19.347 INFO  o.t.s.n.g.GridCalc - Trial 0: time 13400.00499932195 dt=0.005 events=17280000 10123/ms
+12:06:21.055 INFO  o.t.s.n.g.GridCalc - Trial 0: time 13600.004999289937 dt=0.005 events=17280000 10123/ms
+12:06:22.671 INFO  o.t.s.n.g.GridCalc - Trial 0: time 13800.004999257922 dt=0.005 events=17280000 10686/ms
+12:06:24.255 INFO  o.t.s.n.g.GridCalc - Trial 0: time 14000.004999225908 dt=0.005 events=17280000 10909/ms
+12:06:25.903 INFO  o.t.s.n.g.GridCalc - Trial 0: time 14200.004999193894 dt=0.005 events=17280000 10485/ms
+12:06:27.505 INFO  o.t.s.n.g.GridCalc - Trial 0: time 14400.00499916188 dt=0.005 events=17280000 10786/ms
+12:06:29.139 INFO  o.t.s.n.g.GridCalc - Trial 0: time 14600.004999129866 dt=0.005 events=17280000 10575/ms
+12:06:30.806 INFO  o.t.s.n.g.GridCalc - Trial 0: time 14800.004999097851 dt=0.005 events=17280000 10365/ms
+12:06:32.400 INFO  o.t.s.n.g.GridCalc - Trial 0: time 15000.004999065837 dt=0.005 events=17280000 10840/ms
+12:06:34.023 INFO  o.t.s.n.g.GridCalc - Trial 0: time 15200.004999033823 dt=0.005 events=17280000 10646/ms
+12:06:35.655 INFO  o.t.s.n.g.GridCalc - Trial 0: time 15400.004999001809 dt=0.005 events=17280000 10588/ms
+12:06:37.309 INFO  o.t.s.n.g.GridCalc - Trial 0: time 15600.004998969795 dt=0.005 events=17280000 10453/ms
+12:06:39.040 INFO  o.t.s.n.g.GridCalc - Trial 0: time 15800.00499893778 dt=0.005 events=17280000 9976/ms
+12:06:40.728 INFO  o.t.s.n.g.GridCalc - Trial 0: time 16000.004998905766 dt=0.005 events=17280000 10236/ms
+12:06:42.410 INFO  o.t.s.n.g.GridCalc - Trial 0: time 16200.004998873752 dt=0.005 events=17280000 10273/ms
+12:06:44.080 INFO  o.t.s.n.g.GridCalc - Trial 0: time 16400.00499884756 dt=0.005 events=17280000 10347/ms
+12:06:45.735 INFO  o.t.s.n.g.GridCalc - Trial 0: time 16600.004998888304 dt=0.005 events=17280000 10441/ms
+12:06:47.407 INFO  o.t.s.n.g.GridCalc - Trial 0: time 16800.00499892905 dt=0.005 events=17280000 10334/ms
+12:06:49.038 INFO  o.t.s.n.g.GridCalc - Trial 0: time 17000.004998969795 dt=0.005 events=17280000 10594/ms
+12:06:50.731 INFO  o.t.s.n.g.GridCalc - Trial 0: time 17200.00499901054 dt=0.005 events=17280000 10206/ms
+12:06:52.460 INFO  o.t.s.n.g.GridCalc - Trial 0: time 17400.004999051285 dt=0.005 events=17280000 10000/ms
+12:06:54.121 INFO  o.t.s.n.g.GridCalc - Trial 0: time 17600.00499909203 dt=0.005 events=17280000 10397/ms
+12:06:55.818 INFO  o.t.s.n.g.GridCalc - Trial 0: time 17800.004999132776 dt=0.005 events=17280000 10188/ms
+12:06:57.441 INFO  o.t.s.n.g.GridCalc - Trial 0: time 18000.00499917352 dt=0.005 events=17280000 10640/ms
+12:06:59.080 INFO  o.t.s.n.g.GridCalc - Trial 0: time 18200.004999214267 dt=0.005 events=17280000 10543/ms
+12:07:00.759 INFO  o.t.s.n.g.GridCalc - Trial 0: time 18400.004999255012 dt=0.005 events=17280000 10291/ms
+12:07:02.382 INFO  o.t.s.n.g.GridCalc - Trial 0: time 18600.004999295757 dt=0.005 events=17280000 10646/ms
+12:07:04.032 INFO  o.t.s.n.g.GridCalc - Trial 0: time 18800.004999336503 dt=0.005 events=17280000 10479/ms
+12:07:05.703 INFO  o.t.s.n.g.GridCalc - Trial 0: time 19000.004999377248 dt=0.005 events=17280000 10334/ms
+12:07:07.399 INFO  o.t.s.n.g.GridCalc - Trial 0: time 19200.004999417994 dt=0.005 events=17280000 10194/ms
+12:07:09.138 INFO  o.t.s.n.g.GridCalc - Trial 0: time 19400.00499945874 dt=0.005 events=17280000 9936/ms
+12:07:10.808 INFO  o.t.s.n.g.GridCalc - Trial 0: time 19600.004999499484 dt=0.005 events=17280000 10341/ms
+12:07:12.477 INFO  o.t.s.n.g.GridCalc - Trial 0: time 19800.00499954023 dt=0.005 events=17280000 10359/ms
+12:07:14.143 INFO  o.t.s.n.g.GridCalc - Trial 0: time 20000.004999580975 dt=0.005 events=17280000 10372/ms
+12:07:15.814 INFO  o.t.s.n.g.GridCalc - Trial 0: time 20200.00499962172 dt=0.005 events=17280000 10334/ms
+12:07:17.522 INFO  o.t.s.n.g.GridCalc - Trial 0: time 20400.004999662466 dt=0.005 events=17280000 10117/ms
+12:07:19.217 INFO  o.t.s.n.g.GridCalc - Trial 0: time 20600.00499970321 dt=0.005 events=17280000 10194/ms
+12:07:20.915 INFO  o.t.s.n.g.GridCalc - Trial 0: time 20800.004999743956 dt=0.005 events=17280000 10182/ms
+12:07:22.664 INFO  o.t.s.n.g.GridCalc - Trial 0: time 21000.0049997847 dt=0.005 events=17280000 9874/ms
+12:07:24.421 INFO  o.t.s.n.g.GridCalc - Trial 0: time 21200.004999825447 dt=0.005 events=17280000 9840/ms
+12:07:26.123 INFO  o.t.s.n.g.GridCalc - Trial 0: time 21400.004999866193 dt=0.005 events=17280000 10146/ms
+12:07:27.804 INFO  o.t.s.n.g.GridCalc - Trial 0: time 21600.004999906938 dt=0.005 events=17280000 10279/ms
+12:07:29.486 INFO  o.t.s.n.g.GridCalc - Trial 0: time 21800.004999947683 dt=0.005 events=17280000 10273/ms
+12:07:31.186 INFO  o.t.s.n.g.GridCalc - Trial 0: time 22000.00499998843 dt=0.005 events=17280000 10164/ms
+12:07:32.872 INFO  o.t.s.n.g.GridCalc - Trial 0: time 22200.000000029173 dt=0.005 events=17279568 10248/ms
+12:07:34.565 INFO  o.t.s.n.g.GridCalc - Trial 0: time 22400.00000006992 dt=0.005 events=17280000 10212/ms
+12:07:36.242 INFO  o.t.s.n.g.GridCalc - Trial 0: time 22600.000000110664 dt=0.005 events=17280000 10297/ms
+12:07:37.973 INFO  o.t.s.n.g.GridCalc - Trial 0: time 22800.00000015141 dt=0.005 events=17280000 9982/ms
+12:07:39.724 INFO  o.t.s.n.g.GridCalc - Trial 0: time 23000.000000192154 dt=0.005 events=17280000 9868/ms
+12:07:41.457 INFO  o.t.s.n.g.GridCalc - Trial 0: time 23200.0000002329 dt=0.005 events=17280000 9971/ms
+12:07:43.181 INFO  o.t.s.n.g.GridCalc - Trial 0: time 23400.000000273645 dt=0.005 events=17280000 10023/ms
+12:07:44.935 INFO  o.t.s.n.g.GridCalc - Trial 0: time 23600.00000031439 dt=0.005 events=17280000 9851/ms
+12:07:46.666 INFO  o.t.s.n.g.GridCalc - Trial 0: time 23800.000000355136 dt=0.005 events=17280000 9982/ms
+12:07:48.409 INFO  o.t.s.n.g.GridCalc - Trial 0: time 24000.00000039588 dt=0.005 events=17280000 9913/ms
+12:07:50.076 INFO  o.t.s.n.g.GridCalc - Trial 0: time 24200.000000436627 dt=0.005 events=17280000 10365/ms
+12:07:51.770 INFO  o.t.s.n.g.GridCalc - Trial 0: time 24400.000000477372 dt=0.005 events=17280000 10200/ms
+12:07:53.464 INFO  o.t.s.n.g.GridCalc - Trial 0: time 24600.000000518117 dt=0.005 events=17280000 10200/ms
+12:07:55.204 INFO  o.t.s.n.g.GridCalc - Trial 0: time 24800.000000558863 dt=0.005 events=17280000 9931/ms
+12:07:56.931 INFO  o.t.s.n.g.GridCalc - Trial 0: time 25000.000000599608 dt=0.005 events=17280000 10011/ms
+12:07:58.624 INFO  o.t.s.n.g.GridCalc - Trial 0: time 25200.000000640353 dt=0.005 events=17280000 10200/ms
+12:08:00.340 INFO  o.t.s.n.g.GridCalc - Trial 0: time 25400.0000006811 dt=0.005 events=17280000 10069/ms
+12:08:02.047 INFO  o.t.s.n.g.GridCalc - Trial 0: time 25600.000000721844 dt=0.005 events=17280000 10123/ms
+12:08:03.743 INFO  o.t.s.n.g.GridCalc - Trial 0: time 25800.00000076259 dt=0.005 events=17280000 10188/ms
+12:08:05.416 INFO  o.t.s.n.g.GridCalc - Trial 0: time 26000.000000803335 dt=0.005 events=17280000 10328/ms
+12:08:07.118 INFO  o.t.s.n.g.GridCalc - Trial 0: time 26200.00000084408 dt=0.005 events=17280000 10152/ms
+12:08:08.837 INFO  o.t.s.n.g.GridCalc - Trial 0: time 26400.000000884826 dt=0.005 events=17280000 10052/ms
+12:08:10.538 INFO  o.t.s.n.g.GridCalc - Trial 0: time 26600.00000092557 dt=0.005 events=17280000 10158/ms
+12:08:12.248 INFO  o.t.s.n.g.GridCalc - Trial 0: time 26800.000000966316 dt=0.005 events=17280000 10105/ms
+12:08:13.959 INFO  o.t.s.n.g.GridCalc - Trial 0: time 27000.00000100706 dt=0.005 events=17280000 10105/ms
+12:08:15.701 INFO  o.t.s.n.g.GridCalc - Trial 0: time 27200.000001047807 dt=0.005 events=17280000 9913/ms
+12:08:17.489 INFO  o.t.s.n.g.GridCalc - Trial 0: time 27400.000001088552 dt=0.005 events=17280000 9664/ms
+12:08:19.245 INFO  o.t.s.n.g.GridCalc - Trial 0: time 27600.000001129298 dt=0.005 events=17280000 9840/ms
+12:08:21.016 INFO  o.t.s.n.g.GridCalc - Trial 0: time 27800.000001170043 dt=0.005 events=17280000 9762/ms
+12:08:22.797 INFO  o.t.s.n.g.GridCalc - Trial 0: time 28000.00000121079 dt=0.005 events=17280000 9696/ms
+12:08:24.543 INFO  o.t.s.n.g.GridCalc - Trial 0: time 28200.000001251534 dt=0.005 events=17280000 9896/ms
+12:08:26.262 INFO  o.t.s.n.g.GridCalc - Trial 0: time 28400.00000129228 dt=0.005 events=17280000 10052/ms
+12:08:28.005 INFO  o.t.s.n.g.GridCalc - Trial 0: time 28600.000001333025 dt=0.005 events=17280000 9913/ms
+12:08:29.791 INFO  o.t.s.n.g.GridCalc - Trial 0: time 28800.00000137377 dt=0.005 events=17280000 9675/ms
+12:08:31.546 INFO  o.t.s.n.g.GridCalc - Trial 0: time 29000.000001414515 dt=0.005 events=17280000 9846/ms
+12:08:33.313 INFO  o.t.s.n.g.GridCalc - Trial 0: time 29200.00000145526 dt=0.005 events=17280000 9779/ms
+12:08:35.048 INFO  o.t.s.n.g.GridCalc - Trial 0: time 29400.000001496006 dt=0.005 events=17280000 9959/ms
+12:08:36.783 INFO  o.t.s.n.g.GridCalc - Trial 0: time 29600.00000153675 dt=0.005 events=17280000 9959/ms
+12:08:38.527 INFO  o.t.s.n.g.GridCalc - Trial 0: time 29800.000001577497 dt=0.005 events=17280000 9908/ms
+12:08:40.300 INFO  o.t.s.n.g.GridCalc - Trial 0: time 30000.000001618242 dt=0.005 events=17280000 9746/ms
+12:08:42.059 INFO  o.t.s.n.g.GridCalc - Trial 0: time 30200.000001658987 dt=0.005 events=17280000 9823/ms
+12:08:43.762 INFO  o.t.s.n.g.GridCalc - Trial 0: time 30400.000001699733 dt=0.005 events=17280000 10146/ms
+12:08:45.489 INFO  o.t.s.n.g.GridCalc - Trial 0: time 30600.00000174048 dt=0.005 events=17280000 10011/ms
+12:08:47.260 INFO  o.t.s.n.g.GridCalc - Trial 0: time 30800.000001781224 dt=0.005 events=17280000 9751/ms
+12:08:49.040 INFO  o.t.s.n.g.GridCalc - Trial 0: time 31000.00000182197 dt=0.005 events=17280000 9707/ms
+12:08:50.803 INFO  o.t.s.n.g.GridCalc - Trial 0: time 31200.000001862714 dt=0.005 events=17280000 9801/ms
+12:08:52.548 INFO  o.t.s.n.g.GridCalc - Trial 0: time 31400.00000190346 dt=0.005 events=17280000 9908/ms
+12:08:54.316 INFO  o.t.s.n.g.GridCalc - Trial 0: time 31600.000001944205 dt=0.005 events=17280000 9768/ms
+12:08:56.020 INFO  o.t.s.n.g.GridCalc - Trial 0: time 31800.00000198495 dt=0.005 events=17280000 10140/ms
+12:08:57.711 INFO  o.t.s.n.g.GridCalc - Trial 0: time 32000.000002025696 dt=0.005 events=17280000 10218/ms
+12:08:59.434 INFO  o.t.s.n.g.GridCalc - Trial 0: time 32200.00000206644 dt=0.005 events=17280000 10029/ms
+12:09:01.170 INFO  o.t.s.n.g.GridCalc - Trial 0: time 32400.000002107186 dt=0.005 events=17280000 9953/ms
+12:09:02.940 INFO  o.t.s.n.g.GridCalc - Trial 0: time 32600.00000214793 dt=0.005 events=17280000 9768/ms
+12:09:04.686 INFO  o.t.s.n.g.GridCalc - Trial 0: time 32800.00000216539 dt=0.005 events=17280000 9896/ms
+12:09:06.409 INFO  o.t.s.n.g.GridCalc - Trial 0: time 33000.00000206062 dt=0.005 events=17280000 10023/ms
+12:09:08.151 INFO  o.t.s.n.g.GridCalc - Trial 0: time 33200.00000195584 dt=0.005 events=17280000 9919/ms
+12:09:09.900 INFO  o.t.s.n.g.GridCalc - Trial 0: time 33400.00000185107 dt=0.005 events=17280000 9879/ms
+12:09:11.737 INFO  o.t.s.n.g.GridCalc - Trial 0: time 33600.000001746295 dt=0.005 events=17280000 9411/ms
+12:09:13.477 INFO  o.t.s.n.g.GridCalc - Trial 0: time 33800.00000164152 dt=0.005 events=17280000 9925/ms
+12:09:15.220 INFO  o.t.s.n.g.GridCalc - Trial 0: time 34000.00000153675 dt=0.005 events=17280000 9919/ms
+12:09:16.975 INFO  o.t.s.n.g.GridCalc - Trial 0: time 34200.000001431974 dt=0.005 events=17280000 9846/ms
+12:09:18.754 INFO  o.t.s.n.g.GridCalc - Trial 0: time 34400.0000013272 dt=0.005 events=17280000 9707/ms
+12:09:20.445 INFO  o.t.s.n.g.GridCalc - Trial 0: time 34600.00000122243 dt=0.005 events=17280000 10224/ms
+12:09:22.149 INFO  o.t.s.n.g.GridCalc - Trial 0: time 34800.00000111765 dt=0.005 events=17280000 10134/ms
+12:09:23.851 INFO  o.t.s.n.g.GridCalc - Trial 0: time 35000.00000101288 dt=0.005 events=17280000 10152/ms
+12:09:25.537 INFO  o.t.s.n.g.GridCalc - Trial 0: time 35200.000000908105 dt=0.005 events=17280000 10249/ms
+12:09:27.260 INFO  o.t.s.n.g.GridCalc - Trial 0: time 35400.00000080333 dt=0.005 events=17280000 10029/ms
+12:09:29.008 INFO  o.t.s.n.g.GridCalc - Trial 0: time 35600.00000069856 dt=0.005 events=17280000 9885/ms
+12:09:30.716 INFO  o.t.s.n.g.GridCalc - Trial 0: time 35800.00000059378 dt=0.005 events=17280000 10123/ms
+12:09:32.434 INFO  o.t.s.n.g.GridCalc - Trial 0: time 36000.00000048901 dt=0.005 events=17280000 10058/ms
+12:09:34.120 INFO  o.t.s.n.g.GridCalc - Trial 0: time 36200.000000384236 dt=0.005 events=17280000 10243/ms
+12:09:35.829 INFO  o.t.s.n.g.GridCalc - Trial 0: time 36400.00000027946 dt=0.005 events=17280000 10117/ms
+12:09:37.539 INFO  o.t.s.n.g.GridCalc - Trial 0: time 36600.00000017469 dt=0.005 events=17280000 10099/ms
+12:09:39.265 INFO  o.t.s.n.g.GridCalc - Trial 0: time 36800.000000069915 dt=0.005 events=17280000 10017/ms
+12:09:40.934 INFO  o.t.s.n.g.GridCalc - Trial 0: time 37000.00499996514 dt=0.005 events=17280432 10353/ms
+12:09:42.665 INFO  o.t.s.n.g.GridCalc - Trial 0: time 37200.004999860364 dt=0.005 events=17280000 9976/ms
+12:09:44.405 INFO  o.t.s.n.g.GridCalc - Trial 0: time 37400.00499975559 dt=0.005 events=17280000 9931/ms
+12:09:46.115 INFO  o.t.s.n.g.GridCalc - Trial 0: time 37600.00499965082 dt=0.005 events=17280000 10105/ms
+12:09:47.811 INFO  o.t.s.n.g.GridCalc - Trial 0: time 37800.00499954604 dt=0.005 events=17280000 10188/ms
+12:09:49.528 INFO  o.t.s.n.g.GridCalc - Trial 0: time 38000.00499944127 dt=0.005 events=17280000 10064/ms
+12:09:51.227 INFO  o.t.s.n.g.GridCalc - Trial 0: time 38200.004999336496 dt=0.005 events=17280000 10170/ms
+12:09:53.011 INFO  o.t.s.n.g.GridCalc - Trial 0: time 38400.00499923172 dt=0.005 events=17280000 9691/ms
+12:09:54.750 INFO  o.t.s.n.g.GridCalc - Trial 0: time 38600.00499912695 dt=0.005 events=17280000 9931/ms
+12:09:56.511 INFO  o.t.s.n.g.GridCalc - Trial 0: time 38800.004999022174 dt=0.005 events=17280000 9818/ms
+12:09:58.219 INFO  o.t.s.n.g.GridCalc - Trial 0: time 39000.0049989174 dt=0.005 events=17280000 10111/ms
+12:09:59.969 INFO  o.t.s.n.g.GridCalc - Trial 0: time 39200.00499881263 dt=0.005 events=17280000 9874/ms
+12:10:01.714 INFO  o.t.s.n.g.GridCalc - Trial 0: time 39400.00499870785 dt=0.005 events=17280000 9908/ms
+12:10:03.439 INFO  o.t.s.n.g.GridCalc - Trial 0: time 39600.00499860308 dt=0.005 events=17280000 10011/ms
+12:10:05.196 INFO  o.t.s.n.g.GridCalc - Trial 0: time 39800.004998498305 dt=0.005 events=17280000 9840/ms
+12:10:06.939 INFO  o.t.s.n.g.GridCalc - Trial 0: time 40000.00499839353 dt=0.005 events=17280000 9908/ms
+12:10:08.658 INFO  o.t.s.n.g.GridCalc - Trial 0: time 40200.00499828876 dt=0.005 events=17280000 10052/ms
+12:10:10.408 INFO  o.t.s.n.g.GridCalc - Trial 0: time 40400.004998183984 dt=0.005 events=17280000 9874/ms
+12:10:12.080 INFO  o.t.s.n.g.GridCalc - Trial 0: time 40600.00499807921 dt=0.005 events=17280000 10334/ms
+12:10:13.825 INFO  o.t.s.n.g.GridCalc - Trial 0: time 40800.004997974436 dt=0.005 events=17280000 9902/ms
+12:10:15.530 INFO  o.t.s.n.g.GridCalc - Trial 0: time 41000.00499786966 dt=0.005 events=17280000 10134/ms
+12:10:17.318 INFO  o.t.s.n.g.GridCalc - Trial 0: time 41200.00499776489 dt=0.005 events=17280000 9664/ms
+12:10:19.032 INFO  o.t.s.n.g.GridCalc - Trial 0: time 41400.004997660115 dt=0.005 events=17280000 10081/ms
+12:10:20.775 INFO  o.t.s.n.g.GridCalc - Trial 0: time 41600.00499755534 dt=0.005 events=17280000 9913/ms
+12:10:22.493 INFO  o.t.s.n.g.GridCalc - Trial 0: time 41800.00499745057 dt=0.005 events=17280000 10058/ms
+12:10:24.245 INFO  o.t.s.n.g.GridCalc - Trial 0: time 42000.00499734579 dt=0.005 events=17280000 9863/ms
+12:10:26.033 INFO  o.t.s.n.g.GridCalc - Trial 0: time 42200.00499724102 dt=0.005 events=17280000 9664/ms
+12:10:27.720 INFO  o.t.s.n.g.GridCalc - Trial 0: time 42400.004997136246 dt=0.005 events=17280000 10243/ms
+12:10:29.426 INFO  o.t.s.n.g.GridCalc - Trial 0: time 42600.00499703147 dt=0.005 events=17280000 10128/ms
+12:10:31.149 INFO  o.t.s.n.g.GridCalc - Trial 0: time 42800.0049969267 dt=0.005 events=17280000 10034/ms
+12:10:32.920 INFO  o.t.s.n.g.GridCalc - Trial 0: time 43000.004996821925 dt=0.005 events=17280000 9751/ms
+12:10:34.668 INFO  o.t.s.n.g.GridCalc - Trial 0: time 43200.00499671715 dt=0.005 events=17280000 9885/ms
+12:10:36.413 INFO  o.t.s.n.g.GridCalc - Trial 0: time 43400.00499661238 dt=0.005 events=17280000 9908/ms
+12:10:38.198 INFO  o.t.s.n.g.GridCalc - Trial 0: time 43600.0049965076 dt=0.005 events=17280000 9675/ms
+12:10:39.925 INFO  o.t.s.n.g.GridCalc - Trial 0: time 43800.00499640283 dt=0.005 events=17280000 10011/ms
+12:10:41.659 INFO  o.t.s.n.g.GridCalc - Trial 0: time 44000.004996298056 dt=0.005 events=17280000 9959/ms
+12:10:43.405 INFO  o.t.s.n.g.GridCalc - Trial 0: time 44200.00499619328 dt=0.005 events=17280000 9896/ms
+12:10:45.139 INFO  o.t.s.n.g.GridCalc - Trial 0: time 44400.00499608851 dt=0.005 events=17280000 9965/ms
+12:10:46.876 INFO  o.t.s.n.g.GridCalc - Trial 0: time 44600.004995983734 dt=0.005 events=17280000 9948/ms
+12:10:48.640 INFO  o.t.s.n.g.GridCalc - Trial 0: time 44800.00499587896 dt=0.005 events=17280000 9795/ms
+12:10:50.391 INFO  o.t.s.n.g.GridCalc - Trial 0: time 45000.00499577419 dt=0.005 events=17280000 9868/ms
+12:10:52.169 INFO  o.t.s.n.g.GridCalc - Trial 0: time 45200.00499566941 dt=0.005 events=17280000 9718/ms
+12:10:53.969 INFO  o.t.s.n.g.GridCalc - Trial 0: time 45400.00499556464 dt=0.005 events=17280000 9600/ms
+12:10:55.787 INFO  o.t.s.n.g.GridCalc - Trial 0: time 45600.004995459865 dt=0.005 events=17280000 9504/ms
+12:10:57.536 INFO  o.t.s.n.g.GridCalc - Trial 0: time 45800.00499535509 dt=0.005 events=17280000 9879/ms
+12:10:59.346 INFO  o.t.s.n.g.GridCalc - Trial 0: time 46000.00499525032 dt=0.005 events=17280000 9546/ms
+12:11:01.152 INFO  o.t.s.n.g.GridCalc - Trial 0: time 46200.004995145544 dt=0.005 events=17280000 9568/ms
+12:11:02.923 INFO  o.t.s.n.g.GridCalc - Trial 0: time 46400.00499504077 dt=0.005 events=17280000 9757/ms
+12:11:04.696 INFO  o.t.s.n.g.GridCalc - Trial 0: time 46600.004994936 dt=0.005 events=17280000 9746/ms
+12:11:06.512 INFO  o.t.s.n.g.GridCalc - Trial 0: time 46800.00499483122 dt=0.005 events=17280000 9515/ms
+12:11:08.305 INFO  o.t.s.n.g.GridCalc - Trial 0: time 47000.00499472645 dt=0.005 events=17280000 9637/ms
+12:11:10.079 INFO  o.t.s.n.g.GridCalc - Trial 0: time 47200.004994621675 dt=0.005 events=17280000 9740/ms
+12:11:11.854 INFO  o.t.s.n.g.GridCalc - Trial 0: time 47400.0049945169 dt=0.005 events=17280000 9740/ms
+12:11:13.650 INFO  o.t.s.n.g.GridCalc - Trial 0: time 47600.00499441213 dt=0.005 events=17280000 9616/ms
+12:11:15.390 INFO  o.t.s.n.g.GridCalc - Trial 0: time 47800.00499430735 dt=0.005 events=17280000 9931/ms
+12:11:17.177 INFO  o.t.s.n.g.GridCalc - Trial 0: time 48000.00499420258 dt=0.005 events=17280000 9675/ms
+12:11:18.951 INFO  o.t.s.n.g.GridCalc - Trial 0: time 48200.004994097806 dt=0.005 events=17280000 9735/ms
+12:11:20.709 INFO  o.t.s.n.g.GridCalc - Trial 0: time 48400.00499399303 dt=0.005 events=17280000 9829/ms
+12:11:22.493 INFO  o.t.s.n.g.GridCalc - Trial 0: time 48600.00499388826 dt=0.005 events=17280000 9691/ms
+12:11:24.287 INFO  o.t.s.n.g.GridCalc - Trial 0: time 48800.004993783485 dt=0.005 events=17280000 9632/ms
+12:11:26.077 INFO  o.t.s.n.g.GridCalc - Trial 0: time 49000.00499367871 dt=0.005 events=17280000 9648/ms
+12:11:27.859 INFO  o.t.s.n.g.GridCalc - Trial 0: time 49200.00499357394 dt=0.005 events=17280000 9696/ms
+12:11:29.654 INFO  o.t.s.n.g.GridCalc - Trial 0: time 49400.00499346916 dt=0.005 events=17280000 9626/ms
+12:11:31.394 INFO  o.t.s.n.g.GridCalc - Trial 0: time 49600.00499336439 dt=0.005 events=17280000 9936/ms
+12:11:33.157 INFO  o.t.s.n.g.GridCalc - Trial 0: time 49800.004993259616 dt=0.005 events=17280000 9795/ms
+12:11:34.951 INFO  o.t.s.n.g.GridCalc - Trial 0: time 50000.00499315484 dt=0.005 events=17280000 9632/ms
+12:11:36.710 INFO  o.t.s.n.g.GridCalc - Trial 0: time 50200.00499305007 dt=0.005 events=17280000 9823/ms
+12:11:38.527 INFO  o.t.s.n.g.GridCalc - Trial 0: time 50400.004992945294 dt=0.005 events=17280000 9515/ms
+12:11:40.359 INFO  o.t.s.n.g.GridCalc - Trial 0: time 50600.00499284052 dt=0.005 events=17280000 9427/ms
+12:11:42.153 INFO  o.t.s.n.g.GridCalc - Trial 0: time 50800.00499273575 dt=0.005 events=17280000 9632/ms
+12:11:43.948 INFO  o.t.s.n.g.GridCalc - Trial 0: time 51000.00499263097 dt=0.005 events=17280000 9626/ms
+12:11:45.691 INFO  o.t.s.n.g.GridCalc - Trial 0: time 51200.0049925262 dt=0.005 events=17280000 9913/ms
+12:11:47.547 INFO  o.t.s.n.g.GridCalc - Trial 0: time 51400.004992421425 dt=0.005 events=17280000 9310/ms
+12:11:49.393 INFO  o.t.s.n.g.GridCalc - Trial 0: time 51600.00499231665 dt=0.005 events=17280000 9360/ms
+12:11:51.250 INFO  o.t.s.n.g.GridCalc - Trial 0: time 51800.00499221188 dt=0.005 events=17280000 9305/ms
+12:11:53.115 INFO  o.t.s.n.g.GridCalc - Trial 0: time 52000.004992107104 dt=0.005 events=17280000 9265/ms
+12:11:54.972 INFO  o.t.s.n.g.GridCalc - Trial 0: time 52200.00499200233 dt=0.005 events=17280000 9305/ms
+12:11:56.819 INFO  o.t.s.n.g.GridCalc - Trial 0: time 52400.00499189756 dt=0.005 events=17280000 9355/ms
+12:11:58.656 INFO  o.t.s.n.g.GridCalc - Trial 0: time 52600.00499179278 dt=0.005 events=17280000 9406/ms
+12:12:00.455 INFO  o.t.s.n.g.GridCalc - Trial 0: time 52800.00499168801 dt=0.005 events=17280000 9605/ms
+12:12:02.250 INFO  o.t.s.n.g.GridCalc - Trial 0: time 53000.004991583235 dt=0.005 events=17280000 9626/ms
+12:12:04.066 INFO  o.t.s.n.g.GridCalc - Trial 0: time 53200.00499147846 dt=0.005 events=17280000 9515/ms
+12:12:05.886 INFO  o.t.s.n.g.GridCalc - Trial 0: time 53400.00499137369 dt=0.005 events=17280000 9494/ms
+12:12:07.712 INFO  o.t.s.n.g.GridCalc - Trial 0: time 53600.004991268914 dt=0.005 events=17280000 9463/ms
+12:12:09.517 INFO  o.t.s.n.g.GridCalc - Trial 0: time 53800.00499116414 dt=0.005 events=17280000 9573/ms
+12:12:11.321 INFO  o.t.s.n.g.GridCalc - Trial 0: time 54000.004991059366 dt=0.005 events=17280000 9578/ms
+12:12:13.099 INFO  o.t.s.n.g.GridCalc - Trial 0: time 54200.00499095459 dt=0.005 events=17280000 9718/ms
+12:12:14.918 INFO  o.t.s.n.g.GridCalc - Trial 0: time 54400.00499084982 dt=0.005 events=17280000 9499/ms
+12:12:16.731 INFO  o.t.s.n.g.GridCalc - Trial 0: time 54600.004990745045 dt=0.005 events=17280000 9536/ms
+12:12:18.507 INFO  o.t.s.n.g.GridCalc - Trial 0: time 54800.00499064027 dt=0.005 events=17280000 9724/ms
+12:12:20.327 INFO  o.t.s.n.g.GridCalc - Trial 0: time 55000.0049905355 dt=0.005 events=17280000 9494/ms
+12:12:22.088 INFO  o.t.s.n.g.GridCalc - Trial 0: time 55200.00499043072 dt=0.005 events=17280000 9812/ms
+12:12:23.897 INFO  o.t.s.n.g.GridCalc - Trial 0: time 55400.00499032595 dt=0.005 events=17280000 9552/ms
+12:12:25.687 INFO  o.t.s.n.g.GridCalc - Trial 0: time 55600.004990221176 dt=0.005 events=17280000 9653/ms
+12:12:27.419 INFO  o.t.s.n.g.GridCalc - Trial 0: time 55800.0049901164 dt=0.005 events=17280000 9976/ms
+12:12:29.197 INFO  o.t.s.n.g.GridCalc - Trial 0: time 56000.00499001163 dt=0.005 events=17280000 9724/ms
+12:12:30.943 INFO  o.t.s.n.g.GridCalc - Trial 0: time 56200.004989906854 dt=0.005 events=17280000 9891/ms
+12:12:32.728 INFO  o.t.s.n.g.GridCalc - Trial 0: time 56400.00498980208 dt=0.005 events=17280000 9680/ms
+12:12:34.507 INFO  o.t.s.n.g.GridCalc - Trial 0: time 56600.00498969731 dt=0.005 events=17280000 9713/ms
+12:12:36.253 INFO  o.t.s.n.g.GridCalc - Trial 0: time 56800.00498959253 dt=0.005 events=17280000 9896/ms
+12:12:38.019 INFO  o.t.s.n.g.GridCalc - Trial 0: time 57000.00498948776 dt=0.005 events=17280000 9784/ms
+12:12:39.740 INFO  o.t.s.n.g.GridCalc - Trial 0: time 57200.004989382986 dt=0.005 events=17280000 10040/ms
+12:12:41.498 INFO  o.t.s.n.g.GridCalc - Trial 0: time 57400.00498927821 dt=0.005 events=17280000 9829/ms
+12:12:43.263 INFO  o.t.s.n.g.GridCalc - Trial 0: time 57600.00498917344 dt=0.005 events=17280000 9790/ms
+12:12:45.028 INFO  o.t.s.n.g.GridCalc - Trial 0: time 57800.004989068664 dt=0.005 events=17280000 9790/ms
+12:12:46.798 INFO  o.t.s.n.g.GridCalc - Trial 0: time 58000.00498896389 dt=0.005 events=17280000 9762/ms
+12:12:48.569 INFO  o.t.s.n.g.GridCalc - Trial 0: time 58200.00498885912 dt=0.005 events=17280000 9757/ms
+12:12:50.319 INFO  o.t.s.n.g.GridCalc - Trial 0: time 58400.00498875434 dt=0.005 events=17280000 9879/ms
+12:12:52.063 INFO  o.t.s.n.g.GridCalc - Trial 0: time 58600.00498864957 dt=0.005 events=17280000 9902/ms
+12:12:53.805 INFO  o.t.s.n.g.GridCalc - Trial 0: time 58800.004988544795 dt=0.005 events=17280000 9919/ms
+12:12:55.538 INFO  o.t.s.n.g.GridCalc - Trial 0: time 59000.00498844002 dt=0.005 events=17280000 9971/ms
+12:12:57.304 INFO  o.t.s.n.g.GridCalc - Trial 0: time 59200.00498833525 dt=0.005 events=17280000 9784/ms
+12:12:59.011 INFO  o.t.s.n.g.GridCalc - Trial 0: time 59400.004988230474 dt=0.005 events=17280000 10123/ms
+12:13:00.768 INFO  o.t.s.n.g.GridCalc - Trial 0: time 59600.0049881257 dt=0.005 events=17280000 9834/ms
+12:13:02.491 INFO  o.t.s.n.g.GridCalc - Trial 0: time 59800.004988020926 dt=0.005 events=17280000 10029/ms
+12:13:04.263 INFO  o.t.s.n.g.GridCalc - Trial 0: time 60000.00498791615 dt=0.005 events=17280000 9751/ms
+12:13:05.945 INFO  o.t.s.n.g.GridCalc - Trial 0: time 60200.00498781138 dt=0.005 events=17280000 10279/ms
+12:13:07.676 INFO  o.t.s.n.g.GridCalc - Trial 0: time 60400.004987706605 dt=0.005 events=17280000 9976/ms
+12:13:09.363 INFO  o.t.s.n.g.GridCalc - Trial 0: time 60600.00498760183 dt=0.005 events=17280000 10243/ms
+12:13:11.075 INFO  o.t.s.n.g.GridCalc - Trial 0: time 60800.00498749706 dt=0.005 events=17280000 10093/ms
+12:13:12.796 INFO  o.t.s.n.g.GridCalc - Trial 0: time 61000.00498739228 dt=0.005 events=17280000 10040/ms
+12:13:14.504 INFO  o.t.s.n.g.GridCalc - Trial 0: time 61200.00498728751 dt=0.005 events=17280000 10117/ms
+12:13:16.218 INFO  o.t.s.n.g.GridCalc - Trial 0: time 61400.004987182736 dt=0.005 events=17280000 10081/ms
+12:13:17.983 INFO  o.t.s.n.g.GridCalc - Trial 0: time 61600.00498707796 dt=0.005 events=17280000 9790/ms
+12:13:19.765 INFO  o.t.s.n.g.GridCalc - Trial 0: time 61800.00498697319 dt=0.005 events=17280000 9696/ms
+12:13:21.526 INFO  o.t.s.n.g.GridCalc - Trial 0: time 62000.004986868415 dt=0.005 events=17280000 9812/ms
+12:13:23.326 INFO  o.t.s.n.g.GridCalc - Trial 0: time 62200.00498676364 dt=0.005 events=17280000 9605/ms
+12:13:25.073 INFO  o.t.s.n.g.GridCalc - Trial 0: time 62400.00498665887 dt=0.005 events=17280000 9885/ms
+12:13:26.818 INFO  o.t.s.n.g.GridCalc - Trial 0: time 62600.00498655409 dt=0.005 events=17280000 9902/ms
+12:13:28.579 INFO  o.t.s.n.g.GridCalc - Trial 0: time 62800.00498644932 dt=0.005 events=17280000 9812/ms
+12:13:30.301 INFO  o.t.s.n.g.GridCalc - Trial 0: time 63000.004986344546 dt=0.005 events=17280000 10034/ms
+12:13:32.050 INFO  o.t.s.n.g.GridCalc - Trial 0: time 63200.00498623977 dt=0.005 events=17280000 9879/ms
+12:13:33.772 INFO  o.t.s.n.g.GridCalc - Trial 0: time 63400.004986135 dt=0.005 events=17280000 10034/ms
+12:13:35.538 INFO  o.t.s.n.g.GridCalc - Trial 0: time 63600.004986030224 dt=0.005 events=17280000 9784/ms
+12:13:37.336 INFO  o.t.s.n.g.GridCalc - Trial 0: time 63800.00498592545 dt=0.005 events=17280000 9610/ms
+12:13:39.044 INFO  o.t.s.n.g.GridCalc - Trial 0: time 64000.00498582068 dt=0.005 events=17280000 10117/ms
+12:13:40.756 INFO  o.t.s.n.g.GridCalc - Trial 0: time 64200.0049857159 dt=0.005 events=17280000 10093/ms
+12:13:42.425 INFO  o.t.s.n.g.GridCalc - Trial 0: time 64400.00498561113 dt=0.005 events=17280000 10353/ms
+12:13:44.131 INFO  o.t.s.n.g.GridCalc - Trial 0: time 64600.004985506355 dt=0.005 events=17280000 10128/ms
+12:13:45.834 INFO  o.t.s.n.g.GridCalc - Trial 0: time 64800.00498540158 dt=0.005 events=17280000 10146/ms
+12:13:47.555 INFO  o.t.s.n.g.GridCalc - Trial 0: time 65000.00498529681 dt=0.005 events=17280000 10040/ms
+12:13:49.282 INFO  o.t.s.n.g.GridCalc - Trial 0: time 65200.004985192034 dt=0.005 events=17280000 10011/ms
+12:13:50.952 INFO  o.t.s.n.g.GridCalc - Trial 0: time 65400.00498508726 dt=0.005 events=17280000 10341/ms
+12:13:52.599 INFO  o.t.s.n.g.GridCalc - Trial 0: time 65600.00498507562 dt=0.005 events=17280000 10491/ms
+12:13:54.272 INFO  o.t.s.n.g.GridCalc - Trial 0: time 65800.00498526188 dt=0.005 events=17280000 10328/ms
+12:13:55.925 INFO  o.t.s.n.g.GridCalc - Trial 0: time 66000.00498544815 dt=0.005 events=17280000 10453/ms
+12:13:57.579 INFO  o.t.s.n.g.GridCalc - Trial 0: time 66200.00498563441 dt=0.005 events=17280000 10447/ms
+12:13:59.320 INFO  o.t.s.n.g.GridCalc - Trial 0: time 66400.00498582068 dt=0.005 events=17280000 9925/ms
+12:14:01.010 INFO  o.t.s.n.g.GridCalc - Trial 0: time 66600.00498600694 dt=0.005 events=17280000 10224/ms
+12:14:02.705 INFO  o.t.s.n.g.GridCalc - Trial 0: time 66800.0049861932 dt=0.005 events=17280000 10194/ms
+12:14:04.410 INFO  o.t.s.n.g.GridCalc - Trial 0: time 67000.00498637947 dt=0.005 events=17280000 10134/ms
+12:14:06.126 INFO  o.t.s.n.g.GridCalc - Trial 0: time 67200.00498656573 dt=0.005 events=17280000 10069/ms
+12:14:07.809 INFO  o.t.s.n.g.GridCalc - Trial 0: time 67400.004986752 dt=0.005 events=17280000 10267/ms
+12:14:09.415 INFO  o.t.s.n.g.GridCalc - Trial 0: time 67600.00498693826 dt=0.005 events=17280000 10759/ms
+12:14:11.065 INFO  o.t.s.n.g.GridCalc - Trial 0: time 67800.00498712453 dt=0.005 events=17280000 10472/ms
+12:14:12.727 INFO  o.t.s.n.g.GridCalc - Trial 0: time 68000.0049873108 dt=0.005 events=17280000 10397/ms
+12:14:14.388 INFO  o.t.s.n.g.GridCalc - Trial 0: time 68200.00498749706 dt=0.005 events=17280000 10403/ms
+12:14:16.076 INFO  o.t.s.n.g.GridCalc - Trial 0: time 68400.00498768332 dt=0.005 events=17280000 10236/ms
+12:14:17.756 INFO  o.t.s.n.g.GridCalc - Trial 0: time 68600.00498786959 dt=0.005 events=17280000 10285/ms
+12:14:19.409 INFO  o.t.s.n.g.GridCalc - Trial 0: time 68800.00498805585 dt=0.005 events=17280000 10453/ms
+12:14:21.056 INFO  o.t.s.n.g.GridCalc - Trial 0: time 69000.00498824212 dt=0.005 events=17280000 10491/ms
+12:14:22.682 INFO  o.t.s.n.g.GridCalc - Trial 0: time 69200.00498842838 dt=0.005 events=17280000 10627/ms
+12:14:24.328 INFO  o.t.s.n.g.GridCalc - Trial 0: time 69400.00498861464 dt=0.005 events=17280000 10498/ms
+12:14:26.054 INFO  o.t.s.n.g.GridCalc - Trial 0: time 69600.00498880091 dt=0.005 events=17280000 10017/ms
+12:14:27.766 INFO  o.t.s.n.g.GridCalc - Trial 0: time 69800.00498898717 dt=0.005 events=17280000 10093/ms
+12:14:29.433 INFO  o.t.s.n.g.GridCalc - Trial 0: time 70000.00498917344 dt=0.005 events=17280000 10365/ms
+12:14:31.091 INFO  o.t.s.n.g.GridCalc - Trial 0: time 70200.0049893597 dt=0.005 events=17280000 10415/ms
+12:14:32.802 INFO  o.t.s.n.g.GridCalc - Trial 0: time 70400.00498954597 dt=0.005 events=17280000 10099/ms
+12:14:34.475 INFO  o.t.s.n.g.GridCalc - Trial 0: time 70600.00498973223 dt=0.005 events=17280000 10328/ms
+12:14:36.097 INFO  o.t.s.n.g.GridCalc - Trial 0: time 70800.0049899185 dt=0.005 events=17280000 10653/ms
+12:14:37.777 INFO  o.t.s.n.g.GridCalc - Trial 0: time 71000.00499010476 dt=0.005 events=17280000 10285/ms
+12:14:39.478 INFO  o.t.s.n.g.GridCalc - Trial 0: time 71200.00499029103 dt=0.005 events=17280000 10158/ms
+12:14:41.186 INFO  o.t.s.n.g.GridCalc - Trial 0: time 71400.00499047729 dt=0.005 events=17280000 10117/ms
+12:14:42.849 INFO  o.t.s.n.g.GridCalc - Trial 0: time 71600.00499066355 dt=0.005 events=17280000 10390/ms
+12:14:44.555 INFO  o.t.s.n.g.GridCalc - Trial 0: time 71800.00499084982 dt=0.005 events=17280000 10128/ms
+12:14:46.190 INFO  o.t.s.n.g.GridCalc - Trial 0: time 72000.00499103608 dt=0.005 events=17280000 10575/ms
+12:14:47.915 INFO  o.t.s.n.g.GridCalc - Trial 0: time 72200.00499122235 dt=0.005 events=17280000 10017/ms
+12:14:49.575 INFO  o.t.s.n.g.GridCalc - Trial 0: time 72400.00499140861 dt=0.005 events=17280000 10403/ms
+12:14:51.216 INFO  o.t.s.n.g.GridCalc - Trial 0: time 72600.00499159488 dt=0.005 events=17280000 10530/ms
+12:14:52.845 INFO  o.t.s.n.g.GridCalc - Trial 0: time 72800.00499178114 dt=0.005 events=17280000 10607/ms
+12:14:54.533 INFO  o.t.s.n.g.GridCalc - Trial 0: time 73000.0049919674 dt=0.005 events=17280000 10236/ms
+12:14:56.155 INFO  o.t.s.n.g.GridCalc - Trial 0: time 73200.00499215367 dt=0.005 events=17280000 10653/ms
+12:14:57.752 INFO  o.t.s.n.g.GridCalc - Trial 0: time 73400.00499233993 dt=0.005 events=17280000 10820/ms
+12:14:59.438 INFO  o.t.s.n.g.GridCalc - Trial 0: time 73600.0049925262 dt=0.005 events=17280000 10249/ms
+12:15:01.047 INFO  o.t.s.n.g.GridCalc - Trial 0: time 73800.00499271246 dt=0.005 events=17280000 10746/ms
+12:15:02.700 INFO  o.t.s.n.g.GridCalc - Trial 0: time 74000.00499289873 dt=0.005 events=17280000 10447/ms
+12:15:04.365 INFO  o.t.s.n.g.GridCalc - Trial 0: time 74200.004993085 dt=0.005 events=17280000 10378/ms
+12:15:06.097 INFO  o.t.s.n.g.GridCalc - Trial 0: time 74400.00499327126 dt=0.005 events=17280000 9976/ms
+12:15:07.714 INFO  o.t.s.n.g.GridCalc - Trial 0: time 74600.00499345752 dt=0.005 events=17280000 10686/ms
+12:15:09.325 INFO  o.t.s.n.g.GridCalc - Trial 0: time 74800.00499364379 dt=0.005 events=17280000 10726/ms
+12:15:10.970 INFO  o.t.s.n.g.GridCalc - Trial 0: time 75000.00499383005 dt=0.005 events=17280000 10504/ms
+12:15:12.611 INFO  o.t.s.n.g.GridCalc - Trial 0: time 75200.00499401632 dt=0.005 events=17280000 10530/ms
+12:15:14.268 INFO  o.t.s.n.g.GridCalc - Trial 0: time 75400.00499420258 dt=0.005 events=17280000 10428/ms
+12:15:15.891 INFO  o.t.s.n.g.GridCalc - Trial 0: time 75600.00499438884 dt=0.005 events=17280000 10646/ms
+12:15:17.502 INFO  o.t.s.n.g.GridCalc - Trial 0: time 75800.00499457511 dt=0.005 events=17280000 10726/ms
+12:15:19.207 INFO  o.t.s.n.g.GridCalc - Trial 0: time 76000.00499476137 dt=0.005 events=17280000 10134/ms
+12:15:20.863 INFO  o.t.s.n.g.GridCalc - Trial 0: time 76200.00499494764 dt=0.005 events=17280000 10434/ms
+12:15:22.526 INFO  o.t.s.n.g.GridCalc - Trial 0: time 76400.0049951339 dt=0.005 events=17280000 10390/ms
+12:15:24.133 INFO  o.t.s.n.g.GridCalc - Trial 0: time 76600.00499532017 dt=0.005 events=17280000 10752/ms
+12:15:25.769 INFO  o.t.s.n.g.GridCalc - Trial 0: time 76800.00499550643 dt=0.005 events=17280000 10562/ms
+12:15:27.474 INFO  o.t.s.n.g.GridCalc - Trial 0: time 77000.0049956927 dt=0.005 events=17280000 10134/ms
+12:15:29.112 INFO  o.t.s.n.g.GridCalc - Trial 0: time 77200.00499587896 dt=0.005 events=17280000 10549/ms
+12:15:30.805 INFO  o.t.s.n.g.GridCalc - Trial 0: time 77400.00499606522 dt=0.005 events=17280000 10206/ms
+12:15:32.488 INFO  o.t.s.n.g.GridCalc - Trial 0: time 77600.00499625149 dt=0.005 events=17280000 10267/ms
+12:15:34.153 INFO  o.t.s.n.g.GridCalc - Trial 0: time 77800.00499643775 dt=0.005 events=17280000 10378/ms
+12:15:35.794 INFO  o.t.s.n.g.GridCalc - Trial 0: time 78000.00499662402 dt=0.005 events=17280000 10530/ms
+12:15:37.433 INFO  o.t.s.n.g.GridCalc - Trial 0: time 78200.00499681028 dt=0.005 events=17280000 10543/ms
+12:15:39.078 INFO  o.t.s.n.g.GridCalc - Trial 0: time 78400.00499699655 dt=0.005 events=17280000 10504/ms
+12:15:40.731 INFO  o.t.s.n.g.GridCalc - Trial 0: time 78600.00499718281 dt=0.005 events=17280000 10460/ms
+12:15:42.388 INFO  o.t.s.n.g.GridCalc - Trial 0: time 78800.00499736908 dt=0.005 events=17280000 10422/ms
+12:15:44.012 INFO  o.t.s.n.g.GridCalc - Trial 0: time 79000.00499755534 dt=0.005 events=17280000 10640/ms
+12:15:45.674 INFO  o.t.s.n.g.GridCalc - Trial 0: time 79200.0049977416 dt=0.005 events=17280000 10397/ms
+12:15:47.295 INFO  o.t.s.n.g.GridCalc - Trial 0: time 79400.00499792787 dt=0.005 events=17280000 10660/ms
+12:15:48.902 INFO  o.t.s.n.g.GridCalc - Trial 0: time 79600.00499811413 dt=0.005 events=17280000 10752/ms
+12:15:50.506 INFO  o.t.s.n.g.GridCalc - Trial 0: time 79800.0049983004 dt=0.005 events=17280000 10779/ms
+12:15:52.170 INFO  o.t.s.n.g.GridCalc - Trial 0: time 80000.00499848666 dt=0.005 events=17280000 10378/ms
+12:15:53.828 INFO  o.t.s.n.g.GridCalc - Trial 0: time 80200.00499867293 dt=0.005 events=17280000 10422/ms
+12:15:55.493 INFO  o.t.s.n.g.GridCalc - Trial 0: time 80400.00499885919 dt=0.005 events=17280000 10378/ms
+12:15:57.145 INFO  o.t.s.n.g.GridCalc - Trial 0: time 80600.00499904546 dt=0.005 events=17280000 10460/ms
+12:15:58.731 INFO  o.t.s.n.g.GridCalc - Trial 0: time 80800.00499923172 dt=0.005 events=17280000 10895/ms
+12:16:00.300 INFO  o.t.s.n.g.GridCalc - Trial 0: time 81000.00499941799 dt=0.005 events=17280000 11013/ms
+12:16:01.934 INFO  o.t.s.n.g.GridCalc - Trial 0: time 81200.00499960425 dt=0.005 events=17280000 10575/ms
+12:16:03.544 INFO  o.t.s.n.g.GridCalc - Trial 0: time 81400.00499979052 dt=0.005 events=17280000 10732/ms
+12:16:05.178 INFO  o.t.s.n.g.GridCalc - Trial 0: time 81600.00499997678 dt=0.005 events=17280000 10575/ms
+12:16:06.859 INFO  o.t.s.n.g.GridCalc - Trial 0: time 81800.00000016304 dt=0.005 events=17279568 10279/ms
+12:16:08.560 INFO  o.t.s.n.g.GridCalc - Trial 0: time 82000.0000003493 dt=0.005 events=17280000 10158/ms
+12:16:10.226 INFO  o.t.s.n.g.GridCalc - Trial 0: time 82200.00000053557 dt=0.005 events=17280000 10372/ms
+12:16:11.915 INFO  o.t.s.n.g.GridCalc - Trial 0: time 82400.00000072183 dt=0.005 events=17280000 10230/ms
+12:16:13.609 INFO  o.t.s.n.g.GridCalc - Trial 0: time 82600.0000009081 dt=0.005 events=17280000 10200/ms
+12:16:15.312 INFO  o.t.s.n.g.GridCalc - Trial 0: time 82800.00000109436 dt=0.005 events=17280000 10146/ms
+12:16:16.973 INFO  o.t.s.n.g.GridCalc - Trial 0: time 83000.00000128063 dt=0.005 events=17280000 10403/ms
+12:16:18.631 INFO  o.t.s.n.g.GridCalc - Trial 0: time 83200.00000146689 dt=0.005 events=17280000 10422/ms
+12:16:20.369 INFO  o.t.s.n.g.GridCalc - Trial 0: time 83400.00000165316 dt=0.005 events=17280000 9942/ms
+12:16:22.064 INFO  o.t.s.n.g.GridCalc - Trial 0: time 83600.00000183942 dt=0.005 events=17280000 10194/ms
+12:16:23.744 INFO  o.t.s.n.g.GridCalc - Trial 0: time 83800.00000202568 dt=0.005 events=17280000 10285/ms
+12:16:25.426 INFO  o.t.s.n.g.GridCalc - Trial 0: time 84000.00000221195 dt=0.005 events=17280000 10273/ms
+12:16:27.135 INFO  o.t.s.n.g.GridCalc - Trial 0: time 84200.00000239821 dt=0.005 events=17280000 10111/ms
+12:16:28.866 INFO  o.t.s.n.g.GridCalc - Trial 0: time 84400.00000258448 dt=0.005 events=17280000 9982/ms
+12:16:30.549 INFO  o.t.s.n.g.GridCalc - Trial 0: time 84600.00000277074 dt=0.005 events=17280000 10267/ms
+12:16:32.242 INFO  o.t.s.n.g.GridCalc - Trial 0: time 84800.00000295701 dt=0.005 events=17280000 10212/ms
+12:16:33.908 INFO  o.t.s.n.g.GridCalc - Trial 0: time 85000.00000314327 dt=0.005 events=17280000 10365/ms
+12:16:35.636 INFO  o.t.s.n.g.GridCalc - Trial 0: time 85200.00000332954 dt=0.005 events=17280000 10000/ms
+12:16:37.353 INFO  o.t.s.n.g.GridCalc - Trial 0: time 85400.0000035158 dt=0.005 events=17280000 10064/ms
+12:16:39.056 INFO  o.t.s.n.g.GridCalc - Trial 0: time 85600.00000370207 dt=0.005 events=17280000 10146/ms
+12:16:40.688 INFO  o.t.s.n.g.GridCalc - Trial 0: time 85800.00000388833 dt=0.005 events=17280000 10588/ms
+12:16:42.390 INFO  o.t.s.n.g.GridCalc - Trial 0: time 86000.0000040746 dt=0.005 events=17280000 10152/ms
+12:16:44.141 INFO  o.t.s.n.g.GridCalc - Trial 0: time 86200.00000426086 dt=0.005 events=17280000 9868/ms
+12:16:45.797 INFO  o.t.s.n.g.GridCalc - Trial 0: time 86400.00000444712 dt=0.005 events=17280000 10434/ms
+12:16:47.436 INFO  o.t.s.n.g.GridCalc - Trial 0: time 86600.00000463339 dt=0.005 events=17280000 10543/ms
+12:16:49.092 INFO  o.t.s.n.g.GridCalc - Trial 0: time 86800.00000481965 dt=0.005 events=17280000 10434/ms
+12:16:50.737 INFO  o.t.s.n.g.GridCalc - Trial 0: time 87000.00000500592 dt=0.005 events=17280000 10504/ms
+12:16:52.409 INFO  o.t.s.n.g.GridCalc - Trial 0: time 87200.00000519218 dt=0.005 events=17280000 10334/ms
+12:16:54.074 INFO  o.t.s.n.g.GridCalc - Trial 0: time 87400.00000537845 dt=0.005 events=17280000 10378/ms
+12:16:55.763 INFO  o.t.s.n.g.GridCalc - Trial 0: time 87600.00000556471 dt=0.005 events=17280000 10230/ms
+12:16:57.448 INFO  o.t.s.n.g.GridCalc - Trial 0: time 87800.00000575098 dt=0.005 events=17280000 10255/ms
+12:16:59.156 INFO  o.t.s.n.g.GridCalc - Trial 0: time 88000.00000593724 dt=0.005 events=17280000 10117/ms
+12:17:00.844 INFO  o.t.s.n.g.GridCalc - Trial 0: time 88200.0000061235 dt=0.005 events=17280000 10236/ms
+12:17:02.505 INFO  o.t.s.n.g.GridCalc - Trial 0: time 88400.00000630977 dt=0.005 events=17280000 10403/ms
+12:17:04.121 INFO  o.t.s.n.g.GridCalc - Trial 0: time 88600.00000649603 dt=0.005 events=17280000 10693/ms
+12:17:05.711 INFO  o.t.s.n.g.GridCalc - Trial 0: time 88800.0000066823 dt=0.005 events=17280000 10867/ms
+12:17:07.306 INFO  o.t.s.n.g.GridCalc - Trial 0: time 89000.00000686856 dt=0.005 events=17280000 10833/ms
+12:17:08.884 INFO  o.t.s.n.g.GridCalc - Trial 0: time 89200.00000705483 dt=0.005 events=17280000 10950/ms
+12:17:10.523 INFO  o.t.s.n.g.GridCalc - Trial 0: time 89400.00000724109 dt=0.005 events=17280000 10549/ms
+12:17:12.147 INFO  o.t.s.n.g.GridCalc - Trial 0: time 89600.00000742736 dt=0.005 events=17280000 10633/ms
+12:17:13.771 INFO  o.t.s.n.g.GridCalc - Trial 0: time 89800.00000761362 dt=0.005 events=17280000 10640/ms
+12:17:15.375 INFO  o.t.s.n.g.GridCalc - Trial 0: time 90000.00000779988 dt=0.005 events=17280000 10773/ms
+12:17:17.021 INFO  o.t.s.n.g.GridCalc - Trial 0: time 90200.00000798615 dt=0.005 events=17280000 10498/ms
+12:17:18.606 INFO  o.t.s.n.g.GridCalc - Trial 0: time 90400.00000817241 dt=0.005 events=17280000 10902/ms
+12:17:20.223 INFO  o.t.s.n.g.GridCalc - Trial 0: time 90600.00000835868 dt=0.005 events=17280000 10686/ms
+12:17:21.860 INFO  o.t.s.n.g.GridCalc - Trial 0: time 90800.00000854494 dt=0.005 events=17280000 10555/ms
+12:17:23.452 INFO  o.t.s.n.g.GridCalc - Trial 0: time 91000.00000873121 dt=0.005 events=17280000 10854/ms
+12:17:25.066 INFO  o.t.s.n.g.GridCalc - Trial 0: time 91200.00000891747 dt=0.005 events=17280000 10706/ms
+12:17:26.716 INFO  o.t.s.n.g.GridCalc - Trial 0: time 91400.00000910374 dt=0.005 events=17280000 10479/ms
+12:17:28.373 INFO  o.t.s.n.g.GridCalc - Trial 0: time 91600.00000929 dt=0.005 events=17280000 10422/ms
+12:17:29.960 INFO  o.t.s.n.g.GridCalc - Trial 0: time 91800.00000947627 dt=0.005 events=17280000 10895/ms
+12:17:31.566 INFO  o.t.s.n.g.GridCalc - Trial 0: time 92000.00000966253 dt=0.005 events=17280000 10759/ms
+12:17:33.138 INFO  o.t.s.n.g.GridCalc - Trial 0: time 92200.0000098488 dt=0.005 events=17280000 10985/ms
+12:17:34.792 INFO  o.t.s.n.g.GridCalc - Trial 0: time 92400.00001003506 dt=0.005 events=17280000 10447/ms
+12:17:36.403 INFO  o.t.s.n.g.GridCalc - Trial 0: time 92600.00001022132 dt=0.005 events=17280000 10726/ms
+12:17:38.018 INFO  o.t.s.n.g.GridCalc - Trial 0: time 92800.00001040759 dt=0.005 events=17280000 10699/ms
+12:17:39.627 INFO  o.t.s.n.g.GridCalc - Trial 0: time 93000.00001059385 dt=0.005 events=17280000 10739/ms
+12:17:41.248 INFO  o.t.s.n.g.GridCalc - Trial 0: time 93200.00001078012 dt=0.005 events=17280000 10660/ms
+12:17:42.903 INFO  o.t.s.n.g.GridCalc - Trial 0: time 93400.00001096638 dt=0.005 events=17280000 10441/ms
+12:17:44.560 INFO  o.t.s.n.g.GridCalc - Trial 0: time 93600.00001115265 dt=0.005 events=17280000 10434/ms
+12:17:46.241 INFO  o.t.s.n.g.GridCalc - Trial 0: time 93800.00001133891 dt=0.005 events=17280000 10273/ms
+12:17:47.842 INFO  o.t.s.n.g.GridCalc - Trial 0: time 94000.00001152518 dt=0.005 events=17280000 10793/ms
+12:17:49.405 INFO  o.t.s.n.g.GridCalc - Trial 0: time 94200.00001171144 dt=0.005 events=17280000 11055/ms
+12:17:50.994 INFO  o.t.s.n.g.GridCalc - Trial 0: time 94400.0000118977 dt=0.005 events=17280000 10874/ms
+12:17:52.628 INFO  o.t.s.n.g.GridCalc - Trial 0: time 94600.00001208397 dt=0.005 events=17280000 10575/ms
+12:17:54.282 INFO  o.t.s.n.g.GridCalc - Trial 0: time 94800.00001227023 dt=0.005 events=17280000 10447/ms
+12:17:55.857 INFO  o.t.s.n.g.GridCalc - Trial 0: time 95000.0000124565 dt=0.005 events=17280000 10971/ms
+12:17:57.448 INFO  o.t.s.n.g.GridCalc - Trial 0: time 95200.00001264276 dt=0.005 events=17280000 10861/ms
+12:17:59.049 INFO  o.t.s.n.g.GridCalc - Trial 0: time 95400.00001282903 dt=0.005 events=17280000 10793/ms
+12:18:00.749 INFO  o.t.s.n.g.GridCalc - Trial 0: time 95600.00001301529 dt=0.005 events=17280000 10164/ms
+12:18:02.349 INFO  o.t.s.n.g.GridCalc - Trial 0: time 95800.00001320156 dt=0.005 events=17280000 10800/ms
+12:18:03.971 INFO  o.t.s.n.g.GridCalc - Trial 0: time 96000.00001338782 dt=0.005 events=17280000 10653/ms
+12:18:05.577 INFO  o.t.s.n.g.GridCalc - Trial 0: time 96200.00001357408 dt=0.005 events=17280000 10759/ms
+12:18:07.163 INFO  o.t.s.n.g.GridCalc - Trial 0: time 96400.00001376035 dt=0.005 events=17280000 10902/ms
+12:18:08.761 INFO  o.t.s.n.g.GridCalc - Trial 0: time 96600.00001394661 dt=0.005 events=17280000 10813/ms
+12:18:10.332 INFO  o.t.s.n.g.GridCalc - Trial 0: time 96800.00001413288 dt=0.005 events=17280000 10992/ms
+12:18:11.935 INFO  o.t.s.n.g.GridCalc - Trial 0: time 97000.00001431914 dt=0.005 events=17280000 10779/ms
+12:18:13.554 INFO  o.t.s.n.g.GridCalc - Trial 0: time 97200.00001450541 dt=0.005 events=17280000 10673/ms
+12:18:15.149 INFO  o.t.s.n.g.GridCalc - Trial 0: time 97400.00001469167 dt=0.005 events=17280000 10833/ms
+12:18:16.787 INFO  o.t.s.n.g.GridCalc - Trial 0: time 97600.00001487794 dt=0.005 events=17280000 10549/ms
+12:18:18.378 INFO  o.t.s.n.g.GridCalc - Trial 0: time 97800.0000150642 dt=0.005 events=17280000 10861/ms
+12:18:19.975 INFO  o.t.s.n.g.GridCalc - Trial 0: time 98000.00001525047 dt=0.005 events=17280000 10820/ms
+12:18:21.604 INFO  o.t.s.n.g.GridCalc - Trial 0: time 98200.00001543673 dt=0.005 events=17280000 10607/ms
+12:18:23.206 INFO  o.t.s.n.g.GridCalc - Trial 0: time 98400.000015623 dt=0.005 events=17280000 10786/ms
+12:18:24.853 INFO  o.t.s.n.g.GridCalc - Trial 0: time 98600.00001580926 dt=0.005 events=17280000 10491/ms
+12:18:26.516 INFO  o.t.s.n.g.GridCalc - Trial 0: time 98800.00001599552 dt=0.005 events=17280000 10390/ms
+12:18:28.147 INFO  o.t.s.n.g.GridCalc - Trial 0: time 99000.00001618179 dt=0.005 events=17280000 10594/ms
+12:18:29.792 INFO  o.t.s.n.g.GridCalc - Trial 0: time 99200.00001636805 dt=0.005 events=17280000 10504/ms
+12:18:31.428 INFO  o.t.s.n.g.GridCalc - Trial 0: time 99400.00001655432 dt=0.005 events=17280000 10562/ms
+12:18:33.055 INFO  o.t.s.n.g.GridCalc - Trial 0: time 99600.00001674058 dt=0.005 events=17280000 10620/ms
+12:18:34.625 INFO  o.t.s.n.g.GridCalc - Trial 0: time 99800.00001692685 dt=0.005 events=17280000 11006/ms
+12:18:36.171 INFO  o.t.s.n.g.GridCalc - Trial 0: time 100000.00001711311 dt=0.005 events=17280001 11177/ms
+12:18:38.060 INFO  o.t.s.n.g.GridCalc - Trial 0: time 100200.00001729938 dt=0.005 events=17282000 9148/ms
+12:18:40.109 INFO  o.t.s.n.g.GridCalc - Trial 0: time 100400.00001748564 dt=0.005 events=17280000 8433/ms
+12:18:42.221 INFO  o.t.s.n.g.GridCalc - Trial 0: time 100600.0000176719 dt=0.005 events=17280000 8181/ms
+12:18:44.373 INFO  o.t.s.n.g.GridCalc - Trial 0: time 100800.00001785817 dt=0.005 events=17280000 8029/ms
+12:18:46.606 INFO  o.t.s.n.g.GridCalc - Trial 0: time 101000.00001804443 dt=0.005 events=17280000 7738/ms
+12:18:48.838 INFO  o.t.s.n.g.GridCalc - Trial 0: time 101200.0000182307 dt=0.005 events=17280000 7741/ms
+12:18:51.090 INFO  o.t.s.n.g.GridCalc - Trial 0: time 101400.00001841696 dt=0.005 events=17280000 7673/ms
+12:18:53.460 INFO  o.t.s.n.g.GridCalc - Trial 0: time 101600.00001860323 dt=0.005 events=17280000 7291/ms
+12:18:55.844 INFO  o.t.s.n.g.GridCalc - Trial 0: time 101800.00001878949 dt=0.005 events=17280000 7248/ms
+12:18:58.263 INFO  o.t.s.n.g.GridCalc - Trial 0: time 102000.00001897576 dt=0.005 events=17280000 7143/ms
+12:19:00.734 INFO  o.t.s.n.g.GridCalc - Trial 0: time 102200.00001916202 dt=0.005 events=17280000 6993/ms
+12:19:03.261 INFO  o.t.s.n.g.GridCalc - Trial 0: time 102400.00001934828 dt=0.005 events=17280000 6838/ms
+12:19:05.809 INFO  o.t.s.n.g.GridCalc - Trial 0: time 102600.00001953455 dt=0.005 events=17280000 6781/ms
+12:19:08.390 INFO  o.t.s.n.g.GridCalc - Trial 0: time 102800.00001972081 dt=0.005 events=17280000 6695/ms
+12:19:10.923 INFO  o.t.s.n.g.GridCalc - Trial 0: time 103000.00001990708 dt=0.005 events=17280000 6821/ms
+12:19:13.465 INFO  o.t.s.n.g.GridCalc - Trial 0: time 103200.00002009334 dt=0.005 events=17280000 6797/ms
+12:19:16.019 INFO  o.t.s.n.g.GridCalc - Trial 0: time 103400.0000202796 dt=0.005 events=17280000 6765/ms
+12:19:18.547 INFO  o.t.s.n.g.GridCalc - Trial 0: time 103600.00002046587 dt=0.005 events=17280000 6835/ms
+12:19:21.092 INFO  o.t.s.n.g.GridCalc - Trial 0: time 103800.00002065214 dt=0.005 events=17280000 6789/ms
+12:19:23.626 INFO  o.t.s.n.g.GridCalc - Trial 0: time 104000.0000208384 dt=0.005 events=17280000 6819/ms
+12:19:26.163 INFO  o.t.s.n.g.GridCalc - Trial 0: time 104200.00002102467 dt=0.005 events=17280000 6811/ms
+12:19:28.733 INFO  o.t.s.n.g.GridCalc - Trial 0: time 104400.00002121093 dt=0.005 events=17280000 6723/ms
+12:19:31.369 INFO  o.t.s.n.g.GridCalc - Trial 0: time 104600.0000213972 dt=0.005 events=17280000 6555/ms
+12:19:34.097 INFO  o.t.s.n.g.GridCalc - Trial 0: time 104800.00002158346 dt=0.005 events=17280000 6336/ms
+12:19:36.871 INFO  o.t.s.n.g.GridCalc - Trial 0: time 105000.00002176972 dt=0.005 events=17280000 6227/ms
+12:19:39.533 INFO  o.t.s.n.g.GridCalc - Trial 0: time 105200.00002195599 dt=0.005 events=17280000 6491/ms
+12:19:42.316 INFO  o.t.s.n.g.GridCalc - Trial 0: time 105400.00002214225 dt=0.005 events=17280000 6209/ms
+12:19:45.084 INFO  o.t.s.n.g.GridCalc - Trial 0: time 105600.00002232852 dt=0.005 events=17280000 6245/ms
+12:19:47.821 INFO  o.t.s.n.g.GridCalc - Trial 0: time 105800.00002251478 dt=0.005 events=17280000 6311/ms
+12:19:50.546 INFO  o.t.s.n.g.GridCalc - Trial 0: time 106000.00002270105 dt=0.005 events=17280000 6341/ms
+12:19:53.286 INFO  o.t.s.n.g.GridCalc - Trial 0: time 106200.00002288731 dt=0.005 events=17280000 6306/ms
+12:19:55.992 INFO  o.t.s.n.g.GridCalc - Trial 0: time 106400.00002307357 dt=0.005 events=17280000 6385/ms
+12:19:58.754 INFO  o.t.s.n.g.GridCalc - Trial 0: time 106600.00002325984 dt=0.005 events=17280000 6258/ms
+12:20:01.554 INFO  o.t.s.n.g.GridCalc - Trial 0: time 106800.0000234461 dt=0.005 events=17280000 6169/ms
+12:20:04.336 INFO  o.t.s.n.g.GridCalc - Trial 0: time 107000.00002363237 dt=0.005 events=17280000 6211/ms
+12:20:07.195 INFO  o.t.s.n.g.GridCalc - Trial 0: time 107200.00002381863 dt=0.005 events=17280000 6044/ms
+12:20:10.029 INFO  o.t.s.n.g.GridCalc - Trial 0: time 107400.0000240049 dt=0.005 events=17280000 6097/ms
+12:20:12.812 INFO  o.t.s.n.g.GridCalc - Trial 0: time 107600.00002419116 dt=0.005 events=17280000 6209/ms
+12:20:15.582 INFO  o.t.s.n.g.GridCalc - Trial 0: time 107800.00002437743 dt=0.005 events=17280000 6238/ms
+12:20:18.365 INFO  o.t.s.n.g.GridCalc - Trial 0: time 108000.00002456369 dt=0.005 events=17280000 6209/ms
+12:20:21.162 INFO  o.t.s.n.g.GridCalc - Trial 0: time 108200.00002474996 dt=0.005 events=17280000 6178/ms
+12:20:24.036 INFO  o.t.s.n.g.GridCalc - Trial 0: time 108400.00002493622 dt=0.005 events=17280000 6012/ms
+12:20:26.849 INFO  o.t.s.n.g.GridCalc - Trial 0: time 108600.00002512248 dt=0.005 events=17280000 6142/ms
+12:20:29.640 INFO  o.t.s.n.g.GridCalc - Trial 0: time 108800.00002530875 dt=0.005 events=17280000 6191/ms
+12:20:32.514 INFO  o.t.s.n.g.GridCalc - Trial 0: time 109000.00002549501 dt=0.005 events=17280000 6012/ms
+12:20:35.402 INFO  o.t.s.n.g.GridCalc - Trial 0: time 109200.00002568128 dt=0.005 events=17280000 5983/ms
+12:20:38.267 INFO  o.t.s.n.g.GridCalc - Trial 0: time 109400.00002586754 dt=0.005 events=17280000 6031/ms
+12:20:41.108 INFO  o.t.s.n.g.GridCalc - Trial 0: time 109600.0000260538 dt=0.005 events=17280000 6082/ms
+12:20:43.996 INFO  o.t.s.n.g.GridCalc - Trial 0: time 109800.00002624007 dt=0.005 events=17280000 5983/ms
+12:20:46.866 INFO  o.t.s.n.g.GridCalc - Trial 0: time 110000.00002642634 dt=0.005 events=17280000 6020/ms
+12:20:49.720 INFO  o.t.s.n.g.GridCalc - Trial 0: time 110200.0000266126 dt=0.005 events=17280000 6056/ms
+12:20:52.624 INFO  o.t.s.n.g.GridCalc - Trial 0: time 110400.00002679887 dt=0.005 events=17280000 5948/ms
+12:20:55.460 INFO  o.t.s.n.g.GridCalc - Trial 0: time 110600.00002698513 dt=0.005 events=17280000 6093/ms
+12:20:58.270 INFO  o.t.s.n.g.GridCalc - Trial 0: time 110800.0000271714 dt=0.005 events=17280000 6149/ms
+12:21:01.087 INFO  o.t.s.n.g.GridCalc - Trial 0: time 111000.00002735766 dt=0.005 events=17280000 6134/ms
+12:21:03.902 INFO  o.t.s.n.g.GridCalc - Trial 0: time 111200.00002754392 dt=0.005 events=17280000 6138/ms
+12:21:06.734 INFO  o.t.s.n.g.GridCalc - Trial 0: time 111400.00002773019 dt=0.005 events=17280000 6101/ms
+12:21:09.614 INFO  o.t.s.n.g.GridCalc - Trial 0: time 111600.00002791645 dt=0.005 events=17280000 6000/ms
+12:21:12.437 INFO  o.t.s.n.g.GridCalc - Trial 0: time 111800.00002810272 dt=0.005 events=17280000 6121/ms
+12:21:15.252 INFO  o.t.s.n.g.GridCalc - Trial 0: time 112000.00002828898 dt=0.005 events=17280000 6138/ms
+12:21:18.115 INFO  o.t.s.n.g.GridCalc - Trial 0: time 112200.00002847525 dt=0.005 events=17280000 6035/ms
+12:21:20.881 INFO  o.t.s.n.g.GridCalc - Trial 0: time 112400.00002866151 dt=0.005 events=17280000 6247/ms
+12:21:23.648 INFO  o.t.s.n.g.GridCalc - Trial 0: time 112600.00002884777 dt=0.005 events=17280000 6245/ms
+12:21:26.389 INFO  o.t.s.n.g.GridCalc - Trial 0: time 112800.00002903404 dt=0.005 events=17280000 6304/ms
+12:21:29.213 INFO  o.t.s.n.g.GridCalc - Trial 0: time 113000.0000292203 dt=0.005 events=17280000 6118/ms
+12:21:32.041 INFO  o.t.s.n.g.GridCalc - Trial 0: time 113200.00002940657 dt=0.005 events=17280000 6110/ms
+12:21:34.823 INFO  o.t.s.n.g.GridCalc - Trial 0: time 113400.00002959283 dt=0.005 events=17280000 6211/ms
+12:21:37.562 INFO  o.t.s.n.g.GridCalc - Trial 0: time 113600.0000297791 dt=0.005 events=17280000 6308/ms
+12:21:40.282 INFO  o.t.s.n.g.GridCalc - Trial 0: time 113800.00002996536 dt=0.005 events=17280000 6352/ms
+12:21:43.039 INFO  o.t.s.n.g.GridCalc - Trial 0: time 114000.00003015163 dt=0.005 events=17280000 6267/ms
+12:21:45.869 INFO  o.t.s.n.g.GridCalc - Trial 0: time 114200.00003033789 dt=0.005 events=17280000 6106/ms
+12:21:48.711 INFO  o.t.s.n.g.GridCalc - Trial 0: time 114400.00003052416 dt=0.005 events=17280000 6080/ms
+12:21:51.534 INFO  o.t.s.n.g.GridCalc - Trial 0: time 114600.00003071042 dt=0.005 events=17280000 6121/ms
+12:21:54.334 INFO  o.t.s.n.g.GridCalc - Trial 0: time 114800.00003089668 dt=0.005 events=17280000 6171/ms
+12:21:57.145 INFO  o.t.s.n.g.GridCalc - Trial 0: time 115000.00003108295 dt=0.005 events=17280000 6149/ms
+12:21:59.981 INFO  o.t.s.n.g.GridCalc - Trial 0: time 115200.00003126921 dt=0.005 events=17280000 6090/ms
+12:22:02.767 INFO  o.t.s.n.g.GridCalc - Trial 0: time 115400.00003145548 dt=0.005 events=17280000 6204/ms
+12:22:05.552 INFO  o.t.s.n.g.GridCalc - Trial 0: time 115600.00003164174 dt=0.005 events=17280000 6202/ms
+12:22:08.270 INFO  o.t.s.n.g.GridCalc - Trial 0: time 115800.000031828 dt=0.005 events=17280000 6357/ms
+12:22:10.958 INFO  o.t.s.n.g.GridCalc - Trial 0: time 116000.00003201427 dt=0.005 events=17280000 6428/ms
+12:22:13.668 INFO  o.t.s.n.g.GridCalc - Trial 0: time 116200.00003220054 dt=0.005 events=17280000 6376/ms
+12:22:16.398 INFO  o.t.s.n.g.GridCalc - Trial 0: time 116400.0000323868 dt=0.005 events=17280000 6329/ms
+12:22:19.154 INFO  o.t.s.n.g.GridCalc - Trial 0: time 116600.00003257307 dt=0.005 events=17280000 6269/ms
+12:22:21.876 INFO  o.t.s.n.g.GridCalc - Trial 0: time 116800.00003275933 dt=0.005 events=17280000 6348/ms
+12:22:24.614 INFO  o.t.s.n.g.GridCalc - Trial 0: time 117000.0000329456 dt=0.005 events=17280000 6311/ms
+12:22:27.346 INFO  o.t.s.n.g.GridCalc - Trial 0: time 117200.00003313186 dt=0.005 events=17280000 6325/ms
+12:22:30.084 INFO  o.t.s.n.g.GridCalc - Trial 0: time 117400.00003331812 dt=0.005 events=17280000 6311/ms
+12:22:32.802 INFO  o.t.s.n.g.GridCalc - Trial 0: time 117600.00003350439 dt=0.005 events=17280000 6357/ms
+12:22:35.562 INFO  o.t.s.n.g.GridCalc - Trial 0: time 117800.00003369065 dt=0.005 events=17280000 6260/ms
+12:22:38.313 INFO  o.t.s.n.g.GridCalc - Trial 0: time 118000.00003387692 dt=0.005 events=17280000 6281/ms
+12:22:41.125 INFO  o.t.s.n.g.GridCalc - Trial 0: time 118200.00003406318 dt=0.005 events=17280000 6145/ms
+12:22:43.806 INFO  o.t.s.n.g.GridCalc - Trial 0: time 118400.00003424945 dt=0.005 events=17280000 6445/ms
+12:22:46.495 INFO  o.t.s.n.g.GridCalc - Trial 0: time 118600.00003443571 dt=0.005 events=17280000 6426/ms
+12:22:49.136 INFO  o.t.s.n.g.GridCalc - Trial 0: time 118800.00003462197 dt=0.005 events=17280000 6542/ms
+12:22:51.775 INFO  o.t.s.n.g.GridCalc - Trial 0: time 119000.00003480824 dt=0.005 events=17280000 6547/ms
+12:22:54.509 INFO  o.t.s.n.g.GridCalc - Trial 0: time 119200.0000349945 dt=0.005 events=17280000 6320/ms
+12:22:57.229 INFO  o.t.s.n.g.GridCalc - Trial 0: time 119400.00003518077 dt=0.005 events=17280000 6352/ms
+12:22:59.968 INFO  o.t.s.n.g.GridCalc - Trial 0: time 119600.00003536703 dt=0.005 events=17280000 6308/ms
+12:23:02.754 INFO  o.t.s.n.g.GridCalc - Trial 0: time 119800.0000355533 dt=0.005 events=17280000 6202/ms
+12:23:05.477 INFO  o.t.s.n.g.GridCalc - Trial 0: time 120000.00003573956 dt=0.005 events=17280000 6345/ms
+12:23:08.170 INFO  o.t.s.n.g.GridCalc - Trial 0: time 120200.00003592583 dt=0.005 events=17280000 6416/ms
+12:23:10.914 INFO  o.t.s.n.g.GridCalc - Trial 0: time 120400.00003611209 dt=0.005 events=17280000 6297/ms
+12:23:13.661 INFO  o.t.s.n.g.GridCalc - Trial 0: time 120600.00003629836 dt=0.005 events=17280000 6290/ms
+12:23:16.301 INFO  o.t.s.n.g.GridCalc - Trial 0: time 120800.00003648462 dt=0.005 events=17280000 6545/ms
+12:23:18.941 INFO  o.t.s.n.g.GridCalc - Trial 0: time 121000.00003667088 dt=0.005 events=17280000 6545/ms
+12:23:21.648 INFO  o.t.s.n.g.GridCalc - Trial 0: time 121200.00003685715 dt=0.005 events=17280000 6383/ms
+12:23:24.353 INFO  o.t.s.n.g.GridCalc - Trial 0: time 121400.00003704341 dt=0.005 events=17280000 6388/ms
+12:23:27.055 INFO  o.t.s.n.g.GridCalc - Trial 0: time 121600.00003722968 dt=0.005 events=17280000 6395/ms
+12:23:29.791 INFO  o.t.s.n.g.GridCalc - Trial 0: time 121800.00003741594 dt=0.005 events=17280000 6315/ms
+12:23:32.501 INFO  o.t.s.n.g.GridCalc - Trial 0: time 122000.0000376022 dt=0.005 events=17280000 6376/ms
+12:23:35.244 INFO  o.t.s.n.g.GridCalc - Trial 0: time 122200.00003778847 dt=0.005 events=17280000 6299/ms
+12:23:38.012 INFO  o.t.s.n.g.GridCalc - Trial 0: time 122400.00003797474 dt=0.005 events=17280000 6242/ms
+12:23:40.700 INFO  o.t.s.n.g.GridCalc - Trial 0: time 122600.000038161 dt=0.005 events=17280000 6428/ms
+12:23:43.406 INFO  o.t.s.n.g.GridCalc - Trial 0: time 122800.00003834727 dt=0.005 events=17280000 6385/ms
+12:23:46.134 INFO  o.t.s.n.g.GridCalc - Trial 0: time 123000.00003853353 dt=0.005 events=17280000 6334/ms
+12:23:48.892 INFO  o.t.s.n.g.GridCalc - Trial 0: time 123200.0000387198 dt=0.005 events=17280000 6265/ms
+12:23:51.671 INFO  o.t.s.n.g.GridCalc - Trial 0: time 123400.00003890606 dt=0.005 events=17280000 6218/ms
+12:23:54.407 INFO  o.t.s.n.g.GridCalc - Trial 0: time 123600.00003909232 dt=0.005 events=17280000 6315/ms
+12:23:57.118 INFO  o.t.s.n.g.GridCalc - Trial 0: time 123800.00003927859 dt=0.005 events=17280000 6374/ms
+12:23:59.807 INFO  o.t.s.n.g.GridCalc - Trial 0: time 124000.00003946485 dt=0.005 events=17280000 6426/ms
+12:24:02.570 INFO  o.t.s.n.g.GridCalc - Trial 0: time 124200.00003965112 dt=0.005 events=17280000 6254/ms
+12:24:05.308 INFO  o.t.s.n.g.GridCalc - Trial 0: time 124400.00003983738 dt=0.005 events=17280000 6311/ms
+12:24:08.024 INFO  o.t.s.n.g.GridCalc - Trial 0: time 124600.00004002365 dt=0.005 events=17280000 6362/ms
+12:24:10.787 INFO  o.t.s.n.g.GridCalc - Trial 0: time 124800.00004020991 dt=0.005 events=17280000 6254/ms
+12:24:13.455 INFO  o.t.s.n.g.GridCalc - Trial 0: time 125000.00004039617 dt=0.005 events=17280000 6476/ms
+12:24:16.086 INFO  o.t.s.n.g.GridCalc - Trial 0: time 125200.00004058244 dt=0.005 events=17280000 6567/ms
+12:24:18.718 INFO  o.t.s.n.g.GridCalc - Trial 0: time 125400.0000407687 dt=0.005 events=17280000 6565/ms
+12:24:21.397 INFO  o.t.s.n.g.GridCalc - Trial 0: time 125600.00004095497 dt=0.005 events=17280000 6452/ms
+12:24:24.111 INFO  o.t.s.n.g.GridCalc - Trial 0: time 125800.00004114123 dt=0.005 events=17280000 6364/ms
+12:24:26.807 INFO  o.t.s.n.g.GridCalc - Trial 0: time 126000.0000413275 dt=0.005 events=17280000 6411/ms
+12:24:29.502 INFO  o.t.s.n.g.GridCalc - Trial 0: time 126200.00004151376 dt=0.005 events=17280000 6409/ms
+12:24:32.135 INFO  o.t.s.n.g.GridCalc - Trial 0: time 126400.00004170003 dt=0.005 events=17280000 6562/ms
+12:24:34.826 INFO  o.t.s.n.g.GridCalc - Trial 0: time 126600.00004188629 dt=0.005 events=17280000 6421/ms
+12:24:37.503 INFO  o.t.s.n.g.GridCalc - Trial 0: time 126800.00004207256 dt=0.005 events=17280000 6454/ms
+12:24:40.165 INFO  o.t.s.n.g.GridCalc - Trial 0: time 127000.00004225882 dt=0.005 events=17280000 6491/ms
+12:24:42.833 INFO  o.t.s.n.g.GridCalc - Trial 0: time 127200.00004244508 dt=0.005 events=17280000 6476/ms
+12:24:45.488 INFO  o.t.s.n.g.GridCalc - Trial 0: time 127400.00004263135 dt=0.005 events=17280000 6508/ms
+12:24:48.156 INFO  o.t.s.n.g.GridCalc - Trial 0: time 127600.00004281761 dt=0.005 events=17280000 6476/ms
+12:24:50.810 INFO  o.t.s.n.g.GridCalc - Trial 0: time 127800.00004300388 dt=0.005 events=17280000 6510/ms
+12:24:53.420 INFO  o.t.s.n.g.GridCalc - Trial 0: time 128000.00004319014 dt=0.005 events=17280000 6620/ms
+12:24:56.069 INFO  o.t.s.n.g.GridCalc - Trial 0: time 128200.0000433764 dt=0.005 events=17280000 6523/ms
+12:24:58.752 INFO  o.t.s.n.g.GridCalc - Trial 0: time 128400.00004356267 dt=0.005 events=17280000 6440/ms
+12:25:01.428 INFO  o.t.s.n.g.GridCalc - Trial 0: time 128600.00004374894 dt=0.005 events=17280000 6457/ms
+12:25:04.101 INFO  o.t.s.n.g.GridCalc - Trial 0: time 128800.0000439352 dt=0.005 events=17280000 6464/ms
+12:25:06.789 INFO  o.t.s.n.g.GridCalc - Trial 0: time 129000.00004412147 dt=0.005 events=17280000 6428/ms
+12:25:09.448 INFO  o.t.s.n.g.GridCalc - Trial 0: time 129200.00004430773 dt=0.005 events=17280000 6498/ms
+12:25:12.117 INFO  o.t.s.n.g.GridCalc - Trial 0: time 129400.000044494 dt=0.005 events=17280000 6474/ms
+12:25:14.748 INFO  o.t.s.n.g.GridCalc - Trial 0: time 129600.00004468026 dt=0.005 events=17280000 6567/ms
+12:25:17.354 INFO  o.t.s.n.g.GridCalc - Trial 0: time 129800.00004486652 dt=0.005 events=17280000 6630/ms
+12:25:20.045 INFO  o.t.s.n.g.GridCalc - Trial 0: time 130000.00004505279 dt=0.005 events=17280000 6421/ms
+12:25:22.670 INFO  o.t.s.n.g.GridCalc - Trial 0: time 130200.00004523905 dt=0.005 events=17280000 6582/ms
+12:25:25.265 INFO  o.t.s.n.g.GridCalc - Trial 0: time 130400.00004542532 dt=0.005 events=17280000 6658/ms
+12:25:27.928 INFO  o.t.s.n.g.GridCalc - Trial 0: time 130600.00004561158 dt=0.005 events=17280000 6488/ms
+12:25:30.540 INFO  o.t.s.n.g.GridCalc - Trial 0: time 130800.00004579785 dt=0.005 events=17280000 6615/ms
+12:25:33.146 INFO  o.t.s.n.g.GridCalc - Trial 0: time 131000.00004598411 dt=0.005 events=17280000 6630/ms
+12:25:35.760 INFO  o.t.s.n.g.GridCalc - Trial 0: time 131200.00004617037 dt=0.005 events=17280000 6613/ms
+12:25:38.343 INFO  o.t.s.n.g.GridCalc - Trial 0: time 131400.00004635664 dt=0.005 events=17280000 6689/ms
+12:25:41.019 INFO  o.t.s.n.g.GridCalc - Trial 0: time 131600.0000465429 dt=0.005 events=17280000 6454/ms
+12:25:43.592 INFO  o.t.s.n.g.GridCalc - Trial 0: time 131800.00004672917 dt=0.005 events=17280000 6715/ms
+12:25:46.144 INFO  o.t.s.n.g.GridCalc - Trial 0: time 132000.00004691543 dt=0.005 events=17280000 6771/ms
+12:25:48.769 INFO  o.t.s.n.g.GridCalc - Trial 0: time 132200.0000471017 dt=0.005 events=17280000 6582/ms
+12:25:51.345 INFO  o.t.s.n.g.GridCalc - Trial 0: time 132400.00004728796 dt=0.005 events=17280000 6708/ms
+12:25:53.960 INFO  o.t.s.n.g.GridCalc - Trial 0: time 132600.00004747423 dt=0.005 events=17280000 6608/ms
+12:25:56.565 INFO  o.t.s.n.g.GridCalc - Trial 0: time 132800.0000476605 dt=0.005 events=17280000 6633/ms
+12:25:59.156 INFO  o.t.s.n.g.GridCalc - Trial 0: time 133000.00004784676 dt=0.005 events=17280000 6669/ms
+12:26:01.787 INFO  o.t.s.n.g.GridCalc - Trial 0: time 133200.00004803302 dt=0.005 events=17280000 6567/ms
+12:26:04.402 INFO  o.t.s.n.g.GridCalc - Trial 0: time 133400.00004821928 dt=0.005 events=17280000 6608/ms
+12:26:06.984 INFO  o.t.s.n.g.GridCalc - Trial 0: time 133600.00004840555 dt=0.005 events=17280000 6692/ms
+12:26:09.622 INFO  o.t.s.n.g.GridCalc - Trial 0: time 133800.0000485918 dt=0.005 events=17280000 6550/ms
+12:26:12.232 INFO  o.t.s.n.g.GridCalc - Trial 0: time 134000.00004877808 dt=0.005 events=17280000 6620/ms
+12:26:14.852 INFO  o.t.s.n.g.GridCalc - Trial 0: time 134200.00004896434 dt=0.005 events=17280000 6595/ms
+12:26:17.490 INFO  o.t.s.n.g.GridCalc - Trial 0: time 134400.0000491506 dt=0.005 events=17280000 6550/ms
+12:26:20.132 INFO  o.t.s.n.g.GridCalc - Trial 0: time 134600.00004933687 dt=0.005 events=17280000 6540/ms
+12:26:22.749 INFO  o.t.s.n.g.GridCalc - Trial 0: time 134800.00004952314 dt=0.005 events=17280000 6602/ms
+12:26:25.426 INFO  o.t.s.n.g.GridCalc - Trial 0: time 135000.0000497094 dt=0.005 events=17280000 6454/ms
+12:26:28.076 INFO  o.t.s.n.g.GridCalc - Trial 0: time 135200.00004989567 dt=0.005 events=17280000 6520/ms
+12:26:30.651 INFO  o.t.s.n.g.GridCalc - Trial 0: time 135400.00005008193 dt=0.005 events=17280000 6710/ms
+12:26:33.255 INFO  o.t.s.n.g.GridCalc - Trial 0: time 135600.0000502682 dt=0.005 events=17280000 6635/ms
+12:26:35.904 INFO  o.t.s.n.g.GridCalc - Trial 0: time 135800.00005045446 dt=0.005 events=17280000 6523/ms
+12:26:38.512 INFO  o.t.s.n.g.GridCalc - Trial 0: time 136000.00005064072 dt=0.005 events=17280000 6625/ms
+12:26:41.097 INFO  o.t.s.n.g.GridCalc - Trial 0: time 136200.000050827 dt=0.005 events=17280000 6684/ms
+12:26:43.737 INFO  o.t.s.n.g.GridCalc - Trial 0: time 136400.00005101325 dt=0.005 events=17280000 6545/ms
+12:26:46.394 INFO  o.t.s.n.g.GridCalc - Trial 0: time 136600.00005119952 dt=0.005 events=17280000 6503/ms
+12:26:49.025 INFO  o.t.s.n.g.GridCalc - Trial 0: time 136800.00005138578 dt=0.005 events=17280000 6567/ms
+12:26:51.718 INFO  o.t.s.n.g.GridCalc - Trial 0: time 137000.00005157205 dt=0.005 events=17280000 6416/ms
+12:26:54.342 INFO  o.t.s.n.g.GridCalc - Trial 0: time 137200.0000517583 dt=0.005 events=17280000 6587/ms
+12:26:56.979 INFO  o.t.s.n.g.GridCalc - Trial 0: time 137400.00005194457 dt=0.005 events=17280000 6550/ms
+12:26:59.535 INFO  o.t.s.n.g.GridCalc - Trial 0: time 137600.00005213084 dt=0.005 events=17280000 6760/ms
+12:27:02.191 INFO  o.t.s.n.g.GridCalc - Trial 0: time 137800.0000523171 dt=0.005 events=17280000 6506/ms
+12:27:04.854 INFO  o.t.s.n.g.GridCalc - Trial 0: time 138000.00005250337 dt=0.005 events=17280000 6488/ms
+12:27:07.526 INFO  o.t.s.n.g.GridCalc - Trial 0: time 138200.00005268963 dt=0.005 events=17280000 6467/ms
+12:27:10.071 INFO  o.t.s.n.g.GridCalc - Trial 0: time 138400.0000528759 dt=0.005 events=17280000 6789/ms
+12:27:12.625 INFO  o.t.s.n.g.GridCalc - Trial 0: time 138600.00005306216 dt=0.005 events=17280000 6765/ms
+12:27:15.179 INFO  o.t.s.n.g.GridCalc - Trial 0: time 138800.00005324843 dt=0.005 events=17280000 6765/ms
+12:27:17.710 INFO  o.t.s.n.g.GridCalc - Trial 0: time 139000.0000534347 dt=0.005 events=17280000 6827/ms
+12:27:20.321 INFO  o.t.s.n.g.GridCalc - Trial 0: time 139200.00005362096 dt=0.005 events=17280000 6618/ms
+12:27:22.890 INFO  o.t.s.n.g.GridCalc - Trial 0: time 139400.00005380722 dt=0.005 events=17280000 6726/ms
+12:27:25.444 INFO  o.t.s.n.g.GridCalc - Trial 0: time 139600.00005399348 dt=0.005 events=17280000 6765/ms
+12:27:27.963 INFO  o.t.s.n.g.GridCalc - Trial 0: time 139800.00005417975 dt=0.005 events=17280000 6859/ms
+12:27:30.505 INFO  o.t.s.n.g.GridCalc - Trial 0: time 140000.000054366 dt=0.005 events=17280000 6797/ms
+12:27:33.096 INFO  o.t.s.n.g.GridCalc - Trial 0: time 140200.00005455228 dt=0.005 events=17280000 6669/ms
+12:27:35.738 INFO  o.t.s.n.g.GridCalc - Trial 0: time 140400.00005473854 dt=0.005 events=17280000 6540/ms
+12:27:38.362 INFO  o.t.s.n.g.GridCalc - Trial 0: time 140600.0000549248 dt=0.005 events=17280000 6585/ms
+12:27:40.941 INFO  o.t.s.n.g.GridCalc - Trial 0: time 140800.00005511107 dt=0.005 events=17280000 6700/ms
+12:27:43.571 INFO  o.t.s.n.g.GridCalc - Trial 0: time 141000.00005529734 dt=0.005 events=17280000 6570/ms
+12:27:46.214 INFO  o.t.s.n.g.GridCalc - Trial 0: time 141200.0000554836 dt=0.005 events=17280000 6538/ms
+12:27:48.814 INFO  o.t.s.n.g.GridCalc - Trial 0: time 141400.00005566987 dt=0.005 events=17280000 6646/ms
+12:27:51.433 INFO  o.t.s.n.g.GridCalc - Trial 0: time 141600.00005585613 dt=0.005 events=17280000 6597/ms
+12:27:54.111 INFO  o.t.s.n.g.GridCalc - Trial 0: time 141800.0000560424 dt=0.005 events=17280000 6452/ms
+12:27:56.676 INFO  o.t.s.n.g.GridCalc - Trial 0: time 142000.00005622866 dt=0.005 events=17280000 6736/ms
+12:27:59.220 INFO  o.t.s.n.g.GridCalc - Trial 0: time 142200.00005641492 dt=0.005 events=17280000 6795/ms
+12:28:01.859 INFO  o.t.s.n.g.GridCalc - Trial 0: time 142400.0000566012 dt=0.005 events=17280000 6545/ms
+12:28:04.416 INFO  o.t.s.n.g.GridCalc - Trial 0: time 142600.00005678745 dt=0.005 events=17280000 6757/ms
+12:28:06.983 INFO  o.t.s.n.g.GridCalc - Trial 0: time 142800.00005697372 dt=0.005 events=17280000 6734/ms
+12:28:09.593 INFO  o.t.s.n.g.GridCalc - Trial 0: time 143000.00005715998 dt=0.005 events=17280000 6618/ms
+12:28:12.174 INFO  o.t.s.n.g.GridCalc - Trial 0: time 143200.00005734625 dt=0.005 events=17280000 6695/ms
+12:28:14.756 INFO  o.t.s.n.g.GridCalc - Trial 0: time 143400.0000575325 dt=0.005 events=17280000 6692/ms
+12:28:17.291 INFO  o.t.s.n.g.GridCalc - Trial 0: time 143600.00005771877 dt=0.005 events=17280000 6816/ms
+12:28:19.911 INFO  o.t.s.n.g.GridCalc - Trial 0: time 143800.00005790504 dt=0.005 events=17280000 6595/ms
+12:28:22.455 INFO  o.t.s.n.g.GridCalc - Trial 0: time 144000.0000580913 dt=0.005 events=17280000 6792/ms
+12:28:24.951 INFO  o.t.s.n.g.GridCalc - Trial 0: time 144200.00005827757 dt=0.005 events=17280000 6923/ms
+12:28:27.476 INFO  o.t.s.n.g.GridCalc - Trial 0: time 144400.00005846383 dt=0.005 events=17280000 6843/ms
+12:28:30.022 INFO  o.t.s.n.g.GridCalc - Trial 0: time 144600.0000586501 dt=0.005 events=17280000 6787/ms
+12:28:32.647 INFO  o.t.s.n.g.GridCalc - Trial 0: time 144800.00005883636 dt=0.005 events=17280000 6582/ms
+12:28:35.277 INFO  o.t.s.n.g.GridCalc - Trial 0: time 145000.00005902263 dt=0.005 events=17280000 6570/ms
+12:28:37.875 INFO  o.t.s.n.g.GridCalc - Trial 0: time 145200.0000592089 dt=0.005 events=17280000 6651/ms
+12:28:40.503 INFO  o.t.s.n.g.GridCalc - Trial 0: time 145400.00005939516 dt=0.005 events=17280000 6575/ms
+12:28:43.062 INFO  o.t.s.n.g.GridCalc - Trial 0: time 145600.00005958142 dt=0.005 events=17280000 6752/ms
+12:28:45.575 INFO  o.t.s.n.g.GridCalc - Trial 0: time 145800.00005976768 dt=0.005 events=17280000 6876/ms
+12:28:48.105 INFO  o.t.s.n.g.GridCalc - Trial 0: time 146000.00005995395 dt=0.005 events=17280000 6830/ms
+12:28:50.677 INFO  o.t.s.n.g.GridCalc - Trial 0: time 146200.0000601402 dt=0.005 events=17280000 6718/ms
+12:28:53.202 INFO  o.t.s.n.g.GridCalc - Trial 0: time 146400.00006032648 dt=0.005 events=17280000 6843/ms
+12:28:55.762 INFO  o.t.s.n.g.GridCalc - Trial 0: time 146600.00006051274 dt=0.005 events=17280000 6750/ms
+12:28:58.301 INFO  o.t.s.n.g.GridCalc - Trial 0: time 146800.000060699 dt=0.005 events=17280000 6808/ms
+12:29:00.848 INFO  o.t.s.n.g.GridCalc - Trial 0: time 147000.00006088527 dt=0.005 events=17280000 6781/ms
+12:29:03.409 INFO  o.t.s.n.g.GridCalc - Trial 0: time 147200.00006107154 dt=0.005 events=17280000 6747/ms
+12:29:05.961 INFO  o.t.s.n.g.GridCalc - Trial 0: time 147400.0000612578 dt=0.005 events=17280000 6771/ms
+12:29:08.482 INFO  o.t.s.n.g.GridCalc - Trial 0: time 147600.00006144407 dt=0.005 events=17280000 6854/ms
+12:29:11.125 INFO  o.t.s.n.g.GridCalc - Trial 0: time 147800.00006163033 dt=0.005 events=17280000 6540/ms
+12:29:13.709 INFO  o.t.s.n.g.GridCalc - Trial 0: time 148000.0000618166 dt=0.005 events=17280000 6684/ms
+12:29:16.259 INFO  o.t.s.n.g.GridCalc - Trial 0: time 148200.00006200286 dt=0.005 events=17280000 6776/ms
+12:29:18.778 INFO  o.t.s.n.g.GridCalc - Trial 0: time 148400.00006218912 dt=0.005 events=17280000 6862/ms
+12:29:21.307 INFO  o.t.s.n.g.GridCalc - Trial 0: time 148600.0000623754 dt=0.005 events=17280000 6830/ms
+12:29:23.841 INFO  o.t.s.n.g.GridCalc - Trial 0: time 148800.00006256165 dt=0.005 events=17280000 6819/ms
+12:29:26.354 INFO  o.t.s.n.g.GridCalc - Trial 0: time 149000.00006274792 dt=0.005 events=17280000 6876/ms
+12:29:28.860 INFO  o.t.s.n.g.GridCalc - Trial 0: time 149200.00006293418 dt=0.005 events=17280000 6898/ms
+12:29:31.410 INFO  o.t.s.n.g.GridCalc - Trial 0: time 149400.00006312045 dt=0.005 events=17280000 6773/ms
+12:29:33.988 INFO  o.t.s.n.g.GridCalc - Trial 0: time 149600.0000633067 dt=0.005 events=17280000 6702/ms
+12:29:36.559 INFO  o.t.s.n.g.GridCalc - Trial 0: time 149800.00006349297 dt=0.005 events=17280000 6721/ms
+12:29:39.125 INFO  o.t.s.n.g.GridCalc - Trial 0: time 150000.00006367924 dt=0.005 events=17280000 6734/ms
+12:29:41.688 INFO  o.t.s.n.g.GridCalc - Trial 0: time 150200.0000638655 dt=0.005 events=17280000 6744/ms
+12:29:44.259 INFO  o.t.s.n.g.GridCalc - Trial 0: time 150400.00006405177 dt=0.005 events=17280000 6718/ms
+12:29:46.803 INFO  o.t.s.n.g.GridCalc - Trial 0: time 150600.00006423803 dt=0.005 events=17280000 6792/ms
+12:29:49.335 INFO  o.t.s.n.g.GridCalc - Trial 0: time 150800.0000644243 dt=0.005 events=17280000 6824/ms
+12:29:51.878 INFO  o.t.s.n.g.GridCalc - Trial 0: time 151000.00006461056 dt=0.005 events=17280000 6795/ms
+12:29:54.457 INFO  o.t.s.n.g.GridCalc - Trial 0: time 151200.00006479683 dt=0.005 events=17280000 6700/ms
+12:29:57.052 INFO  o.t.s.n.g.GridCalc - Trial 0: time 151400.0000649831 dt=0.005 events=17280000 6658/ms
+12:29:59.604 INFO  o.t.s.n.g.GridCalc - Trial 0: time 151600.00006516936 dt=0.005 events=17280000 6771/ms
+12:30:02.149 INFO  o.t.s.n.g.GridCalc - Trial 0: time 151800.00006535562 dt=0.005 events=17280000 6789/ms
+12:30:04.708 INFO  o.t.s.n.g.GridCalc - Trial 0: time 152000.00006554188 dt=0.005 events=17280000 6752/ms
+12:30:07.253 INFO  o.t.s.n.g.GridCalc - Trial 0: time 152200.00006572815 dt=0.005 events=17280000 6789/ms
+12:30:09.805 INFO  o.t.s.n.g.GridCalc - Trial 0: time 152400.0000659144 dt=0.005 events=17280000 6771/ms
+12:30:12.368 INFO  o.t.s.n.g.GridCalc - Trial 0: time 152600.00006610068 dt=0.005 events=17280000 6742/ms
+12:30:14.883 INFO  o.t.s.n.g.GridCalc - Trial 0: time 152800.00006628694 dt=0.005 events=17280000 6873/ms
+12:30:17.423 INFO  o.t.s.n.g.GridCalc - Trial 0: time 153000.0000664732 dt=0.005 events=17280000 6800/ms
+12:30:19.991 INFO  o.t.s.n.g.GridCalc - Trial 0: time 153200.00006665947 dt=0.005 events=17280000 6728/ms
+12:30:22.536 INFO  o.t.s.n.g.GridCalc - Trial 0: time 153400.00006684574 dt=0.005 events=17280000 6789/ms
+12:30:25.062 INFO  o.t.s.n.g.GridCalc - Trial 0: time 153600.000067032 dt=0.005 events=17280000 6840/ms
+12:30:27.589 INFO  o.t.s.n.g.GridCalc - Trial 0: time 153800.00006721827 dt=0.005 events=17280000 6838/ms
+12:30:30.198 INFO  o.t.s.n.g.GridCalc - Trial 0: time 154000.00006740453 dt=0.005 events=17280000 6623/ms
+12:30:32.819 INFO  o.t.s.n.g.GridCalc - Trial 0: time 154200.0000675908 dt=0.005 events=17280000 6592/ms
+12:30:35.407 INFO  o.t.s.n.g.GridCalc - Trial 0: time 154400.00006777706 dt=0.005 events=17280000 6676/ms
+12:30:37.913 INFO  o.t.s.n.g.GridCalc - Trial 0: time 154600.00006796332 dt=0.005 events=17280000 6895/ms
+12:30:40.425 INFO  o.t.s.n.g.GridCalc - Trial 0: time 154800.0000681496 dt=0.005 events=17280000 6878/ms
+12:30:43.000 INFO  o.t.s.n.g.GridCalc - Trial 0: time 155000.00006833585 dt=0.005 events=17280000 6713/ms
+12:30:45.547 INFO  o.t.s.n.g.GridCalc - Trial 0: time 155200.00006852212 dt=0.005 events=17280000 6784/ms
+12:30:48.057 INFO  o.t.s.n.g.GridCalc - Trial 0: time 155400.00006870838 dt=0.005 events=17280000 6881/ms
+12:30:50.630 INFO  o.t.s.n.g.GridCalc - Trial 0: time 155600.00006889465 dt=0.005 events=17280000 6715/ms
+12:30:53.147 INFO  o.t.s.n.g.GridCalc - Trial 0: time 155800.0000690809 dt=0.005 events=17280000 6865/ms
+12:30:55.686 INFO  o.t.s.n.g.GridCalc - Trial 0: time 156000.00006926717 dt=0.005 events=17280000 6808/ms
+12:30:58.208 INFO  o.t.s.n.g.GridCalc - Trial 0: time 156200.00006945344 dt=0.005 events=17280000 6848/ms
+12:31:00.771 INFO  o.t.s.n.g.GridCalc - Trial 0: time 156400.0000696397 dt=0.005 events=17280000 6742/ms
+12:31:03.296 INFO  o.t.s.n.g.GridCalc - Trial 0: time 156600.00006982597 dt=0.005 events=17280000 6843/ms
+12:31:05.847 INFO  o.t.s.n.g.GridCalc - Trial 0: time 156800.00007001223 dt=0.005 events=17280000 6773/ms
+12:31:08.420 INFO  o.t.s.n.g.GridCalc - Trial 0: time 157000.0000701985 dt=0.005 events=17280000 6715/ms
+12:31:10.975 INFO  o.t.s.n.g.GridCalc - Trial 0: time 157200.00007038476 dt=0.005 events=17280000 6763/ms
+12:31:13.532 INFO  o.t.s.n.g.GridCalc - Trial 0: time 157400.00007057103 dt=0.005 events=17280000 6757/ms
+12:31:16.094 INFO  o.t.s.n.g.GridCalc - Trial 0: time 157600.0000707573 dt=0.005 events=17280000 6744/ms
+12:31:18.667 INFO  o.t.s.n.g.GridCalc - Trial 0: time 157800.00007094356 dt=0.005 events=17280000 6715/ms
+12:31:21.190 INFO  o.t.s.n.g.GridCalc - Trial 0: time 158000.00007112982 dt=0.005 events=17280000 6848/ms
+12:31:23.766 INFO  o.t.s.n.g.GridCalc - Trial 0: time 158200.00007131608 dt=0.005 events=17280000 6708/ms
+12:31:26.349 INFO  o.t.s.n.g.GridCalc - Trial 0: time 158400.00007150235 dt=0.005 events=17280000 6689/ms
+12:31:28.886 INFO  o.t.s.n.g.GridCalc - Trial 0: time 158600.0000716886 dt=0.005 events=17280000 6811/ms
+12:31:31.456 INFO  o.t.s.n.g.GridCalc - Trial 0: time 158800.00007187488 dt=0.005 events=17280000 6723/ms
+12:31:33.979 INFO  o.t.s.n.g.GridCalc - Trial 0: time 159000.00007206114 dt=0.005 events=17280000 6848/ms
+12:31:36.508 INFO  o.t.s.n.g.GridCalc - Trial 0: time 159200.0000722474 dt=0.005 events=17280000 6832/ms
+12:31:39.133 INFO  o.t.s.n.g.GridCalc - Trial 0: time 159400.00007243367 dt=0.005 events=17280000 6582/ms
+12:31:41.659 INFO  o.t.s.n.g.GridCalc - Trial 0: time 159600.00007261994 dt=0.005 events=17280000 6840/ms
+12:31:44.230 INFO  o.t.s.n.g.GridCalc - Trial 0: time 159800.0000728062 dt=0.005 events=17280000 6723/ms
+12:31:46.807 INFO  o.t.s.n.g.GridCalc - Trial 0: time 160000.00007299246 dt=0.005 events=17280000 6702/ms
+12:31:49.381 INFO  o.t.s.n.g.GridCalc - Trial 0: time 160200.00007317873 dt=0.005 events=17280000 6713/ms
+12:31:51.921 INFO  o.t.s.n.g.GridCalc - Trial 0: time 160400.000073365 dt=0.005 events=17280000 6803/ms
+12:31:54.431 INFO  o.t.s.n.g.GridCalc - Trial 0: time 160600.00007355126 dt=0.005 events=17280000 6884/ms
+12:31:57.000 INFO  o.t.s.n.g.GridCalc - Trial 0: time 160800.00007373752 dt=0.005 events=17280000 6726/ms
+12:31:59.544 INFO  o.t.s.n.g.GridCalc - Trial 0: time 161000.0000739238 dt=0.005 events=17280000 6792/ms
+12:32:02.111 INFO  o.t.s.n.g.GridCalc - Trial 0: time 161200.00007411005 dt=0.005 events=17280000 6734/ms
+12:32:04.675 INFO  o.t.s.n.g.GridCalc - Trial 0: time 161400.00007429632 dt=0.005 events=17280000 6736/ms
+12:32:07.227 INFO  o.t.s.n.g.GridCalc - Trial 0: time 161600.00007448258 dt=0.005 events=17280000 6771/ms
+12:32:09.748 INFO  o.t.s.n.g.GridCalc - Trial 0: time 161800.00007466885 dt=0.005 events=17280000 6854/ms
+12:32:12.288 INFO  o.t.s.n.g.GridCalc - Trial 0: time 162000.0000748551 dt=0.005 events=17280000 6803/ms
+12:32:14.825 INFO  o.t.s.n.g.GridCalc - Trial 0: time 162200.00007504137 dt=0.005 events=17280000 6811/ms
+12:32:17.401 INFO  o.t.s.n.g.GridCalc - Trial 0: time 162400.00007522764 dt=0.005 events=17280000 6710/ms
+12:32:19.955 INFO  o.t.s.n.g.GridCalc - Trial 0: time 162600.0000754139 dt=0.005 events=17280000 6763/ms
+12:32:22.497 INFO  o.t.s.n.g.GridCalc - Trial 0: time 162800.00007560017 dt=0.005 events=17280000 6797/ms
+12:32:25.039 INFO  o.t.s.n.g.GridCalc - Trial 0: time 163000.00007578643 dt=0.005 events=17280000 6797/ms
+12:32:27.592 INFO  o.t.s.n.g.GridCalc - Trial 0: time 163200.0000759727 dt=0.005 events=17280000 6768/ms
+12:32:30.150 INFO  o.t.s.n.g.GridCalc - Trial 0: time 163400.00007615896 dt=0.005 events=17280000 6755/ms
+12:32:32.698 INFO  o.t.s.n.g.GridCalc - Trial 0: time 163600.00007634523 dt=0.005 events=17280000 6781/ms
+12:32:35.231 INFO  o.t.s.n.g.GridCalc - Trial 0: time 163800.0000765315 dt=0.005 events=17280000 6821/ms
+12:32:37.780 INFO  o.t.s.n.g.GridCalc - Trial 0: time 164000.00007671776 dt=0.005 events=17280000 6779/ms
+12:32:40.349 INFO  o.t.s.n.g.GridCalc - Trial 0: time 164200.00007690402 dt=0.005 events=17280000 6726/ms
+12:32:42.900 INFO  o.t.s.n.g.GridCalc - Trial 0: time 164400.00007709028 dt=0.005 events=17280000 6773/ms
+12:32:45.477 INFO  o.t.s.n.g.GridCalc - Trial 0: time 164600.00007727655 dt=0.005 events=17280000 6705/ms
+12:32:48.089 INFO  o.t.s.n.g.GridCalc - Trial 0: time 164800.0000774628 dt=0.005 events=17280000 6615/ms
+12:32:50.666 INFO  o.t.s.n.g.GridCalc - Trial 0: time 165000.00007764908 dt=0.005 events=17280000 6705/ms
+12:32:53.226 INFO  o.t.s.n.g.GridCalc - Trial 0: time 165200.00007783534 dt=0.005 events=17280000 6750/ms
+12:32:55.769 INFO  o.t.s.n.g.GridCalc - Trial 0: time 165400.0000780216 dt=0.005 events=17280000 6795/ms
+12:32:58.342 INFO  o.t.s.n.g.GridCalc - Trial 0: time 165600.00007820787 dt=0.005 events=17280000 6715/ms
+12:33:00.990 INFO  o.t.s.n.g.GridCalc - Trial 0: time 165800.00007839414 dt=0.005 events=17280000 6525/ms
+12:33:03.563 INFO  o.t.s.n.g.GridCalc - Trial 0: time 166000.0000785804 dt=0.005 events=17280000 6715/ms
+12:33:06.137 INFO  o.t.s.n.g.GridCalc - Trial 0: time 166200.00007876666 dt=0.005 events=17280000 6715/ms
+12:33:08.687 INFO  o.t.s.n.g.GridCalc - Trial 0: time 166400.00007895293 dt=0.005 events=17280000 6776/ms
+12:33:11.190 INFO  o.t.s.n.g.GridCalc - Trial 0: time 166600.0000791392 dt=0.005 events=17280000 6900/ms
+12:33:13.727 INFO  o.t.s.n.g.GridCalc - Trial 0: time 166800.00007932546 dt=0.005 events=17280000 6811/ms
+12:33:16.258 INFO  o.t.s.n.g.GridCalc - Trial 0: time 167000.00007951172 dt=0.005 events=17280000 6827/ms
+12:33:18.789 INFO  o.t.s.n.g.GridCalc - Trial 0: time 167200.000079698 dt=0.005 events=17280000 6830/ms
+12:33:21.329 INFO  o.t.s.n.g.GridCalc - Trial 0: time 167400.00007988425 dt=0.005 events=17280000 6800/ms
+12:33:23.889 INFO  o.t.s.n.g.GridCalc - Trial 0: time 167600.00008007052 dt=0.005 events=17280000 6750/ms
+12:33:26.409 INFO  o.t.s.n.g.GridCalc - Trial 0: time 167800.00008025678 dt=0.005 events=17280000 6857/ms
+12:33:28.934 INFO  o.t.s.n.g.GridCalc - Trial 0: time 168000.00008044305 dt=0.005 events=17280000 6843/ms
+12:33:31.475 INFO  o.t.s.n.g.GridCalc - Trial 0: time 168200.0000806293 dt=0.005 events=17280000 6800/ms
+12:33:33.996 INFO  o.t.s.n.g.GridCalc - Trial 0: time 168400.00008081557 dt=0.005 events=17280000 6854/ms
+12:33:36.511 INFO  o.t.s.n.g.GridCalc - Trial 0: time 168600.00008100184 dt=0.005 events=17280000 6870/ms
+12:33:39.003 INFO  o.t.s.n.g.GridCalc - Trial 0: time 168800.0000811881 dt=0.005 events=17280000 6934/ms
+12:33:41.532 INFO  o.t.s.n.g.GridCalc - Trial 0: time 169000.00008137437 dt=0.005 events=17280000 6832/ms
+12:33:44.095 INFO  o.t.s.n.g.GridCalc - Trial 0: time 169200.00008156063 dt=0.005 events=17280000 6742/ms
+12:33:46.641 INFO  o.t.s.n.g.GridCalc - Trial 0: time 169400.0000817469 dt=0.005 events=17280000 6787/ms
+12:33:49.164 INFO  o.t.s.n.g.GridCalc - Trial 0: time 169600.00008193316 dt=0.005 events=17280000 6848/ms
+12:33:51.710 INFO  o.t.s.n.g.GridCalc - Trial 0: time 169800.00008211943 dt=0.005 events=17280000 6787/ms
+12:33:54.249 INFO  o.t.s.n.g.GridCalc - Trial 0: time 170000.0000823057 dt=0.005 events=17280000 6805/ms
+12:33:56.806 INFO  o.t.s.n.g.GridCalc - Trial 0: time 170200.00008249196 dt=0.005 events=17280000 6757/ms
+12:33:59.360 INFO  o.t.s.n.g.GridCalc - Trial 0: time 170400.00008267822 dt=0.005 events=17280000 6765/ms
+12:34:01.909 INFO  o.t.s.n.g.GridCalc - Trial 0: time 170600.00008286448 dt=0.005 events=17280000 6779/ms
+12:34:04.435 INFO  o.t.s.n.g.GridCalc - Trial 0: time 170800.00008305075 dt=0.005 events=17280000 6840/ms
+12:34:06.977 INFO  o.t.s.n.g.GridCalc - Trial 0: time 171000.000083237 dt=0.005 events=17280000 6797/ms
+12:34:09.555 INFO  o.t.s.n.g.GridCalc - Trial 0: time 171200.00008342328 dt=0.005 events=17280000 6702/ms
+12:34:12.086 INFO  o.t.s.n.g.GridCalc - Trial 0: time 171400.00008360954 dt=0.005 events=17280000 6827/ms
+12:34:14.635 INFO  o.t.s.n.g.GridCalc - Trial 0: time 171600.0000837958 dt=0.005 events=17280000 6779/ms
+12:34:17.153 INFO  o.t.s.n.g.GridCalc - Trial 0: time 171800.00008398207 dt=0.005 events=17280000 6862/ms
+12:34:19.683 INFO  o.t.s.n.g.GridCalc - Trial 0: time 172000.00008416834 dt=0.005 events=17280000 6830/ms
+12:34:22.240 INFO  o.t.s.n.g.GridCalc - Trial 0: time 172200.0000843546 dt=0.005 events=17280000 6757/ms
+12:34:24.768 INFO  o.t.s.n.g.GridCalc - Trial 0: time 172400.00008454086 dt=0.005 events=17280000 6835/ms
+12:34:27.314 INFO  o.t.s.n.g.GridCalc - Trial 0: time 172600.00008472713 dt=0.005 events=17280000 6787/ms
+12:34:29.794 INFO  o.t.s.n.g.GridCalc - Trial 0: time 172800.0000849134 dt=0.005 events=17280000 6970/ms
+12:34:32.289 INFO  o.t.s.n.g.GridCalc - Trial 0: time 173000.00008509966 dt=0.005 events=17280000 6925/ms
+12:34:34.834 INFO  o.t.s.n.g.GridCalc - Trial 0: time 173200.00008528592 dt=0.005 events=17280000 6787/ms
+12:34:37.332 INFO  o.t.s.n.g.GridCalc - Trial 0: time 173400.0000854722 dt=0.005 events=17280000 6917/ms
+12:34:39.819 INFO  o.t.s.n.g.GridCalc - Trial 0: time 173600.00008565845 dt=0.005 events=17280000 6950/ms
+12:34:42.345 INFO  o.t.s.n.g.GridCalc - Trial 0: time 173800.00008584472 dt=0.005 events=17280000 6838/ms
+12:34:44.868 INFO  o.t.s.n.g.GridCalc - Trial 0: time 174000.00008603098 dt=0.005 events=17280000 6848/ms
+12:34:47.446 INFO  o.t.s.n.g.GridCalc - Trial 0: time 174200.00008621725 dt=0.005 events=17280000 6702/ms
+12:34:49.990 INFO  o.t.s.n.g.GridCalc - Trial 0: time 174400.0000864035 dt=0.005 events=17280000 6792/ms
+12:34:52.531 INFO  o.t.s.n.g.GridCalc - Trial 0: time 174600.00008658977 dt=0.005 events=17280000 6800/ms
+12:34:55.031 INFO  o.t.s.n.g.GridCalc - Trial 0: time 174800.00008677604 dt=0.005 events=17280000 6912/ms
+12:34:57.573 INFO  o.t.s.n.g.GridCalc - Trial 0: time 175000.0000869623 dt=0.005 events=17280000 6797/ms
+12:35:00.142 INFO  o.t.s.n.g.GridCalc - Trial 0: time 175200.00008714857 dt=0.005 events=17280000 6726/ms
+12:35:02.663 INFO  o.t.s.n.g.GridCalc - Trial 0: time 175400.00008733483 dt=0.005 events=17280000 6854/ms
+12:35:05.175 INFO  o.t.s.n.g.GridCalc - Trial 0: time 175600.0000875211 dt=0.005 events=17280000 6878/ms
+12:35:07.716 INFO  o.t.s.n.g.GridCalc - Trial 0: time 175800.00008770736 dt=0.005 events=17280000 6800/ms
+12:35:10.240 INFO  o.t.s.n.g.GridCalc - Trial 0: time 176000.00008789363 dt=0.005 events=17280000 6846/ms
+12:35:12.794 INFO  o.t.s.n.g.GridCalc - Trial 0: time 176200.0000880799 dt=0.005 events=17280000 6768/ms
+12:35:15.309 INFO  o.t.s.n.g.GridCalc - Trial 0: time 176400.00008826616 dt=0.005 events=17280000 6868/ms
+12:35:17.839 INFO  o.t.s.n.g.GridCalc - Trial 0: time 176600.00008845242 dt=0.005 events=17280000 6830/ms
+12:35:20.364 INFO  o.t.s.n.g.GridCalc - Trial 0: time 176800.00008863868 dt=0.005 events=17280000 6843/ms
+12:35:22.851 INFO  o.t.s.n.g.GridCalc - Trial 0: time 177000.00008882495 dt=0.005 events=17280000 6948/ms
+12:35:25.343 INFO  o.t.s.n.g.GridCalc - Trial 0: time 177200.0000890112 dt=0.005 events=17280000 6934/ms
+12:35:27.860 INFO  o.t.s.n.g.GridCalc - Trial 0: time 177400.00008919748 dt=0.005 events=17280000 6865/ms
+12:35:30.409 INFO  o.t.s.n.g.GridCalc - Trial 0: time 177600.00008938374 dt=0.005 events=17280000 6779/ms
+12:35:32.920 INFO  o.t.s.n.g.GridCalc - Trial 0: time 177800.00008957 dt=0.005 events=17280000 6881/ms
+12:35:35.432 INFO  o.t.s.n.g.GridCalc - Trial 0: time 178000.00008975627 dt=0.005 events=17280000 6878/ms
+12:35:37.999 INFO  o.t.s.n.g.GridCalc - Trial 0: time 178200.00008994254 dt=0.005 events=17280000 6731/ms
+12:35:40.581 INFO  o.t.s.n.g.GridCalc - Trial 0: time 178400.0000901288 dt=0.005 events=17280000 6695/ms
+12:35:43.097 INFO  o.t.s.n.g.GridCalc - Trial 0: time 178600.00009031506 dt=0.005 events=17280000 6865/ms
+12:35:45.714 INFO  o.t.s.n.g.GridCalc - Trial 0: time 178800.00009050133 dt=0.005 events=17280000 6602/ms
+12:35:48.234 INFO  o.t.s.n.g.GridCalc - Trial 0: time 179000.0000906876 dt=0.005 events=17280000 6857/ms
+12:35:50.766 INFO  o.t.s.n.g.GridCalc - Trial 0: time 179200.00009087386 dt=0.005 events=17280000 6824/ms
+12:35:53.339 INFO  o.t.s.n.g.GridCalc - Trial 0: time 179400.00009106012 dt=0.005 events=17280000 6715/ms
+12:35:55.843 INFO  o.t.s.n.g.GridCalc - Trial 0: time 179600.0000912464 dt=0.005 events=17280000 6900/ms
+12:35:58.367 INFO  o.t.s.n.g.GridCalc - Trial 0: time 179800.00009143265 dt=0.005 events=17280000 6846/ms
+12:36:00.877 INFO  o.t.s.n.g.GridCalc - Trial 0: time 180000.00009161892 dt=0.005 events=17280000 6884/ms
+12:36:03.395 INFO  o.t.s.n.g.GridCalc - Trial 0: time 180200.00009180518 dt=0.005 events=17280000 6862/ms
+12:36:05.991 INFO  o.t.s.n.g.GridCalc - Trial 0: time 180400.00009199145 dt=0.005 events=17280000 6656/ms
+12:36:08.557 INFO  o.t.s.n.g.GridCalc - Trial 0: time 180600.0000921777 dt=0.005 events=17280000 6734/ms
+12:36:11.067 INFO  o.t.s.n.g.GridCalc - Trial 0: time 180800.00009236397 dt=0.005 events=17280000 6884/ms
+12:36:13.636 INFO  o.t.s.n.g.GridCalc - Trial 0: time 181000.00009255024 dt=0.005 events=17280000 6726/ms
+12:36:16.123 INFO  o.t.s.n.g.GridCalc - Trial 0: time 181200.0000927365 dt=0.005 events=17280000 6948/ms
+12:36:18.674 INFO  o.t.s.n.g.GridCalc - Trial 0: time 181400.00009292277 dt=0.005 events=17280000 6773/ms
+12:36:21.177 INFO  o.t.s.n.g.GridCalc - Trial 0: time 181600.00009310903 dt=0.005 events=17280000 6903/ms
+12:36:23.714 INFO  o.t.s.n.g.GridCalc - Trial 0: time 181800.0000932953 dt=0.005 events=17280000 6811/ms
+12:36:26.306 INFO  o.t.s.n.g.GridCalc - Trial 0: time 182000.00009348156 dt=0.005 events=17280000 6666/ms
+12:36:28.801 INFO  o.t.s.n.g.GridCalc - Trial 0: time 182200.00009366783 dt=0.005 events=17280000 6925/ms
+12:36:31.336 INFO  o.t.s.n.g.GridCalc - Trial 0: time 182400.0000938541 dt=0.005 events=17280000 6816/ms
+12:36:33.858 INFO  o.t.s.n.g.GridCalc - Trial 0: time 182600.00009404036 dt=0.005 events=17280000 6851/ms
+12:36:36.362 INFO  o.t.s.n.g.GridCalc - Trial 0: time 182800.00009422662 dt=0.005 events=17280000 6900/ms
+12:36:38.931 INFO  o.t.s.n.g.GridCalc - Trial 0: time 183000.00009441288 dt=0.005 events=17280000 6728/ms
+12:36:41.463 INFO  o.t.s.n.g.GridCalc - Trial 0: time 183200.00009459915 dt=0.005 events=17280000 6821/ms
+12:36:44.028 INFO  o.t.s.n.g.GridCalc - Trial 0: time 183400.0000947854 dt=0.005 events=17280000 6736/ms
+12:36:46.540 INFO  o.t.s.n.g.GridCalc - Trial 0: time 183600.00009497168 dt=0.005 events=17280000 6878/ms
+12:36:49.100 INFO  o.t.s.n.g.GridCalc - Trial 0: time 183800.00009515794 dt=0.005 events=17280000 6750/ms
+12:36:51.622 INFO  o.t.s.n.g.GridCalc - Trial 0: time 184000.0000953442 dt=0.005 events=17280000 6851/ms
+12:36:54.179 INFO  o.t.s.n.g.GridCalc - Trial 0: time 184200.00009553047 dt=0.005 events=17280000 6757/ms
+12:36:56.678 INFO  o.t.s.n.g.GridCalc - Trial 0: time 184400.00009571674 dt=0.005 events=17280000 6914/ms
+12:36:59.214 INFO  o.t.s.n.g.GridCalc - Trial 0: time 184600.000095903 dt=0.005 events=17280000 6813/ms
+12:37:01.746 INFO  o.t.s.n.g.GridCalc - Trial 0: time 184800.00009608926 dt=0.005 events=17280000 6824/ms
+12:37:04.266 INFO  o.t.s.n.g.GridCalc - Trial 0: time 185000.00009627553 dt=0.005 events=17280000 6857/ms
+12:37:06.739 INFO  o.t.s.n.g.GridCalc - Trial 0: time 185200.0000964618 dt=0.005 events=17280000 6987/ms
+12:37:09.234 INFO  o.t.s.n.g.GridCalc - Trial 0: time 185400.00009664806 dt=0.005 events=17280000 6925/ms
+12:37:11.799 INFO  o.t.s.n.g.GridCalc - Trial 0: time 185600.00009683432 dt=0.005 events=17280000 6736/ms
+12:37:14.328 INFO  o.t.s.n.g.GridCalc - Trial 0: time 185800.0000970206 dt=0.005 events=17280000 6832/ms
+12:37:16.877 INFO  o.t.s.n.g.GridCalc - Trial 0: time 186000.00009720685 dt=0.005 events=17280000 6779/ms
+12:37:19.394 INFO  o.t.s.n.g.GridCalc - Trial 0: time 186200.00009739312 dt=0.005 events=17280000 6865/ms
+12:37:21.893 INFO  o.t.s.n.g.GridCalc - Trial 0: time 186400.00009757938 dt=0.005 events=17280000 6914/ms
+12:37:24.394 INFO  o.t.s.n.g.GridCalc - Trial 0: time 186600.00009776565 dt=0.005 events=17280000 6909/ms
+12:37:26.895 INFO  o.t.s.n.g.GridCalc - Trial 0: time 186800.0000979519 dt=0.005 events=17280000 6909/ms
+12:37:29.404 INFO  o.t.s.n.g.GridCalc - Trial 0: time 187000.00009813817 dt=0.005 events=17280000 6887/ms
+12:37:31.915 INFO  o.t.s.n.g.GridCalc - Trial 0: time 187200.00009832444 dt=0.005 events=17280000 6881/ms
+12:37:34.401 INFO  o.t.s.n.g.GridCalc - Trial 0: time 187400.0000985107 dt=0.005 events=17280000 6950/ms
+12:37:36.937 INFO  o.t.s.n.g.GridCalc - Trial 0: time 187600.00009869697 dt=0.005 events=17280000 6813/ms
+12:37:39.459 INFO  o.t.s.n.g.GridCalc - Trial 0: time 187800.00009888323 dt=0.005 events=17280000 6851/ms
+12:37:42.003 INFO  o.t.s.n.g.GridCalc - Trial 0: time 188000.0000990695 dt=0.005 events=17280000 6792/ms
+12:37:44.546 INFO  o.t.s.n.g.GridCalc - Trial 0: time 188200.00009925576 dt=0.005 events=17280000 6795/ms
+12:37:47.069 INFO  o.t.s.n.g.GridCalc - Trial 0: time 188400.00009944203 dt=0.005 events=17280000 6851/ms
+12:37:49.546 INFO  o.t.s.n.g.GridCalc - Trial 0: time 188600.0000996283 dt=0.005 events=17280000 6973/ms
+12:37:52.033 INFO  o.t.s.n.g.GridCalc - Trial 0: time 188800.00009981456 dt=0.005 events=17280000 6948/ms
+12:37:54.517 INFO  o.t.s.n.g.GridCalc - Trial 0: time 189000.00010000082 dt=0.005 events=17280000 6956/ms
+12:37:57.005 INFO  o.t.s.n.g.GridCalc - Trial 0: time 189200.00010018708 dt=0.005 events=17280000 6945/ms
+12:37:59.481 INFO  o.t.s.n.g.GridCalc - Trial 0: time 189400.00010037335 dt=0.005 events=17280000 6978/ms
+12:38:01.993 INFO  o.t.s.n.g.GridCalc - Trial 0: time 189600.0001005596 dt=0.005 events=17280000 6878/ms
+12:38:04.471 INFO  o.t.s.n.g.GridCalc - Trial 0: time 189800.00010074588 dt=0.005 events=17280000 6973/ms
+12:38:06.959 INFO  o.t.s.n.g.GridCalc - Trial 0: time 190000.00010093214 dt=0.005 events=17280000 6945/ms
+12:38:09.466 INFO  o.t.s.n.g.GridCalc - Trial 0: time 190200.0001011184 dt=0.005 events=17280000 6892/ms
+12:38:12.005 INFO  o.t.s.n.g.GridCalc - Trial 0: time 190400.00010130467 dt=0.005 events=17280000 6805/ms
+12:38:14.534 INFO  o.t.s.n.g.GridCalc - Trial 0: time 190600.00010149094 dt=0.005 events=17280000 6832/ms
+12:38:16.985 INFO  o.t.s.n.g.GridCalc - Trial 0: time 190800.0001016772 dt=0.005 events=17280000 7050/ms
+12:38:19.478 INFO  o.t.s.n.g.GridCalc - Trial 0: time 191000.00010186346 dt=0.005 events=17280000 6931/ms
+12:38:21.916 INFO  o.t.s.n.g.GridCalc - Trial 0: time 191200.00010204973 dt=0.005 events=17280000 7087/ms
+12:38:24.364 INFO  o.t.s.n.g.GridCalc - Trial 0: time 191400.000102236 dt=0.005 events=17280000 7058/ms
+12:38:26.880 INFO  o.t.s.n.g.GridCalc - Trial 0: time 191600.00010242226 dt=0.005 events=17280000 6868/ms
+12:38:29.365 INFO  o.t.s.n.g.GridCalc - Trial 0: time 191800.00010260852 dt=0.005 events=17280000 6953/ms
+12:38:31.815 INFO  o.t.s.n.g.GridCalc - Trial 0: time 192000.0001027948 dt=0.005 events=17280000 7053/ms
+12:38:34.318 INFO  o.t.s.n.g.GridCalc - Trial 0: time 192200.00010298105 dt=0.005 events=17280000 6903/ms
+12:38:36.763 INFO  o.t.s.n.g.GridCalc - Trial 0: time 192400.00010316732 dt=0.005 events=17280000 7067/ms
+12:38:39.263 INFO  o.t.s.n.g.GridCalc - Trial 0: time 192600.00010335358 dt=0.005 events=17280000 6912/ms
+12:38:41.709 INFO  o.t.s.n.g.GridCalc - Trial 0: time 192800.00010353985 dt=0.005 events=17280000 7064/ms
+12:38:44.141 INFO  o.t.s.n.g.GridCalc - Trial 0: time 193000.0001037261 dt=0.005 events=17280000 7105/ms
+12:38:46.594 INFO  o.t.s.n.g.GridCalc - Trial 0: time 193200.00010391237 dt=0.005 events=17280000 7044/ms
+12:38:49.008 INFO  o.t.s.n.g.GridCalc - Trial 0: time 193400.00010409864 dt=0.005 events=17280000 7158/ms
+12:38:51.430 INFO  o.t.s.n.g.GridCalc - Trial 0: time 193600.0001042849 dt=0.005 events=17280000 7134/ms
+12:38:53.949 INFO  o.t.s.n.g.GridCalc - Trial 0: time 193800.00010447117 dt=0.005 events=17280000 6859/ms
+12:38:56.427 INFO  o.t.s.n.g.GridCalc - Trial 0: time 194000.00010465743 dt=0.005 events=17280000 6973/ms
+12:38:58.867 INFO  o.t.s.n.g.GridCalc - Trial 0: time 194200.0001048437 dt=0.005 events=17280000 7081/ms
+12:39:01.328 INFO  o.t.s.n.g.GridCalc - Trial 0: time 194400.00010502996 dt=0.005 events=17280000 7021/ms
+12:39:03.776 INFO  o.t.s.n.g.GridCalc - Trial 0: time 194600.00010521623 dt=0.005 events=17280000 7058/ms
+12:39:06.257 INFO  o.t.s.n.g.GridCalc - Trial 0: time 194800.0001054025 dt=0.005 events=17280000 6964/ms
+12:39:08.709 INFO  o.t.s.n.g.GridCalc - Trial 0: time 195000.00010558876 dt=0.005 events=17280000 7047/ms
+12:39:11.168 INFO  o.t.s.n.g.GridCalc - Trial 0: time 195200.00010577502 dt=0.005 events=17280000 7027/ms
+12:39:13.650 INFO  o.t.s.n.g.GridCalc - Trial 0: time 195400.00010596128 dt=0.005 events=17280000 6962/ms
+12:39:16.146 INFO  o.t.s.n.g.GridCalc - Trial 0: time 195600.00010614755 dt=0.005 events=17280000 6923/ms
+12:39:18.604 INFO  o.t.s.n.g.GridCalc - Trial 0: time 195800.0001063338 dt=0.005 events=17280000 7032/ms
+12:39:21.056 INFO  o.t.s.n.g.GridCalc - Trial 0: time 196000.00010652008 dt=0.005 events=17280000 7044/ms
+12:39:23.533 INFO  o.t.s.n.g.GridCalc - Trial 0: time 196200.00010670634 dt=0.005 events=17280000 6976/ms
+12:39:25.990 INFO  o.t.s.n.g.GridCalc - Trial 0: time 196400.0001068926 dt=0.005 events=17280000 7032/ms
+12:39:28.474 INFO  o.t.s.n.g.GridCalc - Trial 0: time 196600.00010707887 dt=0.005 events=17280000 6956/ms
+12:39:30.932 INFO  o.t.s.n.g.GridCalc - Trial 0: time 196800.00010726514 dt=0.005 events=17280000 7030/ms
+12:39:33.393 INFO  o.t.s.n.g.GridCalc - Trial 0: time 197000.0001074514 dt=0.005 events=17280000 7021/ms
+12:39:35.866 INFO  o.t.s.n.g.GridCalc - Trial 0: time 197200.00010763766 dt=0.005 events=17280000 6987/ms
+12:39:38.394 INFO  o.t.s.n.g.GridCalc - Trial 0: time 197400.00010782393 dt=0.005 events=17280000 6835/ms
+12:39:40.867 INFO  o.t.s.n.g.GridCalc - Trial 0: time 197600.0001080102 dt=0.005 events=17280000 6990/ms
+12:39:43.320 INFO  o.t.s.n.g.GridCalc - Trial 0: time 197800.00010819646 dt=0.005 events=17280000 7041/ms
+12:39:45.802 INFO  o.t.s.n.g.GridCalc - Trial 0: time 198000.00010838272 dt=0.005 events=17280000 6962/ms
+12:39:48.261 INFO  o.t.s.n.g.GridCalc - Trial 0: time 198200.000108569 dt=0.005 events=17280000 7030/ms
+12:39:50.731 INFO  o.t.s.n.g.GridCalc - Trial 0: time 198400.00010875525 dt=0.005 events=17280000 6993/ms
+12:39:53.228 INFO  o.t.s.n.g.GridCalc - Trial 0: time 198600.00010894152 dt=0.005 events=17280000 6920/ms
+12:39:55.673 INFO  o.t.s.n.g.GridCalc - Trial 0: time 198800.00010912778 dt=0.005 events=17280000 7067/ms
+12:39:58.085 INFO  o.t.s.n.g.GridCalc - Trial 0: time 199000.00010931405 dt=0.005 events=17280000 7164/ms
+12:40:00.480 INFO  o.t.s.n.g.GridCalc - Trial 0: time 199200.0001095003 dt=0.005 events=17280000 7215/ms
+12:40:02.911 INFO  o.t.s.n.g.GridCalc - Trial 0: time 199400.00010968657 dt=0.005 events=17280000 7108/ms
+12:40:05.355 INFO  o.t.s.n.g.GridCalc - Trial 0: time 199600.00010987284 dt=0.005 events=17280000 7070/ms
+12:40:07.782 INFO  o.t.s.n.g.GridCalc - Trial 0: time 199800.0001100591 dt=0.005 events=17280000 7119/ms
+12:40:10.222 INFO  o.t.s.n.g.GridCalc - Trial 0: time 200000.00011024537 dt=0.005
+12:40:10.222 INFO  o.t.s.n.g.GridCalc - Trial 0: total number of particles at the end: 4384648
+12:40:10.236 INFO  o.t.s.n.g.GridCalc - Trial 0: total run time 2142692 ms
+12:40:10.236 INFO  o.t.s.n.g.StochasticGridCalc - Used up 12275357245 random numbers
+12:40:10.236 INFO  o.t.s.n.g.SteppedStochasticGridCalc - Leapt 17280002001 times
+12:40:10.236 INFO  o.t.s.n.g.ResultWriterHDF5 - Closing output file Model_cAMPassay1.5-PDE2600-fixed-0.005.h5
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

@@ -1,0 +1,38 @@
+digraph Connections {
+	rankdir=LR;
+	splines=true;
+	node [color=blue,style=filled];
+	"0"  [fillcolor=grey];
+	"0" -> "1" [penwidth=4.856297990381251];
+	"0" -> "3" [penwidth=3.0000000001];
+	"1"  [fillcolor=grey];
+	"1" -> "0" [penwidth=4.856297990381251];
+	"1" -> "2" [penwidth=4.856297990381251];
+	"1" -> "4" [penwidth=4.38629436114489];
+	"2"  [fillcolor=grey];
+	"2" -> "1" [penwidth=4.856297990381251];
+	"2" -> "5" [penwidth=3.0000000001];
+	"3"  [fillcolor=grey];
+	"3" -> "0" [penwidth=3.0000000001];
+	"3" -> "4" [penwidth=4.856297990381251];
+	"3" -> "6" [penwidth=3.0000000001];
+	"4"  [fillcolor=grey];
+	"4" -> "1" [penwidth=4.38629436114489];
+	"4" -> "3" [penwidth=4.856297990381251];
+	"4" -> "5" [penwidth=4.856297990381251];
+	"4" -> "7" [penwidth=4.38629436114489];
+	"5"  [fillcolor=grey];
+	"5" -> "2" [penwidth=3.0000000001];
+	"5" -> "4" [penwidth=4.856297990381251];
+	"5" -> "8" [penwidth=3.0000000001];
+	"6"  [fillcolor=grey];
+	"6" -> "3" [penwidth=3.0000000001];
+	"6" -> "7" [penwidth=4.856297990381251];
+	"7"  [fillcolor=grey];
+	"7" -> "4" [penwidth=4.38629436114489];
+	"7" -> "6" [penwidth=4.856297990381251];
+	"7" -> "8" [penwidth=4.856297990381251];
+	"8"  [fillcolor=grey];
+	"8" -> "5" [penwidth=3.0000000001];
+	"8" -> "7" [penwidth=4.856297990381251];
+}
