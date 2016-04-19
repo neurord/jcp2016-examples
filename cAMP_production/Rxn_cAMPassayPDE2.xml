@@ -17,9 +17,9 @@
     <Specie name="ACGasATP"          id="ACGasATP"          kdiff="0"     kdiffunit="mu2/s"/>
 
 <!-- cAMP, and degradation by PDEs, from Gs model -->
-    <Specie name="ATP"               id="ATP"               kdiff="74.8e-3"  kdiffunit="mu2/s"/>
+    <Specie name="ATP"               id="ATP"               kdiff="74.8"  kdiffunit="mu2/s"/>
     <Specie name="cAMP"              id="cAMP"              kdiff="86.4"  kdiffunit="mu2/s"/>
-    <Specie name="AMP"               id="AMP"               kdiff="86.4"     kdiffunit="mu2/s"/>
+    <Specie name="AMP"               id="AMP"               kdiff="86.4"  kdiffunit="mu2/s"/>
 
     <Specie name="PDE10"             id="PDE10"             kdiff="0"     kdiffunit="mu2/s"/>
     <Specie name="PDE10cAMP"         id="PDE10cAMP"         kdiff="0"     kdiffunit="mu2/s"/>

@@ -1,109 +1,626 @@
-digraph Reactions {
-	rankdir=LR;
-	splines=true;
-	node [color=green,style=filled];
-	"Da+D1R ⇌ DaD1R" [color=black,shape=point,fillcolor=magenta];
-	"Da+D1R ⇌ DaD1R" -> "DaD1R" [penwidth=0.3];
-	"Da+D1R ⇌ DaD1R" -> "Da" [arrowhead=none,style=dashed,penwidth=4.701682653451963];
-	"Da+D1R ⇌ DaD1R" -> "D1R" [arrowhead=none,style=dashed,penwidth=4.701682653451963];
-	"DaD1R+Gsabg ⇌ DaD1RGs" [color=black,shape=point,fillcolor=magenta];
-	"DaD1R+Gsabg ⇌ DaD1RGs" -> "DaD1RGs" [penwidth=0.3];
-	"DaD1R+Gsabg ⇌ DaD1RGs" -> "DaD1R" [arrowhead=none,style=dashed,penwidth=2.1759542391436764];
-	"DaD1R+Gsabg ⇌ DaD1RGs" -> "Gsabg" [arrowhead=none,style=dashed,penwidth=2.1759542391436764];
-	"Gsabg+D1R ⇌ GsD1R" [color=black,shape=point,fillcolor=magenta];
-	"Gsabg+D1R ⇌ GsD1R" -> "GsD1R" [penwidth=0.3];
-	"Gsabg+D1R ⇌ GsD1R" -> "Gsabg" [arrowhead=none,style=dashed,penwidth=2.1759542391436764];
-	"Gsabg+D1R ⇌ GsD1R" -> "D1R" [arrowhead=none,style=dashed,penwidth=2.1759542391436764];
-	"GsD1R+Da ⇌ DaD1RGs" [color=black,shape=point,fillcolor=magenta];
-	"GsD1R+Da ⇌ DaD1RGs" -> "DaD1RGs" [penwidth=0.3];
-	"GsD1R+Da ⇌ DaD1RGs" -> "GsD1R" [arrowhead=none,style=dashed,penwidth=4.701682653451963];
-	"GsD1R+Da ⇌ DaD1RGs" -> "Da" [arrowhead=none,style=dashed,penwidth=4.701682653451963];
-	"DaD1RGs ⇌ GasGTP" [color=black,shape=point,fillcolor=magenta];
-	"DaD1RGs" -> "DaD1RGs ⇌ GasGTP" [style=dashed,penwidth=3.7853919515778074];
-	"DaD1RGs ⇌ GasGTP" -> "GasGTP" [penwidth=3.7853919515778074];
-	"DaD1RGbg ⇌ DaD1R+Gbg" [color=black,shape=point,fillcolor=magenta];
-	"DaD1RGbg" -> "DaD1RGbg ⇌ DaD1R+Gbg" [style=dashed,penwidth=5.0];
-	"DaD1RGbg ⇌ DaD1R+Gbg" -> "DaD1R" [penwidth=5.0];
-	"DaD1RGbg ⇌ DaD1R+Gbg" -> "Gbg" [penwidth=5.0];
-	"GasGTP ⇌ GasGDP" [color=black,shape=point,fillcolor=magenta];
-	"GasGTP" -> "GasGTP ⇌ GasGDP" [style=dashed,penwidth=3.092244821017858];
-	"GasGTP ⇌ GasGDP" -> "GasGDP" [penwidth=3.092244821017858];
-	"GasGDP+Gbg ⇌ Gsabg" [color=black,shape=point,fillcolor=magenta];
-	"GasGDP" -> "GasGDP+Gbg ⇌ Gsabg" [style=dashed,penwidth=3.7853919515778074];
-	"Gbg" -> "GasGDP+Gbg ⇌ Gsabg" [style=dashed,penwidth=3.7853919515778074];
-	"GasGDP+Gbg ⇌ Gsabg" -> "Gsabg" [penwidth=3.7853919515778074];
-	"GasGTP+AC ⇌ ACGas" [color=black,shape=point,fillcolor=magenta];
-	"GasGTP+AC ⇌ ACGas" -> "ACGas" [penwidth=0.3];
-	"GasGTP+AC ⇌ ACGas" -> "GasGTP" [arrowhead=none,style=dashed,penwidth=0.7896606280233165];
-	"GasGTP+AC ⇌ ACGas" -> "AC" [arrowhead=none,style=dashed,penwidth=0.7896606280233165];
-	"ACGas+ATP ⇌ ACGasATP" [color=black,shape=point,fillcolor=magenta];
-	"ACGas+ATP ⇌ ACGasATP" -> "ACGasATP" [penwidth=0.3];
-	"ACGas+ATP ⇌ ACGasATP" -> "ACGas" [arrowhead=none,style=dashed,penwidth=1.7497762222863198];
-	"ACGas+ATP ⇌ ACGasATP" -> "ATP" [arrowhead=none,style=dashed,penwidth=1.7497762222863198];
-	"ACGasATP ⇌ ACGas+cAMP" [color=black,shape=point,fillcolor=magenta];
-	"ACGasATP ⇌ ACGas+cAMP" -> "ACGas" [penwidth=5.0];
-	"ACGasATP ⇌ ACGas+cAMP" -> "cAMP" [penwidth=5.0];
-	"ACGasATP ⇌ ACGas+cAMP" -> "ACGasATP" [arrowhead=none,style=dashed,penwidth=0.3];
-	"PDE10+cAMP ⇌ PDE10cAMP" [color=black,shape=point,fillcolor=magenta];
-	"PDE10+cAMP ⇌ PDE10cAMP" -> "PDE10cAMP" [penwidth=0.6153074313545215];
-	"PDE10+cAMP ⇌ PDE10cAMP" -> "PDE10" [arrowhead=none,style=dashed,penwidth=5.0];
-	"PDE10+cAMP ⇌ PDE10cAMP" -> "cAMP" [arrowhead=none,style=dashed,penwidth=5.0];
-	"PDE10cAMP ⇌ PDE10+AMP" [color=black,shape=point,fillcolor=magenta];
-	"PDE10cAMP" -> "PDE10cAMP ⇌ PDE10+AMP" [style=dashed,penwidth=4.527329270116709];
-	"PDE10cAMP ⇌ PDE10+AMP" -> "PDE10" [penwidth=4.527329270116709];
-	"PDE10cAMP ⇌ PDE10+AMP" -> "AMP" [penwidth=4.527329270116709];
-	"PKAc+PDE10 ⇌ PKAcPDE10" [color=black,shape=point,fillcolor=magenta];
-	"PKAc+PDE10 ⇌ PKAcPDE10" -> "PKAcPDE10" [penwidth=0.3];
-	"PKAc+PDE10 ⇌ PKAcPDE10" -> "PKAc" [arrowhead=none,style=dashed,penwidth=0.3];
-	"PKAc+PDE10 ⇌ PKAcPDE10" -> "PDE10" [arrowhead=none,style=dashed,penwidth=0.3];
-	"PKAcPDE10 ⇌ pPDE10+PKAc" [color=black,shape=point,fillcolor=magenta];
-	"PKAcPDE10" -> "PKAcPDE10 ⇌ pPDE10+PKAc" [style=dashed,penwidth=0.3];
-	"PKAcPDE10 ⇌ pPDE10+PKAc" -> "pPDE10" [penwidth=0.3];
-	"PKAcPDE10 ⇌ pPDE10+PKAc" -> "PKAc" [penwidth=0.3];
-	"PKAc+PDE10cAMP ⇌ PKAcPDE10cAMP" [color=black,shape=point,fillcolor=magenta];
-	"PKAc+PDE10cAMP ⇌ PKAcPDE10cAMP" -> "PKAcPDE10cAMP" [penwidth=0.3];
-	"PKAc+PDE10cAMP ⇌ PKAcPDE10cAMP" -> "PKAc" [arrowhead=none,style=dashed,penwidth=0.3];
-	"PKAc+PDE10cAMP ⇌ PKAcPDE10cAMP" -> "PDE10cAMP" [arrowhead=none,style=dashed,penwidth=0.3];
-	"PKAcPDE10cAMP ⇌ pPDE10cAMP+PKAc" [color=black,shape=point,fillcolor=magenta];
-	"PKAcPDE10cAMP" -> "PKAcPDE10cAMP ⇌ pPDE10cAMP+PKAc" [style=dashed,penwidth=0.3];
-	"PKAcPDE10cAMP ⇌ pPDE10cAMP+PKAc" -> "pPDE10cAMP" [penwidth=0.3];
-	"PKAcPDE10cAMP ⇌ pPDE10cAMP+PKAc" -> "PKAc" [penwidth=0.3];
-	"pPDE10 ⇌ PDE10" [color=black,shape=point,fillcolor=magenta];
-	"pPDE10" -> "pPDE10 ⇌ PDE10" [style=dashed,penwidth=0.3];
-	"pPDE10 ⇌ PDE10" -> "PDE10" [penwidth=0.3];
-	"pPDE10+cAMP ⇌ pPDE10cAMP" [color=black,shape=point,fillcolor=magenta];
-	"pPDE10+cAMP ⇌ pPDE10cAMP" -> "pPDE10cAMP" [penwidth=0.7976287897359935];
-	"pPDE10+cAMP ⇌ pPDE10cAMP" -> "pPDE10" [arrowhead=none,style=dashed,penwidth=5.0];
-	"pPDE10+cAMP ⇌ pPDE10cAMP" -> "cAMP" [arrowhead=none,style=dashed,penwidth=5.0];
-	"pPDE10cAMP ⇌ pPDE10+AMP" [color=black,shape=point,fillcolor=magenta];
-	"pPDE10cAMP" -> "pPDE10cAMP ⇌ pPDE10+AMP" [style=dashed,penwidth=5.0];
-	"pPDE10cAMP ⇌ pPDE10+AMP" -> "pPDE10" [penwidth=5.0];
-	"pPDE10cAMP ⇌ pPDE10+AMP" -> "AMP" [penwidth=5.0];
-	"AMP ⇌ ATP" [color=black,shape=point,fillcolor=magenta];
-	"AMP" -> "AMP ⇌ ATP" [style=dashed,penwidth=3.092244821017858];
-	"AMP ⇌ ATP" -> "ATP" [penwidth=3.092244821017858];
-	"PKA+2cAMP ⇌ PKAcAMP2" [color=black,shape=point,fillcolor=magenta];
-	"PKA+2cAMP ⇌ PKAcAMP2" -> "PKAcAMP2" [penwidth=0.3];
-	"PKA+2cAMP ⇌ PKAcAMP2" -> "PKA" [arrowhead=none,style=dashed,penwidth=0.3];
-	"PKA+2cAMP ⇌ PKAcAMP2" -> "cAMP" [arrowhead=none,style=dashed,penwidth=0.3];
-	"PKAcAMP2+2cAMP ⇌ PKAcAMP4" [color=black,shape=point,fillcolor=magenta];
-	"PKAcAMP2+2cAMP ⇌ PKAcAMP4" -> "PKAcAMP4" [penwidth=0.3];
-	"PKAcAMP2+2cAMP ⇌ PKAcAMP4" -> "PKAcAMP2" [arrowhead=none,style=dashed,penwidth=2.5814192639185247];
-	"PKAcAMP2+2cAMP ⇌ PKAcAMP4" -> "cAMP" [arrowhead=none,style=dashed,penwidth=2.5814192639185247];
-	"PKAcAMP4 ⇌ PKAr+2PKAc" [color=black,shape=point,fillcolor=magenta];
-	"PKAcAMP4 ⇌ PKAr+2PKAc" -> "PKAr" [penwidth=0.3];
-	"PKAcAMP4 ⇌ PKAr+2PKAc" -> "PKAc" [penwidth=0.3];
-	"PKAcAMP4 ⇌ PKAr+2PKAc" -> "PKAcAMP4" [arrowhead=none,style=dashed,penwidth=0.3];
-	"PDE2+cAMP ⇌ PDE2cAMP" [color=black,shape=point,fillcolor=magenta];
-	"PDE2+cAMP ⇌ PDE2cAMP" -> "PDE2cAMP" [penwidth=0.3];
-	"PDE2+cAMP ⇌ PDE2cAMP" -> "PDE2" [arrowhead=none,style=dashed,penwidth=2.399097740457898];
-	"PDE2+cAMP ⇌ PDE2cAMP" -> "cAMP" [arrowhead=none,style=dashed,penwidth=2.399097740457898];
-	"PDE2cAMP+cAMP ⇌ PDE2cAMP2" [color=black,shape=point,fillcolor=magenta];
-	"PDE2cAMP+cAMP ⇌ PDE2cAMP2" -> "PDE2cAMP2" [penwidth=0.3];
-	"PDE2cAMP+cAMP ⇌ PDE2cAMP2" -> "PDE2cAMP" [arrowhead=none,style=dashed,penwidth=2.399097740457898];
-	"PDE2cAMP+cAMP ⇌ PDE2cAMP2" -> "cAMP" [arrowhead=none,style=dashed,penwidth=2.399097740457898];
-	"PDE2cAMP2 ⇌ PDE2cAMP+AMP" [color=black,shape=point,fillcolor=magenta];
-	"PDE2cAMP2" -> "PDE2cAMP2 ⇌ PDE2cAMP+AMP" [style=dashed,penwidth=4.77864369310661];
-	"PDE2cAMP2 ⇌ PDE2cAMP+AMP" -> "PDE2cAMP" [penwidth=4.77864369310661];
-	"PDE2cAMP2 ⇌ PDE2cAMP+AMP" -> "AMP" [penwidth=4.77864369310661];
-}
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: Reactions Pages: 1 -->
+<svg width="569pt" height="1126pt"
+ viewBox="0.00 0.00 569.48 1126.06" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(292.04 499.963)">
+<title>Reactions</title>
+<polygon fill="white" stroke="none" points="-292.04,626.098 -292.04,-499.963 277.443,-499.963 277.443,626.098 -292.04,626.098"/>
+<!-- Da+D1R ⇌ DaD1R -->
+<g id="node1" class="node"><title>Da+D1R ⇌ DaD1R</title>
+<ellipse fill="magenta" stroke="black" cx="-64.367" cy="552.507" rx="1.8" ry="1.8"/>
+</g>
+<!-- DaD1R -->
+<g id="node2" class="node"><title>DaD1R</title>
+<ellipse fill="green" stroke="green" cx="8.56832" cy="509.473" rx="37.8943" ry="18"/>
+<text text-anchor="middle" x="8.56832" y="513.173" font-family="Times,serif" font-size="14.00">DaD1R</text>
+</g>
+<!-- Da+D1R ⇌ DaD1R&#45;&gt;DaD1R -->
+<g id="edge1" class="edge"><title>Da+D1R ⇌ DaD1R&#45;&gt;DaD1R</title>
+<path fill="none" stroke="black" stroke-width="0.3" d="M-62.5641,551.443C-57.0855,548.21 -40.0263,538.145 -23.9881,528.682"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="-25.6542,525.601 -15.263,523.534 -22.097,531.63 -25.6542,525.601"/>
+</g>
+<!-- Da -->
+<g id="node3" class="node"><title>Da</title>
+<ellipse fill="green" stroke="green" cx="-138.035" cy="482.357" rx="27" ry="18"/>
+<text text-anchor="middle" x="-138.035" y="486.057" font-family="Times,serif" font-size="14.00">Da</text>
+</g>
+<!-- Da+D1R ⇌ DaD1R&#45;&gt;Da -->
+<g id="edge2" class="edge"><title>Da+D1R ⇌ DaD1R&#45;&gt;Da</title>
+<path fill="none" stroke="black" stroke-width="4.70168" stroke-dasharray="5,2" d="M-65.9056,551.041C-73.0547,544.234 -103.481,515.261 -122.459,497.189"/>
+</g>
+<!-- D1R -->
+<g id="node4" class="node"><title>D1R</title>
+<ellipse fill="green" stroke="green" cx="-112.15" cy="592.52" rx="27.0966" ry="18"/>
+<text text-anchor="middle" x="-112.15" y="596.22" font-family="Times,serif" font-size="14.00">D1R</text>
+</g>
+<!-- Da+D1R ⇌ DaD1R&#45;&gt;D1R -->
+<g id="edge3" class="edge"><title>Da+D1R ⇌ DaD1R&#45;&gt;D1R</title>
+<path fill="none" stroke="black" stroke-width="4.70168" stroke-dasharray="5,2" d="M-65.9568,553.838C-70.491,557.635 -83.8812,568.848 -95.085,578.23"/>
+</g>
+<!-- DaD1R+Gsabg ⇌ DaD1RGs -->
+<g id="node5" class="node"><title>DaD1R+Gsabg ⇌ DaD1RGs</title>
+<ellipse fill="magenta" stroke="black" cx="-27.3164" cy="411.997" rx="1.8" ry="1.8"/>
+</g>
+<!-- DaD1R+Gsabg ⇌ DaD1RGs&#45;&gt;DaD1R -->
+<g id="edge5" class="edge"><title>DaD1R+Gsabg ⇌ DaD1RGs&#45;&gt;DaD1R</title>
+<path fill="none" stroke="black" stroke-width="2.17595" stroke-dasharray="5,2" d="M-26.6936,413.689C-23.3431,422.79 -7.27129,466.447 1.97606,491.566"/>
+</g>
+<!-- DaD1RGs -->
+<g id="node6" class="node"><title>DaD1RGs</title>
+<ellipse fill="green" stroke="green" cx="-82.122" cy="344.812" rx="47.3916" ry="18"/>
+<text text-anchor="middle" x="-82.122" y="348.512" font-family="Times,serif" font-size="14.00">DaD1RGs</text>
+</g>
+<!-- DaD1R+Gsabg ⇌ DaD1RGs&#45;&gt;DaD1RGs -->
+<g id="edge4" class="edge"><title>DaD1R+Gsabg ⇌ DaD1RGs&#45;&gt;DaD1RGs</title>
+<path fill="none" stroke="black" stroke-width="0.3" d="M-28.6712,410.337C-33.2191,404.761 -48.3871,386.167 -61.4086,370.204"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="-64.3458,372.14 -67.9548,362.179 -58.9216,367.716 -64.3458,372.14"/>
+</g>
+<!-- Gsabg -->
+<g id="node7" class="node"><title>Gsabg</title>
+<ellipse fill="green" stroke="green" cx="-8.65637" cy="457.78" rx="33.2948" ry="18"/>
+<text text-anchor="middle" x="-8.65637" y="461.48" font-family="Times,serif" font-size="14.00">Gsabg</text>
+</g>
+<!-- DaD1R+Gsabg ⇌ DaD1RGs&#45;&gt;Gsabg -->
+<g id="edge6" class="edge"><title>DaD1R+Gsabg ⇌ DaD1RGs&#45;&gt;Gsabg</title>
+<path fill="none" stroke="black" stroke-width="2.17595" stroke-dasharray="5,2" d="M-26.5146,413.965C-24.673,418.483 -19.9826,429.991 -15.8708,440.079"/>
+</g>
+<!-- DaD1RGs ⇌ GasGTP -->
+<g id="node11" class="node"><title>DaD1RGs ⇌ GasGTP</title>
+<ellipse fill="magenta" stroke="black" cx="-63.7186" cy="263.616" rx="1.8" ry="1.8"/>
+</g>
+<!-- DaD1RGs&#45;&gt;DaD1RGs ⇌ GasGTP -->
+<g id="edge13" class="edge"><title>DaD1RGs&#45;&gt;DaD1RGs ⇌ GasGTP</title>
+<path fill="none" stroke="black" stroke-width="3.78539" stroke-dasharray="5,2" d="M-78.0377,326.792C-74.5068,311.213 -69.5018,289.131 -66.4403,275.624"/>
+<polygon fill="black" stroke="black" stroke-width="3.78539" points="-69.836,274.772 -64.212,265.793 -63.0092,276.319 -69.836,274.772"/>
+</g>
+<!-- Gsabg+D1R ⇌ GsD1R -->
+<g id="node8" class="node"><title>Gsabg+D1R ⇌ GsD1R</title>
+<ellipse fill="magenta" stroke="black" cx="-100.568" cy="506.19" rx="1.8" ry="1.8"/>
+</g>
+<!-- Gsabg+D1R ⇌ GsD1R&#45;&gt;D1R -->
+<g id="edge9" class="edge"><title>Gsabg+D1R ⇌ GsD1R&#45;&gt;D1R</title>
+<path fill="none" stroke="black" stroke-width="2.17595" stroke-dasharray="5,2" d="M-100.809,507.993C-101.934,516.371 -106.717,552.028 -109.701,574.268"/>
+</g>
+<!-- Gsabg+D1R ⇌ GsD1R&#45;&gt;Gsabg -->
+<g id="edge8" class="edge"><title>Gsabg+D1R ⇌ GsD1R&#45;&gt;Gsabg</title>
+<path fill="none" stroke="black" stroke-width="2.17595" stroke-dasharray="5,2" d="M-98.9723,505.35C-91.2012,501.257 -56.7111,483.091 -32.6774,470.432"/>
+</g>
+<!-- GsD1R -->
+<g id="node9" class="node"><title>GsD1R</title>
+<ellipse fill="green" stroke="green" cx="-183.494" cy="453.586" rx="37.0935" ry="18"/>
+<text text-anchor="middle" x="-183.494" y="457.286" font-family="Times,serif" font-size="14.00">GsD1R</text>
+</g>
+<!-- Gsabg+D1R ⇌ GsD1R&#45;&gt;GsD1R -->
+<g id="edge7" class="edge"><title>Gsabg+D1R ⇌ GsD1R&#45;&gt;GsD1R</title>
+<path fill="none" stroke="black" stroke-width="0.3" d="M-102.3,505.091C-108.783,500.978 -132.273,486.077 -152.331,473.354"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="-154.374,476.203 -160.943,467.89 -150.624,470.292 -154.374,476.203"/>
+</g>
+<!-- GsD1R+Da ⇌ DaD1RGs -->
+<g id="node10" class="node"><title>GsD1R+Da ⇌ DaD1RGs</title>
+<ellipse fill="magenta" stroke="black" cx="-152.015" cy="392.916" rx="1.8" ry="1.8"/>
+</g>
+<!-- GsD1R+Da ⇌ DaD1RGs&#45;&gt;Da -->
+<g id="edge12" class="edge"><title>GsD1R+Da ⇌ DaD1RGs&#45;&gt;Da</title>
+<path fill="none" stroke="black" stroke-width="4.70168" stroke-dasharray="5,2" d="M-151.723,394.784C-150.35,403.564 -144.458,441.263 -140.866,464.241"/>
+</g>
+<!-- GsD1R+Da ⇌ DaD1RGs&#45;&gt;DaD1RGs -->
+<g id="edge10" class="edge"><title>GsD1R+Da ⇌ DaD1RGs&#45;&gt;DaD1RGs</title>
+<path fill="none" stroke="black" stroke-width="0.3" d="M-150.287,391.727C-145.072,388.138 -128.91,377.014 -113.632,366.499"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="-115.532,363.558 -105.31,360.771 -111.563,369.324 -115.532,363.558"/>
+</g>
+<!-- GsD1R+Da ⇌ DaD1RGs&#45;&gt;GsD1R -->
+<g id="edge11" class="edge"><title>GsD1R+Da ⇌ DaD1RGs&#45;&gt;GsD1R</title>
+<path fill="none" stroke="black" stroke-width="4.70168" stroke-dasharray="5,2" d="M-152.923,394.666C-156.048,400.689 -166.596,421.018 -174.432,436.121"/>
+</g>
+<!-- GasGTP -->
+<g id="node12" class="node"><title>GasGTP</title>
+<ellipse fill="green" stroke="green" cx="-5.01236" cy="201.187" rx="40.8928" ry="18"/>
+<text text-anchor="middle" x="-5.01236" y="204.887" font-family="Times,serif" font-size="14.00">GasGTP</text>
+</g>
+<!-- DaD1RGs ⇌ GasGTP&#45;&gt;GasGTP -->
+<g id="edge14" class="edge"><title>DaD1RGs ⇌ GasGTP&#45;&gt;GasGTP</title>
+<path fill="none" stroke="black" stroke-width="3.78539" d="M-62.2674,262.072C-57.456,256.956 -41.5477,240.039 -27.7176,225.332"/>
+<polygon fill="black" stroke="black" stroke-width="3.78539" points="-30.1449,222.804 -20.7446,217.917 -25.0454,227.599 -30.1449,222.804"/>
+</g>
+<!-- GasGTP ⇌ GasGDP -->
+<g id="node16" class="node"><title>GasGTP ⇌ GasGDP</title>
+<ellipse fill="magenta" stroke="black" cx="68.2003" cy="249.78" rx="1.8" ry="1.8"/>
+</g>
+<!-- GasGTP&#45;&gt;GasGTP ⇌ GasGDP -->
+<g id="edge18" class="edge"><title>GasGTP&#45;&gt;GasGTP ⇌ GasGDP</title>
+<path fill="none" stroke="black" stroke-width="3.09224" stroke-dasharray="5,2" d="M17.7513,216.296C31.3148,225.298 47.8518,236.274 58.2069,243.147"/>
+<polygon fill="black" stroke="black" stroke-width="3.09224" points="60.1874,240.261 66.5837,248.707 56.3164,246.093 60.1874,240.261"/>
+</g>
+<!-- DaD1RGbg ⇌ DaD1R+Gbg -->
+<g id="node13" class="node"><title>DaD1RGbg ⇌ DaD1R+Gbg</title>
+<ellipse fill="magenta" stroke="black" cx="89.7898" cy="539.434" rx="1.8" ry="1.8"/>
+</g>
+<!-- DaD1RGbg ⇌ DaD1R+Gbg&#45;&gt;DaD1R -->
+<g id="edge16" class="edge"><title>DaD1RGbg ⇌ DaD1R+Gbg&#45;&gt;DaD1R</title>
+<path fill="none" stroke="black" stroke-width="5" d="M88.0933,538.808C82.673,536.808 65.1158,530.332 47.8729,523.971"/>
+<polygon fill="black" stroke="black" stroke-width="5" points="46.2729,528.044 38.405,520.479 49.3012,519.835 46.2729,528.044"/>
+</g>
+<!-- Gbg -->
+<g id="node15" class="node"><title>Gbg</title>
+<ellipse fill="green" stroke="green" cx="132.186" cy="470.331" rx="27" ry="18"/>
+<text text-anchor="middle" x="132.186" y="474.031" font-family="Times,serif" font-size="14.00">Gbg</text>
+</g>
+<!-- DaD1RGbg ⇌ DaD1R+Gbg&#45;&gt;Gbg -->
+<g id="edge17" class="edge"><title>DaD1RGbg ⇌ DaD1R+Gbg&#45;&gt;Gbg</title>
+<path fill="none" stroke="black" stroke-width="5" d="M90.8378,537.725C94.3882,531.939 106.306,512.514 116.439,495.997"/>
+<polygon fill="black" stroke="black" stroke-width="5" points="112.863,493.46 121.821,487.224 120.321,498.036 112.863,493.46"/>
+</g>
+<!-- DaD1RGbg -->
+<g id="node14" class="node"><title>DaD1RGbg</title>
+<ellipse fill="green" stroke="green" cx="136.765" cy="604.098" rx="52.7911" ry="18"/>
+<text text-anchor="middle" x="136.765" y="607.798" font-family="Times,serif" font-size="14.00">DaD1RGbg</text>
+</g>
+<!-- DaD1RGbg&#45;&gt;DaD1RGbg ⇌ DaD1R+Gbg -->
+<g id="edge15" class="edge"><title>DaD1RGbg&#45;&gt;DaD1RGbg ⇌ DaD1R+Gbg</title>
+<path fill="none" stroke="black" stroke-width="5" stroke-dasharray="5,2" d="M123.929,586.428C115.244,574.474 104.095,559.126 96.9452,549.284"/>
+<polygon fill="black" stroke="black" stroke-width="5" points="93.2539,551.646 90.9161,540.984 100.333,546.503 93.2539,551.646"/>
+</g>
+<!-- GasGDP+Gbg ⇌ Gsabg -->
+<g id="node18" class="node"><title>GasGDP+Gbg ⇌ Gsabg</title>
+<ellipse fill="magenta" stroke="black" cx="76.9335" cy="409.206" rx="1.8" ry="1.8"/>
+</g>
+<!-- Gbg&#45;&gt;GasGDP+Gbg ⇌ Gsabg -->
+<g id="edge21" class="edge"><title>Gbg&#45;&gt;GasGDP+Gbg ⇌ Gsabg</title>
+<path fill="none" stroke="black" stroke-width="3.78539" stroke-dasharray="5,2" d="M118.243,454.906C107.804,443.357 93.8758,427.949 85.1565,418.303"/>
+<polygon fill="black" stroke="black" stroke-width="3.78539" points="82.4292,420.505 78.32,410.74 87.6222,415.811 82.4292,420.505"/>
+</g>
+<!-- GasGDP -->
+<g id="node17" class="node"><title>GasGDP</title>
+<ellipse fill="green" stroke="green" cx="100.941" cy="326.306" rx="42.4939" ry="18"/>
+<text text-anchor="middle" x="100.941" y="330.006" font-family="Times,serif" font-size="14.00">GasGDP</text>
+</g>
+<!-- GasGTP ⇌ GasGDP&#45;&gt;GasGDP -->
+<g id="edge19" class="edge"><title>GasGTP ⇌ GasGDP&#45;&gt;GasGDP</title>
+<path fill="none" stroke="black" stroke-width="3.09224" d="M69.0097,251.672C71.8104,258.218 81.3533,280.523 89.2833,299.058"/>
+<polygon fill="black" stroke="black" stroke-width="3.09224" points="92.5232,297.733 93.2389,308.304 86.0875,300.486 92.5232,297.733"/>
+</g>
+<!-- GasGDP&#45;&gt;GasGDP+Gbg ⇌ Gsabg -->
+<g id="edge20" class="edge"><title>GasGDP&#45;&gt;GasGDP+Gbg ⇌ Gsabg</title>
+<path fill="none" stroke="black" stroke-width="3.78539" stroke-dasharray="5,2" d="M95.7317,344.294C91.0498,360.461 84.3116,383.728 80.3027,397.571"/>
+<polygon fill="black" stroke="black" stroke-width="3.78539" points="83.5952,398.785 77.4516,407.416 76.8715,396.838 83.5952,398.785"/>
+</g>
+<!-- GasGDP+Gbg ⇌ Gsabg&#45;&gt;Gsabg -->
+<g id="edge22" class="edge"><title>GasGDP+Gbg ⇌ Gsabg&#45;&gt;Gsabg</title>
+<path fill="none" stroke="black" stroke-width="3.78539" d="M75.1458,410.22C68.4542,414.018 44.2092,427.778 23.5076,439.526"/>
+<polygon fill="black" stroke="black" stroke-width="3.78539" points="25.0429,442.679 14.6184,444.571 21.5879,436.591 25.0429,442.679"/>
+</g>
+<!-- GasGTP+AC ⇌ ACGas -->
+<g id="node19" class="node"><title>GasGTP+AC ⇌ ACGas</title>
+<ellipse fill="magenta" stroke="black" cx="-29.4282" cy="118.462" rx="1.8" ry="1.8"/>
+</g>
+<!-- GasGTP+AC ⇌ ACGas&#45;&gt;GasGTP -->
+<g id="edge24" class="edge"><title>GasGTP+AC ⇌ ACGas&#45;&gt;GasGTP</title>
+<path fill="none" stroke="black" stroke-width="0.789661" stroke-dasharray="5,2" d="M-28.9182,120.189C-26.5625,128.171 -16.5808,161.991 -10.2839,183.326"/>
+</g>
+<!-- ACGas -->
+<g id="node20" class="node"><title>ACGas</title>
+<ellipse fill="green" stroke="green" cx="-4.85896" cy="37.0909" rx="36.2938" ry="18"/>
+<text text-anchor="middle" x="-4.85896" y="40.7909" font-family="Times,serif" font-size="14.00">ACGas</text>
+</g>
+<!-- GasGTP+AC ⇌ ACGas&#45;&gt;ACGas -->
+<g id="edge23" class="edge"><title>GasGTP+AC ⇌ ACGas&#45;&gt;ACGas</title>
+<path fill="none" stroke="black" stroke-width="0.3" d="M-28.8209,116.45C-26.6715,109.332 -19.2312,84.6903 -13.205,64.7321"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="-16.5452,63.6859 -10.304,55.1245 -9.84405,65.7093 -16.5452,63.6859"/>
+</g>
+<!-- AC -->
+<g id="node21" class="node"><title>AC</title>
+<ellipse fill="green" stroke="green" cx="-116.051" cy="122.506" rx="27" ry="18"/>
+<text text-anchor="middle" x="-116.051" y="126.206" font-family="Times,serif" font-size="14.00">AC</text>
+</g>
+<!-- GasGTP+AC ⇌ ACGas&#45;&gt;AC -->
+<g id="edge25" class="edge"><title>GasGTP+AC ⇌ ACGas&#45;&gt;AC</title>
+<path fill="none" stroke="black" stroke-width="0.789661" stroke-dasharray="5,2" d="M-31.2374,118.546C-38.6233,118.891 -67.1386,120.222 -89.0884,121.247"/>
+</g>
+<!-- ACGas+ATP ⇌ ACGasATP -->
+<g id="node22" class="node"><title>ACGas+ATP ⇌ ACGasATP</title>
+<ellipse fill="magenta" stroke="black" cx="53.439" cy="41.8876" rx="1.8" ry="1.8"/>
+</g>
+<!-- ACGas+ATP ⇌ ACGasATP&#45;&gt;ACGas -->
+<g id="edge27" class="edge"><title>ACGas+ATP ⇌ ACGasATP&#45;&gt;ACGas</title>
+<path fill="none" stroke="black" stroke-width="1.74978" stroke-dasharray="5,2" d="M51.4993,41.728C47.9826,41.4387 40.0993,40.79 31.3107,40.0669"/>
+</g>
+<!-- ACGasATP -->
+<g id="node23" class="node"><title>ACGasATP</title>
+<ellipse fill="green" stroke="green" cx="-24.1171" cy="-12.3119" rx="53.0913" ry="18"/>
+<text text-anchor="middle" x="-24.1171" y="-8.61193" font-family="Times,serif" font-size="14.00">ACGasATP</text>
+</g>
+<!-- ACGas+ATP ⇌ ACGasATP&#45;&gt;ACGasATP -->
+<g id="edge26" class="edge"><title>ACGas+ATP ⇌ ACGasATP&#45;&gt;ACGasATP</title>
+<path fill="none" stroke="black" stroke-width="0.3" d="M51.8191,40.7556C46.0615,36.7319 25.9625,22.6859 7.88891,10.0553"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="5.44274,12.6158 -0.749142,4.01863 9.45255,6.87805 5.44274,12.6158"/>
+</g>
+<!-- ATP -->
+<g id="node24" class="node"><title>ATP</title>
+<ellipse fill="green" stroke="green" cx="86.2594" cy="-20.5179" rx="27.0966" ry="18"/>
+<text text-anchor="middle" x="86.2594" y="-16.8179" font-family="Times,serif" font-size="14.00">ATP</text>
+</g>
+<!-- ACGas+ATP ⇌ ACGasATP&#45;&gt;ATP -->
+<g id="edge28" class="edge"><title>ACGas+ATP ⇌ ACGasATP&#45;&gt;ATP</title>
+<path fill="none" stroke="black" stroke-width="1.74978" stroke-dasharray="5,2" d="M54.3858,40.0873C57.7071,33.7722 69.07,12.1665 77.283,-3.44985"/>
+</g>
+<!-- ACGasATP ⇌ ACGas+cAMP -->
+<g id="node25" class="node"><title>ACGasATP ⇌ ACGas+cAMP</title>
+<ellipse fill="magenta" stroke="black" cx="17.6288" cy="-55.8192" rx="1.8" ry="1.8"/>
+</g>
+<!-- ACGasATP ⇌ ACGas+cAMP&#45;&gt;ACGas -->
+<g id="edge29" class="edge"><title>ACGasATP ⇌ ACGas+cAMP&#45;&gt;ACGas</title>
+<path fill="none" stroke="black" stroke-width="5" d="M17.1592,-53.8786C15.2142,-45.8429 7.62519,-14.4883 1.89624,9.18127"/>
+<polygon fill="black" stroke="black" stroke-width="5" points="6.10416,10.3938 -0.500589,19.084 -2.40028,8.33536 6.10416,10.3938"/>
+</g>
+<!-- ACGasATP ⇌ ACGas+cAMP&#45;&gt;ACGasATP -->
+<g id="edge31" class="edge"><title>ACGasATP ⇌ ACGas+cAMP&#45;&gt;ACGasATP</title>
+<path fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="5,2" d="M16.2399,-54.3716C12.5049,-50.4791 1.89195,-39.4183 -7.51307,-29.6165"/>
+</g>
+<!-- cAMP -->
+<g id="node26" class="node"><title>cAMP</title>
+<ellipse fill="green" stroke="green" cx="50.2555" cy="-148.14" rx="34.394" ry="18"/>
+<text text-anchor="middle" x="50.2555" y="-144.44" font-family="Times,serif" font-size="14.00">cAMP</text>
+</g>
+<!-- ACGasATP ⇌ ACGas+cAMP&#45;&gt;cAMP -->
+<g id="edge30" class="edge"><title>ACGasATP ⇌ ACGas+cAMP&#45;&gt;cAMP</title>
+<path fill="none" stroke="black" stroke-width="5" d="M18.3103,-57.7474C21.1448,-65.768 32.2416,-97.1677 40.5663,-120.723"/>
+<polygon fill="black" stroke="black" stroke-width="5" points="36.475,-122.276 43.9321,-130.247 44.7249,-119.361 36.475,-122.276"/>
+</g>
+<!-- PDE10+cAMP ⇌ PDE10cAMP -->
+<g id="node27" class="node"><title>PDE10+cAMP ⇌ PDE10cAMP</title>
+<ellipse fill="magenta" stroke="black" cx="-12.3795" cy="-207.096" rx="1.8" ry="1.8"/>
+</g>
+<!-- PDE10+cAMP ⇌ PDE10cAMP&#45;&gt;cAMP -->
+<g id="edge34" class="edge"><title>PDE10+cAMP ⇌ PDE10cAMP&#45;&gt;cAMP</title>
+<path fill="none" stroke="black" stroke-width="5" stroke-dasharray="5,2" d="M-10.8312,-205.639C-4.80294,-199.964 17.552,-178.922 33.4704,-163.939"/>
+</g>
+<!-- PDE10cAMP -->
+<g id="node28" class="node"><title>PDE10cAMP</title>
+<ellipse fill="green" stroke="green" cx="5.23534" cy="-308.391" rx="59.5901" ry="18"/>
+<text text-anchor="middle" x="5.23534" y="-304.691" font-family="Times,serif" font-size="14.00">PDE10cAMP</text>
+</g>
+<!-- PDE10+cAMP ⇌ PDE10cAMP&#45;&gt;PDE10cAMP -->
+<g id="edge32" class="edge"><title>PDE10+cAMP ⇌ PDE10cAMP&#45;&gt;PDE10cAMP</title>
+<path fill="none" stroke="black" stroke-width="0.615307" d="M-12.0116,-209.212C-10.4484,-218.201 -4.23063,-253.956 0.291837,-279.963"/>
+<polygon fill="black" stroke="black" stroke-width="0.615307" points="-3.11361,-280.809 2.04797,-290.062 3.78289,-279.61 -3.11361,-280.809"/>
+</g>
+<!-- PDE10 -->
+<g id="node29" class="node"><title>PDE10</title>
+<ellipse fill="green" stroke="green" cx="-105.153" cy="-239.444" rx="36.2938" ry="18"/>
+<text text-anchor="middle" x="-105.153" y="-235.744" font-family="Times,serif" font-size="14.00">PDE10</text>
+</g>
+<!-- PDE10+cAMP ⇌ PDE10cAMP&#45;&gt;PDE10 -->
+<g id="edge33" class="edge"><title>PDE10+cAMP ⇌ PDE10cAMP&#45;&gt;PDE10</title>
+<path fill="none" stroke="black" stroke-width="5" stroke-dasharray="5,2" d="M-14.3172,-207.772C-22.1234,-210.493 -51.9676,-220.899 -75.344,-229.05"/>
+</g>
+<!-- PDE10cAMP ⇌ PDE10+AMP -->
+<g id="node30" class="node"><title>PDE10cAMP ⇌ PDE10+AMP</title>
+<ellipse fill="magenta" stroke="black" cx="-30.6398" cy="-272.856" rx="1.8" ry="1.8"/>
+</g>
+<!-- PDE10cAMP&#45;&gt;PDE10cAMP ⇌ PDE10+AMP -->
+<g id="edge35" class="edge"><title>PDE10cAMP&#45;&gt;PDE10cAMP ⇌ PDE10+AMP</title>
+<path fill="none" stroke="black" stroke-width="4.52733" stroke-dasharray="5,2" d="M-12.2819,-291.04C-15.5901,-287.763 -18.9175,-284.467 -21.8135,-281.598"/>
+<polygon fill="black" stroke="black" stroke-width="4.52733" points="-19.1596,-278.651 -29.052,-274.428 -24.7351,-284.28 -19.1596,-278.651"/>
+</g>
+<!-- PDE10cAMP ⇌ PDE10+AMP&#45;&gt;PDE10 -->
+<g id="edge36" class="edge"><title>PDE10cAMP ⇌ PDE10+AMP&#45;&gt;PDE10</title>
+<path fill="none" stroke="black" stroke-width="4.52733" d="M-32.4817,-272.03C-37.7154,-269.683 -53.2933,-262.698 -68.6904,-255.794"/>
+<polygon fill="black" stroke="black" stroke-width="4.52733" points="-67.4142,-252.024 -78.1597,-251.547 -70.6559,-259.254 -67.4142,-252.024"/>
+</g>
+<!-- AMP -->
+<g id="node31" class="node"><title>AMP</title>
+<ellipse fill="green" stroke="green" cx="29.7506" cy="-210.888" rx="30.5947" ry="18"/>
+<text text-anchor="middle" x="29.7506" y="-207.188" font-family="Times,serif" font-size="14.00">AMP</text>
+</g>
+<!-- PDE10cAMP ⇌ PDE10+AMP&#45;&gt;AMP -->
+<g id="edge37" class="edge"><title>PDE10cAMP ⇌ PDE10+AMP&#45;&gt;AMP</title>
+<path fill="none" stroke="black" stroke-width="4.52733" d="M-29.147,-271.324C-24.1047,-266.15 -7.2152,-248.819 7.19189,-234.036"/>
+<polygon fill="black" stroke="black" stroke-width="4.52733" points="10.2813,-236.542 14.4237,-226.615 4.60729,-231.012 10.2813,-236.542"/>
+</g>
+<!-- AMP ⇌ ATP -->
+<g id="node44" class="node"><title>AMP ⇌ ATP</title>
+<ellipse fill="magenta" stroke="black" cx="37.4679" cy="-106.73" rx="1.8" ry="1.8"/>
+</g>
+<!-- AMP&#45;&gt;AMP ⇌ ATP -->
+<g id="edge58" class="edge"><title>AMP&#45;&gt;AMP ⇌ ATP</title>
+<path fill="none" stroke="black" stroke-width="3.09224" stroke-dasharray="5,2" d="M31.0948,-192.745C32.6718,-171.462 35.241,-136.786 36.5851,-118.646"/>
+<polygon fill="black" stroke="black" stroke-width="3.09224" points="40.078,-118.87 37.3266,-108.638 33.0971,-118.352 40.078,-118.87"/>
+</g>
+<!-- PKAc+PDE10 ⇌ PKAcPDE10 -->
+<g id="node32" class="node"><title>PKAc+PDE10 ⇌ PKAcPDE10</title>
+<ellipse fill="magenta" stroke="black" cx="-152.885" cy="-325.721" rx="1.8" ry="1.8"/>
+</g>
+<!-- PKAc+PDE10 ⇌ PKAcPDE10&#45;&gt;PDE10 -->
+<g id="edge40" class="edge"><title>PKAc+PDE10 ⇌ PKAcPDE10&#45;&gt;PDE10</title>
+<path fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="5,2" d="M-151.888,-323.919C-147.202,-315.45 -127.083,-279.084 -114.821,-256.919"/>
+</g>
+<!-- PKAcPDE10 -->
+<g id="node33" class="node"><title>PKAcPDE10</title>
+<ellipse fill="green" stroke="green" cx="-230.195" cy="-323.809" rx="57.6901" ry="18"/>
+<text text-anchor="middle" x="-230.195" y="-320.109" font-family="Times,serif" font-size="14.00">PKAcPDE10</text>
+</g>
+<!-- PKAc+PDE10 ⇌ PKAcPDE10&#45;&gt;PKAcPDE10 -->
+<g id="edge38" class="edge"><title>PKAc+PDE10 ⇌ PKAcPDE10&#45;&gt;PKAcPDE10</title>
+<path fill="none" stroke="black" stroke-width="0.3" d="M-154.796,-325.674C-156.426,-325.634 -159.024,-325.57 -162.295,-325.489"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="-162.235,-321.989 -172.318,-325.241 -162.408,-328.987 -162.235,-321.989"/>
+</g>
+<!-- PKAc -->
+<g id="node34" class="node"><title>PKAc</title>
+<ellipse fill="green" stroke="green" cx="-105.044" cy="-381.804" rx="32.4942" ry="18"/>
+<text text-anchor="middle" x="-105.044" y="-378.104" font-family="Times,serif" font-size="14.00">PKAc</text>
+</g>
+<!-- PKAc+PDE10 ⇌ PKAcPDE10&#45;&gt;PKAc -->
+<g id="edge39" class="edge"><title>PKAc+PDE10 ⇌ PKAcPDE10&#45;&gt;PKAc</title>
+<path fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="5,2" d="M-151.702,-327.108C-147.242,-332.337 -131.078,-351.285 -119.018,-365.423"/>
+</g>
+<!-- PKAcPDE10 ⇌ pPDE10+PKAc -->
+<g id="node35" class="node"><title>PKAcPDE10 ⇌ pPDE10+PKAc</title>
+<ellipse fill="magenta" stroke="black" cx="-162.067" cy="-290.523" rx="1.8" ry="1.8"/>
+</g>
+<!-- PKAcPDE10&#45;&gt;PKAcPDE10 ⇌ pPDE10+PKAc -->
+<g id="edge41" class="edge"><title>PKAcPDE10&#45;&gt;PKAcPDE10 ⇌ pPDE10+PKAc</title>
+<path fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="5,2" d="M-198.922,-308.53C-189.6,-303.976 -179.998,-299.284 -172.932,-295.832"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="-171.382,-298.97 -163.934,-291.435 -174.455,-292.681 -171.382,-298.97"/>
+</g>
+<!-- PKAcPDE10 ⇌ pPDE10+PKAc&#45;&gt;PKAc -->
+<g id="edge43" class="edge"><title>PKAcPDE10 ⇌ pPDE10+PKAc&#45;&gt;PKAc</title>
+<path fill="none" stroke="black" stroke-width="0.3" d="M-161.077,-292.108C-156.383,-299.623 -135.97,-332.3 -121.134,-356.048"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="-124.032,-358.015 -115.766,-364.642 -118.095,-354.306 -124.032,-358.015"/>
+</g>
+<!-- pPDE10 -->
+<g id="node36" class="node"><title>pPDE10</title>
+<ellipse fill="green" stroke="green" cx="-128.361" cy="-191.132" rx="40.0939" ry="18"/>
+<text text-anchor="middle" x="-128.361" y="-187.432" font-family="Times,serif" font-size="14.00">pPDE10</text>
+</g>
+<!-- PKAcPDE10 ⇌ pPDE10+PKAc&#45;&gt;pPDE10 -->
+<g id="edge42" class="edge"><title>PKAcPDE10 ⇌ pPDE10+PKAc&#45;&gt;pPDE10</title>
+<path fill="none" stroke="black" stroke-width="0.3" d="M-161.482,-288.798C-158.688,-280.56 -146.479,-244.556 -137.696,-218.657"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="-134.306,-219.56 -134.409,-208.966 -140.935,-217.312 -134.306,-219.56"/>
+</g>
+<!-- pPDE10 ⇌ PDE10 -->
+<g id="node41" class="node"><title>pPDE10 ⇌ PDE10</title>
+<ellipse fill="magenta" stroke="black" cx="-188.584" cy="-198.47" rx="1.8" ry="1.8"/>
+</g>
+<!-- pPDE10&#45;&gt;pPDE10 ⇌ PDE10 -->
+<g id="edge50" class="edge"><title>pPDE10&#45;&gt;pPDE10 ⇌ PDE10</title>
+<path fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="5,2" d="M-167.521,-195.904C-170.621,-196.282 -173.58,-196.642 -176.249,-196.967"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="-176.981,-193.531 -186.484,-198.214 -176.134,-200.479 -176.981,-193.531"/>
+</g>
+<!-- PKAc+PDE10cAMP ⇌ PKAcPDE10cAMP -->
+<g id="node37" class="node"><title>PKAc+PDE10cAMP ⇌ PKAcPDE10cAMP</title>
+<ellipse fill="magenta" stroke="black" cx="-44.0493" cy="-387.055" rx="1.8" ry="1.8"/>
+</g>
+<!-- PKAc+PDE10cAMP ⇌ PKAcPDE10cAMP&#45;&gt;PDE10cAMP -->
+<g id="edge46" class="edge"><title>PKAc+PDE10cAMP ⇌ PKAcPDE10cAMP&#45;&gt;PDE10cAMP</title>
+<path fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="5,2" d="M-43.0199,-385.412C-38.32,-377.91 -18.5826,-346.407 -5.85196,-326.087"/>
+</g>
+<!-- PKAc+PDE10cAMP ⇌ PKAcPDE10cAMP&#45;&gt;PKAc -->
+<g id="edge45" class="edge"><title>PKAc+PDE10cAMP ⇌ PKAcPDE10cAMP&#45;&gt;PKAc</title>
+<path fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="5,2" d="M-46.0787,-386.88C-50.5023,-386.499 -61.5292,-385.55 -72.8667,-384.574"/>
+</g>
+<!-- PKAcPDE10cAMP -->
+<g id="node38" class="node"><title>PKAcPDE10cAMP</title>
+<ellipse fill="green" stroke="green" cx="-101.082" cy="-437.336" rx="81.4863" ry="18"/>
+<text text-anchor="middle" x="-101.082" y="-433.636" font-family="Times,serif" font-size="14.00">PKAcPDE10cAMP</text>
+</g>
+<!-- PKAc+PDE10cAMP ⇌ PKAcPDE10cAMP&#45;&gt;PKAcPDE10cAMP -->
+<g id="edge44" class="edge"><title>PKAc+PDE10cAMP ⇌ PKAcPDE10cAMP&#45;&gt;PKAcPDE10cAMP</title>
+<path fill="none" stroke="black" stroke-width="0.3" d="M-45.4591,-388.298C-49.4834,-391.846 -61.4986,-402.438 -73.3365,-412.875"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="-75.8178,-410.396 -81.0044,-419.635 -71.1886,-415.647 -75.8178,-410.396"/>
+</g>
+<!-- PKAcPDE10cAMP ⇌ pPDE10cAMP+PKAc -->
+<g id="node39" class="node"><title>PKAcPDE10cAMP ⇌ pPDE10cAMP+PKAc</title>
+<ellipse fill="magenta" stroke="black" cx="-92.009" cy="-343.341" rx="1.8" ry="1.8"/>
+</g>
+<!-- PKAcPDE10cAMP&#45;&gt;PKAcPDE10cAMP ⇌ pPDE10cAMP+PKAc -->
+<g id="edge47" class="edge"><title>PKAcPDE10cAMP&#45;&gt;PKAcPDE10cAMP ⇌ pPDE10cAMP+PKAc</title>
+<path fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="5,2" d="M-99.3325,-419.212C-97.5303,-400.541 -94.7698,-371.942 -93.2033,-355.713"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="-89.6926,-355.77 -92.2156,-345.48 -96.6603,-355.098 -89.6926,-355.77"/>
+</g>
+<!-- PKAcPDE10cAMP ⇌ pPDE10cAMP+PKAc&#45;&gt;PKAc -->
+<g id="edge49" class="edge"><title>PKAcPDE10cAMP ⇌ pPDE10cAMP+PKAc&#45;&gt;PKAc</title>
+<path fill="none" stroke="black" stroke-width="0.3" d="M-92.7099,-345.408C-93.3692,-347.354 -94.439,-350.511 -95.6801,-354.173"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="-99.0873,-353.322 -98.9822,-363.917 -92.4577,-355.569 -99.0873,-353.322"/>
+</g>
+<!-- pPDE10cAMP -->
+<g id="node40" class="node"><title>pPDE10cAMP</title>
+<ellipse fill="green" stroke="green" cx="-70.6509" cy="-254.186" rx="63.8893" ry="18"/>
+<text text-anchor="middle" x="-70.6509" y="-250.486" font-family="Times,serif" font-size="14.00">pPDE10cAMP</text>
+</g>
+<!-- PKAcPDE10cAMP ⇌ pPDE10cAMP+PKAc&#45;&gt;pPDE10cAMP -->
+<g id="edge48" class="edge"><title>PKAcPDE10cAMP ⇌ pPDE10cAMP+PKAc&#45;&gt;pPDE10cAMP</title>
+<path fill="none" stroke="black" stroke-width="0.3" d="M-91.5629,-341.478C-89.7447,-333.889 -82.7334,-304.621 -77.3248,-282.045"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="-73.9031,-282.784 -74.977,-272.244 -80.7105,-281.154 -73.9031,-282.784"/>
+</g>
+<!-- pPDE10cAMP ⇌ pPDE10+AMP -->
+<g id="node43" class="node"><title>pPDE10cAMP ⇌ pPDE10+AMP</title>
+<ellipse fill="magenta" stroke="black" cx="-70.4411" cy="-199.42" rx="1.8" ry="1.8"/>
+</g>
+<!-- pPDE10cAMP&#45;&gt;pPDE10cAMP ⇌ pPDE10+AMP -->
+<g id="edge55" class="edge"><title>pPDE10cAMP&#45;&gt;pPDE10cAMP ⇌ pPDE10+AMP</title>
+<path fill="none" stroke="black" stroke-width="5" stroke-dasharray="5,2" d="M-70.581,-235.949C-70.5504,-227.96 -70.5153,-218.798 -70.4879,-211.648"/>
+<polygon fill="black" stroke="black" stroke-width="5" points="-66.1122,-211.443 -70.4488,-201.426 -74.8621,-211.409 -66.1122,-211.443"/>
+</g>
+<!-- pPDE10 ⇌ PDE10&#45;&gt;PDE10 -->
+<g id="edge51" class="edge"><title>pPDE10 ⇌ PDE10&#45;&gt;PDE10</title>
+<path fill="none" stroke="black" stroke-width="0.3" d="M-186.841,-199.326C-180.728,-202.328 -159.585,-212.712 -140.342,-222.162"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="-141.641,-225.423 -131.122,-226.69 -138.555,-219.14 -141.641,-225.423"/>
+</g>
+<!-- pPDE10+cAMP ⇌ pPDE10cAMP -->
+<g id="node42" class="node"><title>pPDE10+cAMP ⇌ pPDE10cAMP</title>
+<ellipse fill="magenta" stroke="black" cx="-42.6572" cy="-160.22" rx="1.8" ry="1.8"/>
+</g>
+<!-- pPDE10+cAMP ⇌ pPDE10cAMP&#45;&gt;cAMP -->
+<g id="edge54" class="edge"><title>pPDE10+cAMP ⇌ pPDE10cAMP&#45;&gt;cAMP</title>
+<path fill="none" stroke="black" stroke-width="5" stroke-dasharray="5,2" d="M-40.7166,-159.968C-33.3156,-159.006 -6.13499,-155.472 16.6051,-152.515"/>
+</g>
+<!-- pPDE10+cAMP ⇌ pPDE10cAMP&#45;&gt;pPDE10 -->
+<g id="edge53" class="edge"><title>pPDE10+cAMP ⇌ pPDE10cAMP&#45;&gt;pPDE10</title>
+<path fill="none" stroke="black" stroke-width="5" stroke-dasharray="5,2" d="M-44.4473,-160.866C-51.226,-163.311 -75.9937,-172.244 -96.8781,-179.777"/>
+</g>
+<!-- pPDE10+cAMP ⇌ pPDE10cAMP&#45;&gt;pPDE10cAMP -->
+<g id="edge52" class="edge"><title>pPDE10+cAMP ⇌ pPDE10cAMP&#45;&gt;pPDE10cAMP</title>
+<path fill="none" stroke="black" stroke-width="0.797629" d="M-43.2419,-162.183C-45.6739,-170.346 -55.195,-202.305 -62.3375,-226.281"/>
+<polygon fill="black" stroke="black" stroke-width="0.797629" points="-65.7245,-225.391 -65.2254,-235.974 -59.0159,-227.39 -65.7245,-225.391"/>
+</g>
+<!-- pPDE10cAMP ⇌ pPDE10+AMP&#45;&gt;AMP -->
+<g id="edge57" class="edge"><title>pPDE10cAMP ⇌ pPDE10+AMP&#45;&gt;AMP</title>
+<path fill="none" stroke="black" stroke-width="5" d="M-68.3484,-199.659C-60.809,-200.522 -34.2337,-203.564 -10.6431,-206.265"/>
+<polygon fill="black" stroke="black" stroke-width="5" points="-10.8703,-210.642 -0.437603,-207.433 -9.87517,-201.949 -10.8703,-210.642"/>
+</g>
+<!-- pPDE10cAMP ⇌ pPDE10+AMP&#45;&gt;pPDE10 -->
+<g id="edge56" class="edge"><title>pPDE10cAMP ⇌ pPDE10+AMP&#45;&gt;pPDE10</title>
+<path fill="none" stroke="black" stroke-width="5" d="M-72.3682,-199.144C-73.9876,-198.912 -76.5389,-198.547 -79.6798,-198.098"/>
+<polygon fill="black" stroke="black" stroke-width="5" points="-79.2894,-193.734 -89.8083,-196.649 -80.5288,-202.396 -79.2894,-193.734"/>
+</g>
+<!-- AMP ⇌ ATP&#45;&gt;ATP -->
+<g id="edge59" class="edge"><title>AMP ⇌ ATP&#45;&gt;ATP</title>
+<path fill="none" stroke="black" stroke-width="3.09224" d="M38.487,-104.93C42.7019,-97.4821 59.1335,-68.4482 71.5583,-46.4941"/>
+<polygon fill="black" stroke="black" stroke-width="3.09224" points="74.7113,-48.029 76.5906,-37.6022 68.6192,-44.5812 74.7113,-48.029"/>
+</g>
+<!-- PKA+2cAMP ⇌ PKAcAMP2 -->
+<g id="node45" class="node"><title>PKA+2cAMP ⇌ PKAcAMP2</title>
+<ellipse fill="magenta" stroke="black" cx="125.732" cy="-109.897" rx="1.8" ry="1.8"/>
+</g>
+<!-- PKA+2cAMP ⇌ PKAcAMP2&#45;&gt;cAMP -->
+<g id="edge62" class="edge"><title>PKA+2cAMP ⇌ PKAcAMP2&#45;&gt;cAMP</title>
+<path fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="5,2" d="M123.866,-110.842C117.192,-114.224 93.9116,-126.02 75.2964,-135.452"/>
+</g>
+<!-- PKAcAMP2 -->
+<g id="node46" class="node"><title>PKAcAMP2</title>
+<ellipse fill="green" stroke="green" cx="185.797" cy="-190.609" rx="55.7903" ry="18"/>
+<text text-anchor="middle" x="185.797" y="-186.909" font-family="Times,serif" font-size="14.00">PKAcAMP2</text>
+</g>
+<!-- PKA+2cAMP ⇌ PKAcAMP2&#45;&gt;PKAcAMP2 -->
+<g id="edge60" class="edge"><title>PKA+2cAMP ⇌ PKAcAMP2&#45;&gt;PKAcAMP2</title>
+<path fill="none" stroke="black" stroke-width="0.3" d="M126.987,-111.583C132.051,-118.387 151.438,-144.44 166.586,-164.795"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="163.779,-166.886 172.557,-172.819 169.395,-162.707 163.779,-166.886"/>
+</g>
+<!-- PKA -->
+<g id="node47" class="node"><title>PKA</title>
+<ellipse fill="green" stroke="green" cx="213.582" cy="-76.5645" rx="28.6953" ry="18"/>
+<text text-anchor="middle" x="213.582" y="-72.8645" font-family="Times,serif" font-size="14.00">PKA</text>
+</g>
+<!-- PKA+2cAMP ⇌ PKAcAMP2&#45;&gt;PKA -->
+<g id="edge61" class="edge"><title>PKA+2cAMP ⇌ PKAcAMP2&#45;&gt;PKA</title>
+<path fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="5,2" d="M127.567,-109.201C135.353,-106.247 166.293,-94.5071 188.841,-85.952"/>
+</g>
+<!-- PKAcAMP2+2cAMP ⇌ PKAcAMP4 -->
+<g id="node48" class="node"><title>PKAcAMP2+2cAMP ⇌ PKAcAMP4</title>
+<ellipse fill="magenta" stroke="black" cx="91.8834" cy="-227.245" rx="1.8" ry="1.8"/>
+</g>
+<!-- PKAcAMP2+2cAMP ⇌ PKAcAMP4&#45;&gt;cAMP -->
+<g id="edge65" class="edge"><title>PKAcAMP2+2cAMP ⇌ PKAcAMP4&#45;&gt;cAMP</title>
+<path fill="none" stroke="black" stroke-width="2.58142" stroke-dasharray="5,2" d="M91.0139,-225.593C87.0209,-218.005 70.1766,-185.996 59.4311,-165.576"/>
+</g>
+<!-- PKAcAMP2+2cAMP ⇌ PKAcAMP4&#45;&gt;PKAcAMP2 -->
+<g id="edge64" class="edge"><title>PKAcAMP2+2cAMP ⇌ PKAcAMP4&#45;&gt;PKAcAMP2</title>
+<path fill="none" stroke="black" stroke-width="2.58142" stroke-dasharray="5,2" d="M93.8449,-226.48C101.115,-223.644 127.267,-213.442 149.831,-204.639"/>
+</g>
+<!-- PKAcAMP4 -->
+<g id="node49" class="node"><title>PKAcAMP4</title>
+<ellipse fill="green" stroke="green" cx="81.7301" cy="-330.22" rx="55.7903" ry="18"/>
+<text text-anchor="middle" x="81.7301" y="-326.52" font-family="Times,serif" font-size="14.00">PKAcAMP4</text>
+</g>
+<!-- PKAcAMP2+2cAMP ⇌ PKAcAMP4&#45;&gt;PKAcAMP4 -->
+<g id="edge63" class="edge"><title>PKAcAMP2+2cAMP ⇌ PKAcAMP4&#45;&gt;PKAcAMP4</title>
+<path fill="none" stroke="black" stroke-width="0.3" d="M91.6713,-229.396C90.7653,-238.585 87.1464,-275.287 84.5362,-301.761"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="81.0227,-301.726 83.5245,-312.021 87.9889,-302.413 81.0227,-301.726"/>
+</g>
+<!-- PKAcAMP4 ⇌ PKAr+2PKAc -->
+<g id="node50" class="node"><title>PKAcAMP4 ⇌ PKAr+2PKAc</title>
+<ellipse fill="magenta" stroke="black" cx="9.19987" cy="-397.809" rx="1.8" ry="1.8"/>
+</g>
+<!-- PKAcAMP4 ⇌ PKAr+2PKAc&#45;&gt;PKAc -->
+<g id="edge67" class="edge"><title>PKAcAMP4 ⇌ PKAr+2PKAc&#45;&gt;PKAc</title>
+<path fill="none" stroke="black" stroke-width="0.3" d="M7.21694,-397.531C-1.22754,-396.348 -35.055,-391.609 -63.3904,-387.64"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="-63.1353,-384.141 -73.5242,-386.22 -64.1065,-391.074 -63.1353,-384.141"/>
+</g>
+<!-- PKAcAMP4 ⇌ PKAr+2PKAc&#45;&gt;PKAcAMP4 -->
+<g id="edge68" class="edge"><title>PKAcAMP4 ⇌ PKAr+2PKAc&#45;&gt;PKAcAMP4</title>
+<path fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="5,2" d="M10.7148,-396.397C17.3872,-390.179 44.6553,-364.769 63.3925,-347.308"/>
+</g>
+<!-- PKAr -->
+<g id="node51" class="node"><title>PKAr</title>
+<ellipse fill="green" stroke="green" cx="35.3849" cy="-477.963" rx="31.3957" ry="18"/>
+<text text-anchor="middle" x="35.3849" y="-474.263" font-family="Times,serif" font-size="14.00">PKAr</text>
+</g>
+<!-- PKAcAMP4 ⇌ PKAr+2PKAc&#45;&gt;PKAr -->
+<g id="edge66" class="edge"><title>PKAcAMP4 ⇌ PKAr+2PKAc&#45;&gt;PKAr</title>
+<path fill="none" stroke="black" stroke-width="0.3" d="M9.84714,-399.79C12.1274,-406.77 19.9951,-430.854 26.4019,-450.465"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="23.1493,-451.78 29.5817,-460.199 29.8033,-449.607 23.1493,-451.78"/>
+</g>
+<!-- PDE2+cAMP ⇌ PDE2cAMP -->
+<g id="node52" class="node"><title>PDE2+cAMP ⇌ PDE2cAMP</title>
+<ellipse fill="magenta" stroke="black" cx="143.688" cy="-142.96" rx="1.8" ry="1.8"/>
+</g>
+<!-- PDE2+cAMP ⇌ PDE2cAMP&#45;&gt;cAMP -->
+<g id="edge71" class="edge"><title>PDE2+cAMP ⇌ PDE2cAMP&#45;&gt;cAMP</title>
+<path fill="none" stroke="black" stroke-width="2.3991" stroke-dasharray="5,2" d="M141.736,-143.069C134.347,-143.478 107.345,-144.975 84.5778,-146.237"/>
+</g>
+<!-- PDE2cAMP -->
+<g id="node53" class="node"><title>PDE2cAMP</title>
+<ellipse fill="green" stroke="green" cx="188.262" cy="-213.477" rx="55.4913" ry="18"/>
+<text text-anchor="middle" x="188.262" y="-209.777" font-family="Times,serif" font-size="14.00">PDE2cAMP</text>
+</g>
+<!-- PDE2+cAMP ⇌ PDE2cAMP&#45;&gt;PDE2cAMP -->
+<g id="edge69" class="edge"><title>PDE2+cAMP ⇌ PDE2cAMP&#45;&gt;PDE2cAMP</title>
+<path fill="none" stroke="black" stroke-width="0.3" d="M144.79,-144.704C148.477,-150.537 160.75,-169.952 171.318,-186.672"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="168.648,-188.997 176.949,-195.58 174.565,-185.257 168.648,-188.997"/>
+</g>
+<!-- PDE2 -->
+<g id="node54" class="node"><title>PDE2</title>
+<ellipse fill="green" stroke="green" cx="241.596" cy="-136.376" rx="31.6951" ry="18"/>
+<text text-anchor="middle" x="241.596" y="-132.676" font-family="Times,serif" font-size="14.00">PDE2</text>
+</g>
+<!-- PDE2+cAMP ⇌ PDE2cAMP&#45;&gt;PDE2 -->
+<g id="edge70" class="edge"><title>PDE2+cAMP ⇌ PDE2cAMP&#45;&gt;PDE2</title>
+<path fill="none" stroke="black" stroke-width="2.3991" stroke-dasharray="5,2" d="M145.733,-142.823C153.916,-142.273 185.048,-140.179 209.643,-138.525"/>
+</g>
+<!-- PDE2cAMP+cAMP ⇌ PDE2cAMP2 -->
+<g id="node55" class="node"><title>PDE2cAMP+cAMP ⇌ PDE2cAMP2</title>
+<ellipse fill="magenta" stroke="black" cx="123.336" cy="-183.403" rx="1.8" ry="1.8"/>
+</g>
+<!-- PDE2cAMP+cAMP ⇌ PDE2cAMP2&#45;&gt;cAMP -->
+<g id="edge74" class="edge"><title>PDE2cAMP+cAMP ⇌ PDE2cAMP2&#45;&gt;cAMP</title>
+<path fill="none" stroke="black" stroke-width="2.3991" stroke-dasharray="5,2" d="M121.529,-182.531C115.199,-179.477 93.4389,-168.977 75.6104,-160.374"/>
+</g>
+<!-- PDE2cAMP+cAMP ⇌ PDE2cAMP2&#45;&gt;PDE2cAMP -->
+<g id="edge73" class="edge"><title>PDE2cAMP+cAMP ⇌ PDE2cAMP2&#45;&gt;PDE2cAMP</title>
+<path fill="none" stroke="black" stroke-width="2.3991" stroke-dasharray="5,2" d="M125.209,-184.27C129.991,-186.485 143.201,-192.604 156.301,-198.672"/>
+</g>
+<!-- PDE2cAMP2 -->
+<g id="node56" class="node"><title>PDE2cAMP2</title>
+<ellipse fill="green" stroke="green" cx="190.682" cy="-256.686" rx="59.5901" ry="18"/>
+<text text-anchor="middle" x="190.682" y="-252.986" font-family="Times,serif" font-size="14.00">PDE2cAMP2</text>
+</g>
+<!-- PDE2cAMP+cAMP ⇌ PDE2cAMP2&#45;&gt;PDE2cAMP2 -->
+<g id="edge72" class="edge"><title>PDE2cAMP+cAMP ⇌ PDE2cAMP2&#45;&gt;PDE2cAMP2</title>
+<path fill="none" stroke="black" stroke-width="0.3" d="M124.743,-184.933C130.263,-190.94 150.965,-213.468 167.719,-231.698"/>
+<polygon fill="black" stroke="black" stroke-width="0.3" points="165.258,-234.193 174.602,-239.188 170.412,-229.457 165.258,-234.193"/>
+</g>
+<!-- PDE2cAMP2 ⇌ PDE2cAMP+AMP -->
+<g id="node57" class="node"><title>PDE2cAMP2 ⇌ PDE2cAMP+AMP</title>
+<ellipse fill="magenta" stroke="black" cx="123.814" cy="-269.621" rx="1.8" ry="1.8"/>
+</g>
+<!-- PDE2cAMP2&#45;&gt;PDE2cAMP2 ⇌ PDE2cAMP+AMP -->
+<g id="edge75" class="edge"><title>PDE2cAMP2&#45;&gt;PDE2cAMP2 ⇌ PDE2cAMP+AMP</title>
+<path fill="none" stroke="black" stroke-width="4.77864" stroke-dasharray="5,2" d="M140.343,-266.423C138.71,-266.739 137.15,-267.041 135.687,-267.324"/>
+<polygon fill="black" stroke="black" stroke-width="4.77864" points="134.758,-263.245 125.734,-269.249 136.346,-271.455 134.758,-263.245"/>
+</g>
+<!-- PDE2cAMP2 ⇌ PDE2cAMP+AMP&#45;&gt;AMP -->
+<g id="edge77" class="edge"><title>PDE2cAMP2 ⇌ PDE2cAMP+AMP&#45;&gt;AMP</title>
+<path fill="none" stroke="black" stroke-width="4.77864" d="M122.181,-268.601C114.75,-263.962 83.4481,-244.417 59.3069,-229.343"/>
+<polygon fill="black" stroke="black" stroke-width="4.77864" points="61.4912,-225.777 50.7943,-224.028 57.062,-232.871 61.4912,-225.777"/>
+</g>
+<!-- PDE2cAMP2 ⇌ PDE2cAMP+AMP&#45;&gt;PDE2cAMP -->
+<g id="edge76" class="edge"><title>PDE2cAMP2 ⇌ PDE2cAMP+AMP&#45;&gt;PDE2cAMP</title>
+<path fill="none" stroke="black" stroke-width="4.77864" d="M125.407,-268.233C130.412,-263.873 146.352,-249.987 160.927,-237.29"/>
+<polygon fill="black" stroke="black" stroke-width="4.77864" points="164.012,-240.148 168.805,-230.427 158.519,-233.842 164.012,-240.148"/>
+</g>
+</g>
+</svg>

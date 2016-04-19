@@ -17,7 +17,7 @@
         <NanoMolarity specieID="ACGasATP"       value="0" />
 
     <!-- cytosolic molecules -->
-        <NanoMolarity specieID="ATP"                 value="4e5" />
+        <NanoMolarity specieID="ATP"                 value="2e6" />
         <NanoMolarity specieID="cAMP"                value="36" />
         <NanoMolarity specieID="AMP"                 value="0" />
         <NanoMolarity specieID="PDE10"              value="120" />
