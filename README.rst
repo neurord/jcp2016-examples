@@ -2,8 +2,8 @@ Example models for JCP 2016 article
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Asynchronous τ-leaping**,
-Zbigniew Jędrzejewski-Szmek, Kim T. “Avrama” Blackwell,
-Journal of Chemical Physics, *(in press)*
+Zbigniew Jędrzejewski-Szmek, Kim T. Blackwell,
+Journal of Chemical Physics, **144**, 125104 (2016)
 
 To run the examples:
 
